@@ -1,0 +1,40 @@
+begin rule definition
+   name           : com.example.samplelibrary:Testing Custom Service
+   definition     : {
+   definition     :   "version" : "1.0-SNAPSHOT",
+   definition     :   "lastUpdateTime" : 1612380891482,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "com.example.samplelibrary",
+   definition     :   "name" : "com.example.samplelibrary:Testing Custom Service",
+   definition     :   "tags" : null,
+   definition     :   "description" : "This rule is triggered when a record is created and will call the Process that will update the password.",
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "developerId" : "com.example",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "IDGA5FQGDU9FUAOYQJ4QOXTWWF3KTZ",
+   definition     :   "triggerEvent" : {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.rule.domain.RecordTriggerEvent",
+   definition     :     "eventTypes" : [ "ON_CREATE" ],
+   definition     :     "executionOrder" : 500
+   definition     :   },
+   definition     :   "isEnabled" : true,
+   definition     :   "recordDefinitionNames" : [ "com.example.samplelibrary:Test Service" ],
+   definition     :   "qualification" : null,
+   definition     :   "actions" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.rule.domain.StartProcessInstanceAction",
+   definition     :     "name" : "Update password process",
+   definition     :     "processDefinitionName" : "rx-ce549ec3-65e8-4987-a2b3-ba38da557a00",
+   definition     :     "sampleProcessDefinitionName" : null,
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "10029001",
+   definition     :       "expression" : "$\\ENTRY$"
+   definition     :     } ],
+   definition     :     "outputMap" : [ ]
+   definition     :   } ],
+   definition     :   "overlayDescriptor" : null,
+   definition     :   "allowOverlay" : false,
+   definition     :   "localizableStrings" : null,
+   definition     :   "saaSAdminOnly" : false
+   definition     : }
+end

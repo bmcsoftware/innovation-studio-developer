@@ -1,0 +1,85 @@
+begin view definition
+   name           : com.example.samplelibrary:VC - Get Administration Configuration
+   definition     : {
+   definition     :   "version" : "1.0-SNAPSHOT",
+   definition     :   "lastUpdateTime" : 1612380896473,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "ARSERVER",
+   definition     :   "name" : "com.example.samplelibrary:VC - Get Administration Configuration",
+   definition     :   "tags" : null,
+   definition     :   "description" : null,
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "developerId" : "com.example",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "6db4028c-03f1-48cb-95a3-d1db85866821",
+   definition     :   "layout" : "{\"layoutTemplate\":5,\"columns\":[{\"role\":\"content\",\"children\":[{\"componentDefinitionId\":\"93e8ac4e-f73e-4597-acfb-22793adb29ee\"},{\"componentDefinitionId\":\"5962f92c-a1fc-4e8b-bc28-1244e5f01053\"}]}],\"componentDefinitionId\":\"6db4028c-03f1-48cb-95a3-d1db85866821\"}",
+   definition     :   "inputParams" : [ ],
+   definition     :   "outputParams" : [ ],
+   definition     :   "componentDefinitions" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1612380896473,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "93e8ac4e-f73e-4597-acfb-22793adb29ee",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "93e8ac4e-f73e-4597-acfb-22793adb29ee",
+   definition     :     "type" : "rx-rich-text",
+   definition     :     "propertiesByName" : {
+   definition     :       "hidden" : "0",
+   definition     :       "html" : "ee4abef4-c91d-4f90-b188-7d5808438b09"
+   definition     :     },
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ]
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1612380896473,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "5962f92c-a1fc-4e8b-bc28-1244e5f01053",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "5962f92c-a1fc-4e8b-bc28-1244e5f01053",
+   definition     :     "type" : "com-example-samplelibrary-admin-settings",
+   definition     :     "propertiesByName" : null,
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ]
+   definition     :   } ],
+   definition     :   "permissions" : [ {
+   definition     :     "ownerId" : {
+   definition     :       "value" : 0,
+   definition     :       "type" : "GROUP",
+   definition     :       "name" : "Public"
+   definition     :     },
+   definition     :     "type" : "VISIBLE"
+   definition     :   } ],
+   definition     :   "localizableStringsByComponentId" : null,
+   definition     :   "overlayDescriptor" : {
+   definition     :     "parentOverlayGroupId" : null
+   definition     :   },
+   definition     :   "allowOverlay" : false,
+   definition     :   "type" : "REGULAR",
+   definition     :   "styles" : null,
+   definition     :   "targetViewDefinitionName" : null,
+   definition     :   "targetExtensionContainerGuid" : null
+   definition     : }
+end

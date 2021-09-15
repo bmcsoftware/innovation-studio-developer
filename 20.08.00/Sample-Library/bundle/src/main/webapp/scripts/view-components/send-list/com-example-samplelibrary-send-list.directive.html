@@ -1,0 +1,22 @@
+<br/>
+<br/>
+<div ng-show="fetchInProgress">
+    Fetch in progress, please wait...
+</div>
+<div ng-hide="fetchInProgress">
+We get a Java class Note object from the rest api /api/com.example.samplelibrary/restTicket/note/NOT0001:
+<rx-simple-json-editor name="json" rx-object="getNoteData" ng-readonly="true"></rx-simple-json-editor>
+<br/>
+<br/>
+We get a Java class Ticket object from the rest api /api/com.example.samplelibrary/restTicket/ticket/TIC001:<br/>
+This Ticket object has a NoteList that is an array of Notes.
+<rx-simple-json-editor name="json" rx-object="getTicketData" ng-readonly="true"></rx-simple-json-editor>
+<br/>
+<br/>
+We Post a a Java class Ticket object to the rest api /com.example.samplelibrary/restTicket/ticket:<br/>
+Payload we send:
+<rx-simple-json-editor name="json" rx-object="createTicketPayload" ng-readonly="true"></rx-simple-json-editor>
+<br/>
+The answer from the backend is the same object with a different title:
+<rx-simple-json-editor name="json" rx-object="createTicketData" ng-readonly="true"></rx-simple-json-editor>
+</div>

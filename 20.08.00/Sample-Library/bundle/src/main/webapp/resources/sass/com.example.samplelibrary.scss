@@ -1,0 +1,35 @@
+@import "<%= standardlibTarget %>/resources/sass/partials/core/variables";
+@import "variables";
+
+/* Importing Rzslider css file, used for sliders
+https://github.com/angular-slider/angularjs-slider
+ */
+@import "rzslider.min";
+
+/* Importing css for "bmc-css-icons" view components */
+@import "bmc-css-icons";
+
+/* Importing the scss for get-date View Component */
+@import "partials/get-date";
+
+@import "partials/custom-classes";
+@import "partials/call-action";
+@import "partials/access-grid";
+@import "partials/user-infos";
+@import "partials/send-list";
+@import "partials/click-button";
+@import "partials/trigger-activity";
+@import "partials/custom-grid";
+@import "partials/download-file";
+@import "partials/admin-settings";
+@import "partials/api-rxnotificationmessage";
+@import "partials/iframe";
+@import "partials/user-preference";
+@import "partials/google-map";
+@import "partials/call-process-js";
+@import "partials/display-image";
+@import "partials/nvd3-chart";
+@import "partials/digital-signature";
+@import "partials/get-user-infos";
+@import "partials/webcam";
+@import "partials/qrcode-reader";

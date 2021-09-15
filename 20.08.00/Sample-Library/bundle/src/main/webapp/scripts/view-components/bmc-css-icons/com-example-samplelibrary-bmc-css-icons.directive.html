@@ -1,0 +1,18 @@
+<span class="color0" ng-show="showSearchInProgress">Please wait, search in progress...</span>
+<input type="text" class="form-control" placeholder="Quick Search (3 characters minimum)" ng-model="searchIcon">
+<table class="table table-condensed">
+    <thead>
+    <tr>
+        <td><strong>Icon Name</strong></td>
+        <td><strong>Icon Symbol</strong></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="oneIcon in allIcons track by $index">
+        <td>{{oneIcon.ruleName}}</td>
+        <td class="{{oneIcon.selectorText}}">
+            <span ng-class="'d-icon-'+oneIcon.ruleName" class="bigfont"></span>
+        </td>
+    </tr>
+    </tbody>
+</table>

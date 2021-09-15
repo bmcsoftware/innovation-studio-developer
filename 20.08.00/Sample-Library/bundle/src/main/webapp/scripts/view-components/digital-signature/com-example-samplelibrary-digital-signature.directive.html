@@ -1,0 +1,11 @@
+<!-- This directive allows several parameters:
+accept: It is the method you can use to get the signature object.
+    You call call it directly in the html code or within the code using $scope.acceptSignature().
+clear: It is the method you can call to clear the signature.
+    You call call it directly in the html code or within the code using $scope.clearSignature().
+-->
+<signature-pad accept="acceptSignature"
+               clear="clearSignature"
+               height="{{height}}"
+               width="{{width}}"
+               container-css="{{customCss}}"></signature-pad>

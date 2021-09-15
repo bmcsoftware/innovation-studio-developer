@@ -1,0 +1,10 @@
+<button type="button"
+        class="d-button d-button_Primary d-button_small"
+        ng-click="getPassword()">Generate Password</button>
+
+<div ng-show="fetchInProgress">
+    Generating password, please wait...
+</div>
+<div ng-hide="fetchInProgress">
+    The password is: {{password}}
+</div>

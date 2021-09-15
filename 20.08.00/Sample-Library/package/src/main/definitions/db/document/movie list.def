@@ -1,0 +1,20 @@
+begin document definition
+   name           : com.example.samplelibrary:movie list
+   definition     : {
+   definition     :   "version" : "1.0-SNAPSHOT",
+   definition     :   "lastUpdateTime" : 1612380902671,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "developer",
+   definition     :   "name" : "com.example.samplelibrary:movie list",
+   definition     :   "tags" : null,
+   definition     :   "description" : null,
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "developerId" : null,
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "IDGADG1AANVNMAPQG6LTPPJE5FV2AQ",
+   definition     :   "allowOverlay" : false,
+   definition     :   "overlayDescriptor" : null,
+   definition     :   "documentSchema" : "{\n  \"movieList\": []\n}"
+   definition     : }
+end

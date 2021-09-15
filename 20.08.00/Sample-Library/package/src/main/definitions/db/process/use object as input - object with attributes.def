@@ -1,0 +1,194 @@
+begin process definition
+   name           : com.example.samplelibrary:use object as input - object with attributes
+   definition     : {
+   definition     :   "version" : "1.0-SNAPSHOT",
+   definition     :   "lastUpdateTime" : 1612380890947,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "developer",
+   definition     :   "name" : "com.example.samplelibrary:use object as input - object with attributes",
+   definition     :   "tags" : null,
+   definition     :   "description" : null,
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "developerId" : "com.example",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "rx-24099f47-4710-4146-8b0f-6d86e915e26b",
+   definition     :   "flowElements" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
+   definition     :     "lastUpdateTime" : 1612380890947,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Creating a string using the object attributes",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-b5f57eaa-364c-498b-a347-fb7aa1ed498c",
+   definition     :     "multiInstanceLoopDefinition" : null,
+   definition     :     "actionTypeName" : "computeValue",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "expressionText",
+   definition     :       "expression" : "((((${processContext.10029005.title} + \", \") + ${processContext.10029005.genre}) + \", \") + ${processContext.10029005.releaseDate})"
+   definition     :     } ],
+   definition     :     "outputMap" : [ {
+   definition     :       "assignTarget" : "10029008",
+   definition     :       "expression" : "${activityResults.rx-b5f57eaa-364c-498b-a347-fb7aa1ed498c.output}"
+   definition     :     } ],
+   definition     :     "runAsUser" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1612380890947,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-180223c8-abb3-407f-b821-73571456393a",
+   definition     :     "sourceNode" : "rx-87dc459e-ce53-45d2-950b-b282ff22f1a7",
+   definition     :     "targetNode" : "rx-b5f57eaa-364c-498b-a347-fb7aa1ed498c",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.StartEventDefinition",
+   definition     :     "lastUpdateTime" : 1612380890947,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Start",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-87dc459e-ce53-45d2-950b-b282ff22f1a7"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.EndEventDefinition",
+   definition     :     "lastUpdateTime" : 1612380890947,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "End",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-74236ac2-5192-4e2d-bd1f-07e59cd72118",
+   definition     :     "event" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1612380890947,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-b49a93e4-2280-4988-b0b8-91831f0c7b43",
+   definition     :     "sourceNode" : "rx-b5f57eaa-364c-498b-a347-fb7aa1ed498c",
+   definition     :     "targetNode" : "rx-74236ac2-5192-4e2d-bd1f-07e59cd72118",
+   definition     :     "condition" : ""
+   definition     :   } ],
+   definition     :   "inputParams" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.record.ObjectFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380890947,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "movieObject",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "id" : 10029005,
+   definition     :     "fieldOption" : "REQUIRED",
+   definition     :     "permissions" : null,
+   definition     :     "fieldTypeName" : "com.bmc.arsys.rx.services.process.domain.record.ObjectFieldType",
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : null,
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : true,
+   definition     :     "allowOtherPropertiesOverlay" : true,
+   definition     :     "auditOption" : null,
+   definition     :     "documentDefinitionName" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   } ],
+   definition     :   "outputParams" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380890947,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "movieString",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "id" : 10029008,
+   definition     :     "fieldOption" : "OPTIONAL",
+   definition     :     "permissions" : null,
+   definition     :     "fieldTypeName" : "com.bmc.arsys.rx.services.record.domain.DefaultFieldType",
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : null,
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : true,
+   definition     :     "allowOtherPropertiesOverlay" : true,
+   definition     :     "auditOption" : null,
+   definition     :     "maxLength" : 0,
+   definition     :     "defaultValue" : null,
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   } ],
+   definition     :   "localVariables" : [ ],
+   definition     :   "contextKeyParam" : null,
+   definition     :   "isEnabled" : true,
+   definition     :   "permissions" : [ ],
+   definition     :   "layout" : "{\"cells\":[{\"type\":\"rx.StartEvent\",\"size\":{\"width\":30,\"height\":30},\"eventType\":\"start\",\"position\":{\"x\":30,\"y\":465},\"angle\":0,\"id\":\"87dc459e-ce53-45d2-950b-b282ff22f1a7\",\"z\":30,\"attrs\":{\".label\":{\"text\":\"\"},\".inner\":{\"visibility\":\"hidden\"}}},{\"type\":\"rx.EndEvent\",\"size\":{\"width\":30,\"height\":30},\"eventType\":\"end\",\"position\":{\"x\":615,\"y\":465},\"angle\":0,\"id\":\"74236ac2-5192-4e2d-bd1f-07e59cd72118\",\"z\":71,\"attrs\":{\".label\":{\"text\":\"\"},\".outer\":{\"stroke-width\":5},\".inner\":{\"visibility\":\"hidden\"}}},{\"type\":\"rx.ProcessAction\",\"size\":{\"width\":230,\"height\":90},\"icon\":\"gear\",\"activityType\":\"task\",\"subProcess\":null,\"content\":\"Creating a string using the object attributes\",\"position\":{\"x\":177.5,\"y\":435},\"angle\":0,\"id\":\"b5f57eaa-364c-498b-a347-fb7aa1ed498c\",\"z\":96,\"attrs\":{\".icon\":{\"ref\":\".outer\",\"ref-dy\":\"\",\"xlink:href\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsSAAALEgHS3X78AAAAw0lEQVQoz22SwRGCQAxF3zIUQAnSAXSAHUgHcslZK3CswPu/YAeUQAlQgp3oJThhNTM7s8lPfv783UQWZtYAC4CklOMpNE3AAHTAzfErsAIj0EtaSwcm4ADMGeEj3CegLjwZssaXnxgDwDbQREBSLanOiBqAZGbvUFwltZkJSyQssrUrv7GTVrh1V89P7li0uNsck5TKjLkCZjN7en722rdnGxjD1gq4/JE2Rlt719oGeQB34OhY/33pP99jc66VtDPiA3vHNpWAb5BUAAAAAElFTkSuQmCC\"},\".inner\":{\"visibility\":\"hidden\"},\"text\":{\"ref-y\":0.5},\".content\":{\"html\":\"Creating a string using the object attributes\",\"title\":\"\"},\".fobj\":{\"width\":230,\"height\":90},\"div\":{\"style\":{\"width\":230,\"height\":90}},\".fobj div\":{\"style\":{\"verticalAlign\":\"middle\",\"paddingTop\":0}},\".outer\":{\"stroke-width\":2,\"stroke-dasharray\":\"none\"},\".sub-process\":{\"d\":\"M 0 0 L 30 0 30 30 0 30 z M 15 4 L 15 26 M 4 15 L 26 15\",\"stroke\":\"#000000\",\"fill\":\"transparent\",\"transform\":\"scale(0.3, 0.3) translate(0, 6)\",\"display\":\"none\",\"visibility\":\"hidden\",\"data-sub-process\":\"\"},\".icon-multi-instance-sequential\":{\"width\":10,\"height\":10,\"y\":1,\"xlink:href\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACtJREFUeNpilJOTYaAEsADxf0oMYGKgEFBsAMgLjEPfC6OxMBoLFBsAEGAAje8DgZ8/t18AAAAASUVORK5CYII=\",\"display\":\"none\"},\".icon-multi-instance-parallel\":{\"width\":10,\"height\":10,\"y\":1,\"xlink:href\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACxJREFUeNpilJOT+c+AAIwPHz5mkJeXBbGJEmdioBCMGjBqwKgBg8UAgAADADERCXj6SL6VAAAAAElFTkSuQmCC\",\"display\":\"none\"},\".rx-icon-container\":{\"ref\":\".body\",\"x-alignment\":\"middle\",\"ref-x\":0.5,\"ref-dy\":-15}}},{\"type\":\"rx.SequenceFlow\",\"router\":{\"name\":\"manhattan\"},\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"flowType\":\"normal\",\"id\":\"180223c8-abb3-407f-b821-73571456393a\",\"source\":{\"id\":\"87dc459e-ce53-45d2-950b-b282ff22f1a7\"},\"target\":{\"id\":\"b5f57eaa-364c-498b-a347-fb7aa1ed498c\"},\"z\":97,\"attrs\":{}},{\"type\":\"rx.SequenceFlow\",\"router\":{\"name\":\"manhattan\"},\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"flowType\":\"normal\",\"id\":\"b49a93e4-2280-4988-b0b8-91831f0c7b43\",\"source\":{\"id\":\"b5f57eaa-364c-498b-a347-fb7aa1ed498c\"},\"target\":{\"id\":\"74236ac2-5192-4e2d-bd1f-07e59cd72118\"},\"z\":97,\"attrs\":{}},{\"type\":\"rx.TextAnnotation\",\"size\":{\"width\":730,\"height\":340},\"wingLength\":20,\"content\":\"Here the goal is to create a String that concatenates the movie information give by the input parameter movieObject.\\n\\nThe process input is an Object (like a JSON object) that contains movie information:\\n{\\\"title\\\":\\\"Matrix\\\",\\\"genre\\\":\\\"Science Fiction\\\",\\\"releaseDate\\\":\\\"1999\\\"}\\n\\nWe are using a ComputeValue activity to create the process output string movieString.\\nFor this, we extract the movieObject attributes one by one to create the string.\\nThe trick is to use this syntax:\\n${processContext.<processVariableName>.<processVariableAttribute>}\\n\\nSo for example if we have in movieObject this object:\\n{\\\"title\\\":\\\"Matrix\\\",\\\"genre\\\":\\\"Science Fiction\\\",\\\"releaseDate\\\":\\\"1999\\\"}\\nand we want the title, we need to do:\\n${processContext.movieObject.title}\\n\\nNote:\\nUsing this syntax will display an ERROR in the expression editor when you are in the process designer view. It is expected.\\nWhen you click on it to edit the expression you will still see the expression you typed and it has no impact on its execution.\",\"position\":{\"x\":-65,\"y\":-50},\"angle\":0,\"id\":\"ef6c21d5-eee2-4a59-9771-fc5d129ee433\",\"z\":106,\"attrs\":{\".stroke\":{\"d\":\"M 20 0 L 0 0 0 340 20 340\"},\".content\":{\"html\":\"Here the goal is to create a String that concatenates the movie information give by the input parameter movieObject.\\n\\nThe process input is an Object (like a JSON object) that contains movie information:\\n{&quot;title&quot;:&quot;Matrix&quot;,&quot;genre&quot;:&quot;Science Fiction&quot;,&quot;releaseDate&quot;:&quot;1999&quot;}\\n\\nWe are using a ComputeValue activity to create the process output string movieString.\\nFor this, we extract the movieObject attributes one by one to create the string.\\nThe trick is to use this syntax:\\n${processContext.&lt;processVariableName&gt;.&lt;processVariableAttribute&gt;}\\n\\nSo for example if we have in movieObject this object:\\n{&quot;title&quot;:&quot;Matrix&quot;,&quot;genre&quot;:&quot;Science Fiction&quot;,&quot;releaseDate&quot;:&quot;1999&quot;}\\nand we want the title, we need to do:\\n${processContext.movieObject.title}\\n\\nNote:\\nUsing this syntax will display an ERROR in the expression editor when you are in the process designer view. It is expected.\\nWhen you click on it to edit the expression you will still see the expression you typed and it has no impact on its execution.\",\"title\":\"\"},\".fobj\":{\"width\":730,\"height\":340},\"div\":{\"style\":{\"width\":730,\"height\":340}}}},{\"type\":\"rx.TextAnnotationAssociation\",\"flowType\":\"association\",\"id\":\"fdc6ccec-c9eb-4d40-842b-c7699b38b267\",\"source\":{\"id\":\"ef6c21d5-eee2-4a59-9771-fc5d129ee433\"},\"target\":{\"id\":\"b5f57eaa-364c-498b-a347-fb7aa1ed498c\"},\"z\":107,\"attrs\":{\".marker-target\":{\"d\":\"M 0 0\"},\".connection\":{\"stroke-dasharray\":\"4,4\"}}},{\"type\":\"rx.TextAnnotation\",\"size\":{\"width\":295,\"height\":110},\"wingLength\":20,\"content\":\"movieString will contain the movieObject information concatenated in a String.\\nFor example:\\n\\\"Matrix, Science Fiction, 1999\\\"\",\"position\":{\"x\":685,\"y\":330},\"angle\":0,\"id\":\"143d1281-b4b0-4330-a796-5530ff217897\",\"z\":108,\"attrs\":{\".stroke\":{\"d\":\"M 20 0 L 0 0 0 110 20 110\"},\".content\":{\"html\":\"movieString will contain the movieObject information concatenated in a String.\\nFor example:\\n&quot;Matrix, Science Fiction, 1999&quot;\",\"title\":\"\"},\".fobj\":{\"width\":295,\"height\":110},\"div\":{\"style\":{\"width\":295,\"height\":110}}}},{\"type\":\"rx.TextAnnotationAssociation\",\"flowType\":\"association\",\"id\":\"a24509bc-6d0b-46fa-b9a5-481dc2d5b6e5\",\"source\":{\"id\":\"143d1281-b4b0-4330-a796-5530ff217897\"},\"target\":{\"id\":\"74236ac2-5192-4e2d-bd1f-07e59cd72118\"},\"z\":109,\"attrs\":{\".marker-target\":{\"d\":\"M 0 0\"},\".connection\":{\"stroke-dasharray\":\"4,4\"}}},{\"type\":\"rx.TextAnnotation\",\"size\":{\"width\":405,\"height\":60},\"wingLength\":20,\"content\":\"movieObject is an Object Input parameter which is an Object containing information about a movie (title, genre, releaseDate):\\n{\\\"title\\\":\\\"Matrix\\\",\\\"genre\\\":\\\"Science Fiction\\\",\\\"releaseDate\\\":\\\"1999\\\"}\",\"position\":{\"x\":-365,\"y\":355},\"angle\":0,\"id\":\"b45330e2-92b6-4544-9dde-43043e73a6c7\",\"z\":111,\"attrs\":{\".stroke\":{\"d\":\"M 20 0 L 0 0 0 60 20 60\"},\".content\":{\"html\":\"movieObject is an Object Input parameter which is an Object containing information about a movie (title, genre, releaseDate):\\n{&quot;title&quot;:&quot;Matrix&quot;,&quot;genre&quot;:&quot;Science Fiction&quot;,&quot;releaseDate&quot;:&quot;1999&quot;}\",\"title\":\"\"},\".fobj\":{\"width\":405,\"height\":60},\"div\":{\"style\":{\"width\":405,\"height\":60}}}},{\"type\":\"rx.TextAnnotationAssociation\",\"flowType\":\"association\",\"id\":\"f37457be-fd7d-4d7f-9f4e-d403972ee697\",\"source\":{\"id\":\"b45330e2-92b6-4544-9dde-43043e73a6c7\"},\"target\":{\"id\":\"87dc459e-ce53-45d2-950b-b282ff22f1a7\"},\"z\":112,\"attrs\":{\".marker-target\":{\"d\":\"M 0 0\"},\".connection\":{\"stroke-dasharray\":\"4,4\"}}},{\"type\":\"rx.TextAnnotation\",\"size\":{\"width\":735,\"height\":80},\"wingLength\":20,\"content\":\"This process gets a a movie object (title, genre, releaseDate) as input and shows how to access the object attributes.\\n\\nFor example here we are going to pass in \\\"movieObject\\\" input parameter with a movie characteristics:\\n{\\\"title\\\":\\\"Matrix\\\",\\\"genre\\\":\\\"Science Fiction\\\",\\\"releaseDate\\\":\\\"1999\\\"} and we are going to simply make a string from it.\",\"position\":{\"x\":-100,\"y\":-245},\"angle\":0,\"id\":\"3ddfecc7-470d-4c1e-8883-97b48363bde6\",\"z\":114,\"attrs\":{\".stroke\":{\"d\":\"M 20 0 L 0 0 0 80 20 80\"},\".content\":{\"html\":\"This process gets a a movie object (title, genre, releaseDate) as input and shows how to access the object attributes.\\n\\nFor example here we are going to pass in &quot;movieObject&quot; input parameter with a movie characteristics:\\n{&quot;title&quot;:&quot;Matrix&quot;,&quot;genre&quot;:&quot;Science Fiction&quot;,&quot;releaseDate&quot;:&quot;1999&quot;} and we are going to simply make a string from it.\",\"title\":\"\"},\".fobj\":{\"width\":735,\"height\":80},\"div\":{\"style\":{\"width\":735,\"height\":80}}}}]}",
+   definition     :   "artifacts" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotation",
+   definition     :     "guid" : "rx-3ddfecc7-470d-4c1e-8883-97b48363bde6",
+   definition     :     "text" : "This process gets a a movie object (title, genre, releaseDate) as input and shows how to access the object attributes.\n\nFor example here we are going to pass in \"movieObject\" input parameter with a movie characteristics:\n{\"title\":\"Matrix\",\"genre\":\"Science Fiction\",\"releaseDate\":\"1999\"} and we are going to simply make a string from it."
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotation",
+   definition     :     "guid" : "rx-ef6c21d5-eee2-4a59-9771-fc5d129ee433",
+   definition     :     "text" : "Here the goal is to create a String that concatenates the movie information give by the input parameter movieObject.\n\nThe process input is an Object (like a JSON object) that contains movie information:\n{\"title\":\"Matrix\",\"genre\":\"Science Fiction\",\"releaseDate\":\"1999\"}\n\nWe are using a ComputeValue activity to create the process output string movieString.\nFor this, we extract the movieObject attributes one by one to create the string.\nThe trick is to use this syntax:\n${processContext.<processVariableName>.<processVariableAttribute>}\n\nSo for example if we have in movieObject this object:\n{\"title\":\"Matrix\",\"genre\":\"Science Fiction\",\"releaseDate\":\"1999\"}\nand we want the title, we need to do:\n${processContext.movieObject.title}\n\nNote:\nUsing this syntax will display an ERROR in the expression editor when you are in the process designer view. It is expected.\nWhen you click on it to edit the expression you will still see the expression you typed and it has no impact on its execution."
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotationAssociation",
+   definition     :     "guid" : "rx-fdc6ccec-c9eb-4d40-842b-c7699b38b267",
+   definition     :     "sourceNode" : "rx-ef6c21d5-eee2-4a59-9771-fc5d129ee433",
+   definition     :     "targetNode" : "rx-b5f57eaa-364c-498b-a347-fb7aa1ed498c"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotation",
+   definition     :     "guid" : "rx-b45330e2-92b6-4544-9dde-43043e73a6c7",
+   definition     :     "text" : "movieObject is an Object Input parameter which is an Object containing information about a movie (title, genre, releaseDate):\n{\"title\":\"Matrix\",\"genre\":\"Science Fiction\",\"releaseDate\":\"1999\"}"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotationAssociation",
+   definition     :     "guid" : "rx-f37457be-fd7d-4d7f-9f4e-d403972ee697",
+   definition     :     "sourceNode" : "rx-b45330e2-92b6-4544-9dde-43043e73a6c7",
+   definition     :     "targetNode" : "rx-87dc459e-ce53-45d2-950b-b282ff22f1a7"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotation",
+   definition     :     "guid" : "rx-143d1281-b4b0-4330-a796-5530ff217897",
+   definition     :     "text" : "movieString will contain the movieObject information concatenated in a String.\nFor example:\n\"Matrix, Science Fiction, 1999\""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotationAssociation",
+   definition     :     "guid" : "rx-a24509bc-6d0b-46fa-b9a5-481dc2d5b6e5",
+   definition     :     "sourceNode" : "rx-143d1281-b4b0-4330-a796-5530ff217897",
+   definition     :     "targetNode" : "rx-74236ac2-5192-4e2d-bd1f-07e59cd72118"
+   definition     :   } ],
+   definition     :   "runAsUser" : false,
+   definition     :   "synchronous" : true,
+   definition     :   "overlayDescriptor" : null,
+   definition     :   "allowOverlay" : false,
+   definition     :   "localizableStrings" : null
+   definition     : }
+end

@@ -1,0 +1,13 @@
+<div ng-style="{'background-color': selectedColor}">{{text}}</div>
+<br/>
+<label for="color">
+    Please enter a color (text or #value) and click on 'Save Color' to store in the user preferences. When refreshing the page you should see the value you saved appear.
+</label>
+<input type="text"
+       ng-model="selectedColor"
+       name="color"
+       id="color"/>
+<button type="button"
+        class="d-button d-button_primary d-button_small"
+        ng-click="updateColor();">Save Color
+</button>

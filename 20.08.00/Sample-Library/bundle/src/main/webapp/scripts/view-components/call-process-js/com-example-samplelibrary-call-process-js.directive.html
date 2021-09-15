@@ -1,0 +1,37 @@
+<!--Process Input Parameters-->
+<label class="d-textfield__label padding-10"
+       ng-repeat="inputParameter in inputParameters track by $index">
+    <span class="d-textfield__item">{{::inputParameter.inputParameterLabel}}</span>
+    <input class="d-textfield__input"
+           type="text"
+           ng-model="inputParameter.inputParameterValue"
+           style="width: 800px"/>
+</label>
+
+<button class="btn btn-primary"
+        ng-disabled="isLaunchProcessDisabled()"
+        ng-click="launchProcess()">Launch process
+</button>
+
+
+<!--Process Output Parameters-->
+<hr>
+<span class="d-textfield__item"
+      ng-show="processStatus">Process Execution Status: {{processStatus}}</span>
+<span class="d-textfield__item padding-10">Process Result:</span>
+<label class="d-textfield__label padding-10"
+       ng-repeat="outputParameter in outputParameters track by $index">
+    <span class="d-textfield__item">{{::outputParameter.outputParameterLabel}}</span>
+    <div ng-switch on="outputParameter.outputParameterType">
+        <rx-simple-json-editor
+                ng-switch-when="true"
+                name="json"
+                rx-object="outputParameter.outputParameterValue"
+                ng-readonly="true"></rx-simple-json-editor>
+        <textarea
+                ng-switch-default
+                class="d-textfield__input"
+                style="width: 800px"
+                disabled>{{outputParameter.outputParameterValue}}</textarea>
+    </div>
+</label>

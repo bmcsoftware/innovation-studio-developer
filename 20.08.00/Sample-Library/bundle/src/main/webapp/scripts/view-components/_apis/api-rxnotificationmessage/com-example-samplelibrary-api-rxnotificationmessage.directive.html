@@ -1,0 +1,54 @@
+<div class="d-textfield d-textfield_large">
+    <label class="d-textfield__label">
+        <span class="d-textfield__item">Notification text</span>
+        <input class="d-textfield__input"
+               type="text"
+               ng-model="notificationText"
+               style="width: 800px"/>
+    </label>
+</div>
+<label class="d-textfield__label">
+    <span class="d-textfield__item">Select Notification Type</span>
+    <select class="d-textfield__input" ng-model="notificationType">
+        <option value="">Select Notification Type</option>
+        <option ng-repeat="notificationType in notificationTypes">{{notificationType}}</option>
+    </select>
+</label>
+<br/><br/>
+<div class="d-textfield d-textfield_large">
+    <label class="d-textfield__label" ng-show="notificationEnableTtl">
+        <span class="d-textfield__item">TTL (ms)</span>
+        <input class="d-textfield__input"
+               type="number"
+               ng-model="notificationTtl"
+               style="width: 100px"/>
+    </label>
+</div>
+<br/>
+<div class="d-checkbox d-checkbox_switcher">
+    <span class="d-textfield__item">Force TTL</span>
+    <label class="d-checkbox__label">
+        <input class="d-checkbox__input" type="checkbox" id="set_ttl"
+               ng-model="notificationEnableTtl"
+               ng-false-value="false"
+               ng-true-value="true"/>
+        <span class="d-checkbox__item" for="set_ttl"></span>
+    </label>
+</div>
+<br/>
+<div class="d-checkbox d-checkbox_switcher">
+    <span class="d-textfield__item">Send message as HTML string</span>
+    <label class="d-checkbox__label">
+        <input class="d-checkbox__input" type="checkbox" id="set_enableHtml"
+               ng-model="notificationEnableHtml"
+               ng-false-value="false"
+               ng-true-value="true"
+               ng-change="setHtmlMessage()"/>
+        <span class="d-checkbox__item" for="set_enableHtml"></span>
+    </label>
+</div>
+<br/>
+<button type="button"
+        class="d-button d-button_primary d-button_small"
+        ng-click="sendNotification()">Send Notification
+</button>

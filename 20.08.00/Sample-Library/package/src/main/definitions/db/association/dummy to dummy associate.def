@@ -1,0 +1,31 @@
+begin association definition
+   name           : com.example.samplelibrary:dummy to dummy associate
+   definition     : {
+   definition     :   "version" : "1.0-SNAPSHOT",
+   definition     :   "lastUpdateTime" : 1612380889245,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "ARSERVER",
+   definition     :   "name" : "com.example.samplelibrary:dummy to dummy associate",
+   definition     :   "tags" : null,
+   definition     :   "description" : "dummy to dummy associate",
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "developerId" : "com.example",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "IDGIXIUWC3XSKAOTIEKAOS1YZFON41",
+   definition     :   "nodeAId" : "com.example.samplelibrary:dummy",
+   definition     :   "nodeBId" : "com.example.samplelibrary:dummy associate",
+   definition     :   "nodeAName" : "dummy",
+   definition     :   "nodeBName" : "associate",
+   definition     :   "shouldCascadeDelete" : false,
+   definition     :   "cardinality" : "MANY_TO_MANY",
+   definition     :   "nodeAKeys" : [ 379 ],
+   definition     :   "nodeBKeys" : [ 379 ],
+   definition     :   "isEnabled" : true,
+   definition     :   "overlayDescriptor" : {
+   definition     :     "parentOverlayGroupId" : null
+   definition     :   },
+   definition     :   "allowOverlay" : false,
+   definition     :   "nodeAModality" : "OPTIONAL"
+   definition     : }
+end

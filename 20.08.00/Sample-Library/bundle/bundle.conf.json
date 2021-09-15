@@ -1,0 +1,104 @@
+{
+    "bundle": {
+        "id": "com.example.samplelibrary",
+        "version": "0.0.1",
+        "src": "./src/main/webapp",
+        "target": "./target/web-build/webapp",
+        "coverage": "./target/coverage",
+        "resources": [
+            "./",
+            "$RX_SDK_HOME/standardlib"
+        ],
+        "options": {
+            "livereload-port": 39005,
+            "skip-tests": true,
+            "skip-validation": true,
+            "api-host": "localhost",
+            "api-port": 8008,
+            "api-https": false,
+            "host": "localhost",
+            "port": 9005
+        },
+        "packages": {
+            "lib": {
+                "scripts": [],
+                "styles": []
+            },
+            "app": {
+                "scripts": [
+                    "lib/qrcodereader/qrcodereader.min",
+                    "lib/webcam/webcam.min",
+                    "lib/rzslider-5.8.7/rzslider.min",
+                    "lib/angular-signature/signature",
+                    "lib/signature_pad-2.3.2/signature_pad.min",
+                    "scripts/**/*.global",
+                    "scripts/**/*.module",
+                    "scripts/**/*.config",
+                    "scripts/**/*.routes",
+                    "scripts/**/*.constant",
+                    "scripts/**/*.filter",
+                    "scripts/**/*.value",
+                    "scripts/**/*.run",
+                    "scripts/**/*.service",
+                    "scripts/**/*.class",
+                    "scripts/**/*.directive",
+                    "scripts/**/*.controller",
+                    "scripts/**/*.resource",
+                    "!scripts/*",
+                    "scripts/com.example.samplelibrary.module",
+                    "scripts/*"
+                ],
+                "styles": [
+                    "resources/sass/<%= bundle.id %>"
+                ],
+                "templates": [
+                    "scripts/**/*.html"
+                ]
+            },
+            "ext": {
+                "scripts": [
+                    "lib/qrcodereader/qrcodereader.min",
+                    "lib/webcam/webcam.min",
+                    "lib/rzslider-5.8.7/rzslider.min",
+                    "lib/angular-signature/signature",
+                    "lib/signature_pad-2.3.2/signature_pad.min",
+                    "scripts/actions/**/*.global",
+                    "scripts/actions/**/*.module",
+                    "scripts/actions/**/*.config",
+                    "scripts/actions/**/*.routes",
+                    "scripts/actions/**/*.constant",
+                    "scripts/actions/**/*.filter",
+                    "scripts/actions/**/*.value",
+                    "scripts/actions/**/*.run",
+                    "scripts/actions/**/*.service",
+                    "scripts/actions/**/*.class",
+                    "scripts/actions/**/*.directive",
+                    "scripts/actions/**/*.controller",
+                    "scripts/actions/**/*.resource",
+                    "scripts/view-components/**/*.global",
+                    "scripts/view-components/**/*.module",
+                    "scripts/view-components/**/*.config",
+                    "scripts/view-components/**/*.routes",
+                    "scripts/view-components/**/*.constant",
+                    "scripts/view-components/**/*.filter",
+                    "scripts/view-components/**/*.value",
+                    "scripts/view-components/**/*.run",
+                    "scripts/view-components/**/*.service",
+                    "scripts/view-components/**/*.class",
+                    "scripts/view-components/**/*.directive",
+                    "scripts/view-components/**/*.controller",
+                    "scripts/view-components/**/*.resource",
+                    "scripts/ext/**/*",
+                    "scripts/ext/ext.*"
+                ],
+                "styles": [
+                    "resources/sass/<%= bundle.id %>-ext"
+                ],
+                "templates": [
+                    "scripts/view-components/**/*.html",
+                    "scripts/actions/**/*.html"
+                ]
+            }
+        }
+    }
+}

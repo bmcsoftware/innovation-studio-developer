@@ -1,0 +1,670 @@
+begin view definition
+   name           : com.example.samplelibrary:VC - Display associated data
+   definition     : {
+   definition     :   "version" : "1.0-SNAPSHOT",
+   definition     :   "lastUpdateTime" : 1612380894320,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "ARSERVER",
+   definition     :   "name" : "com.example.samplelibrary:VC - Display associated data",
+   definition     :   "tags" : null,
+   definition     :   "description" : null,
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "developerId" : "com.example",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "558487ac-a346-467f-bd36-dd5bcc5ed344",
+   definition     :   "layout" : "{\"layoutTemplate\":5,\"columns\":[{\"role\":\"content\",\"children\":[{\"componentDefinitionId\":\"22fb9029-3244-4c6a-aa5f-eaa63b8ccc18\"},{\"componentDefinitionId\":\"69d0a633-db7a-4ed8-b7f5-0382ac23ac30\",\"columns\":[{\"children\":[]}]},{\"componentDefinitionId\":\"d833894f-74c2-4c52-a603-1f91c4e26ff1\"},{\"componentDefinitionId\":\"b05abd51-72d8-428a-8134-19f92363c4db\"}]}],\"componentDefinitionId\":\"558487ac-a346-467f-bd36-dd5bcc5ed344\"}",
+   definition     :   "inputParams" : [ ],
+   definition     :   "outputParams" : [ ],
+   definition     :   "componentDefinitions" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1612380894320,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "22fb9029-3244-4c6a-aa5f-eaa63b8ccc18",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "22fb9029-3244-4c6a-aa5f-eaa63b8ccc18",
+   definition     :     "type" : "rx-rich-text",
+   definition     :     "propertiesByName" : {
+   definition     :       "autoFill" : "false",
+   definition     :       "html" : "206e76a5-7a8c-4f4f-a51f-d9222a313c9a",
+   definition     :       "hidden" : "0"
+   definition     :     },
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ]
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1612380894320,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "69d0a633-db7a-4ed8-b7f5-0382ac23ac30",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "69d0a633-db7a-4ed8-b7f5-0382ac23ac30",
+   definition     :     "type" : "rx-container",
+   definition     :     "propertiesByName" : {
+   definition     :       "autoFill" : "false",
+   definition     :       "styles" : "",
+   definition     :       "columnCount" : "2",
+   definition     :       "hidden" : "0"
+   definition     :     },
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ],
+   definition     :     "layout" : "{\"componentDefinitionId\":\"6da969cc-a20d-468e-8621-561b9c8dd1ff\",\"columns\":[{\"children\":[{\"componentDefinitionId\":\"668f07d2-95b5-4bae-89b4-202fe840ce53\"}],\"span\":6},{\"children\":[{\"componentDefinitionId\":\"b03bfaee-1ed3-44c8-b5ef-5e7c050b1988\"}],\"span\":6}]}",
+   definition     :     "componentDefinitions" : [ {
+   definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :       "lastUpdateTime" : 1612380894320,
+   definition     :       "lastChangedBy" : "ARSERVER",
+   definition     :       "owner" : "ARSERVER",
+   definition     :       "name" : "dummy list",
+   definition     :       "tags" : null,
+   definition     :       "description" : null,
+   definition     :       "overlayGroupId" : "1",
+   definition     :       "developerId" : "com.example",
+   definition     :       "internal" : false,
+   definition     :       "guid" : "668f07d2-95b5-4bae-89b4-202fe840ce53",
+   definition     :       "type" : "rx-record-grid",
+   definition     :       "propertiesByName" : {
+   definition     :         "showDataForAllLocales" : null,
+   definition     :         "recordDefinitionName" : "IDGIXIUWC3XSKAOTID43OS1XT8ON2D",
+   definition     :         "enableRowSelection" : "single",
+   definition     :         "enableFiltering" : "true",
+   definition     :         "filterExpression" : null,
+   definition     :         "filters" : "{}"
+   definition     :       },
+   definition     :       "permissions" : [ {
+   definition     :         "ownerId" : {
+   definition     :           "value" : 0,
+   definition     :           "type" : "GROUP",
+   definition     :           "name" : "Public"
+   definition     :         },
+   definition     :         "type" : "VISIBLE"
+   definition     :       } ],
+   definition     :       "layout" : "{\"componentDefinitionId\":\"4679e4f0-1eb4-4746-93d6-32406f926127\",\"columns\":[{\"children\":[]}]}",
+   definition     :       "componentDefinitions" : [ {
+   definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :         "lastUpdateTime" : 1612380894320,
+   definition     :         "lastChangedBy" : "ARSERVER",
+   definition     :         "owner" : "ARSERVER",
+   definition     :         "name" : "8adb16ab-3e3d-435b-99bf-b31be16f130d",
+   definition     :         "tags" : null,
+   definition     :         "description" : null,
+   definition     :         "overlayGroupId" : "1",
+   definition     :         "developerId" : "com.example",
+   definition     :         "internal" : false,
+   definition     :         "guid" : "8adb16ab-3e3d-435b-99bf-b31be16f130d",
+   definition     :         "type" : "rx-record-grid-column",
+   definition     :         "propertiesByName" : {
+   definition     :           "filterable" : "true",
+   definition     :           "visible" : "false",
+   definition     :           "clickable" : "false",
+   definition     :           "index" : "2",
+   definition     :           "sortable" : "true",
+   definition     :           "title" : "84686c1e-8ba8-4f11-afcb-3f785ccc7a83",
+   definition     :           "actions" : "[]",
+   definition     :           "fieldId" : "379"
+   definition     :         },
+   definition     :         "permissions" : [ {
+   definition     :           "ownerId" : {
+   definition     :             "value" : 0,
+   definition     :             "type" : "GROUP",
+   definition     :             "name" : "Public"
+   definition     :           },
+   definition     :           "type" : "VISIBLE"
+   definition     :         } ],
+   definition     :         "layout" : null,
+   definition     :         "componentDefinitions" : [ ]
+   definition     :       }, {
+   definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :         "lastUpdateTime" : 1612380894320,
+   definition     :         "lastChangedBy" : "ARSERVER",
+   definition     :         "owner" : "ARSERVER",
+   definition     :         "name" : "8b801fb6-48cd-4e85-b8bb-29dc28937deb",
+   definition     :         "tags" : null,
+   definition     :         "description" : null,
+   definition     :         "overlayGroupId" : "1",
+   definition     :         "developerId" : "com.example",
+   definition     :         "internal" : false,
+   definition     :         "guid" : "8b801fb6-48cd-4e85-b8bb-29dc28937deb",
+   definition     :         "type" : "rx-record-grid-column",
+   definition     :         "propertiesByName" : {
+   definition     :           "filterable" : "true",
+   definition     :           "visible" : "true",
+   definition     :           "clickable" : "false",
+   definition     :           "index" : "1",
+   definition     :           "sortable" : "true",
+   definition     :           "title" : "c1516ad6-9008-4585-8e19-77c56074815d",
+   definition     :           "actions" : "[]",
+   definition     :           "fieldId" : "536870913"
+   definition     :         },
+   definition     :         "permissions" : [ {
+   definition     :           "ownerId" : {
+   definition     :             "value" : 0,
+   definition     :             "type" : "GROUP",
+   definition     :             "name" : "Public"
+   definition     :           },
+   definition     :           "type" : "VISIBLE"
+   definition     :         } ],
+   definition     :         "layout" : null,
+   definition     :         "componentDefinitions" : [ ]
+   definition     :       }, {
+   definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :         "lastUpdateTime" : 1612380894320,
+   definition     :         "lastChangedBy" : "ARSERVER",
+   definition     :         "owner" : "ARSERVER",
+   definition     :         "name" : "f3fc9c13-14cc-44c2-b3f2-03c5b7ddc2d7",
+   definition     :         "tags" : null,
+   definition     :         "description" : null,
+   definition     :         "overlayGroupId" : "1",
+   definition     :         "developerId" : "com.example",
+   definition     :         "internal" : false,
+   definition     :         "guid" : "f3fc9c13-14cc-44c2-b3f2-03c5b7ddc2d7",
+   definition     :         "type" : "rx-record-grid-column",
+   definition     :         "propertiesByName" : {
+   definition     :           "filterable" : "true",
+   definition     :           "visible" : "true",
+   definition     :           "clickable" : "false",
+   definition     :           "index" : "0",
+   definition     :           "sortable" : "true",
+   definition     :           "title" : "e6d17857-89a2-4398-b5e9-820dbb0ce481",
+   definition     :           "actions" : "[]",
+   definition     :           "fieldId" : "8"
+   definition     :         },
+   definition     :         "permissions" : [ {
+   definition     :           "ownerId" : {
+   definition     :             "value" : 0,
+   definition     :             "type" : "GROUP",
+   definition     :             "name" : "Public"
+   definition     :           },
+   definition     :           "type" : "VISIBLE"
+   definition     :         } ],
+   definition     :         "layout" : null,
+   definition     :         "componentDefinitions" : [ ]
+   definition     :       } ]
+   definition     :     }, {
+   definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :       "lastUpdateTime" : 1612380894320,
+   definition     :       "lastChangedBy" : "ARSERVER",
+   definition     :       "owner" : "ARSERVER",
+   definition     :       "name" : "create dummy",
+   definition     :       "tags" : null,
+   definition     :       "description" : null,
+   definition     :       "overlayGroupId" : "1",
+   definition     :       "developerId" : "com.example",
+   definition     :       "internal" : false,
+   definition     :       "guid" : "b03bfaee-1ed3-44c8-b5ef-5e7c050b1988",
+   definition     :       "type" : "rx-record-editor",
+   definition     :       "propertiesByName" : {
+   definition     :         "recordInstanceId" : null,
+   definition     :         "mode" : "CREATE",
+   definition     :         "autoFill" : "false",
+   definition     :         "recordDefinitionName" : "IDGIXIUWC3XSKAOTID43OS1XT8ON2D"
+   definition     :       },
+   definition     :       "permissions" : [ {
+   definition     :         "ownerId" : {
+   definition     :           "value" : 0,
+   definition     :           "type" : "GROUP",
+   definition     :           "name" : "Public"
+   definition     :         },
+   definition     :         "type" : "VISIBLE"
+   definition     :       } ],
+   definition     :       "layout" : "{\"componentDefinitionId\":\"e567ffec-4336-4a64-9758-2dcc36c154ee\",\"columns\":[{\"children\":[{\"componentDefinitionId\":\"bd62a4e7-b29a-4177-8da2-17f0e70a9f47\"},{\"componentDefinitionId\":\"c889162d-6b1c-441d-9a50-f6bd0a0607d4\"},{\"componentDefinitionId\":\"23a06904-4350-40dc-8a24-104f603eaafe\"},{\"componentDefinitionId\":\"6cb22a0a-ad94-4011-a09d-c7a8f2cae9e5\"},{\"componentDefinitionId\":\"5c8dde23-b9ea-48f7-af55-940b8e3abc56\"}]}]}",
+   definition     :       "componentDefinitions" : [ {
+   definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :         "lastUpdateTime" : 1612380894320,
+   definition     :         "lastChangedBy" : "ARSERVER",
+   definition     :         "owner" : "ARSERVER",
+   definition     :         "name" : "23a06904-4350-40dc-8a24-104f603eaafe",
+   definition     :         "tags" : null,
+   definition     :         "description" : null,
+   definition     :         "overlayGroupId" : "1",
+   definition     :         "developerId" : "com.example",
+   definition     :         "internal" : false,
+   definition     :         "guid" : "23a06904-4350-40dc-8a24-104f603eaafe",
+   definition     :         "type" : "rx-integer-field",
+   definition     :         "propertiesByName" : {
+   definition     :           "recordDefinition" : "${view.components.b03bfaee-1ed3-44c8-b5ef-5e7c050b1988.recordDefinition}",
+   definition     :           "recordInstance" : "${view.components.b03bfaee-1ed3-44c8-b5ef-5e7c050b1988.recordInstance}",
+   definition     :           "hidden" : "0",
+   definition     :           "disabled" : "0",
+   definition     :           "label" : "52ddaf9f-f8ff-4c31-84d9-8212929f775c",
+   definition     :           "fieldId" : "536870913"
+   definition     :         },
+   definition     :         "permissions" : [ {
+   definition     :           "ownerId" : {
+   definition     :             "value" : 0,
+   definition     :             "type" : "GROUP",
+   definition     :             "name" : "Public"
+   definition     :           },
+   definition     :           "type" : "VISIBLE"
+   definition     :         } ]
+   definition     :       }, {
+   definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :         "lastUpdateTime" : 1612380894320,
+   definition     :         "lastChangedBy" : "ARSERVER",
+   definition     :         "owner" : "ARSERVER",
+   definition     :         "name" : "5c8dde23-b9ea-48f7-af55-940b8e3abc56",
+   definition     :         "tags" : null,
+   definition     :         "description" : null,
+   definition     :         "overlayGroupId" : "1",
+   definition     :         "developerId" : "com.example",
+   definition     :         "internal" : false,
+   definition     :         "guid" : "5c8dde23-b9ea-48f7-af55-940b8e3abc56",
+   definition     :         "type" : "rx-button-bar",
+   definition     :         "propertiesByName" : {
+   definition     :           "alignment" : "left",
+   definition     :           "hidden" : "0"
+   definition     :         },
+   definition     :         "permissions" : [ {
+   definition     :           "ownerId" : {
+   definition     :             "value" : 0,
+   definition     :             "type" : "GROUP",
+   definition     :             "name" : "Public"
+   definition     :           },
+   definition     :           "type" : "VISIBLE"
+   definition     :         } ],
+   definition     :         "layout" : "{\"componentDefinitionId\":\"9b633498-a054-45dc-8758-b9a8e5b867a5\",\"columns\":[{\"children\":[{\"componentDefinitionId\":\"28e711cf-7d75-462b-b2e2-0813c98f6f97\"}]}]}",
+   definition     :         "componentDefinitions" : [ {
+   definition     :           "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :           "lastUpdateTime" : 1612380894320,
+   definition     :           "lastChangedBy" : "ARSERVER",
+   definition     :           "owner" : "ARSERVER",
+   definition     :           "name" : "28e711cf-7d75-462b-b2e2-0813c98f6f97",
+   definition     :           "tags" : null,
+   definition     :           "description" : null,
+   definition     :           "overlayGroupId" : "1",
+   definition     :           "developerId" : "com.example",
+   definition     :           "internal" : false,
+   definition     :           "guid" : "28e711cf-7d75-462b-b2e2-0813c98f6f97",
+   definition     :           "type" : "rx-action-button",
+   definition     :           "propertiesByName" : {
+   definition     :             "iconAlignment" : "left",
+   definition     :             "hidden" : "0",
+   definition     :             "icon" : "1ec57a16-ff6f-40d6-9af9-2deb12d01d56",
+   definition     :             "style" : "primary",
+   definition     :             "disabled" : "NOT ${view.components.b03bfaee-1ed3-44c8-b5ef-5e7c050b1988.isValid}",
+   definition     :             "label" : "e2b72cf6-ff89-4a95-b94f-2e26bcac2923"
+   definition     :           },
+   definition     :           "permissions" : [ {
+   definition     :             "ownerId" : {
+   definition     :               "value" : 0,
+   definition     :               "type" : "GROUP",
+   definition     :               "name" : "Public"
+   definition     :             },
+   definition     :             "type" : "VISIBLE"
+   definition     :           } ],
+   definition     :           "layout" : null,
+   definition     :           "componentDefinitions" : [ {
+   definition     :             "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :             "lastUpdateTime" : 1612380894320,
+   definition     :             "lastChangedBy" : "ARSERVER",
+   definition     :             "owner" : "ARSERVER",
+   definition     :             "name" : "8b66e29a-2964-4ced-bd80-3860bc8c3024",
+   definition     :             "tags" : null,
+   definition     :             "description" : null,
+   definition     :             "overlayGroupId" : "1",
+   definition     :             "developerId" : "com.example",
+   definition     :             "internal" : false,
+   definition     :             "guid" : "8b66e29a-2964-4ced-bd80-3860bc8c3024",
+   definition     :             "type" : "rx-action",
+   definition     :             "propertiesByName" : {
+   definition     :               "name" : "rxSaveAction",
+   definition     :               "index" : "0",
+   definition     :               "targetApi" : "${view.components.b03bfaee-1ed3-44c8-b5ef-5e7c050b1988.api}",
+   definition     :               "viewApi" : "${view.api}"
+   definition     :             },
+   definition     :             "permissions" : [ {
+   definition     :               "ownerId" : {
+   definition     :                 "value" : 0,
+   definition     :                 "type" : "GROUP",
+   definition     :                 "name" : "Public"
+   definition     :               },
+   definition     :               "type" : "VISIBLE"
+   definition     :             } ]
+   definition     :           }, {
+   definition     :             "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :             "lastUpdateTime" : 1612380894320,
+   definition     :             "lastChangedBy" : "ARSERVER",
+   definition     :             "owner" : "ARSERVER",
+   definition     :             "name" : "a9b3bbb9-3a86-4c8e-95b5-4548c23c8553",
+   definition     :             "tags" : null,
+   definition     :             "description" : null,
+   definition     :             "overlayGroupId" : "1",
+   definition     :             "developerId" : "com.example",
+   definition     :             "internal" : false,
+   definition     :             "guid" : "a9b3bbb9-3a86-4c8e-95b5-4548c23c8553",
+   definition     :             "type" : "rx-action",
+   definition     :             "propertiesByName" : {
+   definition     :               "name" : "rxRefreshAction",
+   definition     :               "index" : "1",
+   definition     :               "component" : "${view.components.668f07d2-95b5-4bae-89b4-202fe840ce53.api}"
+   definition     :             },
+   definition     :             "permissions" : [ {
+   definition     :               "ownerId" : {
+   definition     :                 "value" : 0,
+   definition     :                 "type" : "GROUP",
+   definition     :                 "name" : "Public"
+   definition     :               },
+   definition     :               "type" : "VISIBLE"
+   definition     :             } ]
+   definition     :           } ]
+   definition     :         } ]
+   definition     :       }, {
+   definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :         "lastUpdateTime" : 1612380894320,
+   definition     :         "lastChangedBy" : "ARSERVER",
+   definition     :         "owner" : "ARSERVER",
+   definition     :         "name" : "6cb22a0a-ad94-4011-a09d-c7a8f2cae9e5",
+   definition     :         "tags" : null,
+   definition     :         "description" : null,
+   definition     :         "overlayGroupId" : "1",
+   definition     :         "developerId" : "com.example",
+   definition     :         "internal" : false,
+   definition     :         "guid" : "6cb22a0a-ad94-4011-a09d-c7a8f2cae9e5",
+   definition     :         "type" : "rx-association",
+   definition     :         "propertiesByName" : {
+   definition     :           "associatedRecordNodeSide" : "nodeB",
+   definition     :           "recordDefinition" : "${view.components.b03bfaee-1ed3-44c8-b5ef-5e7c050b1988.recordDefinition}",
+   definition     :           "editingMode" : "views",
+   definition     :           "associationDefinitionName" : "IDGIXIUWC3XSKAOTIEKAOS1YZFON41",
+   definition     :           "recordInstance" : "${view.components.b03bfaee-1ed3-44c8-b5ef-5e7c050b1988.recordInstance}",
+   definition     :           "hidden" : "0",
+   definition     :           "recordDefinitionName" : "IDGIXIUWC3XSKAOTIE9HOS1YY2ON4D",
+   definition     :           "disabled" : "0",
+   definition     :           "label" : "01be84e3-0298-4cec-853d-edb1bd169feb",
+   definition     :           "fieldId" : ""
+   definition     :         },
+   definition     :         "permissions" : [ {
+   definition     :           "ownerId" : {
+   definition     :             "value" : 0,
+   definition     :             "type" : "GROUP",
+   definition     :             "name" : "Public"
+   definition     :           },
+   definition     :           "type" : "VISIBLE"
+   definition     :         } ],
+   definition     :         "layout" : null,
+   definition     :         "componentDefinitions" : [ {
+   definition     :           "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :           "lastUpdateTime" : 1612380894320,
+   definition     :           "lastChangedBy" : "ARSERVER",
+   definition     :           "owner" : "ARSERVER",
+   definition     :           "name" : "a8c9ac7d-6984-4f4e-b36d-1cadfaafc487",
+   definition     :           "tags" : null,
+   definition     :           "description" : null,
+   definition     :           "overlayGroupId" : "1",
+   definition     :           "developerId" : "com.example",
+   definition     :           "internal" : false,
+   definition     :           "guid" : "a8c9ac7d-6984-4f4e-b36d-1cadfaafc487",
+   definition     :           "type" : "rx-action-button",
+   definition     :           "propertiesByName" : {
+   definition     :             "action" : "createAndAssociate",
+   definition     :             "style" : "secondary",
+   definition     :             "label" : "bf2da9ac-2f69-4ceb-acd6-6cd22381ae59"
+   definition     :           },
+   definition     :           "permissions" : [ {
+   definition     :             "ownerId" : {
+   definition     :               "value" : 0,
+   definition     :               "type" : "GROUP",
+   definition     :               "name" : "Public"
+   definition     :             },
+   definition     :             "type" : "VISIBLE"
+   definition     :           } ],
+   definition     :           "layout" : null,
+   definition     :           "componentDefinitions" : [ {
+   definition     :             "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :             "lastUpdateTime" : 1612380894320,
+   definition     :             "lastChangedBy" : "ARSERVER",
+   definition     :             "owner" : "ARSERVER",
+   definition     :             "name" : "b55fbae9-8a16-4c20-a24b-0fd7c7ab4d06",
+   definition     :             "tags" : null,
+   definition     :             "description" : null,
+   definition     :             "overlayGroupId" : "1",
+   definition     :             "developerId" : "com.example",
+   definition     :             "internal" : false,
+   definition     :             "guid" : "b55fbae9-8a16-4c20-a24b-0fd7c7ab4d06",
+   definition     :             "type" : "rx-action",
+   definition     :             "propertiesByName" : {
+   definition     :               "name" : "rxAvcAssociate",
+   definition     :               "associationViewComponent" : "${view.components.6cb22a0a-ad94-4011-a09d-c7a8f2cae9e5.api}",
+   definition     :               "viewDefinitionName" : "90a6df3b-b2d6-4622-8f76-83068df6cc2c"
+   definition     :             },
+   definition     :             "permissions" : [ {
+   definition     :               "ownerId" : {
+   definition     :                 "value" : 0,
+   definition     :                 "type" : "GROUP",
+   definition     :                 "name" : "Public"
+   definition     :               },
+   definition     :               "type" : "VISIBLE"
+   definition     :             } ]
+   definition     :           } ]
+   definition     :         }, {
+   definition     :           "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :           "lastUpdateTime" : 1612380894320,
+   definition     :           "lastChangedBy" : "ARSERVER",
+   definition     :           "owner" : "ARSERVER",
+   definition     :           "name" : "35eaae07-98ca-4491-800e-329944137106",
+   definition     :           "tags" : null,
+   definition     :           "description" : null,
+   definition     :           "overlayGroupId" : "1",
+   definition     :           "developerId" : "com.example",
+   definition     :           "internal" : false,
+   definition     :           "guid" : "35eaae07-98ca-4491-800e-329944137106",
+   definition     :           "type" : "rx-action-button",
+   definition     :           "propertiesByName" : {
+   definition     :             "action" : "associate",
+   definition     :             "style" : "secondary",
+   definition     :             "label" : "a90f80ca-a6ae-41b4-90db-03f8afe5195b"
+   definition     :           },
+   definition     :           "permissions" : [ {
+   definition     :             "ownerId" : {
+   definition     :               "value" : 0,
+   definition     :               "type" : "GROUP",
+   definition     :               "name" : "Public"
+   definition     :             },
+   definition     :             "type" : "VISIBLE"
+   definition     :           } ],
+   definition     :           "layout" : null,
+   definition     :           "componentDefinitions" : [ {
+   definition     :             "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :             "lastUpdateTime" : 1612380894320,
+   definition     :             "lastChangedBy" : "ARSERVER",
+   definition     :             "owner" : "ARSERVER",
+   definition     :             "name" : "3087fc01-4927-4635-ad03-ad4c0ae1b378",
+   definition     :             "tags" : null,
+   definition     :             "description" : null,
+   definition     :             "overlayGroupId" : "1",
+   definition     :             "developerId" : "com.example",
+   definition     :             "internal" : false,
+   definition     :             "guid" : "3087fc01-4927-4635-ad03-ad4c0ae1b378",
+   definition     :             "type" : "rx-action",
+   definition     :             "propertiesByName" : {
+   definition     :               "name" : "rxAvcAssociate",
+   definition     :               "associationViewComponent" : "${view.components.6cb22a0a-ad94-4011-a09d-c7a8f2cae9e5.api}",
+   definition     :               "viewDefinitionName" : "90a6df3b-b2d6-4622-8f76-83068df6cc2c"
+   definition     :             },
+   definition     :             "permissions" : [ {
+   definition     :               "ownerId" : {
+   definition     :                 "value" : 0,
+   definition     :                 "type" : "GROUP",
+   definition     :                 "name" : "Public"
+   definition     :               },
+   definition     :               "type" : "VISIBLE"
+   definition     :             } ]
+   definition     :           } ]
+   definition     :         }, {
+   definition     :           "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :           "lastUpdateTime" : 1612380894320,
+   definition     :           "lastChangedBy" : "ARSERVER",
+   definition     :           "owner" : "ARSERVER",
+   definition     :           "name" : "822891c3-2e60-409b-8dd4-bd6eee682884",
+   definition     :           "tags" : null,
+   definition     :           "description" : null,
+   definition     :           "overlayGroupId" : "1",
+   definition     :           "developerId" : "com.example",
+   definition     :           "internal" : false,
+   definition     :           "guid" : "822891c3-2e60-409b-8dd4-bd6eee682884",
+   definition     :           "type" : "rx-associated-record-field",
+   definition     :           "propertiesByName" : {
+   definition     :             "index" : "0",
+   definition     :             "label" : "27e2c513-b21f-4b5b-8deb-54521f703f64",
+   definition     :             "fieldId" : "8"
+   definition     :           },
+   definition     :           "permissions" : [ {
+   definition     :             "ownerId" : {
+   definition     :               "value" : 0,
+   definition     :               "type" : "GROUP",
+   definition     :               "name" : "Public"
+   definition     :             },
+   definition     :             "type" : "VISIBLE"
+   definition     :           } ]
+   definition     :         } ]
+   definition     :       }, {
+   definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :         "lastUpdateTime" : 1612380894320,
+   definition     :         "lastChangedBy" : "ARSERVER",
+   definition     :         "owner" : "ARSERVER",
+   definition     :         "name" : "bd62a4e7-b29a-4177-8da2-17f0e70a9f47",
+   definition     :         "tags" : null,
+   definition     :         "description" : null,
+   definition     :         "overlayGroupId" : "1",
+   definition     :         "developerId" : "com.example",
+   definition     :         "internal" : false,
+   definition     :         "guid" : "bd62a4e7-b29a-4177-8da2-17f0e70a9f47",
+   definition     :         "type" : "rx-rich-text",
+   definition     :         "propertiesByName" : {
+   definition     :           "autoFill" : "false",
+   definition     :           "html" : "84416355-0cc7-47d9-ab70-4e382c5e7e1e",
+   definition     :           "hidden" : "0"
+   definition     :         },
+   definition     :         "permissions" : [ {
+   definition     :           "ownerId" : {
+   definition     :             "value" : 0,
+   definition     :             "type" : "GROUP",
+   definition     :             "name" : "Public"
+   definition     :           },
+   definition     :           "type" : "VISIBLE"
+   definition     :         } ]
+   definition     :       }, {
+   definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :         "lastUpdateTime" : 1612380894320,
+   definition     :         "lastChangedBy" : "ARSERVER",
+   definition     :         "owner" : "ARSERVER",
+   definition     :         "name" : "c889162d-6b1c-441d-9a50-f6bd0a0607d4",
+   definition     :         "tags" : null,
+   definition     :         "description" : null,
+   definition     :         "overlayGroupId" : "1",
+   definition     :         "developerId" : "com.example",
+   definition     :         "internal" : false,
+   definition     :         "guid" : "c889162d-6b1c-441d-9a50-f6bd0a0607d4",
+   definition     :         "type" : "rx-character-field",
+   definition     :         "propertiesByName" : {
+   definition     :           "recordDefinition" : "${view.components.b03bfaee-1ed3-44c8-b5ef-5e7c050b1988.recordDefinition}",
+   definition     :           "recordInstance" : "${view.components.b03bfaee-1ed3-44c8-b5ef-5e7c050b1988.recordInstance}",
+   definition     :           "hidden" : "0",
+   definition     :           "disabled" : "0",
+   definition     :           "enableMultiSelection" : "false",
+   definition     :           "label" : "4631fe10-76d3-409c-9f75-11f29e44c391",
+   definition     :           "fieldId" : "8"
+   definition     :         },
+   definition     :         "permissions" : [ {
+   definition     :           "ownerId" : {
+   definition     :             "value" : 0,
+   definition     :             "type" : "GROUP",
+   definition     :             "name" : "Public"
+   definition     :           },
+   definition     :           "type" : "VISIBLE"
+   definition     :         } ]
+   definition     :       } ]
+   definition     :     } ]
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1612380894320,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "b05abd51-72d8-428a-8134-19f92363c4db",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "b05abd51-72d8-428a-8134-19f92363c4db",
+   definition     :     "type" : "com-example-samplelibrary-display-associated-data",
+   definition     :     "propertiesByName" : {
+   definition     :       "fieldLabelToDisplay" : "Description",
+   definition     :       "recordInstanceId" : "${view.components.668f07d2-95b5-4bae-89b4-202fe840ce53.firstSelectedRow.379}",
+   definition     :       "AssociationName" : "com.example.samplelibrary:dummy to dummy associate",
+   definition     :       "fieldIdToDisplay" : "8"
+   definition     :     },
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ]
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1612380894320,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "d833894f-74c2-4c52-a603-1f91c4e26ff1",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "d833894f-74c2-4c52-a603-1f91c4e26ff1",
+   definition     :     "type" : "rx-rich-text",
+   definition     :     "propertiesByName" : {
+   definition     :       "autoFill" : "false",
+   definition     :       "html" : "24069bd1-d3a8-4231-ab3c-b62f2ebe6f58",
+   definition     :       "hidden" : "0"
+   definition     :     },
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ]
+   definition     :   } ],
+   definition     :   "permissions" : [ {
+   definition     :     "ownerId" : {
+   definition     :       "value" : 0,
+   definition     :       "type" : "GROUP",
+   definition     :       "name" : "Public"
+   definition     :     },
+   definition     :     "type" : "VISIBLE"
+   definition     :   } ],
+   definition     :   "localizableStringsByComponentId" : null,
+   definition     :   "overlayDescriptor" : {
+   definition     :     "parentOverlayGroupId" : null
+   definition     :   },
+   definition     :   "allowOverlay" : false,
+   definition     :   "type" : "REGULAR",
+   definition     :   "styles" : null,
+   definition     :   "targetViewDefinitionName" : null,
+   definition     :   "targetExtensionContainerGuid" : null
+   definition     : }
+end

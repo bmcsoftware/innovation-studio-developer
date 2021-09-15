@@ -1,0 +1,696 @@
+begin record definition
+   name           : com.example.samplelibrary:dummy associate
+   definition     : {
+   definition     :   "resourceType" : "com.bmc.arsys.rx.services.record.domain.RegularRecordDefinition",
+   definition     :   "version" : "1.0-SNAPSHOT",
+   definition     :   "lastUpdateTime" : 1612380887195,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "com.example.samplelibrary",
+   definition     :   "name" : "com.example.samplelibrary:dummy associate",
+   definition     :   "tags" : null,
+   definition     :   "description" : null,
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "developerId" : "com.example",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "IDGIXIUWC3XSKAOTIE9HOS1YY2ON4D",
+   definition     :   "fieldDefinitions" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "Display ID",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 1,
+   definition     :     "fieldOption" : "SYSTEM",
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 3,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Submitter"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "fieldTypeName" : null,
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 3,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Submitter"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "maxLength" : 15,
+   definition     :     "defaultValue" : "",
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "Created By",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 2,
+   definition     :     "fieldOption" : "REQUIRED",
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 3,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Submitter"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "fieldTypeName" : null,
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 3,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Submitter"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "maxLength" : 254,
+   definition     :     "defaultValue" : "$USER$",
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "anyUserAllowedToSubmit" : true
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.DateTimeFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "Created Date",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 3,
+   definition     :     "fieldOption" : "SYSTEM",
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 3,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Submitter"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "fieldTypeName" : null,
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 3,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Submitter"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "defaultValue" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "Assignee",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 4,
+   definition     :     "fieldOption" : "OPTIONAL",
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "fieldTypeName" : null,
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "maxLength" : 254,
+   definition     :     "defaultValue" : null,
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "Modified By",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 5,
+   definition     :     "fieldOption" : "SYSTEM",
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "fieldTypeName" : null,
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "maxLength" : 254,
+   definition     :     "defaultValue" : null,
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.DateTimeFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "Modified Date",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 6,
+   definition     :     "fieldOption" : "SYSTEM",
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "fieldTypeName" : null,
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "defaultValue" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.SelectionFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "Status",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 7,
+   definition     :     "fieldOption" : "REQUIRED",
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "CHANGE"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 3,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Submitter"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "fieldTypeName" : null,
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "CHANGE"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 3,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Submitter"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "optionNamesById" : {
+   definition     :       "0" : "New",
+   definition     :       "1" : "Assigned",
+   definition     :       "2" : "Fixed",
+   definition     :       "3" : "Rejected",
+   definition     :       "4" : "Closed"
+   definition     :     },
+   definition     :     "displayType" : null,
+   definition     :     "defaultValue" : "0",
+   definition     :     "optionLabelsById" : {
+   definition     :       "0" : "120e4921-fc8e-4bac-8981-da7b09a818be",
+   definition     :       "1" : "79e2d640-0d4c-40f7-8598-9a78d7af1ece",
+   definition     :       "2" : "18f5c911-c4ee-4172-8f87-209a81e1d7c3",
+   definition     :       "3" : "281b3d22-af01-42cf-a67f-b404c6a91cb5",
+   definition     :       "4" : "6603b67d-18c3-4252-8abd-8aedf203f970"
+   definition     :     },
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "Description",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 8,
+   definition     :     "fieldOption" : "REQUIRED",
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 3,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Submitter"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "fieldTypeName" : null,
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 3,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Submitter"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "maxLength" : 254,
+   definition     :     "defaultValue" : null,
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "anyUserAllowedToSubmit" : true
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.SelectionFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "Notifier Listening",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 16,
+   definition     :     "fieldOption" : "SYSTEM",
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 3,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Submitter"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "fieldTypeName" : null,
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 4,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Assignee"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     }, {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 3,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Submitter"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "optionNamesById" : {
+   definition     :       "0" : "Not Listening",
+   definition     :       "1" : "Listening"
+   definition     :     },
+   definition     :     "displayType" : null,
+   definition     :     "defaultValue" : "0",
+   definition     :     "optionLabelsById" : {
+   definition     :       "0" : "25aca570-09e3-49ea-8cc9-708829a998a6",
+   definition     :       "1" : "36921c3d-8844-47f7-89d1-74fff3d3ef20"
+   definition     :     },
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "GUID",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 179,
+   definition     :     "fieldOption" : "SYSTEM",
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "fieldTypeName" : null,
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "maxLength" : 128,
+   definition     :     "defaultValue" : null,
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "anyUserAllowedToSubmit" : true
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "ID",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 379,
+   definition     :     "fieldOption" : "SYSTEM",
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "fieldTypeName" : null,
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VIEW"
+   definition     :     } ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "maxLength" : 128,
+   definition     :     "defaultValue" : null,
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "anyUserAllowedToSubmit" : true
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "java class",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 536870913,
+   definition     :     "fieldOption" : "OPTIONAL",
+   definition     :     "permissions" : [ ],
+   definition     :     "fieldTypeName" : "com.bmc.arsys.rx.services.record.domain.DefaultFieldType",
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "maxLength" : 254,
+   definition     :     "defaultValue" : null,
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380887195,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "java parameters",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "developerId" : "com.example",
+   definition     :     "internal" : false,
+   definition     :     "id" : 536870914,
+   definition     :     "fieldOption" : "OPTIONAL",
+   definition     :     "permissions" : [ ],
+   definition     :     "fieldTypeName" : "com.bmc.arsys.rx.services.record.domain.DefaultFieldType",
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : [ ],
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : false,
+   definition     :     "allowOtherPropertiesOverlay" : false,
+   definition     :     "auditOption" : "NONE",
+   definition     :     "maxLength" : 254,
+   definition     :     "defaultValue" : null,
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   } ],
+   definition     :   "recordInstancePrefix" : "",
+   definition     :   "permissions" : [ ],
+   definition     :   "securityLabels" : [ ],
+   definition     :   "rowSecurityPropagations" : null,
+   definition     :   "recordTypeName" : "com.bmc.arsys.rx.services.record.domain.DefaultRecordType",
+   definition     :   "weightedRelevancyFields" : null,
+   definition     :   "shouldExportData" : true,
+   definition     :   "fullPermissions" : [ ],
+   definition     :   "overlayDescriptor" : null,
+   definition     :   "allowPermissionsOverlay" : false,
+   definition     :   "allowOtherPropertiesOverlay" : false,
+   definition     :   "allowIndexesOverlay" : false,
+   definition     :   "allowFieldsOverlay" : false,
+   definition     :   "allowNonAdminToDeleteRecordInstances" : false,
+   definition     :   "auditSourceRecordDefinitionName" : null,
+   definition     :   "auditDescriptor" : null,
+   definition     :   "isAuditRecordDefinition" : false,
+   definition     :   "enableCognitiveSearch" : false,
+   definition     :   "localizableStringsByFieldId" : null,
+   definition     :   "upgradeVersion" : 0,
+   definition     :   "displayFieldIdInAssociation" : null,
+   definition     :   "confidentialDataDescriptor" : null,
+   definition     :   "indexDefinitions" : [ {
+   definition     :     "indexName" : "I918_179_T918",
+   definition     :     "unique" : true,
+   definition     :     "indexFieldIds" : [ 179 ]
+   definition     :   }, {
+   definition     :     "indexName" : "I918_379_T918",
+   definition     :     "unique" : true,
+   definition     :     "indexFieldIds" : [ 379 ]
+   definition     :   } ],
+   definition     :   "inheritanceDescriptor" : null,
+   definition     :   "isSharedInstanceStorage" : false,
+   definition     :   "isAbstract" : false,
+   definition     :   "isFinal" : false
+   definition     : }
+end

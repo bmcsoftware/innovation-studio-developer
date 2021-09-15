@@ -1,0 +1,16 @@
+/* This css class (com-example-library-container-red-border) will be used to skin the containers in a video */
+.com-example-library-container-red-border {
+  border: solid green 1px;
+  background-color: #0db9f0;
+}
+
+/* This css class (com-example-library-great-vibes-font) will be used to show how to use fonts */
+@font-face {
+  font-family: "GreatVibes";
+  src: url("../../resources/fonts/GreatVibes-Regular.otf") format("opentype");
+}
+
+.com-example-library-great-vibes-font {
+  font-family: "GreatVibes", Arial, sans-serif;
+  background-color: gray;
+}

@@ -1,0 +1,23 @@
+/*
+This is the design directive style, here an icon.
+It needs to be imported in the com.example.samplelibrary.scss and com.example.samplelibrary-ext.scss.
+ */
+com-example-samplelibrary-custom-grid-design {
+  span {
+    font-size: 150px;
+    color: $black;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* The class used in the cellClass must be global */
+.com-example-samplelibrary-custom-grid-green-class {
+  color: green !important;
+  background-color: yellow !important;
+}
+
+.com-example-samplelibrary-custom-grid-red-class {
+  color: red !important;
+  background-color: yellow !important;
+}

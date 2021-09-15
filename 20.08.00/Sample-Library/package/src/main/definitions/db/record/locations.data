@@ -1,0 +1,34 @@
+begin schema data
+   name           : com.example.samplelibrary:locations
+   data-mapping   : <?xml version="1.0" encoding="utf-8"?><arDocMapping xmlns="urn:remedy:schemas:ars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+   data-mapping   :     <element name="entryList">        <formMapping>            <form foreignKeyId="1" formName="com.example.samplelibrary:locations" mapType="embedded
+   data-mapping   : " primaryKeyId="1"/>            <element name="entryItem">                <element dataType="string" name="f1_Display_ID">                    <fieldM
+   data-mapping   : apping arFieldId="1"/>                </element>                <element dataType="string" name="f2_Created_By">                    <fieldMapping arF
+   data-mapping   : ieldId="2"/>                </element>                <element dataType="dateTime" name="f3_Created_Date">                    <fieldMapping arFieldId
+   data-mapping   : ="3"/>                </element>                <element dataType="string" name="f4_Assignee">                    <fieldMapping arFieldId="4"/>     
+   data-mapping   :            </element>                <element dataType="string" name="f5_Modified_By">                    <fieldMapping arFieldId="5"/>              
+   data-mapping   :   </element>                <element dataType="dateTime" name="f6_Modified_Date">                    <fieldMapping arFieldId="6"/>                </e
+   data-mapping   : lement>                <element dataType="string" name="f7_Status">                    <fieldMapping arFieldId="7"/>                </element>      
+   data-mapping   :           <element dataType="string" name="f8_Description">                    <fieldMapping arFieldId="8"/>                </element>               
+   data-mapping   :  <element dataType="string" name="f15_Status_History">                    <fieldMapping arFieldId="15"/>                </element>                <el
+   data-mapping   : ement dataType="string" name="f16_Notifier_Listening">                    <fieldMapping arFieldId="16"/>                </element>                <el
+   data-mapping   : ement dataType="string" name="f17__GUID">                    <fieldMapping arFieldId="179"/>                </element>                <element dataTy
+   data-mapping   : pe="string" name="f37__ID">                    <fieldMapping arFieldId="379"/>                </element>                <element dataType="string" na
+   data-mapping   : me="f1002_002_Address">                    <fieldMapping arFieldId="10029002"/>                </element>                <element dataType="string" n
+   data-mapping   : ame="f1002_003_Site_Name">                    <fieldMapping arFieldId="10029003"/>                </element>            </element>        </formMapp
+   data-mapping   : ing>    </element></arDocMapping>
+   data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   
+   data           :  <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>developer</f2_Created_By>        <f3_Created_Date>2019-04-25
+   data           : T22:40:15+00:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>developer</f5_Modified_By>        <f6_Modified_Date>201
+   data           : 9-04-25T22:40:15+00:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>Address</f8_Description>        <f15_Status_Histor
+   data           : y xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f17__GUID>AGGADG1AANVNMAPQ961DPPMDQ2KAQY</f17__GUID>
+   data           :         <f37__ID>AGGADG1AANVNMAPQ961DPPMDQ2KAQY</f37__ID>        <f1002_002_Address>Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France</f1002_
+   data           : 002_Address>        <f1002_003_Site_Name>Eiffel Tower</f1002_003_Site_Name>    </entryItem>    <entryItem>        <f1_Display_ID>000000000000002</f1
+   data           : _Display_ID>        <f2_Created_By>developer</f2_Created_By>        <f3_Created_Date>2019-04-25T22:40:48+00:00</f3_Created_Date>        <f4_Assignee 
+   data           : xsi:nil="true"/>        <f5_Modified_By>developer</f5_Modified_By>        <f6_Modified_Date>2019-04-25T22:40:48+00:00</f6_Modified_Date>        <f7_S
+   data           : tatus>New</f7_Status>        <f8_Description>Address</f8_Description>        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not 
+   data           : Listening</f16_Notifier_Listening>        <f17__GUID>AGGADG1AANVNMAPQ962APPMDRJKATN</f17__GUID>        <f37__ID>AGGADG1AANVNMAPQ962APPMDRJKATN</f37__I
+   data           : D>        <f1002_002_Address>24 Willie Mays Plaza, San Francisco, CA 94107</f1002_002_Address>        <f1002_003_Site_Name>AT&amp;T Park</f1002_003_Si
+   data           : te_Name>    </entryItem></entryList>
+end
+

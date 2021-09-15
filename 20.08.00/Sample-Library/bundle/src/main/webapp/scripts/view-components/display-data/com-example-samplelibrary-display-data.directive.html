@@ -1,0 +1,21 @@
+<div>
+    <div>
+        <table class="table table-condensed">
+            <thead>
+            <tr>
+                <td><strong>GUID</strong></td>
+                <td><strong>{{cfg.fieldLabelToDisplay}}</strong></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="onedata in myData">
+                <!-- We have to use array notation here since you cannot have obbjet.<numericValue> -->
+                <!-- <td>{{onedata.id}}</td>
+                <td>{{onedata.c7}}</td> -->
+                <td>{{onedata['179']}}</td>
+                <td>{{onedata[cfg.fieldIdToDisplay]}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

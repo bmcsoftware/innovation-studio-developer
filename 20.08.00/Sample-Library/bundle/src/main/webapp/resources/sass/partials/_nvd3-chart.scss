@@ -1,0 +1,36 @@
+com-example-samplelibrary-nvd3-chart-design {
+  span {
+    font-size: 150px;
+    color: $black;
+    display: block;
+    text-align: center;
+  }
+}
+
+com-example-samplelibrary-nvd3-chart {
+  .axis {
+    font-size: 10px;
+  }
+
+  .axis path, .axis line {
+    fill: none;
+    stroke: $black;
+    shape-rendering: crispEdges;
+  }
+
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+  }
+
+  .svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

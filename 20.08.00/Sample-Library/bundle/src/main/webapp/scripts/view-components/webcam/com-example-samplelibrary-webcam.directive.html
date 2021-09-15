@@ -1,0 +1,16 @@
+<div>
+    <div class="webcam-error-message" ng-show="isWebcamError">
+        The webcam could not be started.<br>Please check that gave access to it in your web browser.
+    </div>
+    <div class="container">
+        <webcam channel="channel"
+                on-streaming="onStreaming()"
+                on-error="onError(err)"
+                on-stream="onStream(stream)"></webcam>
+        <div class="preview">
+            <canvas id="{{snapshotFieldId}}" width="0" height="0"></canvas>
+        </div>
+    </div>
+    <button ng-click="takeSnapshot()"
+    class="d-button d-button_primary d-button_small">Take picture</button>
+</div>

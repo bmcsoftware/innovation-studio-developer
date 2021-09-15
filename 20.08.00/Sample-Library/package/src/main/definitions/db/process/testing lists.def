@@ -1,0 +1,431 @@
+begin process definition
+   name           : com.example.samplelibrary:testing lists
+   definition     : {
+   definition     :   "version" : "1.0-SNAPSHOT",
+   definition     :   "lastUpdateTime" : 1612380891436,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "developer",
+   definition     :   "name" : "com.example.samplelibrary:testing lists",
+   definition     :   "tags" : null,
+   definition     :   "description" : "",
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "developerId" : "com.example",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "rx-1c1d8483-c310-4d92-a9b5-d4ab323f758b",
+   definition     :   "flowElements" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Set Index we want to fetch (1)",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-388c7248-6dcf-46c7-9bb4-2218b61985d5",
+   definition     :     "multiInstanceLoopDefinition" : null,
+   definition     :     "actionTypeName" : "computeValue",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "expressionText",
+   definition     :       "expression" : "1"
+   definition     :     } ],
+   definition     :     "outputMap" : [ {
+   definition     :       "assignTarget" : "536870914",
+   definition     :       "expression" : "${activityResults.rx-388c7248-6dcf-46c7-9bb4-2218b61985d5.output}"
+   definition     :     } ],
+   definition     :     "runAsUser" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-af678e01-f88a-4a94-be08-2a622efad2ae",
+   definition     :     "sourceNode" : "rx-84b704d5-dd1c-4ccd-b2d5-7c5244ee78eb",
+   definition     :     "targetNode" : "rx-027c5349-5a01-47a6-923c-5070cd41d47a",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Add \"hello\" to the list",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-85dec22b-8001-4be8-931b-1fe3126eab39",
+   definition     :     "multiInstanceLoopDefinition" : null,
+   definition     :     "actionTypeName" : "createList",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "Source List",
+   definition     :       "expression" : "${processContext.536870913}"
+   definition     :     }, {
+   definition     :       "assignTarget" : "Item To Add",
+   definition     :       "expression" : "\"hello\""
+   definition     :     } ],
+   definition     :     "outputMap" : [ {
+   definition     :       "assignTarget" : "536870913",
+   definition     :       "expression" : "${activityResults.rx-85dec22b-8001-4be8-931b-1fe3126eab39.output}"
+   definition     :     } ],
+   definition     :     "runAsUser" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Get List Size",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-027c5349-5a01-47a6-923c-5070cd41d47a",
+   definition     :     "multiInstanceLoopDefinition" : null,
+   definition     :     "actionTypeName" : "com.example.samplelibrary:getListSize",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "list",
+   definition     :       "expression" : "${processContext.536870913}"
+   definition     :     } ],
+   definition     :     "outputMap" : [ {
+   definition     :       "assignTarget" : "536870912",
+   definition     :       "expression" : "${activityResults.rx-027c5349-5a01-47a6-923c-5070cd41d47a.output}"
+   definition     :     } ],
+   definition     :     "runAsUser" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Get List Value By Index (1)",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-7f08b232-f840-4001-97d3-f26345d4c2b5",
+   definition     :     "multiInstanceLoopDefinition" : null,
+   definition     :     "actionTypeName" : "com.example.samplelibrary:getListValueByIndex",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "list",
+   definition     :       "expression" : "${processContext.536870913}"
+   definition     :     }, {
+   definition     :       "assignTarget" : "index",
+   definition     :       "expression" : "${processContext.536870914}"
+   definition     :     } ],
+   definition     :     "outputMap" : [ ],
+   definition     :     "runAsUser" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Show count and value",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-ecaa17a9-8f6c-489f-9d47-c4a45da4fc9a",
+   definition     :     "multiInstanceLoopDefinition" : null,
+   definition     :     "actionTypeName" : "showAlert",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "alertText",
+   definition     :       "expression" : "\"12c72ce7-8c1b-43c9-9bee-39032f11a89e\""
+   definition     :     }, {
+   definition     :       "assignTarget" : "alertCode",
+   definition     :       "expression" : "10000"
+   definition     :     }, {
+   definition     :       "assignTarget" : "alertType",
+   definition     :       "expression" : "\"INFO\""
+   definition     :     } ],
+   definition     :     "outputMap" : [ ],
+   definition     :     "runAsUser" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-87c49463-8549-4ffe-976e-676533989104",
+   definition     :     "sourceNode" : "rx-027c5349-5a01-47a6-923c-5070cd41d47a",
+   definition     :     "targetNode" : "rx-388c7248-6dcf-46c7-9bb4-2218b61985d5",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.EndEventDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "End",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-053fe2c4-c3f0-4962-a372-05718947be90",
+   definition     :     "event" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-d049b5a7-a254-4b50-8a4f-20e5fb86c327",
+   definition     :     "sourceNode" : "rx-85dec22b-8001-4be8-931b-1fe3126eab39",
+   definition     :     "targetNode" : "rx-84b704d5-dd1c-4ccd-b2d5-7c5244ee78eb",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-7d697c57-04fd-4b4a-8754-1f462b385592",
+   definition     :     "sourceNode" : "rx-388c7248-6dcf-46c7-9bb4-2218b61985d5",
+   definition     :     "targetNode" : "rx-7f08b232-f840-4001-97d3-f26345d4c2b5",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-aa31c978-c6b0-4e10-a17a-c88812faabf1",
+   definition     :     "sourceNode" : "rx-ecaa17a9-8f6c-489f-9d47-c4a45da4fc9a",
+   definition     :     "targetNode" : "rx-053fe2c4-c3f0-4962-a372-05718947be90",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Add \"world\" to the list",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-84b704d5-dd1c-4ccd-b2d5-7c5244ee78eb",
+   definition     :     "multiInstanceLoopDefinition" : null,
+   definition     :     "actionTypeName" : "createList",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "Source List",
+   definition     :       "expression" : "${processContext.536870913}"
+   definition     :     }, {
+   definition     :       "assignTarget" : "Item To Add",
+   definition     :       "expression" : "\"world\""
+   definition     :     } ],
+   definition     :     "outputMap" : [ {
+   definition     :       "assignTarget" : "536870913",
+   definition     :       "expression" : "${activityResults.rx-84b704d5-dd1c-4ccd-b2d5-7c5244ee78eb.output}"
+   definition     :     } ],
+   definition     :     "runAsUser" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-8d2bd4cd-eaed-46c5-be0b-67e76ce1e427",
+   definition     :     "sourceNode" : "rx-7f08b232-f840-4001-97d3-f26345d4c2b5",
+   definition     :     "targetNode" : "rx-ecaa17a9-8f6c-489f-9d47-c4a45da4fc9a",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.StartEventDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Start",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-0ffdfee1-299c-4d54-9da5-55c7a522730a"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-6293fe10-097a-4e26-a8f7-6e73e41839c3",
+   definition     :     "sourceNode" : "rx-0ffdfee1-299c-4d54-9da5-55c7a522730a",
+   definition     :     "targetNode" : "rx-85dec22b-8001-4be8-931b-1fe3126eab39",
+   definition     :     "condition" : ""
+   definition     :   } ],
+   definition     :   "inputParams" : [ ],
+   definition     :   "outputParams" : [ ],
+   definition     :   "localVariables" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "list size",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "id" : 536870912,
+   definition     :     "fieldOption" : "OPTIONAL",
+   definition     :     "permissions" : null,
+   definition     :     "fieldTypeName" : "com.bmc.arsys.rx.services.record.domain.DefaultFieldType",
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : null,
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : true,
+   definition     :     "allowOtherPropertiesOverlay" : true,
+   definition     :     "auditOption" : null,
+   definition     :     "maxLength" : 0,
+   definition     :     "defaultValue" : null,
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.ListFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "my list",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "scope" : null,
+   definition     :     "internal" : false,
+   definition     :     "id" : 536870913,
+   definition     :     "fieldOption" : "OPTIONAL",
+   definition     :     "permissions" : null,
+   definition     :     "fieldTypeName" : "com.bmc.arsys.rx.services.record.domain.DefaultFieldType",
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : null,
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : true,
+   definition     :     "allowOtherPropertiesOverlay" : true,
+   definition     :     "auditOption" : null,
+   definition     :     "searchDefinition" : null,
+   definition     :     "subType" : 4,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.IntegerFieldDefinition",
+   definition     :     "lastUpdateTime" : 1612380891436,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "developer",
+   definition     :     "name" : "my index",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "developerId" : null,
+   definition     :     "internal" : false,
+   definition     :     "id" : 536870914,
+   definition     :     "fieldOption" : "OPTIONAL",
+   definition     :     "permissions" : null,
+   definition     :     "fieldTypeName" : "com.bmc.arsys.rx.services.record.domain.DefaultFieldType",
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : null,
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : true,
+   definition     :     "allowOtherPropertiesOverlay" : true,
+   definition     :     "auditOption" : null,
+   definition     :     "minValue" : -2147483648,
+   definition     :     "maxValue" : 2147483647,
+   definition     :     "defaultValue" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   } ],
+   definition     :   "contextKeyParam" : null,
+   definition     :   "isEnabled" : true,
+   definition     :   "permissions" : [ ],
+   definition     :   "layout" : "{\"cells\":[{\"content\":\"Set Index we want to fetch (1)\",\"id\":\"388c7248-6dcf-46c7-9bb4-2218b61985d5\",\"position\":{\"x\":525,\"y\":360},\"size\":{\"width\":110,\"height\":60},\"type\":\"rx.ProcessAction\",\"z\":47},{\"flowType\":\"normal\",\"id\":\"af678e01-f88a-4a94-be08-2a622efad2ae\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"84b704d5-dd1c-4ccd-b2d5-7c5244ee78eb\"},\"target\":{\"id\":\"027c5349-5a01-47a6-923c-5070cd41d47a\"},\"type\":\"rx.SequenceFlow\",\"z\":60},{\"content\":\"Add \\\"hello\\\" to the list\",\"id\":\"85dec22b-8001-4be8-931b-1fe3126eab39\",\"position\":{\"x\":115,\"y\":360},\"size\":{\"width\":90,\"height\":60},\"type\":\"rx.ProcessActions.createList\",\"z\":55},{\"content\":\"Get List Size\",\"id\":\"027c5349-5a01-47a6-923c-5070cd41d47a\",\"position\":{\"x\":390,\"y\":360},\"size\":{\"width\":90,\"height\":60},\"type\":\"rx.ProcessAction\",\"z\":59},{\"content\":\"Get List Value By Index (1)\",\"id\":\"7f08b232-f840-4001-97d3-f26345d4c2b5\",\"position\":{\"x\":675,\"y\":360},\"size\":{\"width\":115,\"height\":60},\"type\":\"rx.ProcessAction\",\"z\":49},{\"content\":\"Show count and value\",\"id\":\"ecaa17a9-8f6c-489f-9d47-c4a45da4fc9a\",\"position\":{\"x\":850,\"y\":360},\"size\":{\"width\":90,\"height\":60},\"type\":\"rx.ProcessActions.showAlert\",\"z\":61},{\"flowType\":\"normal\",\"id\":\"87c49463-8549-4ffe-976e-676533989104\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"027c5349-5a01-47a6-923c-5070cd41d47a\"},\"target\":{\"id\":\"388c7248-6dcf-46c7-9bb4-2218b61985d5\"},\"type\":\"rx.SequenceFlow\",\"z\":60},{\"id\":\"053fe2c4-c3f0-4962-a372-05718947be90\",\"position\":{\"x\":1015,\"y\":375},\"size\":{\"width\":30,\"height\":30},\"type\":\"rx.EndEvent\",\"z\":53,\"attrs\":{\".label\":{\"text\":\"\"}}},{\"flowType\":\"normal\",\"id\":\"d049b5a7-a254-4b50-8a4f-20e5fb86c327\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"85dec22b-8001-4be8-931b-1fe3126eab39\"},\"target\":{\"id\":\"84b704d5-dd1c-4ccd-b2d5-7c5244ee78eb\"},\"type\":\"rx.SequenceFlow\",\"z\":58},{\"flowType\":\"normal\",\"id\":\"7d697c57-04fd-4b4a-8754-1f462b385592\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"388c7248-6dcf-46c7-9bb4-2218b61985d5\"},\"target\":{\"id\":\"7f08b232-f840-4001-97d3-f26345d4c2b5\"},\"type\":\"rx.SequenceFlow\",\"z\":50},{\"flowType\":\"normal\",\"id\":\"aa31c978-c6b0-4e10-a17a-c88812faabf1\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"ecaa17a9-8f6c-489f-9d47-c4a45da4fc9a\"},\"target\":{\"id\":\"053fe2c4-c3f0-4962-a372-05718947be90\"},\"type\":\"rx.SequenceFlow\",\"z\":62},{\"content\":\"Add \\\"world\\\" to the list\",\"id\":\"84b704d5-dd1c-4ccd-b2d5-7c5244ee78eb\",\"position\":{\"x\":255,\"y\":360},\"size\":{\"width\":90,\"height\":60},\"type\":\"rx.ProcessActions.createList\",\"z\":57},{\"flowType\":\"normal\",\"id\":\"8d2bd4cd-eaed-46c5-be0b-67e76ce1e427\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"7f08b232-f840-4001-97d3-f26345d4c2b5\"},\"target\":{\"id\":\"ecaa17a9-8f6c-489f-9d47-c4a45da4fc9a\"},\"type\":\"rx.SequenceFlow\",\"z\":62},{\"id\":\"0ffdfee1-299c-4d54-9da5-55c7a522730a\",\"position\":{\"x\":50,\"y\":375},\"size\":{\"width\":30,\"height\":30},\"type\":\"rx.StartEvent\",\"z\":1,\"attrs\":{\".label\":{\"text\":\"\"}}},{\"flowType\":\"normal\",\"id\":\"6293fe10-097a-4e26-a8f7-6e73e41839c3\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"0ffdfee1-299c-4d54-9da5-55c7a522730a\"},\"target\":{\"id\":\"85dec22b-8001-4be8-931b-1fe3126eab39\"},\"type\":\"rx.SequenceFlow\",\"z\":56},{\"content\":\"We are building a list with \\\"hello\\\" and \\\"world\\\" as values, so:\\n[\\\"hello\\\", \\\"world\\\"]\",\"id\":\"5377d9c9-f4fd-45f1-962d-539089642abc\",\"position\":{\"x\":115,\"y\":145},\"size\":{\"width\":240,\"height\":95},\"type\":\"rx.TextAnnotation\",\"z\":68},{\"flowType\":\"association\",\"id\":\"497ed8d7-6cb8-450e-aa14-b848209410fd\",\"source\":{\"id\":\"5377d9c9-f4fd-45f1-962d-539089642abc\"},\"target\":{\"id\":\"85dec22b-8001-4be8-931b-1fe3126eab39\"},\"type\":\"rx.TextAnnotationAssociation\",\"z\":69},{\"flowType\":\"association\",\"id\":\"208c2f3a-f0bf-4347-bc73-87eefbf073e5\",\"source\":{\"id\":\"5377d9c9-f4fd-45f1-962d-539089642abc\"},\"target\":{\"id\":\"84b704d5-dd1c-4ccd-b2d5-7c5244ee78eb\"},\"type\":\"rx.TextAnnotationAssociation\",\"z\":69},{\"content\":\"here we are doing pretty much:\\nmy list[1]\",\"id\":\"56ccf064-7523-4d4e-bde0-b903b07bd724\",\"position\":{\"x\":642.5,\"y\":120},\"size\":{\"width\":180,\"height\":105},\"type\":\"rx.TextAnnotation\",\"z\":74},{\"flowType\":\"association\",\"id\":\"fe0b93f4-fc43-4726-a01c-e4e43c9ad901\",\"source\":{\"id\":\"56ccf064-7523-4d4e-bde0-b903b07bd724\"},\"target\":{\"id\":\"7f08b232-f840-4001-97d3-f26345d4c2b5\"},\"type\":\"rx.TextAnnotationAssociation\",\"z\":75},{\"content\":\"If you know the index, you could also access the value directly by doing something like:\\n${activityResults.<guid>.output.valueAt[<index>]}\\nFor example:\\n${activityResults.rx-fb26ed35-78c1-4d50-a1ca-c192f905dc0f.output.valueAt[1]}\\n\\nFor a variable:\\n${processContext.<variable name>.valueAt[<index>]} \\nFor example:\\n${processContext.my list.valueAt[1]} \",\"id\":\"1bcf137a-9b96-4fa1-8b06-db1ad02b1e10\",\"position\":{\"x\":642.5,\"y\":520},\"size\":{\"width\":360,\"height\":215},\"type\":\"rx.TextAnnotation\",\"z\":88},{\"flowType\":\"association\",\"id\":\"578f048a-9d12-4b0e-8c11-58d08081eeca\",\"source\":{\"id\":\"1bcf137a-9b96-4fa1-8b06-db1ad02b1e10\"},\"target\":{\"id\":\"7f08b232-f840-4001-97d3-f26345d4c2b5\"},\"type\":\"rx.TextAnnotationAssociation\",\"z\":89},{\"content\":\"There is an alternative way to get directly the size, though it would show an ERROR in the UI (execution would work properly though):\\n${activityResults.<guid>.output.size}\\nFor example:\\n${activityResults.rx-fb26ed35-78c1-4d50-a1ca-c192f905dc0f.output.size}\\n\\nFor a variable:\\n${processContext.<variable name>.size} \\nFor example:\\n${processContext.my list.size} \",\"id\":\"04e64d01-412d-4803-8653-3fa0f641985c\",\"position\":{\"x\":205,\"y\":510},\"size\":{\"width\":355,\"height\":250},\"type\":\"rx.TextAnnotation\",\"z\":86},{\"flowType\":\"association\",\"id\":\"8b46f56d-498e-4143-be7f-0a1a5e2ccbad\",\"source\":{\"id\":\"04e64d01-412d-4803-8653-3fa0f641985c\"},\"target\":{\"id\":\"027c5349-5a01-47a6-923c-5070cd41d47a\"},\"type\":\"rx.TextAnnotationAssociation\",\"z\":87}]}",
+   definition     :   "artifacts" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotation",
+   definition     :     "guid" : "rx-5377d9c9-f4fd-45f1-962d-539089642abc",
+   definition     :     "text" : "We are building a list with \"hello\" and \"world\" as values, so:\n[\"hello\", \"world\"]"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotationAssociation",
+   definition     :     "guid" : "rx-497ed8d7-6cb8-450e-aa14-b848209410fd",
+   definition     :     "sourceNode" : "rx-5377d9c9-f4fd-45f1-962d-539089642abc",
+   definition     :     "targetNode" : "rx-85dec22b-8001-4be8-931b-1fe3126eab39"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotationAssociation",
+   definition     :     "guid" : "rx-208c2f3a-f0bf-4347-bc73-87eefbf073e5",
+   definition     :     "sourceNode" : "rx-5377d9c9-f4fd-45f1-962d-539089642abc",
+   definition     :     "targetNode" : "rx-84b704d5-dd1c-4ccd-b2d5-7c5244ee78eb"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotation",
+   definition     :     "guid" : "rx-56ccf064-7523-4d4e-bde0-b903b07bd724",
+   definition     :     "text" : "here we are doing pretty much:\nmy list[1]"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotationAssociation",
+   definition     :     "guid" : "rx-fe0b93f4-fc43-4726-a01c-e4e43c9ad901",
+   definition     :     "sourceNode" : "rx-56ccf064-7523-4d4e-bde0-b903b07bd724",
+   definition     :     "targetNode" : "rx-7f08b232-f840-4001-97d3-f26345d4c2b5"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotation",
+   definition     :     "guid" : "rx-1bcf137a-9b96-4fa1-8b06-db1ad02b1e10",
+   definition     :     "text" : "If you know the index, you could also access the value directly by doing something like:\n${activityResults.<guid>.output.valueAt[<index>]}\nFor example:\n${activityResults.rx-fb26ed35-78c1-4d50-a1ca-c192f905dc0f.output.valueAt[1]}\n\nFor a variable:\n${processContext.<variable name>.valueAt[<index>]} \nFor example:\n${processContext.my list.valueAt[1]} "
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotationAssociation",
+   definition     :     "guid" : "rx-578f048a-9d12-4b0e-8c11-58d08081eeca",
+   definition     :     "sourceNode" : "rx-1bcf137a-9b96-4fa1-8b06-db1ad02b1e10",
+   definition     :     "targetNode" : "rx-7f08b232-f840-4001-97d3-f26345d4c2b5"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotation",
+   definition     :     "guid" : "rx-04e64d01-412d-4803-8653-3fa0f641985c",
+   definition     :     "text" : "There is an alternative way to get directly the size, though it would show an ERROR in the UI (execution would work properly though):\n${activityResults.<guid>.output.size}\nFor example:\n${activityResults.rx-fb26ed35-78c1-4d50-a1ca-c192f905dc0f.output.size}\n\nFor a variable:\n${processContext.<variable name>.size} \nFor example:\n${processContext.my list.size} "
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotationAssociation",
+   definition     :     "guid" : "rx-8b46f56d-498e-4143-be7f-0a1a5e2ccbad",
+   definition     :     "sourceNode" : "rx-04e64d01-412d-4803-8653-3fa0f641985c",
+   definition     :     "targetNode" : "rx-027c5349-5a01-47a6-923c-5070cd41d47a"
+   definition     :   } ],
+   definition     :   "runAsUser" : false,
+   definition     :   "synchronous" : true,
+   definition     :   "overlayDescriptor" : null,
+   definition     :   "allowOverlay" : false,
+   definition     :   "localizableStrings" : null
+   definition     : }
+end

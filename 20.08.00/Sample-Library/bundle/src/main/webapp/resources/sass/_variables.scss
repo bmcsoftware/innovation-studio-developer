@@ -1,0 +1,8 @@
+$vendor-path: "<%= standardlibTarget %>/lib";
+$dpl-path: $vendor-path + "/bmc-dpl-2.9.0";
+$img-path: $dpl-path + "/dist/assets/";
+$font-path: $dpl-path + "/vendor/fonts";
+
+$rx-path: "<%= standardlibTarget %>";
+$rx-image-path: $rx-path + "/resources/images";
+$rx-font-path: $rx-path + "/resources/fonts";

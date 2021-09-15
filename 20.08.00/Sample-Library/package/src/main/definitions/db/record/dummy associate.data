@@ -1,0 +1,28 @@
+begin schema data
+   name           : com.example.samplelibrary:dummy associate
+   data-mapping   : <?xml version="1.0" encoding="utf-8"?><arDocMapping xmlns="urn:remedy:schemas:ars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+   data-mapping   :     <element name="entryList">        <formMapping>            <form foreignKeyId="1" formName="com.example.samplelibrary:dummy associate" mapType="em
+   data-mapping   : bedded" primaryKeyId="1"/>            <element name="entryItem">                <element dataType="string" name="f1_Display_ID">                    <
+   data-mapping   : fieldMapping arFieldId="1"/>                </element>                <element dataType="string" name="f2_Created_By">                    <fieldMappi
+   data-mapping   : ng arFieldId="2"/>                </element>                <element dataType="dateTime" name="f3_Created_Date">                    <fieldMapping arF
+   data-mapping   : ieldId="3"/>                </element>                <element dataType="string" name="f4_Assignee">                    <fieldMapping arFieldId="4"/>
+   data-mapping   :                 </element>                <element dataType="string" name="f5_Modified_By">                    <fieldMapping arFieldId="5"/>        
+   data-mapping   :         </element>                <element dataType="dateTime" name="f6_Modified_Date">                    <fieldMapping arFieldId="6"/>             
+   data-mapping   :    </element>                <element dataType="string" name="f7_Status">                    <fieldMapping arFieldId="7"/>                </element>
+   data-mapping   :                 <element dataType="string" name="f8_Description">                    <fieldMapping arFieldId="8"/>                </element>         
+   data-mapping   :        <element dataType="string" name="f15_Status_History">                    <fieldMapping arFieldId="15"/>                </element>             
+   data-mapping   :    <element dataType="string" name="f16_Notifier_Listening">                    <fieldMapping arFieldId="16"/>                </element>             
+   data-mapping   :    <element dataType="string" name="f17__GUID">                    <fieldMapping arFieldId="179"/>                </element>                <element 
+   data-mapping   : dataType="string" name="f37__ID">                    <fieldMapping arFieldId="379"/>                </element>                <element dataType="stri
+   data-mapping   : ng" name="f536870_13_java_class">                    <fieldMapping arFieldId="536870913"/>                </element>                <element dataType
+   data-mapping   : ="string" name="f536870_14_java_parameters">                    <fieldMapping arFieldId="536870914"/>                </element>            </element>
+   data-mapping   :         </formMapping>    </element></arDocMapping>
+   data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   
+   data           :  <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>developer</f2_Created_By>        <f3_Created_Date>2017-07-17
+   data           : T07:29:57+00:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>developer</f5_Modified_By>        <f6_Modified_Date>201
+   data           : 7-07-17T07:29:57+00:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>test</f8_Description>        <f15_Status_History x
+   data           : si:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f17__GUID>AGGIXIUWC3XSKAOTIETXOS1ZJCON52</f17__GUID>   
+   data           :      <f37__ID>AGGIXIUWC3XSKAOTIETXOS1ZJCON52</f37__ID>        <f536870_13_java_class xsi:nil="true"/>        <f536870_14_java_parameters xsi:nil="true
+   data           : "/>    </entryItem></entryList>
+end
+

@@ -1,0 +1,8 @@
+<label ng-class="options.attrs.label.class">
+    <rx-tooltip tooltip="options.tooltip"></rx-tooltip>
+    {{options.label}}:
+</label>
+
+<div ng-click="onStarSelectHandler($event)">
+    <span ng-repeat="star in stars track by $index" class="{{star.icon}}"></span>
+</div>

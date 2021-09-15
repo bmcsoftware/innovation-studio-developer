@@ -1,0 +1,130 @@
+begin schema data
+   name           : AppLocalConfigSettingBase
+   data-mapping   : <?xml version="1.0" encoding="utf-8"?><arDocMapping xmlns="urn:remedy:schemas:ars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+   data-mapping   :     <element name="entryList">        <formMapping>            <form foreignKeyId="1" formName="AppLocalConfigSettingBase" mapType="embedded" primaryK
+   data-mapping   : eyId="1"/>            <element name="entryItem">                <element dataType="string" name="f1_Request_ID">                    <fieldMapping arF
+   data-mapping   : ieldId="1"/>                </element>                <element dataType="string" name="f2_Submitter">                    <fieldMapping arFieldId="2"/
+   data-mapping   : >                </element>                <element dataType="dateTime" name="f3_Create_Date">                    <fieldMapping arFieldId="3"/>     
+   data-mapping   :            </element>                <element dataType="string" name="f4_Assigned_To">                    <fieldMapping arFieldId="4"/>              
+   data-mapping   :   </element>                <element dataType="string" name="f5_Last_Modified_By">                    <fieldMapping arFieldId="5"/>                </
+   data-mapping   : element>                <element dataType="dateTime" name="f6_Modified_Date">                    <fieldMapping arFieldId="6"/>                </eleme
+   data-mapping   : nt>                <element dataType="string" name="f7_Status">                    <fieldMapping arFieldId="7"/>                </element>          
+   data-mapping   :       <element dataType="string" name="f8_Short_Description">                    <fieldMapping arFieldId="8"/>                </element>             
+   data-mapping   :    <element dataType="string" name="f15_Status_History">                    <fieldMapping arFieldId="15"/>                </element>                <
+   data-mapping   : element dataType="string" name="f16_Notifier_Listening">                    <fieldMapping arFieldId="16"/>                </element>                <
+   data-mapping   : element dataType="string" name="f112_Assignee_Group">                    <fieldMapping arFieldId="112"/>                </element>                <el
+   data-mapping   : ement dataType="string" name="f17__SettingGUID">                    <fieldMapping arFieldId="179"/>                </element>                <element
+   data-mapping   :  dataType="string" name="f37__Record_ID">                    <fieldMapping arFieldId="379"/>                </element>                <element dataTy
+   data-mapping   : pe="string" name="f3200_Component_Name">                    <fieldMapping arFieldId="3200"/>                </element>                <element dataTy
+   data-mapping   : pe="string" name="f3204_Setting_Name">                    <fieldMapping arFieldId="3204"/>                </element>                <element dataType
+   data-mapping   : ="string" name="f3257_SettingDataType">                    <fieldMapping arFieldId="3257"/>                </element>                <element dataTyp
+   data-mapping   : e="string" name="f3258_Character_Menu">                    <fieldMapping arFieldId="3258"/>                </element>                <element dataTyp
+   data-mapping   : e="string" name="f325__Limits">                    <fieldMapping arFieldId="3259"/>                </element>                <element name="f3260_Fie
+   data-mapping   : ldGrouping">                    <element dataType="string" name="value">                        <fieldMapping arFieldId="3260" arFieldPart="value"/> 
+   data-mapping   :                    </element>                    <element dataType="string" name="valueByLocale">                        <fieldMapping arFieldId="3260
+   data-mapping   : " arFieldPart="valueByLocale"/>                    </element>                </element>                <element dataType="int" name="f3261_Field_Orde
+   data-mapping   : r">                    <fieldMapping arFieldId="3261"/>                </element>                <element dataType="string" name="f3262_KeySetting">
+   data-mapping   :                     <fieldMapping arFieldId="3262"/>                </element>                <element dataType="string" name="f3263_Default_Setting_V
+   data-mapping   : alue">                    <fieldMapping arFieldId="3263"/>                </element>                <element dataType="string" name="f3264_SettingDep
+   data-mapping   : endencies">                    <fieldMapping arFieldId="3264"/>                </element>                <element dataType="string" name="f3265_Boole
+   data-mapping   : anType">                    <fieldMapping arFieldId="3265"/>                </element>                <element name="f3266_SettingLabel">           
+   data-mapping   :          <element dataType="string" name="value">                        <fieldMapping arFieldId="3266" arFieldPart="value"/>                    </ele
+   data-mapping   : ment>                    <element dataType="string" name="valueByLocale">                        <fieldMapping arFieldId="3266" arFieldPart="valueByLo
+   data-mapping   : cale"/>                    </element>                </element>                <element name="f3267_Setting_Description">                    <elemen
+   data-mapping   : t dataType="string" name="value">                        <fieldMapping arFieldId="3267" arFieldPart="value"/>                    </element>          
+   data-mapping   :           <element dataType="string" name="valueByLocale">                        <fieldMapping arFieldId="3267" arFieldPart="valueByLocale"/>        
+   data-mapping   :             </element>                </element>                <element dataType="string" name="f3270_RequiredSetting">                    <fieldMap
+   data-mapping   : ping arFieldId="3270"/>                </element>                <element dataType="string" name="f60005_Shared_Settings_Write">                    <
+   data-mapping   : fieldMapping arFieldId="60005"/>                </element>                <element dataType="string" name="f60006_Shared_Settings_Read">             
+   data-mapping   :        <fieldMapping arFieldId="60006"/>                </element>                <element dataType="string" name="f60_8__ParentAssigneeGroup">      
+   data-mapping   :               <fieldMapping arFieldId="60989"/>                </element>                <element dataType="string" name="f61001_Application">       
+   data-mapping   :              <fieldMapping arFieldId="61001"/>                </element>            </element>        </formMapping>    </element></arDocMapping>
+   data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   
+   data           :  <entryItem>        <f1_Request_ID>000000000010009</f1_Request_ID>        <f2_Submitter>ARSERVER</f2_Submitter>        <f3_Create_Date>2018-06-09T13:
+   data           : 36:31+00:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>ARSERVER</f5_Last_Modified_By>        <f6_Modified_D
+   data           : ate>2018-06-09T13:36:31+00:00</f6_Modified_Date>        <f7_Status>Active</f7_Status>        <f8_Short_Description>fileName</f8_Short_Description>   
+   data           :      <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f112_Assignee_Group>0;</f112_A
+   data           : ssignee_Group>        <f17__SettingGUID>AGGIXIUWC3XSKAOTIBSFOS1WH0ON18</f17__SettingGUID>        <f37__Record_ID>AGGIXIUWC3XSKAOTIBSFOS1WH0ON18</f37__
+   data           : Record_ID>        <f3200_Component_Name>LogConfig</f3200_Component_Name>        <f3204_Setting_Name>fileName</f3204_Setting_Name>        <f3257_Setti
+   data           : ngDataType>Character</f3257_SettingDataType>        <f3258_Character_Menu xsi:nil="true"/>        <f325__Limits xsi:nil="true"/>        <f3260_FieldG
+   data           : rouping>            <value>Logger Configuration Settings</value>            <valueByLocale>{"en-US":"Logger Configuration Settings"}</valueByLocale> 
+   data           :        </f3260_FieldGrouping>        <f3261_Field_Order>0</f3261_Field_Order>        <f3262_KeySetting>No</f3262_KeySetting>        <f3263_Default_Se
+   data           : tting_Value>com.example.samplelibrary.log</f3263_Default_Setting_Value>        <f3264_SettingDependencies xsi:nil="true"/>        <f3265_BooleanType x
+   data           : si:nil="true"/>        <f3266_SettingLabel>            <value>fileName</value>            <valueByLocale>{"en-US":"fileName"}</valueByLocale>       
+   data           :  </f3266_SettingLabel>        <f3267_Setting_Description>            <value/>            <valueByLocale>{"en-US":null}</valueByLocale>        </f326
+   data           : 7_Setting_Description>        <f3270_RequiredSetting>No</f3270_RequiredSetting>        <f60005_Shared_Settings_Write>null;</f60005_Shared_Settings_Wri
+   data           : te>        <f60006_Shared_Settings_Read>null;</f60006_Shared_Settings_Read>        <f60_8__ParentAssigneeGroup/>        <f61001_Application>com.examp
+   data           : le.samplelibrary</f61001_Application>    </entryItem>    <entryItem>        <f1_Request_ID>000000000010010</f1_Request_ID>        <f2_Submitter>ARSE
+   data           : RVER</f2_Submitter>        <f3_Create_Date>2018-06-09T13:36:31+00:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modifie
+   data           : d_By>ARSERVER</f5_Last_Modified_By>        <f6_Modified_Date>2018-06-09T13:36:31+00:00</f6_Modified_Date>        <f7_Status>Active</f7_Status>       
+   data           :  <f8_Short_Description>level</f8_Short_Description>        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Noti
+   data           : fier_Listening>        <f112_Assignee_Group>0;</f112_Assignee_Group>        <f17__SettingGUID>AGGIXIUWC3XSKAOTIBSFOS1WH0ON1K</f17__SettingGUID>      
+   data           :   <f37__Record_ID>AGGIXIUWC3XSKAOTIBSFOS1WH0ON1K</f37__Record_ID>        <f3200_Component_Name>LogConfig</f3200_Component_Name>        <f3204_Setting_
+   data           : Name>level</f3204_Setting_Name>        <f3257_SettingDataType>Selection</f3257_SettingDataType>        <f3258_Character_Menu>1=TRACE,2=DEBUG,3=INFO,4=
+   data           : WARN,5=ERROR,6=FATAL,7=NOLOGERROR,8=NOLOGFATAL</f3258_Character_Menu>        <f325__Limits xsi:nil="true"/>        <f3260_FieldGrouping>            <
+   data           : value>Logger Configuration Settings</value>            <valueByLocale>{"en-US":"Logger Configuration Settings"}</valueByLocale>        </f3260_FieldGr
+   data           : ouping>        <f3261_Field_Order>0</f3261_Field_Order>        <f3262_KeySetting>No</f3262_KeySetting>        <f3263_Default_Setting_Value>5</f3263_D
+   data           : efault_Setting_Value>        <f3264_SettingDependencies xsi:nil="true"/>        <f3265_BooleanType xsi:nil="true"/>        <f3266_SettingLabel>     
+   data           :        <value>level</value>            <valueByLocale>{"en-US":"level"}</valueByLocale>        </f3266_SettingLabel>        <f3267_Setting_Descriptio
+   data           : n>            <value/>            <valueByLocale>{"en-US":null}</valueByLocale>        </f3267_Setting_Description>        <f3270_RequiredSetting>No
+   data           : </f3270_RequiredSetting>        <f60005_Shared_Settings_Write>null;</f60005_Shared_Settings_Write>        <f60006_Shared_Settings_Read>null;</f60006_S
+   data           : hared_Settings_Read>        <f60_8__ParentAssigneeGroup/>        <f61001_Application>com.example.samplelibrary</f61001_Application>    </entryItem> 
+   data           :    <entryItem>        <f1_Request_ID>000000000010301</f1_Request_ID>        <f2_Submitter>ARSERVER</f2_Submitter>        <f3_Create_Date>2018-08-08T2
+   data           : 3:49:19+00:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>ARSERVER</f5_Last_Modified_By>        <f6_Modified
+   data           : _Date>2018-08-08T23:49:19+00:00</f6_Modified_Date>        <f7_Status>Active</f7_Status>        <f8_Short_Description>fileName</f8_Short_Description> 
+   data           :        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f112_Assignee_Group xsi:nil=
+   data           : "true"/>        <f17__SettingGUID>AGGADG1AANVNMAP3GCG3P2JH0E8S98</f17__SettingGUID>        <f37__Record_ID>AGGADG1AANVNMAP3GCG3P2JH0E8S98</f37__Record
+   data           : _ID>        <f3200_Component_Name>Logger Configuration</f3200_Component_Name>        <f3204_Setting_Name>fileName</f3204_Setting_Name>        <f3257_
+   data           : SettingDataType>Character</f3257_SettingDataType>        <f3258_Character_Menu xsi:nil="true"/>        <f325__Limits xsi:nil="true"/>        <f3260_F
+   data           : ieldGrouping>            <value>Logger Configuration Settings</value>            <valueByLocale>{"en-US":"Logger Configuration Settings"}</valueByLoca
+   data           : le>        </f3260_FieldGrouping>        <f3261_Field_Order>0</f3261_Field_Order>        <f3262_KeySetting>No</f3262_KeySetting>        <f3263_Defau
+   data           : lt_Setting_Value>com.example.samplelibrary.log</f3263_Default_Setting_Value>        <f3264_SettingDependencies xsi:nil="true"/>        <f3265_BooleanT
+   data           : ype xsi:nil="true"/>        <f3266_SettingLabel>            <value>fileName</value>            <valueByLocale>{"en-US":"fileName"}</valueByLocale>  
+   data           :       </f3266_SettingLabel>        <f3267_Setting_Description>            <value/>            <valueByLocale>{"en-US":null}</valueByLocale>        <
+   data           : /f3267_Setting_Description>        <f3270_RequiredSetting>No</f3270_RequiredSetting>        <f60005_Shared_Settings_Write xsi:nil="true"/>        <f6
+   data           : 0006_Shared_Settings_Read xsi:nil="true"/>        <f60_8__ParentAssigneeGroup xsi:nil="true"/>        <f61001_Application>com.example.samplelibrary</f
+   data           : 61001_Application>    </entryItem>    <entryItem>        <f1_Request_ID>000000000010302</f1_Request_ID>        <f2_Submitter>ARSERVER</f2_Submitter>
+   data           :         <f3_Create_Date>2018-08-08T23:49:19+00:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>ARSERVER</f5_L
+   data           : ast_Modified_By>        <f6_Modified_Date>2018-08-08T23:49:19+00:00</f6_Modified_Date>        <f7_Status>Active</f7_Status>        <f8_Short_Descript
+   data           : ion>level</f8_Short_Description>        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>   
+   data           :      <f112_Assignee_Group xsi:nil="true"/>        <f17__SettingGUID>AGGADG1AANVNMAP3GCG3P2JH0E8S99</f17__SettingGUID>        <f37__Record_ID>AGGADG1AA
+   data           : NVNMAP3GCG3P2JH0E8S99</f37__Record_ID>        <f3200_Component_Name>Logger Configuration</f3200_Component_Name>        <f3204_Setting_Name>level</f320
+   data           : 4_Setting_Name>        <f3257_SettingDataType>Selection</f3257_SettingDataType>        <f3258_Character_Menu>1=TRACE,2=DEBUG,3=INFO,4=WARN,5=ERROR,6=F
+   data           : ATAL,7=NOLOGERROR,8=NOLOGFATAL</f3258_Character_Menu>        <f325__Limits xsi:nil="true"/>        <f3260_FieldGrouping>            <value>Logger Con
+   data           : figuration Settings</value>            <valueByLocale>{"en-US":"Logger Configuration Settings"}</valueByLocale>        </f3260_FieldGrouping>        
+   data           : <f3261_Field_Order>0</f3261_Field_Order>        <f3262_KeySetting>No</f3262_KeySetting>        <f3263_Default_Setting_Value>5</f3263_Default_Setting_V
+   data           : alue>        <f3264_SettingDependencies xsi:nil="true"/>        <f3265_BooleanType xsi:nil="true"/>        <f3266_SettingLabel>            <value>le
+   data           : vel</value>            <valueByLocale>{"en-US":"level"}</valueByLocale>        </f3266_SettingLabel>        <f3267_Setting_Description>            <
+   data           : value/>            <valueByLocale>{"en-US":null}</valueByLocale>        </f3267_Setting_Description>        <f3270_RequiredSetting>No</f3270_Required
+   data           : Setting>        <f60005_Shared_Settings_Write xsi:nil="true"/>        <f60006_Shared_Settings_Read xsi:nil="true"/>        <f60_8__ParentAssigneeGrou
+   data           : p xsi:nil="true"/>        <f61001_Application>com.example.samplelibrary</f61001_Application>    </entryItem>    <entryItem>        <f1_Request_ID>00
+   data           : 0000000010401</f1_Request_ID>        <f2_Submitter>developer</f2_Submitter>        <f3_Create_Date>2018-08-13T21:21:02+00:00</f3_Create_Date>        
+   data           : <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>developer</f5_Last_Modified_By>        <f6_Modified_Date>2018-08-14T02:00:42+00:00</f6_Mo
+   data           : dified_Date>        <f7_Status>Active</f7_Status>        <f8_Short_Description>preferred Book</f8_Short_Description>        <f15_Status_History xsi:n
+   data           : il="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f112_Assignee_Group xsi:nil="true"/>        <f17__SettingGU
+   data           : ID>AGGADG1AANVNMAP35ENCP28JDFB1L3</f17__SettingGUID>        <f37__Record_ID>AGGADG1AANVNMAP35ENCP28JDFB1L3</f37__Record_ID>        <f3200_Component_Na
+   data           : me>bookWorm</f3200_Component_Name>        <f3204_Setting_Name>preferred Book</f3204_Setting_Name>        <f3257_SettingDataType>Character</f3257_Setti
+   data           : ngDataType>        <f3258_Character_Menu xsi:nil="true"/>        <f325__Limits xsi:nil="true"/>        <f3260_FieldGrouping>            <value>Gener
+   data           : al</value>            <valueByLocale>{"en-US":"General"}</valueByLocale>        </f3260_FieldGrouping>        <f3261_Field_Order>0</f3261_Field_Order
+   data           : >        <f3262_KeySetting>No</f3262_KeySetting>        <f3263_Default_Setting_Value>Dune</f3263_Default_Setting_Value>        <f3264_SettingDependen
+   data           : cies xsi:nil="true"/>        <f3265_BooleanType xsi:nil="true"/>        <f3266_SettingLabel>            <value>preferred Book</value>            <va
+   data           : lueByLocale>{"en-US":"preferred Book"}</valueByLocale>        </f3266_SettingLabel>        <f3267_Setting_Description>            <value/>          
+   data           :   <valueByLocale>{"en-US":null}</valueByLocale>        </f3267_Setting_Description>        <f3270_RequiredSetting>No</f3270_RequiredSetting>        <
+   data           : f60005_Shared_Settings_Write xsi:nil="true"/>        <f60006_Shared_Settings_Read xsi:nil="true"/>        <f60_8__ParentAssigneeGroup xsi:nil="true"/>
+   data           :         <f61001_Application>com.example.samplelibrary</f61001_Application>    </entryItem>    <entryItem>        <f1_Request_ID>000000000010402</f1_
+   data           : Request_ID>        <f2_Submitter>developer</f2_Submitter>        <f3_Create_Date>2018-08-13T21:21:02+00:00</f3_Create_Date>        <f4_Assigned_To xs
+   data           : i:nil="true"/>        <f5_Last_Modified_By>developer</f5_Last_Modified_By>        <f6_Modified_Date>2018-08-14T02:00:42+00:00</f6_Modified_Date>     
+   data           :    <f7_Status>Active</f7_Status>        <f8_Short_Description>preferred author</f8_Short_Description>        <f15_Status_History xsi:nil="true"/>    
+   data           :     <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f112_Assignee_Group xsi:nil="true"/>        <f17__SettingGUID>AGGADG1AANVNM
+   data           : AP35ENCP28JDFB1L4</f17__SettingGUID>        <f37__Record_ID>AGGADG1AANVNMAP35ENCP28JDFB1L4</f37__Record_ID>        <f3200_Component_Name>bookWorm</f32
+   data           : 00_Component_Name>        <f3204_Setting_Name>preferred author</f3204_Setting_Name>        <f3257_SettingDataType>Character</f3257_SettingDataType>  
+   data           :       <f3258_Character_Menu xsi:nil="true"/>        <f325__Limits xsi:nil="true"/>        <f3260_FieldGrouping>            <value>General</value>   
+   data           :          <valueByLocale>{"en-US":"General"}</valueByLocale>        </f3260_FieldGrouping>        <f3261_Field_Order>0</f3261_Field_Order>        <f32
+   data           : 62_KeySetting>No</f3262_KeySetting>        <f3263_Default_Setting_Value>Frank Herbert</f3263_Default_Setting_Value>        <f3264_SettingDependencies 
+   data           : xsi:nil="true"/>        <f3265_BooleanType xsi:nil="true"/>        <f3266_SettingLabel>            <value>preferred author</value>            <value
+   data           : ByLocale>{"en-US":"preferred author"}</valueByLocale>        </f3266_SettingLabel>        <f3267_Setting_Description>            <value/>           
+   data           :  <valueByLocale>{"en-US":null}</valueByLocale>        </f3267_Setting_Description>        <f3270_RequiredSetting>No</f3270_RequiredSetting>        <f
+   data           : 60005_Shared_Settings_Write xsi:nil="true"/>        <f60006_Shared_Settings_Read xsi:nil="true"/>        <f60_8__ParentAssigneeGroup xsi:nil="true"/>
+   data           :         <f61001_Application>com.example.samplelibrary</f61001_Application>    </entryItem></entryList>
+end
+

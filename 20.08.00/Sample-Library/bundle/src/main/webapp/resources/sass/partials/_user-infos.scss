@@ -1,0 +1,30 @@
+/*
+This is the design directive style, here an icon.
+It needs to be imported in the com.example.samplelibrary.scss and com.example.samplelibrary-ext.scss.
+ */
+com-example-samplelibrary-user-infos-design {
+  span {
+    font-size: 150px;
+    color: $black;
+    display: block;
+    text-align: center;
+  }
+}
+
+/*
+This style is applied to the custom view component
+ */
+com-example-samplelibrary-user-infos {
+  .title {
+    font-size: 24px;
+    margin-top: 25px;
+  }
+  .key {
+    font-size: 18px;
+    float: left;
+  }
+  .value {
+    font-size: 18px;
+    color: darkgreen;
+  }
+}

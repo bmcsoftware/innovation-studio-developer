@@ -1,0 +1,9 @@
+# exclude generated or boilerplate files
+# IDEs
+.idea/
+.settings/
+.classpath
+.project
+.p4ignore
+*.iml
+

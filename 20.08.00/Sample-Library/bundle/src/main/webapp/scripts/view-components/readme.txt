@@ -1,0 +1,1 @@
+All view components should go into this directory, each in its own folder.

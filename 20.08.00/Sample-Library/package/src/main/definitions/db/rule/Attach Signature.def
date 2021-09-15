@@ -1,0 +1,71 @@
+begin rule definition
+   name           : com.example.samplelibrary:Attach Signature
+   definition     : {
+   definition     :   "version" : "1.0-SNAPSHOT",
+   definition     :   "lastUpdateTime" : 1612380891635,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "developer",
+   definition     :   "name" : "com.example.samplelibrary:Attach Signature",
+   definition     :   "tags" : null,
+   definition     :   "description" : null,
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "developerId" : "com.example",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "IDGADG1AANVNMAPVJYLEPU25V0VP7Q",
+   definition     :   "triggerEvent" : {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.rule.domain.RecordTriggerEvent",
+   definition     :     "eventTypes" : [ "AFTER_CREATE" ],
+   definition     :     "executionOrder" : 500
+   definition     :   },
+   definition     :   "isEnabled" : true,
+   definition     :   "recordDefinitionNames" : [ "com.example.samplelibrary:digital signature" ],
+   definition     :   "qualification" : {
+   definition     :     "name" : "Do we have a signature?",
+   definition     :     "expression" : "(${ruleContext.10029003} != $\\NULL$) AND (${ruleContext.10029003} != \"\") AND (${ruleContext.10029002} = $\\NULL$)"
+   definition     :   },
+   definition     :   "actions" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.rule.domain.CustomRuleAction",
+   definition     :     "name" : "Attach Signature Picture",
+   definition     :     "actionTypeName" : "com.example.samplelibrary:attachSignaturePicture",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "recordDefinitionName",
+   definition     :       "expression" : "\"com.example.samplelibrary:digital signature\""
+   definition     :     }, {
+   definition     :       "assignTarget" : "recordInstanceId",
+   definition     :       "expression" : "${ruleContext.379}"
+   definition     :     }, {
+   definition     :       "assignTarget" : "attachmentFieldId",
+   definition     :       "expression" : "\"10029002\""
+   definition     :     }, {
+   definition     :       "assignTarget" : "fileName",
+   definition     :       "expression" : "\"signature.png\""
+   definition     :     }, {
+   definition     :       "assignTarget" : "base64Payload",
+   definition     :       "expression" : "${ruleContext.10029003}"
+   definition     :     } ],
+   definition     :     "outputMap" : [ ],
+   definition     :     "runAsUser" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.rule.domain.CustomRuleAction",
+   definition     :     "name" : "Update Record",
+   definition     :     "actionTypeName" : "updateRecord",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "recordDefinitionName",
+   definition     :       "expression" : "\"IDGADG1AANVNMAPVJMNCPU2DXIUQRP\""
+   definition     :     }, {
+   definition     :       "assignTarget" : "recordID",
+   definition     :       "expression" : "${ruleContext.379}"
+   definition     :     }, {
+   definition     :       "assignTarget" : "values[\"10029003\"]",
+   definition     :       "expression" : "\"\""
+   definition     :     } ],
+   definition     :     "outputMap" : [ ],
+   definition     :     "runAsUser" : null
+   definition     :   } ],
+   definition     :   "overlayDescriptor" : null,
+   definition     :   "allowOverlay" : false,
+   definition     :   "localizableStrings" : null,
+   definition     :   "saaSAdminOnly" : false
+   definition     : }
+end

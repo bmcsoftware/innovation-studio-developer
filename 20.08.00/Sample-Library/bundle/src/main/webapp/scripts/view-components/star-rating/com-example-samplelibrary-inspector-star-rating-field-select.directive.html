@@ -1,0 +1,13 @@
+<label ng-class="options.attrs.label.class">
+    <rx-tooltip tooltip="options.tooltip"></rx-tooltip>
+    {{options.label}}:
+</label>
+
+<div ng-if="data.fields.length">
+    <select class="select" ng-options="field.name for field in data.fields track by field.id"
+            ng-model="data.selectedField"></select>
+</div>
+
+<div ng-if="!data.fields.length">
+    There are no fields for select
+</div>

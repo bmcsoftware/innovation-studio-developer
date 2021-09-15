@@ -1,0 +1,86 @@
+begin schema data
+   name           : AppLocalConfigComponentBase
+   data-mapping   : <?xml version="1.0" encoding="utf-8"?><arDocMapping xmlns="urn:remedy:schemas:ars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+   data-mapping   :     <element name="entryList">        <formMapping>            <form foreignKeyId="1" formName="AppLocalConfigComponentBase" mapType="embedded" primar
+   data-mapping   : yKeyId="1"/>            <element name="entryItem">                <element dataType="string" name="f1_Request_ID">                    <fieldMapping a
+   data-mapping   : rFieldId="1"/>                </element>                <element dataType="string" name="f2_Submitter">                    <fieldMapping arFieldId="2
+   data-mapping   : "/>                </element>                <element dataType="dateTime" name="f3_Create_Date">                    <fieldMapping arFieldId="3"/>   
+   data-mapping   :              </element>                <element dataType="string" name="f4_Assigned_To">                    <fieldMapping arFieldId="4"/>            
+   data-mapping   :     </element>                <element dataType="string" name="f5_Last_Modified_By">                    <fieldMapping arFieldId="5"/>                
+   data-mapping   : </element>                <element dataType="dateTime" name="f6_Modified_Date">                    <fieldMapping arFieldId="6"/>                </ele
+   data-mapping   : ment>                <element dataType="string" name="f7_Status">                    <fieldMapping arFieldId="7"/>                </element>        
+   data-mapping   :         <element dataType="string" name="f8_Short_Description">                    <fieldMapping arFieldId="8"/>                </element>           
+   data-mapping   :      <element dataType="string" name="f15_Status_History">                    <fieldMapping arFieldId="15"/>                </element>               
+   data-mapping   :  <element dataType="string" name="f16_Notifier_Listening">                    <fieldMapping arFieldId="16"/>                </element>               
+   data-mapping   :  <element dataType="string" name="f112_Assignee_Group">                    <fieldMapping arFieldId="112"/>                </element>                <
+   data-mapping   : element dataType="string" name="f17__ComponentGUID">                    <fieldMapping arFieldId="179"/>                </element>                <ele
+   data-mapping   : ment dataType="string" name="f37__Record_ID">                    <fieldMapping arFieldId="379"/>                </element>                <element da
+   data-mapping   : taType="string" name="f3200_Component_Name">                    <fieldMapping arFieldId="3200"/>                </element>                <element da
+   data-mapping   : taType="string" name="f3250_ShowInNAVBar">                    <fieldMapping arFieldId="3250"/>                </element>                <element data
+   data-mapping   : Type="string" name="f3251_Multiples">                    <fieldMapping arFieldId="3251"/>                </element>                <element dataType=
+   data-mapping   : "string" name="f3252_ViewToOpen">                    <fieldMapping arFieldId="3252"/>                </element>                <element name="f3253_G
+   data-mapping   : roup1">                    <element dataType="string" name="value">                        <fieldMapping arFieldId="3253" arFieldPart="value"/>      
+   data-mapping   :               </element>                    <element dataType="string" name="valueByLocale">                        <fieldMapping arFieldId="3253" arF
+   data-mapping   : ieldPart="valueByLocale"/>                    </element>                </element>                <element name="f3254_Group2">                    <
+   data-mapping   : element dataType="string" name="value">                        <fieldMapping arFieldId="3254" arFieldPart="value"/>                    </element>    
+   data-mapping   :                 <element dataType="string" name="valueByLocale">                        <fieldMapping arFieldId="3254" arFieldPart="valueByLocale"/>  
+   data-mapping   :                   </element>                </element>                <element name="f3255_ComponentTitle">                    <element dataType="str
+   data-mapping   : ing" name="value">                        <fieldMapping arFieldId="3255" arFieldPart="value"/>                    </element>                    <elem
+   data-mapping   : ent dataType="string" name="valueByLocale">                        <fieldMapping arFieldId="3255" arFieldPart="valueByLocale"/>                    </e
+   data-mapping   : lement>                </element>                <element dataType="string" name="f3257_ParentComponentName">                    <fieldMapping arFiel
+   data-mapping   : dId="3257"/>                </element>                <element dataType="string" name="f3258_Radio_Button_Field">                    <fieldMapping ar
+   data-mapping   : FieldId="3258"/>                </element>                <element dataType="string" name="f325__Location">                    <fieldMapping arFieldI
+   data-mapping   : d="3259"/>                </element>                <element dataType="string" name="f3260_Registered_Module_Name">                    <fieldMapping 
+   data-mapping   : arFieldId="3260"/>                </element>                <element dataType="string" name="f3261_Is_View">                    <fieldMapping arField
+   data-mapping   : Id="3261"/>                </element>                <element dataType="string" name="f3265_Show_In">                    <fieldMapping arFieldId="326
+   data-mapping   : 5"/>                </element>                <element dataType="string" name="f60005_Shared_Settings_Write">                    <fieldMapping arFiel
+   data-mapping   : dId="60005"/>                </element>                <element dataType="string" name="f60006_Shared_Settings_Read">                    <fieldMappin
+   data-mapping   : g arFieldId="60006"/>                </element>                <element dataType="string" name="f60_8__ParentAssigneeGroup">                    <fiel
+   data-mapping   : dMapping arFieldId="60989"/>                </element>                <element dataType="string" name="f61001_Application">                    <field
+   data-mapping   : Mapping arFieldId="61001"/>                </element>                <element dataType="string" name="f61002_ImpactRowVisibility">                   
+   data-mapping   :  <fieldMapping arFieldId="61002"/>                </element>            </element>        </formMapping>    </element></arDocMapping>
+   data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   
+   data           :  <entryItem>        <f1_Request_ID>000000000010028</f1_Request_ID>        <f2_Submitter>ARSERVER</f2_Submitter>        <f3_Create_Date>2018-06-09T13:
+   data           : 36:31+00:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>ARSERVER</f5_Last_Modified_By>        <f6_Modified_D
+   data           : ate>2018-06-09T13:36:31+00:00</f6_Modified_Date>        <f7_Status>Active</f7_Status>        <f8_Short_Description>LogConfig</f8_Short_Description>  
+   data           :       <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f112_Assignee_Group xsi:nil="
+   data           : true"/>        <f17__ComponentGUID>AGGIXIUWC3XSKAOTIBSFOS1WH0ON17</f17__ComponentGUID>        <f37__Record_ID>AGGIXIUWC3XSKAOTIBSFOS1WH0ON17</f37__Rec
+   data           : ord_ID>        <f3200_Component_Name>LogConfig</f3200_Component_Name>        <f3250_ShowInNAVBar>Yes</f3250_ShowInNAVBar>        <f3251_Multiples>No<
+   data           : /f3251_Multiples>        <f3252_ViewToOpen>Common Settings</f3252_ViewToOpen>        <f3253_Group1>            <value>com.example.samplelibrary</valu
+   data           : e>            <valueByLocale>{"en-US":"com.example.samplelibrary"}</valueByLocale>        </f3253_Group1>        <f3254_Group2>            <value/>
+   data           :             <valueByLocale>{"en-US":null}</valueByLocale>        </f3254_Group2>        <f3255_ComponentTitle>            <value>LogConfig</value>  
+   data           :           <valueByLocale>{"en-US":"LogConfig"}</valueByLocale>        </f3255_ComponentTitle>        <f3257_ParentComponentName xsi:nil="true"/>     
+   data           :    <f3258_Radio_Button_Field>In Bundle</f3258_Radio_Button_Field>        <f325__Location xsi:nil="true"/>        <f3260_Registered_Module_Name xsi:nil
+   data           : ="true"/>        <f3261_Is_View>No</f3261_Is_View>        <f3265_Show_In>InnovationStudio</f3265_Show_In>        <f60005_Shared_Settings_Write xsi:ni
+   data           : l="true"/>        <f60006_Shared_Settings_Read xsi:nil="true"/>        <f60_8__ParentAssigneeGroup xsi:nil="true"/>        <f61001_Application>com.ex
+   data           : ample.samplelibrary</f61001_Application>        <f61002_ImpactRowVisibility>None</f61002_ImpactRowVisibility>    </entryItem>    <entryItem>        
+   data           : <f1_Request_ID>000000000010302</f1_Request_ID>        <f2_Submitter>ARSERVER</f2_Submitter>        <f3_Create_Date>2018-08-08T23:49:19+00:00</f3_Creat
+   data           : e_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>ARSERVER</f5_Last_Modified_By>        <f6_Modified_Date>2019-06-06T11:39:
+   data           : 20+00:00</f6_Modified_Date>        <f7_Status>Active</f7_Status>        <f8_Short_Description>Logger Configuration</f8_Short_Description>        <f15
+   data           : _Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f112_Assignee_Group xsi:nil="true"/>  
+   data           :       <f17__ComponentGUID>AGGADG1AANVNMAP3GCG3P2JH0E8S97</f17__ComponentGUID>        <f37__Record_ID>AGGADG1AANVNMAP3GCG3P2JH0E8S97</f37__Record_ID>  
+   data           :       <f3200_Component_Name>Logger Configuration</f3200_Component_Name>        <f3250_ShowInNAVBar>Yes</f3250_ShowInNAVBar>        <f3251_Multiples>No
+   data           : </f3251_Multiples>        <f3252_ViewToOpen>Common Settings</f3252_ViewToOpen>        <f3253_Group1>            <value>Logger Configuration</value> 
+   data           :            <valueByLocale>{"en-US":"Logger Configuration"}</valueByLocale>        </f3253_Group1>        <f3254_Group2>            <value>com.example
+   data           : .samplelibrary</value>            <valueByLocale>{"en-US":"com.example.samplelibrary"}</valueByLocale>        </f3254_Group2>        <f3255_Component
+   data           : Title>            <value>Logger Configuration</value>            <valueByLocale>{"en-US":"Logger Configuration"}</valueByLocale>        </f3255_Compo
+   data           : nentTitle>        <f3257_ParentComponentName xsi:nil="true"/>        <f3258_Radio_Button_Field>In Bundle</f3258_Radio_Button_Field>        <f325__Loc
+   data           : ation xsi:nil="true"/>        <f3260_Registered_Module_Name xsi:nil="true"/>        <f3261_Is_View>No</f3261_Is_View>        <f3265_Show_In>Innovatio
+   data           : nStudio</f3265_Show_In>        <f60005_Shared_Settings_Write xsi:nil="true"/>        <f60006_Shared_Settings_Read xsi:nil="true"/>        <f60_8__Par
+   data           : entAssigneeGroup xsi:nil="true"/>        <f61001_Application>com.example.samplelibrary</f61001_Application>        <f61002_ImpactRowVisibility>None</f
+   data           : 61002_ImpactRowVisibility>    </entryItem>    <entryItem>        <f1_Request_ID>000000000010401</f1_Request_ID>        <f2_Submitter>developer</f2_S
+   data           : ubmitter>        <f3_Create_Date>2018-08-13T21:21:02+00:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>devel
+   data           : oper</f5_Last_Modified_By>        <f6_Modified_Date>2018-08-14T02:00:42+00:00</f6_Modified_Date>        <f7_Status>Active</f7_Status>        <f8_Shor
+   data           : t_Description>bookWorm</f8_Short_Description>        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_L
+   data           : istening>        <f112_Assignee_Group xsi:nil="true"/>        <f17__ComponentGUID>AGGADG1AANVNMAP35ENCP28JDFB1L2</f17__ComponentGUID>        <f37__Re
+   data           : cord_ID>AGGADG1AANVNMAP35ENCP28JDFB1L2</f37__Record_ID>        <f3200_Component_Name>bookWorm</f3200_Component_Name>        <f3250_ShowInNAVBar>Yes</f
+   data           : 3250_ShowInNAVBar>        <f3251_Multiples>No</f3251_Multiples>        <f3252_ViewToOpen>Common Settings</f3252_ViewToOpen>        <f3253_Group1>   
+   data           :          <value>Sample Library</value>            <valueByLocale>{"en-US":"Sample Library"}</valueByLocale>        </f3253_Group1>        <f3254_Grou
+   data           : p2>            <value/>            <valueByLocale>{"en-US":null}</valueByLocale>        </f3254_Group2>        <f3255_ComponentTitle>            <v
+   data           : alue>bookWorm</value>            <valueByLocale>{"en-US":"bookWorm"}</valueByLocale>        </f3255_ComponentTitle>        <f3257_ParentComponentName
+   data           :  xsi:nil="true"/>        <f3258_Radio_Button_Field>In Bundle</f3258_Radio_Button_Field>        <f325__Location xsi:nil="true"/>        <f3260_Registe
+   data           : red_Module_Name xsi:nil="true"/>        <f3261_Is_View>No</f3261_Is_View>        <f3265_Show_In>Both</f3265_Show_In>        <f60005_Shared_Settings_W
+   data           : rite xsi:nil="true"/>        <f60006_Shared_Settings_Read xsi:nil="true"/>        <f60_8__ParentAssigneeGroup xsi:nil="true"/>        <f61001_Applica
+   data           : tion>com.example.samplelibrary</f61001_Application>        <f61002_ImpactRowVisibility>None</f61002_ImpactRowVisibility>    </entryItem></entryList>
+end
+

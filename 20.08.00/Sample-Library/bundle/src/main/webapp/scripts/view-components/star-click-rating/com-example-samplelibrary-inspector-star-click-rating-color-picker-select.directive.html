@@ -1,0 +1,13 @@
+<label ng-class="options.attrs.label.class">
+    <rx-tooltip tooltip="options.tooltip"></rx-tooltip>
+    {{options.label}}:
+</label>
+
+<div class="input-group">
+ <input colorpicker="hex" type="text" ng-model="hexPickerColor"/>
+    <span class="input-group-btn">
+        <button type="button" class="rx-editor-header__button rx-editor-header__button_save rx-editor-header__button_divider-before d-button d-button_primary d-button_small"
+                ng-click="saveColor();"
+                ng-disabled="false">Use Color</button>
+    </span>
+</div>

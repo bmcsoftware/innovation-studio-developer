@@ -1,0 +1,6 @@
+#
+#Wed Feb 03 19:35:37 UTC 2021
+IgnoreRuleExecution=false
+DuplicateDataActionType=MERGE
+Name=com.example.samplelibrary\:dummy associate
+ImportOrder=1

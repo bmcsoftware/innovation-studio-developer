@@ -1,0 +1,18 @@
+/*
+This is the design directive style, here an icon.
+It needs to be imported in the com.example.samplelibrary.scss and com.example.samplelibrary-ext.scss.
+ */
+com-example-samplelibrary-send-list-design {
+  span {
+    font-size: 150px;
+    color: $black;
+    display: block;
+    text-align: center;
+  }
+}
+
+com-example-samplelibrary-send-list {
+  textarea {
+    height: 400px;
+  }
+}

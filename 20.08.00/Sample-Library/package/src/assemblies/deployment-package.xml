@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+
+	<id>deployment-package</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+
+	<fileSets>
+		<fileSet>
+			<outputDirectory></outputDirectory>
+			<directory>${definitionsFileLocation}</directory>
+		</fileSet>
+		<!-- Automation Framework -->
+		<fileSet>
+			<directory>../automation/target</directory>
+			<includes>
+				<include>${rx-sdk.bundleId}-${artifact.version}-automation-tests.jar</include>
+			</includes>
+			<outputDirectory></outputDirectory>
+		</fileSet>	
+		<fileSet>
+			<directory>../automation</directory>
+			<includes>
+				<include>properties.config</include>
+			</includes>
+			<outputDirectory></outputDirectory>
+		</fileSet>		
+		<fileSet>
+			<directory>../automation</directory>
+			<includes>
+				<include>testng.list</include>
+			</includes>
+			<outputDirectory></outputDirectory>
+		</fileSet>	
+	</fileSets>
+	<files>
+		<file>
+			<source>target/${rx-sdk.bundleId}.manifest</source>
+			<outputDirectory></outputDirectory>
+		</file>
+	</files>
+
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory></outputDirectory>
+			<outputFileNameMapping>${rx-sdk.bundleId}-${artifact.version}.${artifact.extension}</outputFileNameMapping>
+			<useProjectArtifact>false</useProjectArtifact>
+			<useTransitiveDependencies>false</useTransitiveDependencies>
+		</dependencySet>
+	</dependencySets>
+
+</assembly>

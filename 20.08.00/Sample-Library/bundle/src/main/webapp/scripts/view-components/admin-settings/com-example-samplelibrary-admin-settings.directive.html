@@ -1,0 +1,23 @@
+<br/>
+<br/>
+<div ng-show="fetchInProgress">
+    Fetch in progress, please wait...
+</div>
+<div ng-hide="fetchInProgress">
+    <p>
+        <h2>Backend:</h2>
+        Getting the value of the setting "preferred author" from Component "bookWorm" from bundle "com.example.samplelibrary":<br/>
+        <b>{{favoriteAuthor}}</b>
+        <br/>
+        Getting the value of the setting "preferred Book" from Component "bookWorm" from bundle "com.example.samplelibrary":<br/>
+        <b>{{favoriteBook}}</b>
+    </p>
+    <p>
+        <h2>UI:</h2>
+        Getting the value of the setting "preferred author" from Component "bookWorm" from bundle "com.example.samplelibrary":<br/>
+        <b>{{uiPreferredAuthor}}</b>
+        <br/>
+        Getting the value of the setting "preferred Book" from Component "bookWorm" from bundle "com.example.samplelibrary":<br/>
+        <b>{{uiPreferredBook}}</b>
+    </p>
+</div>

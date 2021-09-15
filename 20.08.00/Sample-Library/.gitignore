@@ -1,0 +1,26 @@
+# exclude generated or boilerplate files
+# IDEs
+.idea/
+.settings/
+.classpath
+.project
+.p4ignore
+*.iml
+
+# Compiled class files
+*.class
+
+# Target
+bundle/target/ 
+bundle/node_modules/ 
+package/target/
+automation/target/
+ui-automation/target/
+
+# AutoLog and Automation
+automation/AutoLog/
+automation/jgiven-reports/
+automation/test-output/
+ui-automation/AutoLog/
+ui-automation/jgiven-reports/
+ui-automation/test-output/

@@ -1,0 +1,26 @@
+com-example-samplelibrary-webcam-design {
+  span {
+    font-size: 150px;
+    color: $black;
+    display: block;
+    text-align: center;
+  }
+}
+
+com-example-samplelibrary-webcam {
+  .webcam-error-message {
+    text-align: center;
+    vertical-align: middle;
+    color: red;
+  }
+
+  .container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .preview {
+    margin-left: 30px;
+  }
+}
