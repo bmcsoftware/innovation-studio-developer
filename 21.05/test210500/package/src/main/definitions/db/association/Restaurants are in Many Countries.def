@@ -1,0 +1,31 @@
+begin association definition
+   name           : com.example.test210500:Restaurants are in Many Countries
+   definition     : {
+   definition     :   "version" : "1.0-SNAPSHOT",
+   definition     :   "lastUpdateTime" : 1623166668000,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "ARSERVER",
+   definition     :   "name" : "com.example.test210500:Restaurants are in Many Countries",
+   definition     :   "tags" : null,
+   definition     :   "description" : "Restaurants are in Many Countries",
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "developerId" : null,
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "IDGAAC47FY79WAQSHFTTQSHFTTYWZE",
+   definition     :   "nodeAId" : "com.example.test210500:Restaurant",
+   definition     :   "nodeBId" : "com.example.test210500:Country",
+   definition     :   "nodeAName" : "Restaurant",
+   definition     :   "nodeBName" : "Country",
+   definition     :   "shouldCascadeDelete" : false,
+   definition     :   "cardinality" : "MANY_TO_MANY",
+   definition     :   "nodeAKeys" : [ 379 ],
+   definition     :   "nodeBKeys" : [ 379 ],
+   definition     :   "isEnabled" : true,
+   definition     :   "overlayDescriptor" : {
+   definition     :     "parentOverlayGroupId" : null
+   definition     :   },
+   definition     :   "allowOverlay" : false,
+   definition     :   "nodeAModality" : "OPTIONAL"
+   definition     : }
+end

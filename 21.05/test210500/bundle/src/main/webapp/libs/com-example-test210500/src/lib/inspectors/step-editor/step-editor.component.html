@@ -1,0 +1,31 @@
+<div class="form-group">
+  <!--  Handling steps-->
+  <adapt-button btn-type="tertiary" class="px-0 py-0" (click)="openStepEditor()">
+    <adapt-icon name="plus_circle" class="mr-1"></adapt-icon>
+    Edit steps
+  </adapt-button>
+
+  <!--  Information on the list of steps. -->
+  <adapt-empty-state [hidden]="stepList.length > 0" label="No steps created yet." type="config"></adapt-empty-state>
+
+  <!--  Step list-->
+  <ul class="list-unstyled mb-0 mt-2" [hidden]="stepList.length === 0">
+    <li class="border px-2 py-1 mb-1 d-flex align-items-center" *ngFor="let step of stepList">
+      <strong class="mr-auto">{{step.label}}</strong>
+      <button class="d-icon-left-pencil p-1"
+              adapt-button
+              btn-type="tertiary"
+              size="small"
+              type="button"
+              (click)="editStep(step)"
+      ></button>
+      <button class="d-icon-left-cross_adapt p-1"
+              adapt-button
+              btn-type="tertiary"
+              size="small"
+              type="button"
+              (click)="removeStep(step)"
+      ></button>
+    </li>
+  </ul>
+</div>

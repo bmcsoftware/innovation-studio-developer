@@ -1,0 +1,32 @@
+begin schema data
+   name           : com.example.test210500:Country
+   data-mapping   : <?xml version="1.0" encoding="utf-8"?><arDocMapping xmlns="urn:remedy:schemas:ars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"> 
+   data-mapping   :    <element name="entryList">        <formMapping>            <form foreignKeyId="1" formName="com.example.test210500:Country" mapType="embedded" prima
+   data-mapping   : ryKeyId="1"/>            <element name="entryItem">                <element dataType="string" name="f1_Display_ID">                    <fieldMapping a
+   data-mapping   : rFieldId="1"/>                </element>                <element dataType="string" name="f2_Created_By">                    <fieldMapping arFieldId="2
+   data-mapping   : "/>                </element>                <element dataType="dateTime" name="f3_Created_Date">                    <fieldMapping arFieldId="3"/>   
+   data-mapping   :              </element>                <element dataType="string" name="f4_Assignee">                    <fieldMapping arFieldId="4"/>                
+   data-mapping   : </element>                <element dataType="string" name="f5_Modified_By">                    <fieldMapping arFieldId="5"/>                </element>
+   data-mapping   :                 <element dataType="dateTime" name="f6_Modified_Date">                    <fieldMapping arFieldId="6"/>                </element>     
+   data-mapping   :            <element dataType="string" name="f7_Status">                    <fieldMapping arFieldId="7"/>                </element>                <ele
+   data-mapping   : ment dataType="string" name="f8_Country_Name">                    <fieldMapping arFieldId="8"/>                </element>                <element data
+   data-mapping   : Type="string" name="f15_Status_History">                    <fieldMapping arFieldId="15"/>                </element>                <element dataType=
+   data-mapping   : "string" name="f16_Notifier_Listening">                    <fieldMapping arFieldId="16"/>                </element>                <element dataType="
+   data-mapping   : string" name="f37__ID">                    <fieldMapping arFieldId="379"/>                </element>            </element>        </formMapping>    
+   data-mapping   : </element></arDocMapping>
+   data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">    
+   data           : <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-04-26T22:57:
+   data           : 47-04:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-04-26T22:57
+   data           : :47-04:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Country_Name>France</f8_Country_Name>        <f15_Status_History xsi:nil="tr
+   data           : ue"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGAAC47FY79WAQSH2I1QSH2I1ZN1S</f37__ID>    </entryItem> 
+   data           :    <entryItem>        <f1_Display_ID>000000000000002</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-04-26T22:
+   data           : 58:45-04:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-04-26T22
+   data           : :58:45-04:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Country_Name>Germany</f8_Country_Name>        <f15_Status_History xsi:nil
+   data           : ="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGAAC47FY79WAQSH2JXQSH2JXZN8M</f37__ID>    </entryIte
+   data           : m>    <entryItem>        <f1_Display_ID>000000000000003</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-04-26
+   data           : T22:58:49-04:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-04-2
+   data           : 6T22:58:49-04:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Country_Name>Japan</f8_Country_Name>        <f15_Status_History xsi:n
+   data           : il="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGAAC47FY79WAQSH20BQSH20BZN8Y</f37__ID>    </entryI
+   data           : tem></entryList>
+end
+

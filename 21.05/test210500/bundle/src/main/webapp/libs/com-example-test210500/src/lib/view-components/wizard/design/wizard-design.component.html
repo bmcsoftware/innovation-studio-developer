@@ -1,0 +1,10 @@
+<div>
+<!--  LMA:: TODO:: This is a workaround due to several adapt step component defects-->
+<!--  where the steps are still collapsed or cannot be updated.-->
+<!--  We also need to set [readonly]="false" in the html.-->
+  <adapt-steps #adaptStepObject
+               *ngIf="!isLoadingConfiguration"
+               [model]="stepList"
+               [readonly]="false">
+  </adapt-steps>
+</div>

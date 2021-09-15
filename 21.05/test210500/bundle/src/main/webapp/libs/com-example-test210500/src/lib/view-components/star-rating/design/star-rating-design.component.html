@@ -1,0 +1,10 @@
+<adapt-rx-rating
+  [size]="selectedSize"
+  [style]="labelStyle"
+  [classList]="starRatingParameters.cssStyles"
+  [required]="starRatingParameters.isRequired"
+  [readonly]="isReadonly"
+  [label]="starRatingParameters.label"
+  [(ngModel)]="starRatingParameters.defaultNumberOfStars"
+  (onRateChange)="onRateChange($event)">
+</adapt-rx-rating>

@@ -1,0 +1,72 @@
+<!--The following ng-templates are used as popovers / tooltips in adapt-icon below.-->
+<!--They can be used to display some help messages when you click on the icon.-->
+<ng-template #helpMessageBackgroundColor>
+  Please select the background color that will be applied to the text zone on the right.
+</ng-template>
+<ng-template #helpMessageTextColor>
+  Please select the color that will be applied to the text zone on the right.
+</ng-template>
+
+<div class="container flex-padding">
+  <!--Selecting the background color-->
+  <div>
+    <!--We leverage Adapt Color Picker.-->
+    <!--This requires importing the module AdaptColorPickerModule in the component module.-->
+    <!--"form-control-label" is an Adapt class.-->
+    <p class="form-control-label">
+      <!--Here we are using adapt-icon to create a tooltip.-->
+      Select the Background Color <span class="icon-space"></span>
+      <!--We leverage Adapt Icon tag to display an icon to create a tooltip.-->
+      <!--This requires importing the module AdaptIconModule in the component module.-->
+      <!--  Important:-->
+      <!--  AdaptPopoverModule is necessary for AdaptIconModule if we use popover properties in adapt icon-->
+      <!--  like [placement] or [adaptPopover] to display a "tooltip" style message.-->
+      <adapt-icon
+        [name]="'info_circle'"
+        [placement]="'top'"
+        [adaptPopover]="helpMessageBackgroundColor">
+      </adapt-icon>
+    </p>
+    <!--  We are using ngModel so we need to import the FormsModule module.-->
+    <adapt-color-picker [label]="'Pick the background Color'"
+                        [(ngModel)]="backgroundColor"
+                        (onChange)="onBackgroundColorUpdate($event)">
+    </adapt-color-picker>
+
+    <!--Selecting the text color-->
+    <p class="form-control-label">
+      Select the Text Color <span class="icon-space"></span>
+      <adapt-icon
+        [name]="'info_circle'"
+        [placement]="'top'"
+        [adaptPopover]="helpMessageTextColor">
+      </adapt-icon>
+    </p>
+    <adapt-color-picker [label]="'Pick the background Color'"
+                        [(ngModel)]="textColor"
+                        (onChange)="onTextColorUpdate($event)">
+    </adapt-color-picker>
+
+    <!--We leverage Adapt Buttons to match the BMC OOTB objects look & feel.-->
+    <!--This requires importing the module AdaptButtonModule in the component module.-->
+    <button adapt-button btn-type="primary"
+            size="default"
+            (click)="saveColors()">
+      <!--Adding an icon next to the text.-->
+      <span class="d-icon-plus_adapt icon-padding"></span>
+      <span>Save selected color to the User Preference</span>
+    </button>
+  </div>
+
+  <!--  Second column is the text sample-->
+  <div class="text-sample-container flex-padding">
+    <div class="helper">
+      This text will be displayed in the user Preference saved color ({{textColor}}).<br>
+      This background color is the one stored in the user Preference saved color ({{backgroundColor}}).
+    </div>
+    <div [style]="{'backgroundColor': backgroundColor ? backgroundColor : defaultBackgroundColor, 'color': textColor ? textColor : defaultTextColor}"
+         class="lorem-ipsum-formatting">
+      {{sampleText}}
+    </div>
+  </div>
+</div>

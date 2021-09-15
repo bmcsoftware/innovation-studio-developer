@@ -1,0 +1,14 @@
+<adapt-workflow-carousel>
+  <adapt-workflow-carousel-slide *ngFor="let step of defaultSteps; let index = index">
+    <adapt-workflow-step [title]="step.label"
+                         [title-icon]="step.icon"
+                         [type]="step.variant"
+                         [size]="size"
+                         [active]="index === 0"
+    ></adapt-workflow-step>
+  </adapt-workflow-carousel-slide>
+  <adapt-workflow-bar [progress]="progress"
+                      [activeIndex]="0"
+                      [size]="size"
+  ></adapt-workflow-bar>
+</adapt-workflow-carousel>

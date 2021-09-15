@@ -1,0 +1,20 @@
+<button adapt-button btn-type="primary"
+        size="default"
+        (click)="generateRandomData()">
+  <span>Regenerate Data</span>
+</button>
+
+<br>
+<adapt-stacked-chart [ngBusy]="busyConfigSection"
+                     [type]="stackedColChart"
+                     [height]="chartConfig.height"
+                     [header]="chartConfig.header"
+                     [xAxis]="chartConfig.xAxis"
+                     [yAxis]="chartConfig.yAxis"
+                     (clickChart)="onColumnClick($event)"
+                     [legend]="legend"
+                     [series]="chartConfig.series"
+                     [showSlider]="true"
+                     [seriesDisplay]="'horizontal'"
+>
+</adapt-stacked-chart>

@@ -1,0 +1,6 @@
+#
+#Fri Jun 11 03:55:56 EDT 2021
+IgnoreRuleExecution=false
+DuplicateDataActionType=THROW_ERROR
+Name=AppLocalConfigSettingBase
+ImportOrder=null

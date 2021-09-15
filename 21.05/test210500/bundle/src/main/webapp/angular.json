@@ -1,0 +1,279 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "",
+  "projects": {
+    "shell": {
+      "root": "apps/shell/",
+      "sourceRoot": "apps/shell/src",
+      "projectType": "application",
+      "prefix": "rx",
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "style": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "ngx-build-plus:browser",
+          "options": {
+            "progress": false,
+            "outputPath": "dist/apps/shell",
+            "baseHref": "/helix/index.html",
+            "index": "apps/shell/src/index.html",
+            "main": "apps/shell/src/main.ts",
+            "polyfills": "apps/shell/src/polyfills.ts",
+            "tsConfig": "apps/shell/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "apps/shell/src/favicon.ico",
+              "apps/shell/src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/@bmc-ux/adapt-css/src/scss",
+                "output": "assets/sass/theme"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@bmc-ux/adapt-css",
+                "output": "assets/adapt-css"
+              },
+              {
+                "glob": "**/*",
+                "input": "scripts/ckeditor-4.16.0/",
+                "output": "assets/libs/ckeditor/"
+              },
+              {
+                "glob": "**/*",
+                "input": "apps/shell/src/assets/css/ckeditor/skins/",
+                "output": "assets/libs/ckeditor/skins/"
+              },
+              {
+                "glob": "**/*",
+                "input": "apps/shell/src/assets/images/",
+                "output": "assets/libs/ckeditor/plugins/expression-editor/"
+              },
+              {
+                "glob": "**/*",
+                "input": "libs/com-example-test210500/src/lib/assets/pictures/",
+                "output": "assets/libs/test210500/resources/pictures/"
+              },
+              {
+                "glob": "**/*",
+                "input": "libs/com-example-test210500/src/lib/assets/scripts/",
+                "output": "assets/libs/test210500/resources/scripts/"
+              },
+              {
+                "glob": "**/*",
+                "input": "libs/com-example-test210500/src/lib/i18n/",
+                "output": "assets/i18n/"
+              }
+            ],
+            "styles": [
+              "apps/shell/src/styles.scss",
+              "scripts/rappid-3.1.1/rappid.min.css",
+              {
+                "input": "libs/com-example-test210500/src/lib/styles/com-example-test210500.scss",
+                "bundleName": "com-example-test210500"
+              },
+              {
+                "input": "libs/com-example-test210500/src/lib/assets/_global-styles.scss",
+                "bundleName": "com-example-test210500"
+              }
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "styles"
+              ]
+            },
+            "scripts": [
+              "scripts/rxjs-6.6.3/rxjs.umd.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/lodash/lodash.min.js",
+              "node_modules/d3/dist/d3.min.js",
+              "node_modules/backbone/backbone-min.js",
+              "scripts/ckeditor-4.16.0/ckeditor.min.js",
+              "scripts/rappid-3.1.1/rappid.min.js",
+              {
+                "input": "libs/com-example-test210500/src/lib/assets/alert-me.js",
+                "bundleName": "com-example-test210500-asset-scripts"
+              },
+              {
+                "input": "libs/com-example-test210500/src/lib/assets/alert-me2.js",
+                "bundleName": "com-example-test210500-asset-scripts"
+              }
+            ],
+            "extractLicenses": true,
+            "crossOrigin": "use-credentials",
+            "allowedCommonJsDependencies": [
+              "@bmc-ux/adapt-angular",
+              "lodash",
+              "moment-es6",
+              "hammerjs",
+              "bignumber.js",
+              "backbone",
+              "element-resize-detector",
+              "file-saver",
+              "css-element-queries",
+              "ramda",
+              "dagre",
+              "util",
+              "webcola",
+              "@angular/common/locales/zh-Hans",
+              "@angular/common/locales/sv",
+              "@angular/common/locales/ru",
+              "@angular/common/locales/pt",
+              "@angular/common/locales/nl",
+              "@angular/common/locales/nb",
+              "@angular/common/locales/ko",
+              "@angular/common/locales/ja",
+              "@angular/common/locales/it",
+              "@angular/common/locales/fr",
+              "@angular/common/locales/es",
+              "@angular/common/locales/de",
+              "@angular/common/locales/da"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/shell/src/environments/environment.ts",
+                  "with": "apps/shell/src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "apps/shell/src/app/app.module.ts",
+                  "with": "apps/shell/src/app/app.module.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": true,
+              "extractCss": true,
+              "namedChunks": true,
+              "aot": false,
+              "commonChunk": false,
+              "extractLicenses": true,
+              "vendorChunk": true,
+              "buildOptimizer": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "10mb",
+                  "maximumError": "30mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "ngx-build-plus:dev-server",
+          "options": {
+            "browserTarget": "shell:build",
+            "proxyConfig": "proxy.conf.js"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "shell:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "shell:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/shell/tsconfig.app.json",
+              "apps/shell/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/shell/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/shell/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "com-example-test210500": {
+      "projectType": "library",
+      "root": "libs/com-example-test210500",
+      "sourceRoot": "libs/com-example-test210500/src",
+      "prefix": "com.example.test210500",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/com-example-test210500/tsconfig.lib.json",
+            "project": "libs/com-example-test210500/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/com-example-test210500/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/com-example-test210500/tsconfig.lib.json",
+              "libs/com-example-test210500/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/com-example-test210500/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/com-example-test210500/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
+    }
+  },
+  "cli": {
+    "warnings": {
+      "versionMismatch": false
+    },
+    "defaultCollection": "@helix/schematics",
+    "packageManager": "yarn",
+    "analytics": false
+  },
+  "schematics": {
+    "@nrwl/schematics:application": {
+      "style": "scss",
+      "framework": "angular"
+    },
+    "@nrwl/schematics:library": {
+      "style": "scss"
+    },
+    "@nrwl/angular:application": {
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:library": {
+      "unitTestRunner": "jest"
+    }
+  },
+  "defaultProject": "shell"
+}

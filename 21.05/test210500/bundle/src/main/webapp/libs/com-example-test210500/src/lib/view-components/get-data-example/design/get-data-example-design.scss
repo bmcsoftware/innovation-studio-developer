@@ -1,0 +1,9 @@
+// Loading the Adapt styles, here we can use the color code $black.
+@import "~styles/variables";
+
+span {
+  font-size: 150px;
+  color: $black;
+  display: block;
+  text-align: center;
+}

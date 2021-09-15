@@ -1,0 +1,78 @@
+begin schema data
+   name           : AppLocalConfigStorage
+   data-mapping   : <?xml version="1.0" encoding="utf-8"?><arDocMapping xmlns="urn:remedy:schemas:ars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"> 
+   data-mapping   :    <element name="entryList">        <formMapping>            <form foreignKeyId="1" formName="AppLocalConfigStorage" mapType="embedded" primaryKeyId="
+   data-mapping   : 1"/>            <element name="entryItem">                <element dataType="string" name="f1_Request_ID">                    <fieldMapping arFieldId=
+   data-mapping   : "1"/>                </element>                <element dataType="string" name="f2_Submitter">                    <fieldMapping arFieldId="2"/>      
+   data-mapping   :           </element>                <element dataType="dateTime" name="f3_Create_Date">                    <fieldMapping arFieldId="3"/>              
+   data-mapping   :   </element>                <element dataType="string" name="f4_Assigned_To">                    <fieldMapping arFieldId="4"/>                </elemen
+   data-mapping   : t>                <element dataType="string" name="f5_Last_Modified_By">                    <fieldMapping arFieldId="5"/>                </element>  
+   data-mapping   :               <element dataType="dateTime" name="f6_Modified_Date">                    <fieldMapping arFieldId="6"/>                </element>        
+   data-mapping   :         <element dataType="string" name="f7_Status">                    <fieldMapping arFieldId="7"/>                </element>                <elemen
+   data-mapping   : t dataType="string" name="f8_Short_Description">                    <fieldMapping arFieldId="8"/>                </element>                <element da
+   data-mapping   : taType="string" name="f15_Status_History">                    <fieldMapping arFieldId="15"/>                </element>                <element dataTyp
+   data-mapping   : e="string" name="f16_Notifier_Listening">                    <fieldMapping arFieldId="16"/>                </element>                <element dataType
+   data-mapping   : ="string" name="f112_Assignee_Group">                    <fieldMapping arFieldId="112"/>                </element>                <element dataType="s
+   data-mapping   : tring" name="f17__SettingGUID">                    <fieldMapping arFieldId="179"/>                </element>                <element dataType="string"
+   data-mapping   :  name="f37__Record_ID">                    <fieldMapping arFieldId="379"/>                </element>                <element dataType="string" name="f
+   data-mapping   : 3200_Component_Name">                    <fieldMapping arFieldId="3200"/>                </element>                <element dataType="string" name="f3
+   data-mapping   : 204_Setting_Name">                    <fieldMapping arFieldId="3204"/>                </element>                <element dataType="string" name="f3205
+   data-mapping   : _Setting_Value">                    <fieldMapping arFieldId="3205"/>                </element>                <element dataType="string" name="f3206_S
+   data-mapping   : ecure_Data">                    <fieldMapping arFieldId="3206"/>                </element>                <element dataType="string" name="f3257_Paren
+   data-mapping   : tComponentName">                    <fieldMapping arFieldId="3257"/>                </element>                <element dataType="string" name="f3267_O
+   data-mapping   : wnerKeyValue1">                    <fieldMapping arFieldId="3267"/>                </element>                <element dataType="string" name="f3268_Ow
+   data-mapping   : nerKeyValue2">                    <fieldMapping arFieldId="3268"/>                </element>                <element dataType="string" name="f326__Own
+   data-mapping   : erKeyValue3">                    <fieldMapping arFieldId="3269"/>                </element>                <element dataType="string" name="f3270_File
+   data-mapping   : Name">                    <fieldMapping arFieldId="3270"/>                </element>                <element dataType="string" name="f3272_FileType">
+   data-mapping   :                     <fieldMapping arFieldId="3272"/>                </element>                <element dataType="string" name="f60005_Shared_Settings_W
+   data-mapping   : rite">                    <fieldMapping arFieldId="60005"/>                </element>                <element dataType="string" name="f60006_Shared_Se
+   data-mapping   : ttings_Read">                    <fieldMapping arFieldId="60006"/>                </element>                <element dataType="string" name="f60_8__Pa
+   data-mapping   : rentAssigneeGroup">                    <fieldMapping arFieldId="60989"/>                </element>                <element dataType="string" name="f61
+   data-mapping   : 001_Application">                    <fieldMapping arFieldId="61001"/>                </element>            </element>        </formMapping>    </el
+   data-mapping   : ement></arDocMapping>
+   data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">    
+   data           : <entryItem>        <f1_Request_ID>000000000000201</f1_Request_ID>        <f2_Submitter>ARSERVER</f2_Submitter>        <f3_Create_Date>2021-06-08T11:37
+   data           : :41-04:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>ARSERVER</f5_Last_Modified_By>        <f6_Modified_Date
+   data           : >2021-06-08T11:37:53-04:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Short_Description>preferred author</f8_Short_Description>  
+   data           :       <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f112_Assignee_Group>'Demo';</f
+   data           : 112_Assignee_Group>        <f17__SettingGUID>AGGAAC47EV7N9AQUDP2DQUDP2DBQG2</f17__SettingGUID>        <f37__Record_ID>AGGAAC47EV7N9AQUDP2DQUDP2DBQG2</f
+   data           : 37__Record_ID>        <f3200_Component_Name>bookWorm</f3200_Component_Name>        <f3204_Setting_Name>preferred author</f3204_Setting_Name>        <f
+   data           : 3205_Setting_Value>Frank Herbert</f3205_Setting_Value>        <f3206_Secure_Data xsi:nil="true"/>        <f3257_ParentComponentName xsi:nil="true"/>  
+   data           :       <f3267_OwnerKeyValue1>AGGAAC47EV7N9AQUDP2DQUDP2DBQG2</f3267_OwnerKeyValue1>        <f3268_OwnerKeyValue2 xsi:nil="true"/>        <f326__OwnerKeyV
+   data           : alue3 xsi:nil="true"/>        <f3270_FileName xsi:nil="true"/>        <f3272_FileType xsi:nil="true"/>        <f60005_Shared_Settings_Write>'Demo';</f
+   data           : 60005_Shared_Settings_Write>        <f60006_Shared_Settings_Read>'Demo';</f60006_Shared_Settings_Read>        <f60_8__ParentAssigneeGroup/>        <f6
+   data           : 1001_Application>com.example.test210500</f61001_Application>    </entryItem>    <entryItem>        <f1_Request_ID>000000000000202</f1_Request_ID>    
+   data           :     <f2_Submitter>ARSERVER</f2_Submitter>        <f3_Create_Date>2021-06-08T11:37:41-04:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>   
+   data           :      <f5_Last_Modified_By>ARSERVER</f5_Last_Modified_By>        <f6_Modified_Date>2021-06-08T11:37:41-04:00</f6_Modified_Date>        <f7_Status>New</f
+   data           : 7_Status>        <f8_Short_Description>preferred Book</f8_Short_Description>        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listenin
+   data           : g>Not Listening</f16_Notifier_Listening>        <f112_Assignee_Group>'Demo';</f112_Assignee_Group>        <f17__SettingGUID>AGGAAC47EV7N9AQUDP2DQUDP2DB
+   data           : QG4</f17__SettingGUID>        <f37__Record_ID>AGGAAC47EV7N9AQUDP2DQUDP2DBQG4</f37__Record_ID>        <f3200_Component_Name>bookWorm</f3200_Component_Na
+   data           : me>        <f3204_Setting_Name>preferred Book</f3204_Setting_Name>        <f3205_Setting_Value>Dune</f3205_Setting_Value>        <f3206_Secure_Data xs
+   data           : i:nil="true"/>        <f3257_ParentComponentName xsi:nil="true"/>        <f3267_OwnerKeyValue1>AGGAAC47EV7N9AQUDP2DQUDP2DBQG2</f3267_OwnerKeyValue1>  
+   data           :       <f3268_OwnerKeyValue2 xsi:nil="true"/>        <f326__OwnerKeyValue3 xsi:nil="true"/>        <f3270_FileName xsi:nil="true"/>        <f3272_FileT
+   data           : ype xsi:nil="true"/>        <f60005_Shared_Settings_Write>'Demo';</f60005_Shared_Settings_Write>        <f60006_Shared_Settings_Read>'Demo';</f60006_Sh
+   data           : ared_Settings_Read>        <f60_8__ParentAssigneeGroup/>        <f61001_Application>com.example.test210500</f61001_Application>    </entryItem>    <e
+   data           : ntryItem>        <f1_Request_ID>000000000000203</f1_Request_ID>        <f2_Submitter>ARSERVER</f2_Submitter>        <f3_Create_Date>2021-06-08T11:37:4
+   data           : 1-04:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>ARSERVER</f5_Last_Modified_By>        <f6_Modified_Date>2
+   data           : 021-06-08T11:37:53-04:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Short_Description>fileName</f8_Short_Description>        <f15
+   data           : _Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f112_Assignee_Group>'ARSERVER';</f112_As
+   data           : signee_Group>        <f17__SettingGUID>AGGAAC47D0JQ4AQRJZI9QRJZI93O75</f17__SettingGUID>        <f37__Record_ID>AGGAAC47D0JQ4AQRJZI9QRJZI93O75</f37__Re
+   data           : cord_ID>        <f3200_Component_Name>Logger Configuration</f3200_Component_Name>        <f3204_Setting_Name>fileName</f3204_Setting_Name>        <f32
+   data           : 05_Setting_Value>com.example.test210500.log</f3205_Setting_Value>        <f3206_Secure_Data xsi:nil="true"/>        <f3257_ParentComponentName xsi:nil=
+   data           : "true"/>        <f3267_OwnerKeyValue1>AGGAAC47D0JQ4AQRJZI9QRJZI93O75</f3267_OwnerKeyValue1>        <f3268_OwnerKeyValue2 xsi:nil="true"/>        <f326
+   data           : __OwnerKeyValue3 xsi:nil="true"/>        <f3270_FileName xsi:nil="true"/>        <f3272_FileType xsi:nil="true"/>        <f60005_Shared_Settings_Write
+   data           : >'ARSERVER';</f60005_Shared_Settings_Write>        <f60006_Shared_Settings_Read>'ARSERVER';</f60006_Shared_Settings_Read>        <f60_8__ParentAssignee
+   data           : Group/>        <f61001_Application>com.example.test210500</f61001_Application>    </entryItem>    <entryItem>        <f1_Request_ID>000000000000204</
+   data           : f1_Request_ID>        <f2_Submitter>ARSERVER</f2_Submitter>        <f3_Create_Date>2021-06-08T11:37:41-04:00</f3_Create_Date>        <f4_Assigned_To x
+   data           : si:nil="true"/>        <f5_Last_Modified_By>ARSERVER</f5_Last_Modified_By>        <f6_Modified_Date>2021-06-08T11:37:41-04:00</f6_Modified_Date>      
+   data           :   <f7_Status>New</f7_Status>        <f8_Short_Description>level</f8_Short_Description>        <f15_Status_History xsi:nil="true"/>        <f16_Notifie
+   data           : r_Listening>Not Listening</f16_Notifier_Listening>        <f112_Assignee_Group>'ARSERVER';</f112_Assignee_Group>        <f17__SettingGUID>AGGAAC47D0JQ4
+   data           : AQRJZI9QRJZI93O77</f17__SettingGUID>        <f37__Record_ID>AGGAAC47D0JQ4AQRJZI9QRJZI93O77</f37__Record_ID>        <f3200_Component_Name>Logger Configu
+   data           : ration</f3200_Component_Name>        <f3204_Setting_Name>level</f3204_Setting_Name>        <f3205_Setting_Value>5</f3205_Setting_Value>        <f3206_
+   data           : Secure_Data xsi:nil="true"/>        <f3257_ParentComponentName xsi:nil="true"/>        <f3267_OwnerKeyValue1>AGGAAC47D0JQ4AQRJZI9QRJZI93O75</f3267_Owne
+   data           : rKeyValue1>        <f3268_OwnerKeyValue2 xsi:nil="true"/>        <f326__OwnerKeyValue3 xsi:nil="true"/>        <f3270_FileName xsi:nil="true"/>      
+   data           :   <f3272_FileType xsi:nil="true"/>        <f60005_Shared_Settings_Write>'ARSERVER';</f60005_Shared_Settings_Write>        <f60006_Shared_Settings_Read>
+   data           : 'ARSERVER';</f60006_Shared_Settings_Read>        <f60_8__ParentAssigneeGroup/>        <f61001_Application>com.example.test210500</f61001_Application> 
+   data           :    </entryItem></entryList>
+end
+
