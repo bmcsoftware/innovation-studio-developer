@@ -39,7 +39,7 @@ This repository hosts several source code example for Innovation Suite, aiming f
 
 <a name="installation"></a>
 ## Installation (using the zip file):
-You can Just deploy the file "com.example.test210500-1.0-SNAPSHOT.zip" on your development environment.
+You can Just deploy the file "com.example.test210500-1.0-SNAPSHOT.zip" on your development environment.  (The development environment for Angular (21.x) is not yet available on https://developers.bmc.com/site/global/home/index.gsp).  
 https://docs.bmc.com/docs/is2105/deploying-your-digital-service-application-for-the-first-time-to-start-working-in-bmc-helix-innovation-studio-1006302420.html  
 
 
