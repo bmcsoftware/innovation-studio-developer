@@ -12,6 +12,7 @@
 		<developerUserName>developer</developerUserName>
 		<developerPassword>password</developerPassword>
 		<!-- Server name with Jetty port. -->
+		<!-- <webUrl>http://localhost:8008</webUrl> -->
 		<webUrl>https://developerXXXX.innovate.bmc.com</webUrl>
 	  <!-- END: Bundle specific configuration.-->
 
