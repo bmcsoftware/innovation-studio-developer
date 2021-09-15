@@ -24,7 +24,7 @@ History:
 * [Localize your application, Angular and Java code](#localization),
 * [Debug your Process, Rule, Angular or Java code, enable logging](#debugging-logging),
 * [Coding & Naming Guidelines](#coding-naming-guidelines),
-* [Tutorials / Guides](#tutorials-guide),
+* [Tutorials / Guides](#tutorials-guides),
 * [Disclaimer](#disclaimer),
 * [Support](#support),
 * [Links](#links),
