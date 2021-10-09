@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>test210500-all</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+      <!-- START: Bundle specific configuration. Verify and Change as per environment -->
+		<developerUserName>developer</developerUserName>
+		<developerPassword>password</developerPassword>
+		<!-- Server name with Jetty port. -->
+		<webUrl>http://localhost:8008</webUrl>
+		<!--  Decides which overlay mode the SDK calls to server work in. -->
+		<overlayMode>1</overlayMode>
+	  <!-- END: Bundle specific configuration.-->
+
+		<!-- The application will be visible with this name on innovation studio -->
+		<rx-sdk.bundleFriendlyName>Test 21.05.00</rx-sdk.bundleFriendlyName>
+
+		<!-- Comma Separated SchemaDataImportOrder like form1,form2 (fully qualified Form Name)-->
+		<rx-sdk.schemaDataImportOrder></rx-sdk.schemaDataImportOrder>
+
+		<!-- Below are the automatically generated properties.  Should not be changed. -->
+
+		<!-- Bundle common properties -->
+		<rx-sdk.bundleName>test210500</rx-sdk.bundleName>
+		<rx-sdk.bundleId>com.example.test210500</rx-sdk.bundleId>
+		<rx-sdk.bundleDeveloperId>${project.groupId}</rx-sdk.bundleDeveloperId>
+		<rx-sdk.bundleDescription>${project.description}</rx-sdk.bundleDescription>
+		<rx-sdk.bundleDeveloperName>${project.groupId}</rx-sdk.bundleDeveloperName>
+		<rx-sdk.bundleDisplayVersion>${project.version}</rx-sdk.bundleDisplayVersion>
+		<definitionsFileLocation>src/main/definitions</definitionsFileLocation>
+		<forceExport>false</forceExport>
+		<rx-sdk.bundleIsApplication>true</rx-sdk.bundleIsApplication>
+
+    	<!-- Project common Properties -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<javac.version>11</javac.version>
+		<maven-bundle-plugin.version>4.0.0</maven-bundle-plugin.version>
+		<maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
+		<equinox.framework.version>3.10.0-v20140606-1445</equinox.framework.version>
+		<jersey.version>2.29</jersey.version>
+		<jackson.version>2.10.0</jackson.version>
+		<aspectj.version>1.9.1</aspectj.version>
+		<spring.version>5.3.6</spring.version>
+		<servicemix-spring.version>5.3.5_1</servicemix-spring.version>
+		<javax.validation.api.version>2.0.1.Final</javax.validation.api.version>
+		<hibernate-validator.version>6.2.0.Final</hibernate-validator.version>
+		<testng.version>6.9.10</testng.version>
+		<joda-time.version>2.10</joda-time.version>
+		<rx-sdk.groupId>com.bmc.arsys</rx-sdk.groupId>
+		<rx-sdk.version>21.30.00-SNAPSHOT</rx-sdk.version>
+		<servicemix-aspectj.version>1.9.1_1</servicemix-aspectj.version>
+		<maven.compiler.plugin.version>3.8.0</maven.compiler.plugin.version>
+		<aspectj-maven-plugin.version>1.7</aspectj-maven-plugin.version>
+		<aspectj-complianceLevel.version>10</aspectj-complianceLevel.version>
+		<javax.ws.rs.version>2.0.1</javax.ws.rs.version>
+	</properties>
+
+
+<!--START: Sample mvn commands for Bundle Deployment Operations -->
+	<!-- mvn clean install -Pdeploy -->
+	<!-- mvn clean install -Pexport -->
+	<!-- mvn clean install -Pexport -Pdeploy -->
+	<!-- mvn clean install -Plocalization -->
+	<!-- mvn com.bmc.arsys:rx-sdk-maven-plugin:undeploy -N  -->
+	<!-- mvn com.bmc.arsys:rx-sdk-maven-plugin:license -N -DappAuthorType=<Number> BMC 1, Partner 2, Custom 3 -DenforceEndUserLicenses=<true|false> true=Limited licenses , false=Unlimited Licenses -->
+	<!-- Export : output in manifest file: EnforceEndUserLicenseCheck=0 means false & 1 means true -->
+	<!-- Flag -DenforceEndUserLicenses: value=false & appAuthorType=Custom is not a valid combination -->
+<!--END: Sample mvn commands for Bundle Deployment Operations -->
+
+	<modules>
+		<module>bundle</module>
+		<module>package</module>
+	</modules>
+</project>

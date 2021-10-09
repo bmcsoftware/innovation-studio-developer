@@ -1,0 +1,6 @@
+#
+#Sat Oct 09 17:18:18 EDT 2021
+IgnoreRuleExecution=false
+DuplicateDataActionType=MERGE
+Name=com.example.test210500\:Testing Foo
+ImportOrder=5

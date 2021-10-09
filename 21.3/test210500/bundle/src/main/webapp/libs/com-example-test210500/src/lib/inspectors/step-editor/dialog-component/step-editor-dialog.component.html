@@ -1,0 +1,102 @@
+<div class="modal-body">
+  <h3 class="mt-0">{{title}}</h3>
+  <div class="form-group">
+    <button adapt-button btn-type="tertiary" type="button" (click)="addStep()">
+      <span class="d-icon-plus_circle mr-1"></span>
+      Add new step</button>
+  </div>
+
+  <!-- Adapt Empty state when there are no steps to display-->
+  <adapt-empty-state [hidden]="stepList.length > 0 || isLoading"
+                     label="No steps created yet."
+                     type="config"
+  ></adapt-empty-state>
+
+  <!-- Displaying the steps in an Adapt Accordion where we support drag&drop.-->
+  <div class="accordion-wrapper flex-grow-1"
+       *ngIf="!(stepList.length === 0 || isLoading)">
+    <adapt-accordion [multiselect]="true"
+                     cdkDropList
+                     id="selected-step-list"
+                     class="flex-grow-1"
+                     (cdkDropListDropped)="onSelectedStepListDrop($event)">
+      <!-- Looping through the steps-->
+      <div class="selected-step-item"
+           *ngFor="let wizardStep of stepList; let index = index; let first = first; let last = last"
+           cdkDrag
+           cdkDragLockAxis="y"
+           [cdkDragData]="wizardStep">
+        <!-- Drag and drop handle-->
+        <div class="d-icon-left-dots step-drag-handle" cdkDragHandle></div>
+        <!-- Step icon-->
+        <div class="d-icon-{{wizardStep.shortIcon}} container-icon"></div>
+
+        <!-- Each step is display in an accordion tab with an icon on the left of the label (if any).-->
+        <adapt-accordion-tab class="step-list-accordion-tab"
+                             [title]="wizardStep.label"
+                             [multiline]="true"
+                             [isOpen]="wizardStep.isOpen"
+                             (open)="wizardStep.isOpen = true"
+                             (close)="wizardStep.isOpen = false">
+        <!-- Buttons to move up, down and remove a step.-->
+        <span class="card-title-text">
+          <button class="d-icon-angle_up px-3 py-1"
+                  adapt-button btn-type="tertiary"
+                  size="small" type="button"
+                  [disabled]="first"
+                  (click)="$event.stopPropagation(); moveStep(index, index - 1)"></button>
+          <button class="d-icon-angle_down px-3 py-1"
+                  adapt-button btn-type="tertiary"
+                  size="small" type="button"
+                  [disabled]="last"
+                  (click)="$event.stopPropagation(); moveStep(index, index + 1)"></button>
+          <button class="d-icon-left-cross_adapt p-1 pr-4"
+                  adapt-button
+                  size="small"
+                  type="button"
+                  (click)="$event.stopPropagation(); removeStep(wizardStep)">Remove</button>
+        </span>
+
+          <!-- Value (icon, label, sub label)-->
+          <div class="icon-container">
+            <adapt-rx-select [hidden]="iconList.length === 0"
+                             [ngModel]="[wizardStep.shortIcon]"
+                             [options]="iconList"
+                             [label]="'Icon'"
+                             [optionContentTemplate]="iconTemplate"
+                             [enableFilter]="true"
+                             (ngModelChange)="onValueChanged()"
+                             (onSelectionChange)="onIconSelected($event, index)">
+            </adapt-rx-select>
+            <!-- Displaying the selected icon on the right of the dropdown list.-->
+            <div [ngClass]="wizardStep.shortIcon ? 'd-icon-' + wizardStep.shortIcon : ''" class="icon-preview"></div>
+          </div>
+
+          <adapt-rx-textfield [label]="'Label'"
+                              [(ngModel)]="wizardStep.label"
+                              [maxlength]="100"
+                              (ngModelChange)="onValueChanged()"
+          ></adapt-rx-textfield>
+          <adapt-rx-textfield [label]="'Sub label'"
+                              [(ngModel)]="wizardStep.shortLabel"
+                              [maxlength]="100"
+                              (ngModelChange)="onValueChanged()"
+          ></adapt-rx-textfield>
+        </adapt-accordion-tab>
+      </div>
+    </adapt-accordion>
+  </div>
+
+  <div class="modal-footer">
+    <button class="btn btn-primary btn-sm"
+            [disabled]="isSaveButtonDisabled$ | async"
+            (click)="saveValues()">Save</button>
+    <button class="btn btn-secondary btn-sm"
+            (click)="cancel()">Cancel</button>
+  </div>
+</div>
+
+<!-- Template to display the icon-->
+<ng-template #iconTemplate let-option>
+  <span class="big-font d-icon-{{option}}"></span> {{option}}
+</ng-template>

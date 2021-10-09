@@ -1,0 +1,14 @@
+<adapt-workflow-carousel *ngIf="!isConfigurationInProgress">
+  <adapt-workflow-carousel-slide *ngFor="let workflowStep of workflowSteps; let index = index">
+    <adapt-workflow-step [title]="workflowStep.label"
+                         [title-icon]="workflowStep.icon"
+                         [type]="workflowStep.variant"
+                         [size]="size"
+                         [active]="index === 0"
+    ></adapt-workflow-step>
+  </adapt-workflow-carousel-slide>
+  <adapt-workflow-bar [progress]="workflowProgress"
+                      [activeIndex]="activeIndex"
+                      [size]="size"
+  ></adapt-workflow-bar>
+</adapt-workflow-carousel>

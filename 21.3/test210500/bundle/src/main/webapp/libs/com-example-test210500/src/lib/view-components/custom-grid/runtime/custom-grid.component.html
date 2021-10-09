@@ -1,0 +1,26 @@
+<!--Main grid-->
+<rx-record-grid #fruitsRecordGrid [config]="fruitsRecordGridConfig$">
+</rx-record-grid>
+
+<!--Cell templates-->
+<ng-template #guidTemplate let-dataItem="dataItem" let-column="column">
+  <span class="reg-guid">{{dataItem[column.field]}}</span>
+</ng-template>
+
+<ng-template #displayIdTemplate let-dataItem="dataItem" let-column="column">
+  <span class="green-display-id">{{dataItem[column.field]}}</span>
+</ng-template>
+
+<!--Cell template for the custom template piggibacking another guid column-->
+<ng-template #customColumnBasedOnExistingField let-dataItem="dataItem" let-column="column">
+  <button adapt-button btn-type="secondary"
+          size="default"
+          (click)="orderFruitFromCustomField(dataItem)">
+    <span>{{customDataItem(dataItem)}}</span>
+  </button>
+</ng-template>
+
+<!--Cell template for the custom non existing column-->
+<ng-template #nonExistingColumnTemplate let-dataItem="dataItem" let-column="column">
+  <span class="green-display-id">{{getAnimalFromFruit(dataItem, column)}}</span>
+</ng-template>

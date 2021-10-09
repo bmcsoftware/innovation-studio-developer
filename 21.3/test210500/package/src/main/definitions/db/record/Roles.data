@@ -1,0 +1,32 @@
+begin schema data
+   name           : Roles
+   data-mapping   : <?xml version="1.0" encoding="utf-8"?><arDocMapping xmlns="urn:remedy:schemas:ars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"> 
+   data-mapping   :    <element name="entryList">        <formMapping>            <form foreignKeyId="1" formName="Roles" mapType="embedded" primaryKeyId="1"/>           
+   data-mapping   :  <element name="entryItem">                <element dataType="string" name="f1_Request_ID">                    <fieldMapping arFieldId="1"/>          
+   data-mapping   :       </element>                <element dataType="string" name="f2_Submitter">                    <fieldMapping arFieldId="2"/>                </elem
+   data-mapping   : ent>                <element dataType="dateTime" name="f3_Create_Date">                    <fieldMapping arFieldId="3"/>                </element>   
+   data-mapping   :              <element dataType="string" name="f4_Assigned_To">                    <fieldMapping arFieldId="4"/>                </element>             
+   data-mapping   :    <element dataType="string" name="f5_Last_Modified_By">                    <fieldMapping arFieldId="5"/>                </element>                <e
+   data-mapping   : lement dataType="dateTime" name="f6_Modified_Date">                    <fieldMapping arFieldId="6"/>                </element>                <element
+   data-mapping   :  dataType="string" name="f7_Status">                    <fieldMapping arFieldId="7"/>                </element>                <element dataType="stri
+   data-mapping   : ng" name="f8_Short_Description">                    <fieldMapping arFieldId="8"/>                </element>                <element dataType="string" 
+   data-mapping   : name="f15_Status_History">                    <fieldMapping arFieldId="15"/>                </element>                <element dataType="string" name=
+   data-mapping   : "f16_Notifier_Listening">                    <fieldMapping arFieldId="16"/>                </element>                <element dataType="string" name="
+   data-mapping   : f17__Record_Instance_ID">                    <fieldMapping arFieldId="179"/>                </element>                <element dataType="string" name=
+   data-mapping   : "f37__Record_ID">                    <fieldMapping arFieldId="379"/>                </element>                <element dataType="string" name="f1700_A
+   data-mapping   : pplication_Name">                    <fieldMapping arFieldId="1700"/>                </element>                <element dataType="string" name="f1701_
+   data-mapping   : Role_Name">                    <fieldMapping arFieldId="1701"/>                </element>                <element dataType="int" name="f1702_Role_ID">
+   data-mapping   :                     <fieldMapping arFieldId="1702"/>                </element>                <element dataType="string" name="f2001_Test">          
+   data-mapping   :           <fieldMapping arFieldId="2001"/>                </element>                <element dataType="string" name="f2002_Production">               
+   data-mapping   :      <fieldMapping arFieldId="2002"/>                </element>                <element dataType="string" name="f301600300_Datatag">                  
+   data-mapping   :   <fieldMapping arFieldId="301600300"/>                </element>            </element>        </formMapping>    </element></arDocMapping>
+   data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">    
+   data           : <entryItem>        <f1_Request_ID>000000000005932</f1_Request_ID>        <f2_Submitter>ARSERVER</f2_Submitter>        <f3_Create_Date>2021-04-08T22:36
+   data           : :18-04:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>ARSERVER</f5_Last_Modified_By>        <f6_Modified_Date
+   data           : >2021-04-08T22:36:18-04:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Short_Description> </f8_Short_Description>        <f15_Stat
+   data           : us_History/>        <f16_Notifier_Listening xsi:nil="true"/>        <f17__Record_Instance_ID>AGGAAC47D0JQ4AQRJZI8QRJZI83O70</f17__Record_Instance_ID> 
+   data           :        <f37__Record_ID>AGGAAC47D0JQ4AQRJZI8QRJZI83O70</f37__Record_ID>        <f1700_Application_Name>com.example.test210500</f1700_Application_Name>  
+   data           :       <f1701_Role_Name>Event Report Access Role</f1701_Role_Name>        <f1702_Role_ID>-211</f1702_Role_ID>        <f2001_Test xsi:nil="true"/>      
+   data           :   <f2002_Production xsi:nil="true"/>        <f301600300_Datatag xsi:nil="true"/>    </entryItem></entryList>
+end
+

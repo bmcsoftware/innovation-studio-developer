@@ -1,0 +1,103 @@
+begin view definition
+   name           : com.example.test210500:VC Test Debug
+   definition     : {
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1633807889000,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "ARSERVER",
+   definition     :   "name" : "com.example.test210500:VC Test Debug",
+   definition     :   "tags" : null,
+   definition     :   "description" : null,
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "9ac06331-0bf6-4e79-b2bb-896c63e1afad",
+   definition     :   "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"af8cd053-9525-4351-ac4c-33fd1dd3e730\",\"19847685-50ed-4b73-87c6-d5a841d6309c\"]}]}]}",
+   definition     :   "inputParams" : [ ],
+   definition     :   "outputParams" : [ ],
+   definition     :   "componentDefinitions" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1633807889000,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "af8cd053-9525-4351-ac4c-33fd1dd3e730",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "af8cd053-9525-4351-ac4c-33fd1dd3e730",
+   definition     :     "type" : "rx-rich-text",
+   definition     :     "propertiesByName" : {
+   definition     :       "styles" : null,
+   definition     :       "html" : "a3be380b-d16b-45d2-8fbe-a071309450e6",
+   definition     :       "hidden" : "0"
+   definition     :     },
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ],
+   definition     :     "layout" : null,
+   definition     :     "componentDefinitions" : [ ]
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1633807889000,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "19847685-50ed-4b73-87c6-d5a841d6309c",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "19847685-50ed-4b73-87c6-d5a841d6309c",
+   definition     :     "type" : "comExampleTest210500TestDebugComponent",
+   definition     :     "propertiesByName" : {
+   definition     :       "expressionValue" : "\"Foo\"",
+   definition     :       "textValue" : "\"Bar\"",
+   definition     :       "selectValue" : "2",
+   definition     :       "tagsValue" : "test",
+   definition     :       "gradient" : "#f30000|#01aa90",
+   definition     :       "chatbotName" : "BMC Chatbot",
+   definition     :       "textAreaValue" : "\"FooBar\"",
+   definition     :       "viewName" : "com.example.test210500:AC Foo Action",
+   definition     :       "associationName" : "com.example.test210500:Restaurants are in Many Countries",
+   definition     :       "processName" : "com.example.test210500:generate password",
+   definition     :       "recordName" : "com.example.test210500:Country",
+   definition     :       "switchValue" : "true",
+   definition     :       "booleanValue" : "false",
+   definition     :       "numberValue" : "123",
+   definition     :       "colorPickerValue" : "#fa7d00",
+   definition     :       "namedListName" : "com.bmc.arsys.rx.foundation:Application Licenses",
+   definition     :       "Debug" : null
+   definition     :     },
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ]
+   definition     :   } ],
+   definition     :   "permissions" : [ {
+   definition     :     "ownerId" : {
+   definition     :       "value" : 0,
+   definition     :       "type" : "GROUP",
+   definition     :       "name" : "Public"
+   definition     :     },
+   definition     :     "type" : "VISIBLE"
+   definition     :   } ],
+   definition     :   "localizableStringsByComponentId" : null,
+   definition     :   "overlayDescriptor" : {
+   definition     :     "parentOverlayGroupId" : null
+   definition     :   },
+   definition     :   "allowOverlay" : false,
+   definition     :   "type" : "REGULAR",
+   definition     :   "styles" : null,
+   definition     :   "targetViewDefinitionName" : null,
+   definition     :   "targetExtensionContainerGuid" : null
+   definition     : }
+end

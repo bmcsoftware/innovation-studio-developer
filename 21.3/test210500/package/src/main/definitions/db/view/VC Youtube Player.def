@@ -1,0 +1,187 @@
+begin view definition
+   name           : com.example.test210500:VC Youtube Player
+   definition     : {
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1633807888000,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "ARSERVER",
+   definition     :   "name" : "com.example.test210500:VC Youtube Player",
+   definition     :   "tags" : null,
+   definition     :   "description" : null,
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "c7ca017c-4b77-41f8-9ec1-023b9414a963",
+   definition     :   "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"b190e244-c3d3-42a1-85fc-74b22149c36e\",\"bb0b4605-b37c-4bef-9aad-5b3f3b52abd3\",\"1735eda7-ca0b-4cfe-ade4-9daac39d566f\"]}]}]}",
+   definition     :   "inputParams" : [ ],
+   definition     :   "outputParams" : [ ],
+   definition     :   "componentDefinitions" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1633807888000,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "1735eda7-ca0b-4cfe-ade4-9daac39d566f",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "1735eda7-ca0b-4cfe-ade4-9daac39d566f",
+   definition     :     "type" : "rx-container",
+   definition     :     "propertiesByName" : {
+   definition     :       "rowWrap" : "sm",
+   definition     :       "columnCount" : "3",
+   definition     :       "hidden" : "0"
+   definition     :     },
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ],
+   definition     :     "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"7439b753-ff20-4e37-bb78-c8d80ee08ba9\"],\"span\":4},{\"children\":[\"b160d8b7-5e43-44f8-92ca-3ade6f7f30a8\"],\"span\":4},{\"children\":[\"b8d2f100-3e23-4a8e-a300-42cca5f172ba\"],\"span\":4}]}]}",
+   definition     :     "componentDefinitions" : [ {
+   definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :       "lastUpdateTime" : 1633807888000,
+   definition     :       "lastChangedBy" : "ARSERVER",
+   definition     :       "owner" : "ARSERVER",
+   definition     :       "name" : "b8d2f100-3e23-4a8e-a300-42cca5f172ba",
+   definition     :       "tags" : null,
+   definition     :       "description" : null,
+   definition     :       "overlayGroupId" : "1",
+   definition     :       "internal" : false,
+   definition     :       "guid" : "b8d2f100-3e23-4a8e-a300-42cca5f172ba",
+   definition     :       "type" : "comExampleTest210500YoutubePlayer",
+   definition     :       "propertiesByName" : {
+   definition     :         "videoId" : "\"CiXNIjGX1hY\""
+   definition     :       },
+   definition     :       "permissions" : [ {
+   definition     :         "ownerId" : {
+   definition     :           "value" : 0,
+   definition     :           "type" : "GROUP",
+   definition     :           "name" : "Public"
+   definition     :         },
+   definition     :         "type" : "VISIBLE"
+   definition     :       } ]
+   definition     :     }, {
+   definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :       "lastUpdateTime" : 1633807888000,
+   definition     :       "lastChangedBy" : "ARSERVER",
+   definition     :       "owner" : "ARSERVER",
+   definition     :       "name" : "7439b753-ff20-4e37-bb78-c8d80ee08ba9",
+   definition     :       "tags" : null,
+   definition     :       "description" : null,
+   definition     :       "overlayGroupId" : "1",
+   definition     :       "internal" : false,
+   definition     :       "guid" : "7439b753-ff20-4e37-bb78-c8d80ee08ba9",
+   definition     :       "type" : "comExampleTest210500YoutubePlayer",
+   definition     :       "propertiesByName" : {
+   definition     :         "videoId" : "\"y-E7_VHLvkE\""
+   definition     :       },
+   definition     :       "permissions" : [ {
+   definition     :         "ownerId" : {
+   definition     :           "value" : 0,
+   definition     :           "type" : "GROUP",
+   definition     :           "name" : "Public"
+   definition     :         },
+   definition     :         "type" : "VISIBLE"
+   definition     :       } ]
+   definition     :     }, {
+   definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :       "lastUpdateTime" : 1633807888000,
+   definition     :       "lastChangedBy" : "ARSERVER",
+   definition     :       "owner" : "ARSERVER",
+   definition     :       "name" : "b160d8b7-5e43-44f8-92ca-3ade6f7f30a8",
+   definition     :       "tags" : null,
+   definition     :       "description" : null,
+   definition     :       "overlayGroupId" : "1",
+   definition     :       "internal" : false,
+   definition     :       "guid" : "b160d8b7-5e43-44f8-92ca-3ade6f7f30a8",
+   definition     :       "type" : "comExampleTest210500YoutubePlayer",
+   definition     :       "propertiesByName" : {
+   definition     :         "videoId" : "\"dQw4w9WgXcQ\""
+   definition     :       },
+   definition     :       "permissions" : [ {
+   definition     :         "ownerId" : {
+   definition     :           "value" : 0,
+   definition     :           "type" : "GROUP",
+   definition     :           "name" : "Public"
+   definition     :         },
+   definition     :         "type" : "VISIBLE"
+   definition     :       } ]
+   definition     :     } ]
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1633807888000,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "bb0b4605-b37c-4bef-9aad-5b3f3b52abd3",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "bb0b4605-b37c-4bef-9aad-5b3f3b52abd3",
+   definition     :     "type" : "rx-rich-text",
+   definition     :     "propertiesByName" : {
+   definition     :       "styles" : null,
+   definition     :       "html" : "710d3b1d-c9f8-48a6-87af-9b6335c50018",
+   definition     :       "hidden" : "0"
+   definition     :     },
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ],
+   definition     :     "layout" : null,
+   definition     :     "componentDefinitions" : [ ]
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1633807888000,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "b190e244-c3d3-42a1-85fc-74b22149c36e",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "b190e244-c3d3-42a1-85fc-74b22149c36e",
+   definition     :     "type" : "rx-rich-text",
+   definition     :     "propertiesByName" : {
+   definition     :       "styles" : null,
+   definition     :       "html" : "696fea8c-5351-405d-8c3b-377e5e6473f0",
+   definition     :       "hidden" : "0"
+   definition     :     },
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ],
+   definition     :     "layout" : null,
+   definition     :     "componentDefinitions" : [ ]
+   definition     :   } ],
+   definition     :   "permissions" : [ {
+   definition     :     "ownerId" : {
+   definition     :       "value" : 0,
+   definition     :       "type" : "GROUP",
+   definition     :       "name" : "Public"
+   definition     :     },
+   definition     :     "type" : "VISIBLE"
+   definition     :   } ],
+   definition     :   "localizableStringsByComponentId" : null,
+   definition     :   "overlayDescriptor" : {
+   definition     :     "parentOverlayGroupId" : null
+   definition     :   },
+   definition     :   "allowOverlay" : false,
+   definition     :   "type" : "REGULAR",
+   definition     :   "styles" : null,
+   definition     :   "targetViewDefinitionName" : null,
+   definition     :   "targetExtensionContainerGuid" : null
+   definition     : }
+end

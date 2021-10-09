@@ -1,0 +1,11 @@
+@import "~styles/variables";
+
+signature-pad ::ng-deep {
+  canvas {
+    border: 1px solid $gray-300;
+  }
+}
+
+button {
+  margin-right: 10px;
+}

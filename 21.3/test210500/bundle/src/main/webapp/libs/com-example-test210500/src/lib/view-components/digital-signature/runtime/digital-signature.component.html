@@ -1,0 +1,20 @@
+<div>
+  <signature-pad #signaturePad
+                 [options]="signaturePadOptions"
+                 (onBeginEvent)="drawStart()"
+                 (onEndEvent)="drawComplete()">
+  </signature-pad>
+</div>
+
+<div>
+  <button adapt-button btn-type="primary"
+          size="default"
+          (click)="addSignature()">
+    <span>Add signature</span>
+  </button>
+  <button adapt-button btn-type="secondary"
+          size="default"
+          (click)="clearSignature()">
+    <span>Clear signature</span>
+  </button>
+</div>

@@ -1,0 +1,24 @@
+<div class="modal-body">
+  <h3 class="mt-0">{{title}}</h3>
+  <p>
+    {{message}}
+  </p>
+  <div class="form-group">
+    <adapt-rx-control-label [showRequiredLabel]="true"
+                            [label]="'Do you agree to this? Please confirm typing your name and click on the Confirm button:'">
+    </adapt-rx-control-label>
+
+    <adapt-rx-textfield [label]="'Please type your name'"
+                        [(ngModel)]="confirmationText"
+                        [required]="true"
+                        [requiredLabel]="'com.bmc.arsys.rx.standardlib.common.required.label' | translate"
+                        [maxlength]="100"
+    ></adapt-rx-textfield>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary btn-sm"
+            (click)="confirm()" [disabled]="!confirmationText">Confirm</button>
+    <button class="btn btn-secondary btn-sm"
+            (click)="cancel()">Cancel</button>
+  </div>
+</div>

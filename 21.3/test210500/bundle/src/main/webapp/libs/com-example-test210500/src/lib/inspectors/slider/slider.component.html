@@ -1,0 +1,12 @@
+<div class="form-group">
+  <adapt-rx-control-label [showRequiredLabel]="options.required"
+                          [label]="options.label"
+                          [tooltip]="tooltip">
+  </adapt-rx-control-label>
+
+  <adapt-slider [(ngModel)]="value"
+                [min]="options?.minValue"
+                [max]="options?.maxValue"
+                [rangeHorizontal]="true">
+  </adapt-slider>
+</div>

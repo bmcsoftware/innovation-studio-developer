@@ -1,0 +1,12 @@
+<!--Main grid-->
+<rx-record-grid #fruitsRecordGrid [config]="fruitsRecordGridConfig$">
+</rx-record-grid>
+
+<!--Cell template-->
+<ng-template #priceTemplate let-dataItem="dataItem" let-column="column">
+  <button adapt-button btn-type="secondary"
+          size="default"
+          (click)="orderFruitFromPriceField(dataItem)">
+    <span>Order for {{dataItem[column.field]}}</span>
+  </button>
+</ng-template>
