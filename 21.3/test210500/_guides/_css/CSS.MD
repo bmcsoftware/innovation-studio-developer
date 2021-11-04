@@ -112,7 +112,7 @@ In our case:
 > ```
 
 > :memo:  
-> This method is not recommended as can be error prone.  
+> This method is not recommended as can be error-prone.  
 
 > :warning:  
 > To avoid collision with existing classes be sure to respect the [coding and naming guidelines](../_guides/CODING_NAMING_GUIDELINES.MD).

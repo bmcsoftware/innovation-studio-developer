@@ -1,6 +1,7 @@
 # Test 21.05.00 (com.example.test210500)
 History:
 * Version:
+  * 0.5, 2021/11/03, Correcting typos, adding a section on Google Material, correcting the browser logging section, adding additional steps for localization process,
   * 0.4, 2021/09/15, the project is now hosted on BMC Software official Open Source GitHub repository. The license is now BSD 3 (see LICENSE file (https://github.com/bmcsoftware/innovation-studio-developer/blob/main/LICENSE)),
   * 0.3, 2021/06/02, Updating SDK / samples with 2021/06/01 server and SDK,
   * 0.2, 2021/05/20, First list of components done... First cleanup done...
@@ -77,7 +78,25 @@ Here are the steps:
 ## Videos...
 Some videos are available on my YouTube channel (mostly the tutorial for now, examples will be explained at some point):  
 https://www.youtube.com/watch?v=NfVg2tfXhqQ&list=PLKhrzlPY29F-6WOmGILvC0Mu2PScxXNtt&ab_channel=matheolaurent  
+  
+Video content:  
+* Creating an application from Maven Archetype,
+* Global css class,
+* Custom Javascript Action,
+* Custom View Component,
+* Custom Record Field View Component,
+* Leveraging Adapt component,
+* Leveraging external NPM library,
+* Using assets (pictures),
+* Custom Rest Api,
+* Custom Process Activity,
+* Other Java custom objects,
+* Debugging Java code,
 
+Ps:  
+If advertising are playing, those are set by YouTube and not by me.  
+<br>
+  
 <a name="java-objects"></a>
 ## Java Objects:
 [Click here to access the Java object details.](./_details/JAVA.MD)  
@@ -210,6 +229,7 @@ Please refer to this [document](./_guides/CODING_NAMING_GUIDELINES.MD).
 | Star Rating (Field)                 | [Javascript](./_guides/_record-field-view-component/VIEW_COMPONENT.MD)            | Record Field View Component   |
 | Global Css Style                    | [Css](./_guides/_css/CSS.MD)                                                      | Global Css Style |
 | SimpleRest                          | [Java](./_guides/_java-rest-api/REST_API.MD)                                      | Java Rest Api    |
+| Google Material                     | [NPM](./_details/MATERIAL.MD               )                                      | NPM library    |
 
 
 <a name="disclaimer"></a>

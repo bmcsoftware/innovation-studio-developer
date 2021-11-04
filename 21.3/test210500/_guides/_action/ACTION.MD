@@ -81,13 +81,13 @@ yarn run ng g rx-view-action "<action-name>"
 ```
 For example:
 ```bash
-yarn run ng g rx-view-action "launch-url"
+yarn run ng g rx-view-action "confirmation"
 ```
 
 > :memo:  
 > To do a "dry run", which means trying to create the action without actually creating or updating the files, add "--dry-run" at the end of the command line, for example:
 > ```bash
-> yarn run ng g rx-view-action "launch-url" --dry-run
+> yarn run ng g rx-view-action "confirmation" --dry-run
 > ```
 
 > :memo:  

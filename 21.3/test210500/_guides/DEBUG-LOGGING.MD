@@ -289,16 +289,19 @@ Enabling browsing login will allow you to see:
 * [Java](#logs-java) logs,
 * Sql, Api, [Process, Rule](#process-rule) logs,
 
-The log levels and elements to log are defined through parameters added to an existing url using the "debug" query parameter set after "index.html", for example to get "api", "sql" and "info" level client logs:
-```text
-http://192.168.159.135:8008/helix/index.html?debug=api,sql,info#/com.example.test210500/view/com.example.test210500:VC%20Getting%20Record%20Definition%20Data
-```
+In order to see the logs you need to launch the web browser console (hitting F12 for Chrome for example) and set the log level in the Console window, using the object ```rx.logger.setCategories()```.  
+This method accepts an array of type of logs, type ```rx.logger.setCategories()``` to get a list of available values:
+![Get log types](../_details/pictures/log-nothing.png)
+  
+Here for example we set the logs "api" and "sql":
+```rx.logger.setCategories(['api', 'sql'])```
+![Setting Api and SQL](../_details/pictures/log-api-sql.png)
+  
+You can see the type of logs currently being logged typing ```rx.logger.getCategories()```:
+![Getting Log Types](../_details/pictures/log-get.png)
 
-> :memo:  
-> If you desire to see all client logs not depending on the level just use ```?debug``` in the url, such as:
-> ```text
-> http://192.168.159.135:8008/helix/index.html?debug#/com.example.test210500/view/com.example.test210500:VC%20Getting%20Record%20Definition%20Data
-> ```
+In order to reset the log categories, simply use the setCategories() method with an empty array, ```rx.logger.setCategories([])```:
+![Getting Log Types](../_details/pictures/log-set-nothing.png)
 
 > :warning:  
 > Some logs are not accessible to all users. For example server logs will not be displayed for non admin users.

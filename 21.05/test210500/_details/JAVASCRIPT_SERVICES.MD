@@ -146,7 +146,7 @@ src/main/webapp/libs/com-example-test210500/src/lib/services
     ```
 * Complexity: :angel: 
 * Used in the example:
-    * Views: AC Matrix Easter Egg, VC Floating Panel, VC Youtube Player, VC Google Maps, Test Lmame Label View Components and global css pure javascript assets,
+    * Views: AC Matrix Easter Egg, VC Floating Panel, VC YouTube Player, VC Google Maps, Test Lmame Label View Components and global css pure javascript assets,
     * View Components: floating-panel, google-maps, youtube-player, lmame, 
     * Action: matrix,
 * Credits:

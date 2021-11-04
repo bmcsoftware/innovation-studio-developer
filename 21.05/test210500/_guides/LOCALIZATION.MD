@@ -1,7 +1,8 @@
 <h1 style="text-align:center">Localization</h1>
 
 ## Table Of Contents:
-* [Introduction](#introduction)  
+* [Introduction](#introduction)
+* [Important note](#important)
 * [How to leverage localization in your Angular code?](#angular)  
 * [How to leverage localization in your Java code?](#java)  
 * [How to localize your application?](#localize)  
@@ -19,6 +20,49 @@ For example in the [google-maps-component](../_details/JAVASCRIPT_VIEW_COMPONENT
 ![warning-message](../_details/pictures/i18n-warning.png)  
 Once localized in French:
 ![warning-message](../_details/pictures/i18n-warning-fr.png)
+
+
+<a name="important"></a>
+## Important note
+A modification is required in order for the localized strings to be exported properly to the server.  
+Open the file "/package/pom.xml" and change this entry:
+```xml
+<clientStringsFile>${project.basedir}/../bundle/src/main/webapp/resources/i18n/localized-strings.json</clientStringsFile>
+```
+By:
+```xml
+<clientStringsFile>${project.basedir}/../bundle/src/main/webapp/dist/apps/shell/assets/i18n/localized-strings.json</clientStringsFile>
+```
+  
+Open the file "/bundle/src/main/webapp/angular.json" and be sure that this entry is in the "assets" object (of course change the "the-library-name" by the correct name)
+```json
+            "assets": [
+              // ...
+              {
+                "glob": "**/*",
+                "input": "libs/<the-library-name>/src/lib/i18n/",
+                "output": "assets/i18n/"
+              }
+            ]
+```
+
+For example for this application which has the library "com-example-test210500" we would have:  
+```json
+            "assets": [
+              // ...
+              {
+                "glob": "**/*",
+                "input": "libs/com-example-test210500/src/lib/i18n/",
+                "output": "assets/i18n/"
+              }
+            ]
+```
+  
+This will ensure that the file "localized-strings.json" will be copied correctly in the dist folder to be picked up by the pom.xml file.
+
+> :memo:
+![warning-message](../_details/pictures/localization-file.png)
+
 
 
 <a name="angular"></a>
