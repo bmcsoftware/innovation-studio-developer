@@ -70,6 +70,7 @@ yarn run ng g rx-view-component "gradient"
 * [wizard](#wizard),
 * [star-rating](#star-rating),
 * [qr-code-generator](#qr-code-generator),
+* [open-blade](#open-blade),
 
 
 ---
@@ -101,7 +102,7 @@ yarn run ng g rx-view-component "gradient"
 
 > **:warning:**  
 > This example is very simple as the design model implements **IViewDesignerComponentModel** which requires less effort but has more limitation.  
-> In more complex example the desin model will extend and implement different objects, for example for the wizard view component. It is recommended to use this approach:    
+> In more complex example the design model will extend and implement different objects, for example for the wizard view component. It is recommended to use this approach:    
 > ```typescript
 > extends ViewDesignerComponentModel implements IViewDesignerComponentModel<IWizardParameters>
 > ```
@@ -148,7 +149,7 @@ yarn run ng g rx-view-component "gradient"
 
 > **:warning:**  
 > This example is very simple as the design model implements **IViewComponentDesignSandbox** which requires less effort but has more limitation.  
-> In more complex example the desin model will extend and implement different objects, for example for the wizard view component. It is recommended to use this approach:    
+> In more complex example the design model will extend and implement different objects, for example for the wizard view component. It is recommended to use this approach:    
 > ```typescript
 > extends ViewDesignerComponentModel implements IViewDesignerComponentModel<IWizardParameters>
 > ```
@@ -2393,3 +2394,45 @@ yarn run ng g rx-view-component "gradient"
 >    "ngx-kjua": "^1.12.3"
 > }
 >```  
+
+
+---
+
+
+<a name="open-blade"></a>
+### open-blade:
+<details> 
+<summary>open-blade</summary>
+
+![open-blade](./pictures/open-blade.png)  
+</details>
+
+* Description:
+  * This view component shows how to open an Innovation Studio view in a blade, programmatically,
+  * The example in view "VC Open view in blade":
+    * Opens the view "demo view passing two hardcoded view input parameters,
+    * Gets the view output parameter result if the view is closed or detects if the view has been closed using a "act as cancel" action,
+  * Shows how to:
+    * Design Time:
+      * Simple implementation implementing the BMC **IViewDesignerComponentModel**,
+      * Declare one Input parameter which leverages the OOTB inspector **RxDefinitionPickerComponent** with a type **RxDefinitionPickerType.View** to pick a view from the view definition picker,
+    * Runtime:
+      * Implement BMC OOTB **RxOpenViewActionService** service to open the view in a blade, passing view input parameters and getting the view ouput parameter on close,
+* Complexity: :hot_pepper:
+* Used in the example:
+  * View: "VC Open view in blade", it opens the view "demo view",
+
+> **:warning:**  
+> In 21.05 and 21.3 it is necessary to import the module **OpenViewActionModule**, which contains the service **RxOpenViewActionService**, in the view component registration.module.ts file (here open-blade-registration.module.ts). This is done to avoid dependency injection error executing the code after the bundle is deployed and the view component is used.
+> This will not be necessary in future releases.
+> ```typescript
+> import { OpenViewActionModule } from '@helix/platform/view/actions';
+>
+> @NgModule({
+> imports: [OpenBladeDesignModule, OpenBladeModule, OpenViewActionModule]
+> })
+> ```
+> **:memo:**    
+> This dependency injection problem does not happen when the view component runs in debug mode.
+
+---

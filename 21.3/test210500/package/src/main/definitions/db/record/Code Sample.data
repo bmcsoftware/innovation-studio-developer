@@ -17,15 +17,15 @@ begin schema data
    data-mapping   : "f536870_14_language">                    <fieldMapping arFieldId="536870914"/>                </element>            </element>        </formMapping>
    data-mapping   :     </element></arDocMapping>
    data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">    
-   data           : <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-05-03T02:13:
-   data           : 38-04:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-05-03T02:15
-   data           : :58-04:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>NA</f8_Description>        <f15_Status_History xsi:nil="true"/>
+   data           : <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-05-02T23:13:
+   data           : 38-07:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-05-02T23:15
+   data           : :58-07:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>NA</f8_Description>        <f15_Status_History xsi:nil="true"/>
    data           :         <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGAAC47FY79WAQS8P0QQS8P0QYDOI</f37__ID>        <f536870_13_code
    data           : >interface User {  name: string;  id: number;}class UserAccount {  name: string;  id: number;  constructor(name: string, id: number) {    this.
    data           : name = name;    this.id = id;  }}const user: User = new UserAccount('Murphy', 1);</f536870_13_code>        <f536870_14_language>typescript</f536870
    data           : _14_language>    </entryItem>    <entryItem>        <f1_Display_ID>000000000000002</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>       
-   data           :  <f3_Created_Date>2021-05-03T02:17:34-04:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>       
-   data           :  <f6_Modified_Date>2021-05-03T02:17:34-04:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>NA</f8_Description>        <f
+   data           :  <f3_Created_Date>2021-05-02T23:17:34-07:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>       
+   data           :  <f6_Modified_Date>2021-05-02T23:17:34-07:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>NA</f8_Description>        <f
    data           : 15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGAAC47FY79WAQS8P70QS8P70YE6M
    data           : </f37__ID>        <f536870_13_code>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;div {  border: 1px solid black;  margin-top: 100px; 
    data           :  margin-bottom: 100px;  margin-right: 150px;  margin-left: 80px;  background-color: lightblue;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;

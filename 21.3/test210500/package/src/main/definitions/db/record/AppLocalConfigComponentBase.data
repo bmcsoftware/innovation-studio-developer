@@ -40,9 +40,9 @@ begin schema data
    data-mapping   :        </element>                <element dataType="string" name="f61002_ImpactRowVisibility">                    <fieldMapping arFieldId="61002"/>   
    data-mapping   :              </element>            </element>        </formMapping>    </element></arDocMapping>
    data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">    
-   data           : <entryItem>        <f1_Request_ID>000000666002473</f1_Request_ID>        <f2_Submitter>ARSERVER</f2_Submitter>        <f3_Create_Date>2021-04-08T22:36
-   data           : :13-04:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>ARSERVER</f5_Last_Modified_By>        <f6_Modified_Date
-   data           : >2021-04-08T22:36:13-04:00</f6_Modified_Date>        <f7_Status>Active</f7_Status>        <f8_Short_Description>Logger Configuration</f8_Short_Descript
+   data           : <entryItem>        <f1_Request_ID>000000666002473</f1_Request_ID>        <f2_Submitter>ARSERVER</f2_Submitter>        <f3_Create_Date>2021-04-08T19:36
+   data           : :13-07:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>ARSERVER</f5_Last_Modified_By>        <f6_Modified_Date
+   data           : >2021-04-08T19:36:13-07:00</f6_Modified_Date>        <f7_Status>Active</f7_Status>        <f8_Short_Description>Logger Configuration</f8_Short_Descript
    data           : ion>        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f112_Assignee_Group xsi
    data           : :nil="true"/>        <f17__ComponentGUID>AGGAAC47D0JQ4AQRJZI8QRJZI83O72</f17__ComponentGUID>        <f37__Record_ID>AGGAAC47D0JQ4AQRJZI8QRJZI83O72</f37
    data           : __Record_ID>        <f3200_Component_Name>Logger Configuration</f3200_Component_Name>        <f3250_ShowInNAVBar>Yes</f3250_ShowInNAVBar>        <f325
@@ -55,8 +55,8 @@ begin schema data
    data           : ionStudio</f3265_Show_In>        <f60005_Shared_Settings_Write xsi:nil="true"/>        <f60006_Shared_Settings_Read xsi:nil="true"/>        <f60_8__Pa
    data           : rentAssigneeGroup xsi:nil="true"/>        <f61001_Application>com.example.test210500</f61001_Application>        <f61002_ImpactRowVisibility>None</f610
    data           : 02_ImpactRowVisibility>    </entryItem>    <entryItem>        <f1_Request_ID>000000666006870</f1_Request_ID>        <f2_Submitter>Demo</f2_Submitter>
-   data           :         <f3_Create_Date>2021-05-03T18:50:51-04:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>Demo</f5_Last_M
-   data           : odified_By>        <f6_Modified_Date>2021-05-03T18:50:51-04:00</f6_Modified_Date>        <f7_Status>Inactive</f7_Status>        <f8_Short_Description>
+   data           :         <f3_Create_Date>2021-05-03T15:50:51-07:00</f3_Create_Date>        <f4_Assigned_To xsi:nil="true"/>        <f5_Last_Modified_By>Demo</f5_Last_M
+   data           : odified_By>        <f6_Modified_Date>2021-05-03T15:50:51-07:00</f6_Modified_Date>        <f7_Status>Inactive</f7_Status>        <f8_Short_Description>
    data           : bookWorm</f8_Short_Description>        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>     
    data           :    <f112_Assignee_Group xsi:nil="true"/>        <f17__ComponentGUID>AGGAAC47FY79WAQS9Z6RQS9Z6RBDJ5</f17__ComponentGUID>        <f37__Record_ID>AGGAAC47
    data           : FY79WAQS9Z6RQS9Z6RBDJ5</f37__Record_ID>        <f3200_Component_Name>bookWorm</f3200_Component_Name>        <f3250_ShowInNAVBar>Yes</f3250_ShowInNAVBar

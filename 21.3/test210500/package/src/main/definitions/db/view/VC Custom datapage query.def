@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:VC Custom datapage query
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1633807888000,
+   definition     :   "lastUpdateTime" : 1639672312000,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:VC Custom datapage query",
@@ -16,29 +16,8 @@ begin view definition
    definition     :   "inputParams" : [ ],
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
-   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1633807888000,
-   definition     :     "lastChangedBy" : "ARSERVER",
-   definition     :     "owner" : "ARSERVER",
-   definition     :     "name" : "400f8e38-6436-4d30-bbab-865a71c69a87",
-   definition     :     "tags" : null,
-   definition     :     "description" : null,
-   definition     :     "overlayGroupId" : "1",
-   definition     :     "internal" : false,
-   definition     :     "guid" : "400f8e38-6436-4d30-bbab-865a71c69a87",
-   definition     :     "type" : "comExampleTest210500CustomDatapagequery",
-   definition     :     "propertiesByName" : null,
-   definition     :     "permissions" : [ {
-   definition     :       "ownerId" : {
-   definition     :         "value" : 0,
-   definition     :         "type" : "GROUP",
-   definition     :         "name" : "Public"
-   definition     :       },
-   definition     :       "type" : "VISIBLE"
-   definition     :     } ]
-   definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1633807888000,
+   definition     :     "lastUpdateTime" : 1639672312000,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "2f3cab01-08c8-4e7c-b644-3e2a6f5ec348",
@@ -63,6 +42,27 @@ begin view definition
    definition     :     } ],
    definition     :     "layout" : null,
    definition     :     "componentDefinitions" : [ ]
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1639672312000,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "400f8e38-6436-4d30-bbab-865a71c69a87",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "400f8e38-6436-4d30-bbab-865a71c69a87",
+   definition     :     "type" : "comExampleTest210500CustomDatapagequery",
+   definition     :     "propertiesByName" : null,
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ]
    definition     :   } ],
    definition     :   "permissions" : [ {
    definition     :     "ownerId" : {

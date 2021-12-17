@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:TEST Container
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1633807887000,
+   definition     :   "lastUpdateTime" : 1639672311000,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:TEST Container",
@@ -17,7 +17,7 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1633807887000,
+   definition     :     "lastUpdateTime" : 1639672311000,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "92723fbc-1dd7-4bbe-ba92-a8d4e2d2e791",
@@ -44,7 +44,7 @@ begin view definition
    definition     :     "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"86b40fd0-72cc-4fd1-b2d3-f35ff4768c1c\"]}]}]}",
    definition     :     "componentDefinitions" : [ {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1633807887000,
+   definition     :       "lastUpdateTime" : 1639672311000,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "86b40fd0-72cc-4fd1-b2d3-f35ff4768c1c",

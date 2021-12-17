@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:VC iFrame
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1633807889000,
+   definition     :   "lastUpdateTime" : 1639672313000,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:VC iFrame",
@@ -16,37 +16,8 @@ begin view definition
    definition     :   "inputParams" : [ ],
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
-   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1633807889000,
-   definition     :     "lastChangedBy" : "ARSERVER",
-   definition     :     "owner" : "ARSERVER",
-   definition     :     "name" : "b68a9fed-d2a1-483d-aed0-517c51bb343c",
-   definition     :     "tags" : null,
-   definition     :     "description" : null,
-   definition     :     "overlayGroupId" : "1",
-   definition     :     "internal" : false,
-   definition     :     "guid" : "b68a9fed-d2a1-483d-aed0-517c51bb343c",
-   definition     :     "type" : "comExampleTest210500Iframe",
-   definition     :     "propertiesByName" : {
-   definition     :       "sandboxOptions" : "[\"allow-downloads\",\"allow-modals\",\"allow-orientation-lock\",\"allow-pointer-lock\"]",
-   definition     :       "cssClasses" : "rx-default-border",
-   definition     :       "addAllowFromDomain" : "true",
-   definition     :       "sanboxOptions" : "[\"allow-downloads-without-user-activation\",\"allow-forms\",\"allow-modals\"]",
-   definition     :       "cssStyles" : "\"border: 1px solid red;width:100%;height:500px;\"",
-   definition     :       "url" : "\"/helix/index.html#/com.example.test210500/iview/com.example.test210500:VC%20Gradient\"",
-   definition     :       "Debug" : null
-   definition     :     },
-   definition     :     "permissions" : [ {
-   definition     :       "ownerId" : {
-   definition     :         "value" : 0,
-   definition     :         "type" : "GROUP",
-   definition     :         "name" : "Public"
-   definition     :       },
-   definition     :       "type" : "VISIBLE"
-   definition     :     } ]
-   definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1633807889000,
+   definition     :     "lastUpdateTime" : 1639672313000,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "54724652-af6f-412e-9740-b120cbc316c8",
@@ -73,7 +44,7 @@ begin view definition
    definition     :     "componentDefinitions" : [ ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1633807889000,
+   definition     :     "lastUpdateTime" : 1639672313000,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "acb10615-f1c6-4311-bcf8-ec2b88ccc000",
@@ -89,6 +60,35 @@ begin view definition
    definition     :       "cssClasses" : "",
    definition     :       "url" : "\"https://en.wikipedia.org/wiki/The_Cranberries\"",
    definition     :       "addAllowFromDomain" : "false"
+   definition     :     },
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ]
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1639672313000,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "b68a9fed-d2a1-483d-aed0-517c51bb343c",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "b68a9fed-d2a1-483d-aed0-517c51bb343c",
+   definition     :     "type" : "comExampleTest210500Iframe",
+   definition     :     "propertiesByName" : {
+   definition     :       "sandboxOptions" : "[\"allow-downloads\",\"allow-modals\",\"allow-orientation-lock\",\"allow-pointer-lock\"]",
+   definition     :       "cssClasses" : "rx-default-border",
+   definition     :       "addAllowFromDomain" : "true",
+   definition     :       "sanboxOptions" : "[\"allow-downloads-without-user-activation\",\"allow-forms\",\"allow-modals\"]",
+   definition     :       "cssStyles" : "\"border: 1px solid red;width:100%;height:500px;\"",
+   definition     :       "url" : "\"/helix/index.html#/com.example.test210500/iview/com.example.test210500:VC%20Gradient\"",
+   definition     :       "Debug" : null
    definition     :     },
    definition     :     "permissions" : [ {
    definition     :       "ownerId" : {

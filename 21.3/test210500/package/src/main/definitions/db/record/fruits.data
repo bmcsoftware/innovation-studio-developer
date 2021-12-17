@@ -17,18 +17,18 @@ begin schema data
    data-mapping   : 6870_14_Price">                    <fieldMapping arFieldId="536870914"/>                </element>            </element>        </formMapping>    </
    data-mapping   : element></arDocMapping>
    data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">    
-   data           : <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-05-01T17:25:
-   data           : 48-04:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-05-16T18:01
-   data           : :32-04:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>NA</f8_Description>        <f15_Status_History xsi:nil="true"/>
+   data           : <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-05-01T14:25:
+   data           : 48-07:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-05-16T15:01
+   data           : :32-07:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>NA</f8_Description>        <f15_Status_History xsi:nil="true"/>
    data           :         <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGAAC47FY79WAQS6GHAQS6GHAXFW2</f37__ID>        <f536870_13_frui
    data           : t>banana</f536870_13_fruit>        <f536870_14_Price>5</f536870_14_Price>    </entryItem>    <entryItem>        <f1_Display_ID>000000000000002</f1_Di
-   data           : splay_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-05-01T17:25:53-04:00</f3_Created_Date>        <f4_Assignee xsi:nil="
-   data           : true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-05-16T18:01:37-04:00</f6_Modified_Date>        <f7_Status>New</f7_S
+   data           : splay_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-05-01T14:25:53-07:00</f3_Created_Date>        <f4_Assignee xsi:nil="
+   data           : true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-05-16T15:01:37-07:00</f6_Modified_Date>        <f7_Status>New</f7_S
    data           : tatus>        <f8_Description>NA</f8_Description>        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifi
    data           : er_Listening>        <f37__ID>AGGAAC47FY79WAQS6GHFQS6GHFXFXN</f37__ID>        <f536870_13_fruit>apple</f536870_13_fruit>        <f536870_14_Price>10</
    data           : f536870_14_Price>    </entryItem>    <entryItem>        <f1_Display_ID>000000000000003</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>   
-   data           :      <f3_Created_Date>2021-05-01T17:26:01-04:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>   
-   data           :      <f6_Modified_Date>2021-05-16T18:01:42-04:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>NA</f8_Description>      
+   data           :      <f3_Created_Date>2021-05-01T14:26:01-07:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>   
+   data           :      <f6_Modified_Date>2021-05-16T15:01:42-07:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>NA</f8_Description>      
    data           :   <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGAAC47FY79WAQS6GH3QS6GH3
    data           : XFYQ</f37__ID>        <f536870_13_fruit>watermelon</f536870_13_fruit>        <f536870_14_Price>15</f536870_14_Price>    </entryItem></entryList>
 end

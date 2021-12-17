@@ -19,20 +19,20 @@ begin schema data
    data-mapping   : ment dataType="string" name="f536870_16_test_boolean">                    <fieldMapping arFieldId="536870916"/>                </element>            <
    data-mapping   : /element>        </formMapping>    </element></arDocMapping>
    data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">    
-   data           : <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-04-22T21:47:
-   data           : 38-04:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-04-24T14:38
-   data           : :15-04:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>NA</f8_Description>        <f15_Status_History xsi:nil="true"/>
+   data           : <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-04-22T18:47:
+   data           : 38-07:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-04-24T11:38
+   data           : :15-07:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>NA</f8_Description>        <f15_Status_History xsi:nil="true"/>
    data           :         <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGAAC47FY79WAQRZU14QRZU14345X</f37__ID>        <f536870_13_Disa
    data           : ble_Star_Rating>false</f536870_13_Disable_Star_Rating>        <f536870_14_Hide_Star_Rating>false</f536870_14_Hide_Star_Rating>        <f536870_15_Ratin
    data           : g>2.00</f536870_15_Rating>        <f536870_16_test_boolean>true</f536870_16_test_boolean>    </entryItem>    <entryItem>        <f1_Display_ID>000000
-   data           : 000000101</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-04-24T14:38:24-04:00</f3_Created_Date>        <f4_As
-   data           : signee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-04-24T14:38:24-04:00</f6_Modified_Date>        <f7_
+   data           : 000000101</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-04-24T11:38:24-07:00</f3_Created_Date>        <f4_As
+   data           : signee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-04-24T11:38:24-07:00</f6_Modified_Date>        <f7_
    data           : Status>New</f7_Status>        <f8_Description>NA</f8_Description>        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Liste
    data           : ning</f16_Notifier_Listening>        <f37__ID>AGGAAC47FY79WAQSCZSAQSCZSAX0RF</f37__ID>        <f536870_13_Disable_Star_Rating>false</f536870_13_Disable
    data           : _Star_Rating>        <f536870_14_Hide_Star_Rating>false</f536870_14_Hide_Star_Rating>        <f536870_15_Rating>5.00</f536870_15_Rating>        <f5368
    data           : 70_16_test_boolean xsi:nil="true"/>    </entryItem>    <entryItem>        <f1_Display_ID>000000000000102</f1_Display_ID>        <f2_Created_By>Demo</
-   data           : f2_Created_By>        <f3_Created_Date>2021-04-24T16:13:13-04:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f
-   data           : 5_Modified_By>        <f6_Modified_Date>2021-04-24T16:39:30-04:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>fefe</f8
+   data           : f2_Created_By>        <f3_Created_Date>2021-04-24T13:13:13-07:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f
+   data           : 5_Modified_By>        <f6_Modified_Date>2021-04-24T13:39:30-07:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>fefe</f8
    data           : _Description>        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGAAC
    data           : 47FY79WAQSDEGBQSDEGBXSMB</f37__ID>        <f536870_13_Disable_Star_Rating>false</f536870_13_Disable_Star_Rating>        <f536870_14_Hide_Star_Rating>fa
    data           : lse</f536870_14_Hide_Star_Rating>        <f536870_15_Rating>4.00</f536870_15_Rating>        <f536870_16_test_boolean xsi:nil="true"/>    </entryItem>

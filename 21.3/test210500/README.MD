@@ -1,6 +1,7 @@
 # Test 21.05.00 (com.example.test210500)
 History:
 * Version:
+  * 0.7, 2021/12/06, Correcting typos, adding an example on how to open a view in a blade programmatically (open-blade), adding entry for the QR Code scanner example which was missing,
   * 0.6, 2021/11/03, Correcting typos, adding a section on Google Material, correcting the browser logging section, adding additional steps for localization process,
   * 0.5, 2021/10/09, Updating SDK with 21.3.00 SDK,
   * 0.4, 2021/09/15, the project is now hosted on BMC Software official Open Source GitHub repository. The license is now BSD 3 (see LICENSE file (https://github.com/bmcsoftware/innovation-studio-developer/blob/main/LICENSE)),
@@ -149,36 +150,37 @@ If advertising are playing, those are set by YouTube and not by me.
 ## Javascript Standalone View Components:
 [Click here to access the Javascript View Components details.](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD)  
 
-| Name                            | Language                                                                | Type             | Complexity                |
-| :---                            |    :----                                                                |    :----         |            :---           |
-| label                           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#label)            | View Component   | :hot_pepper:              |
-| lmame                           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#lmame)            | View Component   | :hot_pepper:              |
-| code-viewer                     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#code-viewer)      | View Component   | :hot_pepper:              |
-| iframe                          | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#iframe)           | View Component   | :hot_pepper: :hot_pepper: |
-| display-gradient                | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#display-gradient) | View Component   | :hot_pepper:              |
-| generate-password               | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#generate-password)| View Component   | :hot_pepper: :hot_pepper: |
-| youtube-player                  | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#youtube-player)   | View Component   | :hot_pepper: :hot_pepper: |
-| google-maps-component           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#google-maps-component)| View Component   | :hot_pepper: :hot_pepper: |
-| bar-chart-component             | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#bar-chart-component)  | View Component   | :hot_pepper:          |
-| call-command                    | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#call-command)     | View Component   | :hot_pepper:              |
-| call-process                    | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#call-process)     | View Component   | :hot_pepper: :hot_pepper: |
-| webcam                          | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#webcam)           | View Component   | :hot_pepper: :hot_pepper: |
-| qr-code-scanner                 | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#qr-code-scanner)  | View Component   | :hot_pepper: :hot_pepper: |
-| digital-signature               | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#digital-signature)| View Component   | :hot_pepper:              |
-| get-data-example                | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#get-data-example) | View Component   | :hot_pepper:              |
-| list-icons                      | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#list-icons)       | View Component   | :hot_pepper:              |
-| user-preferences                | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#user-preferences) | View Component   | :hot_pepper:              |
-| admin-preferences               | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#admin-preferences)| View Component   | :hot_pepper: :hot_pepper: |
-| captcha                         | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#captcha)          | View Component   | :hot_pepper:              |
-| access-grid                     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#access-grid)      | View Component   | :hot_pepper: :hot_pepper: |
-| floating-panel                  | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#floating-panel)   | View Component   | :hot_pepper:              |
-| test-debug-component            | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#test-debug-component) | View Component  | :hot_pepper:              |
-| custom-datapagequery            | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#custom-datapagequery) | View Component  | :hot_pepper: :hot_pepper: |
-| custom-grid                     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#custom-grid)      | View Component   | :hot_pepper: :hot_pepper: |
-| lifecycle                       | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#lifecycle)        | View Component   | :hot_pepper: :hot_pepper: :hot_pepper: |
-| wizard                          | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#wizard)           | View Component   | :hot_pepper:              |
-| star-rating                     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#star-rating)      | View Component   | :hot_pepper: :hot_pepper: |
-| qr-code-generator               | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#qr-code-generator)    | View Component   | :hot_pepper: :hot_pepper: |
+| Name                  | Language                                                                     | Type             | Complexity               |
+|:----------------------|:-----------------------------------------------------------------------------|    :----         |            :---           |
+| label                 | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#label)                 | View Component   | :hot_pepper:             |
+| lmame                 | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#lmame)                 | View Component   | :hot_pepper:             |
+| code-viewer           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#code-viewer)           | View Component   | :hot_pepper:             |
+| iframe                | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#iframe)                | View Component   | :hot_pepper: :hot_pepper: |
+| display-gradient      | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#display-gradient)      | View Component   | :hot_pepper:             |
+| generate-password     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#generate-password)     | View Component   | :hot_pepper: :hot_pepper: |
+| youtube-player        | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#youtube-player)        | View Component   | :hot_pepper: :hot_pepper: |
+| google-maps-component | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#google-maps-component) | View Component   | :hot_pepper: :hot_pepper: |
+| bar-chart-component   | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#bar-chart-component)   | View Component   | :hot_pepper:         |
+| call-command          | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#call-command)          | View Component   | :hot_pepper:             |
+| call-process          | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#call-process)          | View Component   | :hot_pepper: :hot_pepper: |
+| webcam                | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#webcam)                | View Component   | :hot_pepper: :hot_pepper: |
+| qr-code-scanner       | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#qr-code-scanner)       | View Component   | :hot_pepper: :hot_pepper: |
+| digital-signature     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#digital-signature)     | View Component   | :hot_pepper:             |
+| get-data-example      | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#get-data-example)      | View Component   | :hot_pepper:             |
+| list-icons            | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#list-icons)            | View Component   | :hot_pepper:             |
+| user-preferences      | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#user-preferences)      | View Component   | :hot_pepper:             |
+| admin-preferences     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#admin-preferences)     | View Component   | :hot_pepper: :hot_pepper: |
+| captcha               | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#captcha)               | View Component   | :hot_pepper:             |
+| access-grid           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#access-grid)           | View Component   | :hot_pepper: :hot_pepper: |
+| floating-panel        | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#floating-panel)        | View Component   | :hot_pepper:             |
+| test-debug-component  | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#test-debug-component)  | View Component  | :hot_pepper:             |
+| custom-datapagequery  | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#custom-datapagequery)  | View Component  | :hot_pepper: :hot_pepper: |
+| custom-grid           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#custom-grid)           | View Component   | :hot_pepper: :hot_pepper: |
+| lifecycle             | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#lifecycle)             | View Component   | :hot_pepper: :hot_pepper: :hot_pepper: |
+| wizard                | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#wizard)                | View Component   | :hot_pepper:             |
+| star-rating           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#star-rating)           | View Component   | :hot_pepper: :hot_pepper: |
+| qr-code-generator     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#qr-code-generator)     | View Component   | :hot_pepper: :hot_pepper: |
+| open-blade            | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#open-blade)            | View Component   | :hot_pepper: |
 
 
 <a name="javascript-utility-services"></a>

@@ -10,7 +10,7 @@ export class LifecycleRegistrationModule {
   constructor(
     private rxViewComponentRegistryService: RxViewComponentRegistryService,
     private componentFactoryResolver: ComponentFactoryResolver
-  ) {3
+  ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500Lifecycle',
       name: 'lifecycle',

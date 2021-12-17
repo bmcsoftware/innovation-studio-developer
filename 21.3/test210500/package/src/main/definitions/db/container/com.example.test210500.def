@@ -1,8 +1,8 @@
 begin container
    name           : com.example.test210500
    type           : 2
-   num-references : 234
-   timestamp      : 1633809368
+   num-references : 240
+   timestamp      : 1639685720
    owner          : com.example
    last-changed   : ARSERVER
    export-version : 12
@@ -620,7 +620,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\35\com.example.test210500:VC LifeCycle\
+   value          : 4\39\com.example.test210500:BMC Modern Shell\
 }
 reference {
    type           : 32839
@@ -635,7 +635,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\39\com.example.test210500:BMC Modern Shell\
+   value          : 4\35\com.example.test210500:VC LifeCycle\
 }
 reference {
    type           : 32839
@@ -875,7 +875,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\38\com.example.test210500:AC Confirmation\
+   value          : 4\66\com.example.test210500:VC star rating as standalone view component\
 }
 reference {
    type           : 32839
@@ -905,7 +905,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\66\com.example.test210500:VC star rating as standalone view component\
+   value          : 4\38\com.example.test210500:AC Confirmation\
 }
 reference {
    type           : 32839
@@ -920,7 +920,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\40\com.example.test210500:VC Floating Panel\
+   value          : 4\35\com.example.test210500:VC Icon List\
 }
 reference {
    type           : 32839
@@ -950,7 +950,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\35\com.example.test210500:VC Icon List\
+   value          : 4\40\com.example.test210500:VC Floating Panel\
 }
 reference {
    type           : 32839
@@ -995,21 +995,6 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\37\com.example.test210500:VC Google Maps\
-}
-reference {
-   type           : 32839
-   datatype       : 1
-   value          : 2\2\
-}
-reference {
-   type           : 32849
-   datatype       : 1
-   value          : 0\
-}
-reference {
-   type           : 16
-   datatype       : 1
    value          : 4\38\com.example.test210500:Create New Data\
 }
 reference {
@@ -1025,7 +1010,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\43\com.example.test210500:VC Digital signature\
+   value          : 4\37\com.example.test210500:VC Google Maps\
 }
 reference {
    type           : 32839
@@ -1041,6 +1026,21 @@ reference {
    type           : 16
    datatype       : 1
    value          : 4\32\com.example.test210500:VC Wizard\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\43\com.example.test210500:VC Digital signature\
 }
 reference {
    type           : 32839
@@ -1085,7 +1085,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\32\com.example.test210500:VC iFrame\
+   value          : 4\93\com.example.test210500:Test Lmame Label View Components and global css pure javascript assets\
 }
 reference {
    type           : 32839
@@ -1100,7 +1100,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\93\com.example.test210500:Test Lmame Label View Components and global css pure javascript assets\
+   value          : 4\32\com.example.test210500:VC iFrame\
 }
 reference {
    type           : 32839
@@ -1130,7 +1130,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\41\com.example.test210500:ADM Create Country\
+   value          : 4\40\com.example.test210500:VC Accessing grid\
 }
 reference {
    type           : 32839
@@ -1145,7 +1145,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\40\com.example.test210500:VC Accessing grid\
+   value          : 4\41\com.example.test210500:ADM Create Country\
 }
 reference {
    type           : 32839
@@ -1176,5 +1176,35 @@ reference {
    type           : 16
    datatype       : 1
    value          : 4\36\com.example.test210500:VC Test Debug\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\44\com.example.test210500:VC Open view in blade\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\32\com.example.test210500:demo view\
 }
 end

@@ -39,6 +39,7 @@ import { CallCommandRegistrationModule } from './view-components/call-command/ca
 import { CustomDatapagequeryRegistrationModule } from './view-components/custom-datapagequery/custom-datapagequery-registration.module';
 import { DigitalSignatureRegistrationModule } from './view-components/digital-signature/digital-signature-registration.module';
 import { ComExampleTest210500GlobalLoadModule } from './global-load/global-load.module';
+import { OpenBladeRegistrationModule } from './view-components/open-blade/open-blade-registration.module';
 
 // We declare here the custom view component and action Registration Modules.
 // Those registration Modules take care of the view component / action
@@ -75,6 +76,7 @@ import { ComExampleTest210500GlobalLoadModule } from './global-load/global-load.
     CallCommandRegistrationModule,
     CustomDatapagequeryRegistrationModule,
     DigitalSignatureRegistrationModule,
+    OpenBladeRegistrationModule,
     // Custom Actions.
     GetUserInformationActionModule,
     NotificationActionModule,
@@ -84,7 +86,7 @@ import { ComExampleTest210500GlobalLoadModule } from './global-load/global-load.
     FruitPickerActionModule,
     ConfirmationOotbActionModule,
     AdminPreferencesRegistrationModule,
-    // Gloabal Load
+    // Global Load
     ComExampleTest210500GlobalLoadModule
   ]
 })

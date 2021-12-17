@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:AC Fruits
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1633807888000,
+   definition     :   "lastUpdateTime" : 1639672311000,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:AC Fruits",
@@ -17,7 +17,7 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1633807888000,
+   definition     :     "lastUpdateTime" : 1639672311000,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "8783a5a0-a59c-4897-b6b0-90d409f9a0a8",
@@ -42,7 +42,7 @@ begin view definition
    definition     :     "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"ed2a192e-ac0a-4ab2-bdcd-3cd4315a9129\"]}]}]}",
    definition     :     "componentDefinitions" : [ {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1633807888000,
+   definition     :       "lastUpdateTime" : 1639672311000,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "ed2a192e-ac0a-4ab2-bdcd-3cd4315a9129",
@@ -68,34 +68,7 @@ begin view definition
    definition     :       "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"588d79ff-8900-48a2-93b7-0e876fb360c5\"],\"span\":4},{\"children\":[\"84d8ee1e-4f0b-4693-aafd-aa8988aa8390\"],\"span\":4},{\"span\":4,\"children\":[]}]}]}",
    definition     :       "componentDefinitions" : [ {
    definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :         "lastUpdateTime" : 1633807888000,
-   definition     :         "lastChangedBy" : "ARSERVER",
-   definition     :         "owner" : "ARSERVER",
-   definition     :         "name" : "588d79ff-8900-48a2-93b7-0e876fb360c5",
-   definition     :         "tags" : null,
-   definition     :         "description" : null,
-   definition     :         "overlayGroupId" : "1",
-   definition     :         "internal" : false,
-   definition     :         "guid" : "588d79ff-8900-48a2-93b7-0e876fb360c5",
-   definition     :         "type" : "rx-character-field",
-   definition     :         "propertiesByName" : {
-   definition     :           "disabled" : "0",
-   definition     :           "label" : "0c2074e7-94ee-4bd8-b1a7-d78c32c012d3",
-   definition     :           "hidden" : "0",
-   definition     :           "value" : null,
-   definition     :           "fieldId" : "536870913"
-   definition     :         },
-   definition     :         "permissions" : [ {
-   definition     :           "ownerId" : {
-   definition     :             "value" : 0,
-   definition     :             "type" : "GROUP",
-   definition     :             "name" : "Public"
-   definition     :           },
-   definition     :           "type" : "VISIBLE"
-   definition     :         } ]
-   definition     :       }, {
-   definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :         "lastUpdateTime" : 1633807888000,
+   definition     :         "lastUpdateTime" : 1639672311000,
    definition     :         "lastChangedBy" : "ARSERVER",
    definition     :         "owner" : "ARSERVER",
    definition     :         "name" : "84d8ee1e-4f0b-4693-aafd-aa8988aa8390",
@@ -120,11 +93,38 @@ begin view definition
    definition     :           },
    definition     :           "type" : "VISIBLE"
    definition     :         } ]
+   definition     :       }, {
+   definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :         "lastUpdateTime" : 1639672311000,
+   definition     :         "lastChangedBy" : "ARSERVER",
+   definition     :         "owner" : "ARSERVER",
+   definition     :         "name" : "588d79ff-8900-48a2-93b7-0e876fb360c5",
+   definition     :         "tags" : null,
+   definition     :         "description" : null,
+   definition     :         "overlayGroupId" : "1",
+   definition     :         "internal" : false,
+   definition     :         "guid" : "588d79ff-8900-48a2-93b7-0e876fb360c5",
+   definition     :         "type" : "rx-character-field",
+   definition     :         "propertiesByName" : {
+   definition     :           "disabled" : "0",
+   definition     :           "label" : "0c2074e7-94ee-4bd8-b1a7-d78c32c012d3",
+   definition     :           "hidden" : "0",
+   definition     :           "value" : null,
+   definition     :           "fieldId" : "536870913"
+   definition     :         },
+   definition     :         "permissions" : [ {
+   definition     :           "ownerId" : {
+   definition     :             "value" : 0,
+   definition     :             "type" : "GROUP",
+   definition     :             "name" : "Public"
+   definition     :           },
+   definition     :           "type" : "VISIBLE"
+   definition     :         } ]
    definition     :       } ]
    definition     :     } ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1633807888000,
+   definition     :     "lastUpdateTime" : 1639672311000,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "46bd4cb5-9764-4085-833c-f65c66e4fe7c",
@@ -158,7 +158,34 @@ begin view definition
    definition     :     "layout" : null,
    definition     :     "componentDefinitions" : [ {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1633807888000,
+   definition     :       "lastUpdateTime" : 1639672311000,
+   definition     :       "lastChangedBy" : "ARSERVER",
+   definition     :       "owner" : "ARSERVER",
+   definition     :       "name" : "c5d7acbf-d9a9-4959-817c-34c0ca2827a8",
+   definition     :       "tags" : null,
+   definition     :       "description" : null,
+   definition     :       "overlayGroupId" : "1",
+   definition     :       "internal" : false,
+   definition     :       "guid" : "c5d7acbf-d9a9-4959-817c-34c0ca2827a8",
+   definition     :       "type" : "rx-action",
+   definition     :       "propertiesByName" : {
+   definition     :         "name" : "rxSetPropertyAction",
+   definition     :         "index" : "2",
+   definition     :         "componentApi" : "${view.components.8783a5a0-a59c-4897-b6b0-90d409f9a0a8.api}",
+   definition     :         "propertyValue" : "${view.components.4b2233a6-722c-43eb-a2bc-b7f9bda1897a.output.fruitObject.configuration}",
+   definition     :         "propertyPath" : "${view.components.8783a5a0-a59c-4897-b6b0-90d409f9a0a8.recordInstance.fieldInstances.8.value}"
+   definition     :       },
+   definition     :       "permissions" : [ {
+   definition     :         "ownerId" : {
+   definition     :           "value" : 0,
+   definition     :           "type" : "GROUP",
+   definition     :           "name" : "Public"
+   definition     :         },
+   definition     :         "type" : "VISIBLE"
+   definition     :       } ]
+   definition     :     }, {
+   definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :       "lastUpdateTime" : 1639672311000,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "4b2233a6-722c-43eb-a2bc-b7f9bda1897a",
@@ -187,7 +214,7 @@ begin view definition
    definition     :       } ]
    definition     :     }, {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1633807888000,
+   definition     :       "lastUpdateTime" : 1639672311000,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "7ffdaa90-c591-4053-86aa-99635c44d7fc",
@@ -212,37 +239,10 @@ begin view definition
    definition     :         },
    definition     :         "type" : "VISIBLE"
    definition     :       } ]
-   definition     :     }, {
-   definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1633807888000,
-   definition     :       "lastChangedBy" : "ARSERVER",
-   definition     :       "owner" : "ARSERVER",
-   definition     :       "name" : "c5d7acbf-d9a9-4959-817c-34c0ca2827a8",
-   definition     :       "tags" : null,
-   definition     :       "description" : null,
-   definition     :       "overlayGroupId" : "1",
-   definition     :       "internal" : false,
-   definition     :       "guid" : "c5d7acbf-d9a9-4959-817c-34c0ca2827a8",
-   definition     :       "type" : "rx-action",
-   definition     :       "propertiesByName" : {
-   definition     :         "name" : "rxSetPropertyAction",
-   definition     :         "index" : "2",
-   definition     :         "componentApi" : "${view.components.8783a5a0-a59c-4897-b6b0-90d409f9a0a8.api}",
-   definition     :         "propertyValue" : "${view.components.4b2233a6-722c-43eb-a2bc-b7f9bda1897a.output.fruitObject.configuration}",
-   definition     :         "propertyPath" : "${view.components.8783a5a0-a59c-4897-b6b0-90d409f9a0a8.recordInstance.fieldInstances.8.value}"
-   definition     :       },
-   definition     :       "permissions" : [ {
-   definition     :         "ownerId" : {
-   definition     :           "value" : 0,
-   definition     :           "type" : "GROUP",
-   definition     :           "name" : "Public"
-   definition     :         },
-   definition     :         "type" : "VISIBLE"
-   definition     :       } ]
    definition     :     } ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1633807888000,
+   definition     :     "lastUpdateTime" : 1639672311000,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "f15a8bb6-802f-47a2-a149-f6aaeef01a22",

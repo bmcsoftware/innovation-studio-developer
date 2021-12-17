@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:VC Code Viewer Modal
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1633807887000,
+   definition     :   "lastUpdateTime" : 1639672311000,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:VC Code Viewer Modal",
@@ -20,8 +20,32 @@ begin view definition
    definition     :   } ],
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
+   definition     :     "lastUpdateTime" : 1639672311000,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "cd216b4d-de7f-4733-8d06-76ea31edafe1",
+   definition     :     "tags" : null,
+   definition     :     "description" : null,
+   definition     :     "overlayGroupId" : "1",
+   definition     :     "internal" : false,
+   definition     :     "guid" : "cd216b4d-de7f-4733-8d06-76ea31edafe1",
+   definition     :     "type" : "comExampleTest210500CodeViewer",
+   definition     :     "propertiesByName" : {
+   definition     :       "language" : "${view.inputParams.language}",
+   definition     :       "code" : "${view.inputParams.code}"
+   definition     :     },
+   definition     :     "permissions" : [ {
+   definition     :       "ownerId" : {
+   definition     :         "value" : 0,
+   definition     :         "type" : "GROUP",
+   definition     :         "name" : "Public"
+   definition     :       },
+   definition     :       "type" : "VISIBLE"
+   definition     :     } ]
+   definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1633807887000,
+   definition     :     "lastUpdateTime" : 1639672311000,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "d7b893e2-8a7a-4849-ada8-519c50692631",
@@ -47,7 +71,7 @@ begin view definition
    definition     :     "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"4f8df654-0297-46e5-aee4-c6c69e32484f\"]}]}]}",
    definition     :     "componentDefinitions" : [ {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1633807887000,
+   definition     :       "lastUpdateTime" : 1639672311000,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "4f8df654-0297-46e5-aee4-c6c69e32484f",
@@ -81,7 +105,7 @@ begin view definition
    definition     :       "layout" : null,
    definition     :       "componentDefinitions" : [ {
    definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :         "lastUpdateTime" : 1633807887000,
+   definition     :         "lastUpdateTime" : 1639672311000,
    definition     :         "lastChangedBy" : "ARSERVER",
    definition     :         "owner" : "ARSERVER",
    definition     :         "name" : "ebaf86e9-a0ee-4083-ba5e-5ea4b399b186",
@@ -106,30 +130,6 @@ begin view definition
    definition     :           "type" : "VISIBLE"
    definition     :         } ]
    definition     :       } ]
-   definition     :     } ]
-   definition     :   }, {
-   definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1633807887000,
-   definition     :     "lastChangedBy" : "ARSERVER",
-   definition     :     "owner" : "ARSERVER",
-   definition     :     "name" : "cd216b4d-de7f-4733-8d06-76ea31edafe1",
-   definition     :     "tags" : null,
-   definition     :     "description" : null,
-   definition     :     "overlayGroupId" : "1",
-   definition     :     "internal" : false,
-   definition     :     "guid" : "cd216b4d-de7f-4733-8d06-76ea31edafe1",
-   definition     :     "type" : "comExampleTest210500CodeViewer",
-   definition     :     "propertiesByName" : {
-   definition     :       "language" : "${view.inputParams.language}",
-   definition     :       "code" : "${view.inputParams.code}"
-   definition     :     },
-   definition     :     "permissions" : [ {
-   definition     :       "ownerId" : {
-   definition     :         "value" : 0,
-   definition     :         "type" : "GROUP",
-   definition     :         "name" : "Public"
-   definition     :       },
-   definition     :       "type" : "VISIBLE"
    definition     :     } ]
    definition     :   } ],
    definition     :   "permissions" : [ {
