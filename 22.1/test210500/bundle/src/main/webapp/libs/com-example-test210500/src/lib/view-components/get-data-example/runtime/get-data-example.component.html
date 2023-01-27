@@ -1,0 +1,122 @@
+<!--LMA:: This is also an example how to use the adapt-code-viewer Adapt component to display-->
+<!--data formatted in Json.-->
+
+<div class="container flex-padding">
+  <div>
+    <!--Create a new Record Instance-->
+    <button adapt-button btn-type="primary"
+            [disabled]="isDisabled"
+            size="default"
+            (click)="createNewRecordInstance()">
+      <span>Create a New Record Instance and Refresh the grid</span>
+    </button>
+
+    <!--Updating a specific record instance (hardcoded)-->
+    <p></p>
+    <button adapt-button btn-type="primary"
+            [disabled]="isDisabled"
+            size="default"
+            (click)="updateRecordInstance()">
+      <span>Update a Record Instance and Refresh the grid</span>
+    </button>
+
+    <!--Updating a specific record instance (grid selected row)-->
+    <p></p>
+    <button adapt-button btn-type="primary"
+            [disabled]="isDisabled"
+            size="default"
+            (click)="updateRecordInstance(false)">
+      <span>Update the grid selected row and refresh the grid</span>
+    </button>
+
+    <!--Setting a grid filter-->
+    <p></p>
+    <button adapt-button btn-type="primary"
+            [disabled]="isDisabled"
+            size="default"
+            (click)="setGridFilter()">
+      <span>Setting the grid filter (Status = New)</span>
+    </button>
+
+    <!--Download an attached file-->
+    <p></p>
+    <button adapt-button btn-type="primary"
+            [disabled]="isDisabled"
+            size="default"
+            (click)="downloadAttachment()">
+      <span>Download the record Instance attached file</span>
+    </button>
+
+    <!--Get the attachment (to display it for example)-->
+    <p></p>
+    <button adapt-button btn-type="primary"
+            [disabled]="isDisabled"
+            size="default"
+            (click)="getAttachment()">
+      <span>Get the record Instance attached file</span>
+      <br>
+      We will try to display it as a picture.
+    </button>
+    <img *ngIf="pictureContent"
+         [src]="pictureContent"
+         [alt]="fileName"
+         class="attachment-picture">
+  </div>
+
+  <!--Getting a specific record instance (hardcoded)-->
+  <div class="get-one-record-container flex-padding">
+    <button adapt-button btn-type="primary"
+            [disabled]="isDisabled"
+            size="default"
+            class="full-width-button"
+            (click)="getRecordInstanceById()">
+      <span>Get Record Instance {{recordInstanceId}}</span>
+    </button>
+    <adapt-code-viewer
+      *ngIf="resultGetRecordInstance"
+      [code]="resultGetRecordInstance | json"
+      [lang]="'javascript'"
+      [hasToolbar]="false"
+      [theme]="'light'"
+      class="full-size"
+    ></adapt-code-viewer>
+  </div>
+
+  <!--Getting all record instances with Status as New-->
+  <div class="get-records-container flex-padding">
+    <button adapt-button btn-type="primary"
+            [disabled]="isDisabled"
+            size="default"
+            class="full-width-button"
+            (click)="getRecordInstances()">
+      <span>Listing all record instances where the Status is New</span>
+    </button>
+    <adapt-code-viewer
+      *ngIf="recordInstances.length"
+      [code]="recordInstances | json"
+      [lang]="'javascript'"
+      [hasToolbar]="false"
+      [theme]="'light'"
+      class="full-size"
+    ></adapt-code-viewer>
+  </div>
+
+  <!--Getting the countries associated to the selected restaurant-->
+  <div class="get-associated-records-container flex-padding">
+    <button adapt-button btn-type="primary"
+            [disabled]="isDisabled"
+            size="default"
+            class="full-width-button"
+            (click)="getAssociatedRecordInstances()">
+      <span>Listing all countries associated to the selected restaurant</span>
+    </button>
+    <adapt-code-viewer
+      *ngIf="associatedRecordInstances.length"
+      [code]="associatedRecordInstances | json"
+      [lang]="'javascript'"
+      [hasToolbar]="false"
+      [theme]="'light'"
+      class="full-size"
+    ></adapt-code-viewer>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+#
+#Fri Jan 27 01:29:35 UTC 2023
+IgnoreRuleExecution=false
+DuplicateDataActionType=MERGE
+Name=com.example.test210500\:for data example
+ImportOrder=7

@@ -1,0 +1,34 @@
+<!--The idea here is to display the data in two different ways,-->
+<!--when the record editor is in Read mode and in Edit mode (create/edit).-->
+
+<!--Here this container will be displayed when the record editor is in "read"-->
+<!--mode. inReadState is a property from the parent (inherited).-->
+<!--If the record editor is not in read mode, the element "editStateElementRef"-->
+<!--will be displayed instead.-->
+<!--It is possible to do it differently just using *ngIf conditions using inReadState.-->
+<ng-container>
+  <rx-read-only-field
+    *ngIf="inReadState; else editStateElementRef"
+    [label]="label"
+    [style]="labelStyle"
+    [value]="getDisplayValue()"
+  ></rx-read-only-field>
+</ng-container>
+
+<!--Version displayed when the record editor is in Create or Edit mode and not Read.-->
+<!--Some of the values here are inherited (label, isDisabled, isRequired).-->
+<!--getDisplayValue() is also inherited and returns the field current value.-->
+<ng-template #editStateElementRef>
+  <adapt-rx-rating
+    #starRatingFieldComponent
+    [label]="label"
+    [disabled]="isDisabled"
+    [hidden]="isHidden"
+    [required]="isRequired"
+    [style]="labelStyle"
+    [size]="selectedSize"
+    [ngModel]="getDisplayValue()"
+    (onRateChange)="onRateChange($event)"
+  >
+  </adapt-rx-rating>
+</ng-template>

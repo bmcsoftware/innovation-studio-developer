@@ -1,0 +1,5 @@
+{
+  "fr": {
+    "com.example.test210500.view-components.google-maps-component.missing-api-key": "La clef Api pour utiliser Google Maps api key est manquante, le View Component Google Maps fonctionnera en \"development mode\" et la geolocalisation ne marchera pas."
+  }
+}

@@ -1,0 +1,41 @@
+<!--This picture is in the lib assets folder.-->
+<!--bundle/src/main/webapp/libs/com-example-test210500/src/lib/assets/pictures/lain.jpg-->
+<!--At maven build it is put in a specific folder so can be available at runtime.-->
+<!--The glob in the angular.json file will make sure it is copied in a specific folder of the /dist/.-->
+<!--It is VERY important that you have the bundle maven project.artifactid in the path where the files will be copied:-->
+<!--/libs/<project.artifactid>/-->
+<!--  <artifactId>test210500</artifactId>-->
+<!--  So for example:-->
+<!--  {-->
+<!--  "glob": "**/*",-->
+<!--  "input": "libs/com-example-test210500/src/lib/assets/pictures/",-->
+<!--  "output": "assets/libs/test210500/resources/pictures/"-->
+<!--  },-->
+<!--  The reason is at the copy resource step in maven this specific path will be copied to be embedded in the bundle jar file:-->
+<!--  <configuration>-->
+<!--    <outputDirectory>${basedir}/target/web-build/webapp/scripts/assets</outputDirectory>-->
+<!--    <resources>-->
+<!--      <resource>-->
+<!--        <directory>${basedir}/src/main/webapp/dist/apps/shell/assets/libs/${project.artifactId}</directory>-->
+<!--      </resource>-->
+<!--    </resources>-->
+<!--  </configuration>-->
+<!--  At runtime the picture in this example will be available at different urls depending if the code is running-->
+<!--  in development or production mode, hence the use of the getAssetPathService*service to get the Assets's path.-->
+
+Displaying a picture stored in the library /assets folder:<br>
+<img [src]="assetRootPath + 'pictures/lain.jpg'" alt="" width="200px">
+<br>
+<br>
+
+Label set at design time with a simple css style defined at the component level:<br>
+<div class="green-border">
+  {{lmame}}
+</div>
+<br>
+<br>
+
+Message returned by pure javascript call stored in the library /assets folder with a simple css style defined at the component level:<br>
+<div class="green-border">
+  {{hello}}
+</div>

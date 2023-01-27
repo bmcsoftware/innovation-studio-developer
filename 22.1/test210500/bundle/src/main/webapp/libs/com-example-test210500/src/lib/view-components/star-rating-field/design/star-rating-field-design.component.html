@@ -1,0 +1,11 @@
+<!--Some default parameters values (shared between all fields) can -->
+<!--be fetched using model.<parameter>$ | async-->
+<adapt-rx-rating
+  [size]="selectedSize"
+  [style]="labelStyle"
+  [classList]="starRatingFieldParameters.styles"
+  [required]="model.isRequired$ | async"
+  [readonly]="isReadonly"
+  [label]="model.label$ | async"
+  [(ngModel)]="value">
+</adapt-rx-rating>

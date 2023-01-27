@@ -1,0 +1,23 @@
+<!--Displaying an initialization error message if necessary-->
+<adapt-alert
+  [hidden]="isInitialized"
+  [config]="alertConfiguration">
+  <div [innerHTML]="alertContent"></div>
+</adapt-alert>
+
+<!--Webcam field-->
+<webcam *ngIf="isInitialized"
+        (imageCapture)="onCaptureImage($event)"
+        (initError)="onInitError($event)"
+        (imageClick)="onImageClick($event)"
+        [allowCameraSwitch]="true"
+        [trigger]="onCaptureRequested()"
+        [captureImageData]="true"
+        [imageQuality]="1">
+</webcam>
+<br>
+<br>
+<!--Preview image-->
+<img *ngIf="lastCapture"
+     [src]="lastCapture"
+     alt=""/>
