@@ -34,7 +34,7 @@ You can then refer those objects in your code at runtime as they will be availab
 <a name="best-practices"></a>
 ## How to make sure those resources are copied inside the bundle?
 For this you need to ensure that the content of the /assets/ folder is copied during the build. This is done in the file "angular.json" where you need to declare each folder you want to copy.  
-In our example we have different folder and file structures:
+In our example we have different folders and file structures:
 ```bash
 /assets/pictures/lain.jpg
 /assets/scripts/alert-me3.js
@@ -44,7 +44,7 @@ In our example we have different folder and file structures:
 /assets/scripts/jspanel-4.11.3/jspanel.js
 ```
 
-In the angular.json file we can declare each folder or file in the "assets" section.  You will need to replace the "library-name" and "bundle-artifact-id" by your values (please see the warning below):
+In the [angular.json](../bundle/src/main/webapp/angular.json) file we can declare each folder or file in the "assets" section.  You will need to replace the `library-name` and `bundle-artifact-id` by your values (please see the warning below):
 ```json
 "assets": [
   {
@@ -54,9 +54,10 @@ In the angular.json file we can declare each folder or file in the "assets" sect
   }
 ]
 ```
+
 > :warning:  
-> It is very important in the "output" to refer the bundle "artifactId", or the resources will not be copied properly in your application bundle.  
-> The "artifactId" can be found in the "/bundle/pom.xml" file, for example here:
+> It is very important in the `output` to refer the bundle `artifactId`, or the resources will not be copied properly in your application bundle.  
+> The `artifactId` can be found in the `/bundle/pom.xml` file, for example here:
 > ```xml
 >     <groupId>com.example</groupId>
 >     <artifactId>test210500</artifactId>
@@ -92,7 +93,7 @@ In this example we are going to copy the "pictures" and "scripts" folder:
 ```
 
 > :warning:  
-> Do NOT set a script in the "angular.json" "scripts" section as it would override your View Components, Actions and other objects.
+> Do NOT set a script in the "angular.json" `scripts` section as it would override your View Components, Actions and other objects.
 
 
 <a name="global-css"></a>
@@ -102,7 +103,7 @@ One solution is to add those classes in your library main scss file:
 ```bash
 src/main/webapp/libs/c<library-name>/src/lib/styles/<library-name>.scss
 ```
-For example here:
+For example [here](../bundle/src/main/webapp/libs/com-example-test210500/src/lib/styles/com-example-test210500.scss):
 ```bash
 src/main/webapp/libs/com-example-test210500/src/lib/styles/com-example-test210500.scss
 ```
@@ -118,7 +119,7 @@ src/main/webapp/libs/com-example-test210500/src/lib/styles/com-example-test21050
 ```
 This file will automatically be loaded when the application loads.
 
-Another solution is to put a .scss file containing those classes in the /assets/ folder and declare it in the "angular.json" in the "styles" section.  
+Another solution is to put a .scss file containing those classes in the /assets/ folder and declare it in the [angular.json](../bundle/src/main/webapp/angular.json) in the `styles` section.  
 For example, we want to make sure this file content is loaded at application startup:
 ```bash
 /assets/_global-styles.scss
@@ -136,6 +137,7 @@ We would need to declare it in the "angular.json" file in the "styles" section. 
   }
 ]
 ```
+
 In our case:
 ```json
 "styles": [
@@ -149,6 +151,7 @@ In our case:
   }
 ]
 ```
+
 > :warning:  
 > Do NOT remove the entry of the main library scss file (here "com-example-test210500.scss"), add a new entry.  
 > The "bundleName" needs to be identical as the main .scss file value.
@@ -159,19 +162,20 @@ In our case:
 
 <a name="access"></a>
 ## How to access the /assets/ resources during debug and production modes?
-When testing your application or library using the debug mode (npm start --apihost=192.168.159.135) the path to access the scripts / resources in the assets' folder is different from production:
+When testing your application or library using the [debug mode](../_guides/DEBUG-LOGGING.MD) (`npm start --apihost=192.168.159.135` for example) the path to access the scripts / resources in the assets' folder is different from production:
+
 > **:memo:**  
 > When serving the files locally the path to external resources (javascript / pictures / fonts...) will not be the same.  
 > Some examples:  
 > Javascript in debug mode:  
 > http://localhost:4200/helix/assets/libs/test210500/resources/scripts/alert-me.js  
 > Javascript in production mode:  
-> http://192.168.159.131:8008/com.example.test210500/scripts/assets/resources/scripts/alert-me.js
+> http://192.168.159.135:8008/com.example.test210500/scripts/assets/resources/scripts/alert-me.js
 >
 > Picture in debug mode:  
 > http://localhost:4200/helix/assets/libs/test210500/resources/pictures/lain.jpg  
 > Picture in production mode:  
-> http://192.168.159.131:8008/com.example.test210500/scripts/assets/resources/pictures/lain.jpg
+> http://192.168.159.135:8008/com.example.test210500/scripts/assets/resources/pictures/lain.jpg
 >
 > Those files are stored in:  
 > src/main/webapp/libs/com-example-test210500/src/lib/assets/pictures/lain.jpg  
@@ -184,7 +188,7 @@ To avoid this problem where you would have to maintain two different paths for d
 ```typescript
     this.rootAssetPath = this.getAssetPathService.getAssetRootPath('com.example.test210500');
 ```
-Use it to complete the path to the different assets:
+Use it to complete the path to the different assets, for example:
 ```typescript
   promises.push(this.dynamicScriptLoaderServiceService.loadScriptByUrl(assetFolderPath + 'scripts/jspanel-4.11.3/jspanel.js', 'jspaneljs'));
   promises.push(this.dynamicScriptLoaderServiceService.loadStylesheetByUrl(assetFolderPath + 'scripts/jspanel-4.11.3/jspanel.css', 'jspanelcss'));
@@ -205,6 +209,7 @@ You can look how a picture is used in the [lmame](./JAVASCRIPT_VIEW_COMPONENTS.M
 ```html
 <img [src]="assetRootPath + 'pictures/lain.jpg'" alt="" width="200px">
 ```
+
 > :memo:  
 > Please see the [How to access the /assets/ resources during debug and production modes?](#access) section to see why we have a "assetRootPath" variable here since the path to the assets' folder is different at debug and production mode.
 
@@ -238,5 +243,6 @@ You can look how a global css class is used in the View "Test Lmame Label View C
 ```
 In the View Designer you can then use this class in a **Container** Component for example:
 ![global-css](./pictures/assets-global-css.png)
+
 > :warning:  
 > To avoid collision with existing Css Classes be sure to respect the [coding and naming guidelines](../_guides/CODING_NAMING_GUIDELINES.MD).
