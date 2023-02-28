@@ -71,6 +71,8 @@ yarn run ng g rx-view-component "gradient"
 * [star-rating](#star-rating),
 * [qr-code-generator](#qr-code-generator),
 * [open-blade](#open-blade),
+* [image-click](#image-click),
+* [delay-registration](#delay-registration),
 
 
 ---
@@ -2435,4 +2437,146 @@ yarn run ng g rx-view-component "gradient"
 > **:memo:**    
 > This dependency injection problem does not happen when the view component runs in debug mode.
 
+
+
 ---
+
+
+<a name="image-click"></a>
+### image-click:
+<details> 
+<summary>image-click</summary>
+
+![open-blade](./pictures/image-click.png)
+</details>
+
+* Description:
+  * This view component shows
+    * In Design Time:
+      * How to add actions to a view component, as we do for a "Button".
+    * In Runtime:
+      * How to execute the actions,
+  * The example in view "VC Actions in View Component":
+    * Shows that you can add "Actions" to the custom view component,
+    * Shows that, at runtime, the actions are executed when you click on the picture,
+  * Here are some code highlights:
+    * View component registration:
+      * Since the View Component will embed actions, it is necessary to change its type to tell it is now behaving as a container:
+      * ```typescript
+        isContainerComponent: true,
+        ```
+      * It is not necessary to declare the actions as input parameters in the registration module,
+    * Design Time:
+        * The actions are a specific type, as defined in the interface:
+          * ```actions: IViewComponentDesignData<IViewActionDesignProperties>[];```
+        * The trick here is to leverage the OOTB Actions inspector component "ActionListWidgetComponent" to automatically list, edit, add actions, like would you do with a Button:
+        * ```typescript
+              {
+                widgetName: 'actions',
+                component: ActionListWidgetComponent
+              }
+          ```
+        * To validate the actions, we can also leverage the OOTB Actions validator:
+        * ```typescript
+              // Actions observable object. On modification, we will validate them.
+              const actions$ = this.sandbox.getChildComponents<IViewActionDesignProperties>();
+              // (...)
+              actions$.pipe(switchMap((actions) => {
+              return this.viewActionValidatorService.validate(actions, 'actions');
+              })),
+          ```
+    * Runtime:
+      * We can leverage the OOTB method "runtimeViewModelApi.triggerViewActions()" to trigger the actions defined at design time. We need to pass the View Component Guid.
+      * runtimeViewModelApi and guid are properties that are inherited from the base class "BaseViewComponent":
+      * ```typescript
+        // This service call triggers the actions added to this View Component.
+        return this.runtimeViewModelApi.triggerViewActions(this.guid, VIEW_COMPONENT_DEFAULT_EVENT_NAME)
+        .then((result) => {
+        this.isInProgress = false;
+        })
+        .catch((error) => {
+        this.isInProgress = false;
+        this.rxNotificationService.addErrorMessage('Error triggering the actions ' + error);
+        });
+        ```
+* Complexity: :hot_pepper: :hot_pepper:
+* Used in the example:
+  * View: "VC Actions in View Component",
+
+> **:warning:**  
+> This is considered as a very advanced feature.
+
+> **:warning:**  
+> It is very important to set the property "" to true, else an exception will be thrown saving the view.
+> ```typescript
+> isContainerComponent: true,
+> ```
+
+
+
+
+---
+
+
+<a name="delay-registration"></a>
+### delay-registration:
+<details> 
+<summary>delay-registration</summary>
+
+![open-blade](./pictures/delay-registration.png)
+</details>
+
+* Description:
+  * When a library or application View Component is registered, by default it is registered immediately in  the view component "registration.module.ts" file:
+    * ```typescript
+      rxViewComponentRegistryService.register({
+      type: 'com-example-test210500-image-click',
+      name: 'Image Click',
+      group: 'Test 21.05.00',
+      icon: 'image_square',
+      // (...)
+      } as IViewComponentDescriptor);
+      ```
+  * On some occasion, it might be interesting to perform some operations before the registration occurs, for example, fetching some information using a rest api to set the bundleId visibility or the View Component Name.
+    * For example, we can see here that the View Component can only be used in a view from the "com.example.test210500" bundle. This can be a list of strings, or RegExps:
+      * ```availableInBundles: ['com.example.test210500'],```
+  * In this case, since it can take time to fetch the rest api result, we should not register the View Component Descriptor as an Object, but as a Promise that will be evaluated automatically:
+    * ```typescript
+         rxViewComponentRegistryService.register(viewComponentDescriptorPromise);
+      ```
+    * In order to do this, we prepare a Promise Object where we perform the Rest Api call, then once we get the result, we override the View Component "name" property with the value stored in the Record Instance Description field:
+      * Default View Component Descriptor object, the "name" property will be replaced later on:
+        * ```typescript
+          const defaultComponentDescriptor: IViewComponentDescriptor  = {
+          type: 'com-example-test210500-delay-registration',
+          name: '<The name will be replaced>',
+          group: 'Test 21.05.00',
+          // (...)
+          };
+          ```
+      * We prepare the Promise and when the rest api call will be honored (in the .then()), we will override the "name" property by the record instance Description value:
+        * ```typescript
+          const viewComponentDescriptorPromise = this.rxRecordInstanceService
+              // Getting the record instance where the name is stored.
+              .get(DELAY_REGISTRATION_OPTIONS.recordDefinitionName, DELAY_REGISTRATION_OPTIONS.recordInstanceId)
+              // Converting the Observable to a Promise
+              .toPromise()
+              // At evaluation, we get the record instance
+              .then((recordInstance) => {
+              // We return the component descriptor previously created, but overriding its name property
+              // with the value of the record instance "description" field.
+                  return {
+                      ...defaultComponentDescriptor,
+                      name: recordInstance.fieldInstances[RX_RECORD_DEFINITION.coreFieldIds.description].value
+                  }
+          ```
+* Complexity: :hot_pepper: :hot_pepper:
+* Used in the example:
+  * It is visible in the View Designer palette,
+
+> **:warning:**  
+> This is considered as a very advanced feature.
+
+
+---
+

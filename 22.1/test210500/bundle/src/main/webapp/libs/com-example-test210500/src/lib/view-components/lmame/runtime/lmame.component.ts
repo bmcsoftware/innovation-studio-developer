@@ -27,7 +27,7 @@ export class LmameComponent extends BaseViewComponent implements OnInit, IViewCo
   constructor(private dynamicScriptLoaderServiceService: DynamicScriptLoaderServiceService,
               private getAssetPathService: GetAssetPathService) {
     super();
-    // The asset root path will depend if we are running the code in Production or development (ng serve).
+    // The asset root path will depend on if we are running the code in Production or development (ng serve).
     this.assetRootPath = this.getAssetPathService.getAssetRootPath('com.example.test210500');
   }
 

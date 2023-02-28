@@ -1,6 +1,7 @@
 # Test 22.1.03 (com.example.test210500)
 History:
 * Version:
+  * 0.9.1, 2023/02/26, Adding examples how to work with Record instances in Java, adding actions in a view component, delay a view component registration.
   * 0.9, 2023/02/02, Adding a section about Upgrade and breaking changes. Adapting a bit the MD files.
   * 0.8, 2023/01/26, Updating SDK with 22.1.03 SDK, adding new Process activities (createAttachmentFromBase64File, getListSize, getListValueByIndex), typo corrections, updating documentation links.
   * 0.7, 2021/12/06, Correcting typos, adding an example on how to open a view in a blade programmatically (open-blade), adding entry for the QR Code scanner example which was missing,
@@ -122,18 +123,19 @@ Video content:
 ## Java Objects:
 [Click here to access the Java object details.](./_details/JAVA.MD)  
 
-| Name                              | Language                                                         | Type              | Complexity                |
-|:----------------------------------|:-----------------------------------------------------------------|    :----          |:--------------------------|
-| SimpleProcessActivity             | [Java](./_details/JAVA.MD#SimpleProcessActivity)                 | Activity          | :hot_pepper:              |
-| CheckHCaptchaToken                | [Java](./_details/JAVA.MD#CheckHCaptchaToken)                    | Activity          | :hot_pepper: :hot_pepper: |
-| TwilioTextMessage                 | [Java](./_details/JAVA.MD#TwilioTextMessage)                     | Activity          | :hot_pepper: :hot_pepper: |
-| CreateAttachmentFromBase64File    | [Java](./_details/JAVA.MD#CreateAttachmentFromBase64File)        | Activity          | :hot_pepper: :hot_pepper: |
-| GetListSize                       | [Java](./_details/JAVA.MD#GetListSize)                           | Activity          | :hot_pepper:              |
-| GetListValueByIndex               | [Java](./_details/JAVA.MD#GetListValueByIndex)                   | Activity          | :hot_pepper:              |
-| SimpleRest                        | [Java](./_details/JAVA.MD#SimpleRest)                            | Rest Api          | :hot_pepper:              |
-| FruitRest                         | [Java](./_details/JAVA.MD#FruitRest)                             | Rest Api          | :hot_pepper: :hot_pepper: |
-| Test210500GeneratePasswordCommand | [Java](./_details/JAVA.MD#Test210500GeneratePasswordCommand)     | Command           | :hot_pepper: :hot_pepper: |
-| Test210500FruitDataPageQuery      | [Java](./_details/JAVA.MD#Test210500FruitDataPageQuery)          | Datapage Query    | :hot_pepper: :hot_pepper: |
+| Name                               | Language                                                                       | Type              | Complexity                |
+|:-----------------------------------|:-------------------------------------------------------------------------------|    :----          |:--------------------------|
+| SimpleProcessActivity              | [Java](./_details/JAVA.MD#SimpleProcessActivity)                               | Activity          | :hot_pepper:              |
+| CheckHCaptchaToken                 | [Java](./_details/JAVA.MD#CheckHCaptchaToken)                                  | Activity          | :hot_pepper: :hot_pepper: |
+| TwilioTextMessage                  | [Java](./_details/JAVA.MD#TwilioTextMessage)                                   | Activity          | :hot_pepper: :hot_pepper: |
+| CreateAttachmentFromBase64File     | [Java](./_details/JAVA.MD#CreateAttachmentFromBase64File)                      | Activity          | :hot_pepper: :hot_pepper: |
+| GetListSize                        | [Java](./_details/JAVA.MD#GetListSize)                                         | Activity          | :hot_pepper:              |
+| GetListValueByIndex                | [Java](./_details/JAVA.MD#GetListValueByIndex)                                 | Activity          | :hot_pepper:              |
+| AccessRecordInstances              | [Java](./_details/JAVA.MD#AccessRecordInstances)                               | Activity          | :hot_pepper:              |
+| SimpleRest                         | [Java](./_details/JAVA.MD#SimpleRest)                                          | Rest Api          | :hot_pepper:              |
+| FruitRest                          | [Java](./_details/JAVA.MD#FruitRest)                                           | Rest Api          | :hot_pepper: :hot_pepper: |
+| Test210500GeneratePasswordCommand  | [Java](./_details/JAVA.MD#Test210500GeneratePasswordCommand)                   | Command           | :hot_pepper: :hot_pepper: |
+| Test210500FruitDataPageQuery       | [Java](./_details/JAVA.MD#Test210500FruitDataPageQuery)                        | Datapage Query    | :hot_pepper: :hot_pepper: |
 
 <a name="inspectors"></a>
 ## Javascript Inspectors, aka Form Control Components:
@@ -172,37 +174,39 @@ Video content:
 ## Javascript Standalone View Components:
 [Click here to access the Javascript View Components details.](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD)  
 
-| Name                  | Language                                                                     | Type              | Complexity                             |
-|:----------------------|:-----------------------------------------------------------------------------|:------------------|:---------------------------------------|
-| label                 | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#label)                 | View Component    | :hot_pepper:                           |
-| lmame                 | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#lmame)                 | View Component    | :hot_pepper:                           |
-| code-viewer           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#code-viewer)           | View Component    | :hot_pepper:                           |
-| iframe                | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#iframe)                | View Component    | :hot_pepper: :hot_pepper:              |
-| display-gradient      | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#display-gradient)      | View Component    | :hot_pepper:                           |
-| generate-password     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#generate-password)     | View Component    | :hot_pepper: :hot_pepper:              |
-| youtube-player        | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#youtube-player)        | View Component    | :hot_pepper: :hot_pepper:              |
-| google-maps-component | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#google-maps-component) | View Component    | :hot_pepper: :hot_pepper:              |
-| bar-chart-component   | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#bar-chart-component)   | View Component    | :hot_pepper:                           |
-| call-command          | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#call-command)          | View Component    | :hot_pepper:                           |
-| call-process          | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#call-process)          | View Component    | :hot_pepper: :hot_pepper:              |
-| webcam                | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#webcam)                | View Component    | :hot_pepper: :hot_pepper:              |
-| qr-code-scanner       | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#qr-code-scanner)       | View Component    | :hot_pepper: :hot_pepper:              |
-| digital-signature     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#digital-signature)     | View Component    | :hot_pepper:                           |
-| get-data-example      | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#get-data-example)      | View Component    | :hot_pepper:                           |
-| list-icons            | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#list-icons)            | View Component    | :hot_pepper:                           |
-| user-preferences      | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#user-preferences)      | View Component    | :hot_pepper:                           |
-| admin-preferences     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#admin-preferences)     | View Component    | :hot_pepper: :hot_pepper:              |
-| captcha               | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#captcha)               | View Component    | :hot_pepper:                           |
-| access-grid           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#access-grid)           | View Component    | :hot_pepper: :hot_pepper:              |
-| floating-panel        | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#floating-panel)        | View Component    | :hot_pepper:                           |
-| test-debug-component  | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#test-debug-component)  | View Component    | :hot_pepper:                           |
-| custom-datapagequery  | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#custom-datapagequery)  | View Component    | :hot_pepper: :hot_pepper:              |
-| custom-grid           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#custom-grid)           | View Component    | :hot_pepper: :hot_pepper:              |
-| lifecycle             | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#lifecycle)             | View Component    | :hot_pepper: :hot_pepper: :hot_pepper: |
-| wizard                | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#wizard)                | View Component    | :hot_pepper:                           |
-| star-rating           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#star-rating)           | View Component    | :hot_pepper: :hot_pepper:              |
-| qr-code-generator     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#qr-code-generator)     | View Component    | :hot_pepper: :hot_pepper:              |
-| open-blade            | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#open-blade)            | View Component    | :hot_pepper:                           |
+| Name                  | Language                                                                                      | Type              | Complexity                                         |
+|:----------------------|:----------------------------------------------------------------------------------------------|:------------------|:---------------------------------------------------|
+| label                 | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#label)                                  | View Component    | :hot_pepper:                                       |
+| lmame                 | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#lmame)                                  | View Component    | :hot_pepper:                                       |
+| code-viewer           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#code-viewer)                            | View Component    | :hot_pepper:                                       |
+| iframe                | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#iframe)                                 | View Component    | :hot_pepper: :hot_pepper:                          |
+| display-gradient      | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#display-gradient)                       | View Component    | :hot_pepper:                                       |
+| generate-password     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#generate-password)                      | View Component    | :hot_pepper: :hot_pepper:                          |
+| youtube-player        | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#youtube-player)                         | View Component    | :hot_pepper: :hot_pepper:                          |
+| google-maps-component | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#google-maps-component)                  | View Component    | :hot_pepper: :hot_pepper:                          |
+| bar-chart-component   | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#bar-chart-component)                    | View Component    | :hot_pepper:                                       |
+| call-command          | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#call-command)                           | View Component    | :hot_pepper:                                       |
+| call-process          | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#call-process)                           | View Component    | :hot_pepper: :hot_pepper:                          |
+| webcam                | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#webcam)                                 | View Component    | :hot_pepper: :hot_pepper:                          |
+| qr-code-scanner       | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#qr-code-scanner)                        | View Component    | :hot_pepper: :hot_pepper:                          |
+| digital-signature     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#digital-signature)                      | View Component    | :hot_pepper:                                       |
+| get-data-example      | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#get-data-example)                       | View Component    | :hot_pepper:                                       |
+| list-icons            | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#list-icons)                             | View Component    | :hot_pepper:                                       |
+| user-preferences      | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#user-preferences)                       | View Component    | :hot_pepper:                                       |
+| admin-preferences     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#admin-preferences)                      | View Component    | :hot_pepper: :hot_pepper:                          |
+| captcha               | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#captcha)                                | View Component    | :hot_pepper:                                       |
+| access-grid           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#access-grid)                            | View Component    | :hot_pepper: :hot_pepper:                          |
+| floating-panel        | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#floating-panel)                         | View Component    | :hot_pepper:                                       |
+| test-debug-component  | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#test-debug-component)                   | View Component    | :hot_pepper:                                       |
+| custom-datapagequery  | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#custom-datapagequery)                   | View Component    | :hot_pepper: :hot_pepper:                          |
+| custom-grid           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#custom-grid)                            | View Component    | :hot_pepper: :hot_pepper:                          |
+| lifecycle             | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#lifecycle)                              | View Component    | :hot_pepper: :hot_pepper: :hot_pepper:             |
+| wizard                | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#wizard)                                 | View Component    | :hot_pepper:                                       |
+| star-rating           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#star-rating)                            | View Component    | :hot_pepper: :hot_pepper:                          |
+| qr-code-generator     | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#qr-code-generator)                      | View Component    | :hot_pepper: :hot_pepper:                          |
+| open-blade            | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#open-blade)                             | View Component    | :hot_pepper:                                       |
+| image-click           | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#image-click)                            | View Component    | :hot_pepper: :hot_pepper: :hot_pepper:             |
+| delay-registration    | [Javascript](./_details/JAVASCRIPT_VIEW_COMPONENTS.MD#delay-registration)                     | View Component    | :hot_pepper: :hot_pepper:                          |
 
 
 <a name="javascript-utility-services"></a>

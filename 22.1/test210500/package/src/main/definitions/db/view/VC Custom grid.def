@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:VC Custom grid
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1674765450033,
+   definition     :   "lastUpdateTime" : 1677522966008,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:VC Custom grid",
@@ -17,7 +17,7 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1674765450033,
+   definition     :     "lastUpdateTime" : 1677522966008,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "137db6c5-faae-4ade-95e6-844c77a5759e",
@@ -44,7 +44,7 @@ begin view definition
    definition     :     "componentDefinitions" : [ ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1674765450033,
+   definition     :     "lastUpdateTime" : 1677522966008,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "30c9f018-e364-4bb7-b1bf-5680d994ead3",

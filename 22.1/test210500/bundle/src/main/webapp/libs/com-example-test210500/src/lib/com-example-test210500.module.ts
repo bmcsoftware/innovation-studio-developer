@@ -40,6 +40,8 @@ import { CustomDatapagequeryRegistrationModule } from './view-components/custom-
 import { DigitalSignatureRegistrationModule } from './view-components/digital-signature/digital-signature-registration.module';
 import { ComExampleTest210500GlobalLoadModule } from './global-load/global-load.module';
 import { OpenBladeRegistrationModule } from './view-components/open-blade/open-blade-registration.module';
+import { ImageClickRegistrationModule } from './view-components/image-click/image-click-registration.module';
+import { DelayRegistrationRegistrationModule } from './view-components/delay-registration/delay-registration-registration.module';
 
 // We declare here the custom view component and action Registration Modules.
 // Those registration Modules take care of the view component / action
@@ -77,6 +79,8 @@ import { OpenBladeRegistrationModule } from './view-components/open-blade/open-b
     CustomDatapagequeryRegistrationModule,
     DigitalSignatureRegistrationModule,
     OpenBladeRegistrationModule,
+    ImageClickRegistrationModule,
+    DelayRegistrationRegistrationModule,
     // Custom Actions.
     GetUserInformationActionModule,
     NotificationActionModule,

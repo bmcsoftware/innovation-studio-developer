@@ -1,0 +1,6 @@
+#
+#Tue Feb 28 06:02:17 UTC 2023
+IgnoreRuleExecution=false
+DuplicateDataActionType=MERGE
+Name=com.example.test210500\:test for promise
+ImportOrder=4

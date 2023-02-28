@@ -34,6 +34,7 @@ public class MyApplication extends RxBundle {
         registerService(new TwilioTextMessage());
         registerService(new ListUtils());
         registerService(new AttachFile());
+        registerService(new AccessRecordInstances());
 
         registerStaticWebResource(String.format("/%s", getId()), "/webapp");
     }

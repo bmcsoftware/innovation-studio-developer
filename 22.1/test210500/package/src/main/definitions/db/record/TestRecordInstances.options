@@ -1,0 +1,6 @@
+#
+#Tue Feb 28 06:02:16 UTC 2023
+IgnoreRuleExecution=false
+DuplicateDataActionType=MERGE
+Name=com.example.test210500\:TestRecordInstances
+ImportOrder=1

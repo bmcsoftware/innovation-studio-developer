@@ -32,6 +32,7 @@ For now, you would need to create the file structure manually and register the R
 * [CreateAttachmentFromBase64File](#CreateAttachmentFromBase64File),
 * [GetListSize](#GetListSize),
 * [GetListValueByIndex](#GetListValueByIndex),
+* [AccessRecordInstances](#AccessRecordInstances),
 * [SimpleRest](#SimpleRest),
 * [FruitRest](#FruitRest),
 * [Test210500GeneratePasswordCommand](#Test210500GeneratePasswordCommand),
@@ -209,6 +210,80 @@ public HCaptchaAnswer verifyHCaptchaToken
 * Used in the example:
   * View: CACT get list size and get list index,
   * Process: List manipulation,
+
+
+---
+
+<a name="AccessRecordInstances"></a>
+### AccessRecordInstances:
+* Type: Custom activity,
+* Description: This example shows how to manipulate Record Instances in Java using RecordService.
+* ```scope = Scope.PUBLIC``` means that the Activity can be used in all bundles,
+* It shows how to:
+  * Get a record instance,
+    * We simply need to call the method getRecordInstance() with the record definition name and the record instance ID (Guid):
+      * ```java
+        RecordInstance recordInstance = new RecordInstance();
+        String recordInstance = recordService.getRecordInstance(RECORD_DEFINITION_NAME, DEMO_RECORD_INSTANCE_ID);
+        ```
+  * Modify a record instance,
+    * We get a record instance using getRecordInstance(), modify some of its values using setFieldValue() and save it using updateRecordInstance():
+      * ```java
+        RecordInstance recordInstance = new RecordInstance();
+
+        // We first get a record instance:
+        recordInstance = recordService.getRecordInstance(RECORD_DEFINITION_NAME, DEMO_RECORD_INSTANCE_ID);
+
+        // And then we modify it, adding the current time stamp.
+        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+
+        // We update the field Id 8 value (description field).
+        recordInstance.setFieldValue(8, "Udpated " + timeStamp);
+        recordService.updateRecordInstance(recordInstance); 
+        ```
+  * Create a record instance,
+    * We prepare a record instance object, and use the method createRecordInstance() to create it:
+      * ```java
+        RecordInstance recordInstance = new RecordInstance();
+
+        // Getting the record definition.
+        RecordDefinition testRecord = recordService.getRecordDefinition(RECORD_DEFINITION_NAME);
+
+        // Preparing a new RecordInstance Object, we are using a helper method.
+        // Here we are setting two fields with some values.
+        recordInstance.setRecordDefinitionName(RECORD_DEFINITION_NAME);
+        addFieldInstanceToRecordInstance(8, "New Description", recordInstance, testRecord);
+        addFieldInstanceToRecordInstance(Integer.parseInt(SEARCH_FIELD_ID), "I WILL BE DELETED SOON", recordInstance, testRecord);
+
+        // Creating the new record instance.
+        recordService.createRecordInstance(recordInstance);
+        ```
+  * Delete a record instance,
+    * We need simply to provide the record definition name and the record instance Id (GUID) to the method :
+      * ```java
+        recordService.deleteRecordInstance(RECORD_DEFINITION_NAME, recordInstanceGuid);
+        ```
+  * Get an attachment,
+    * We get an attachment object using the getAttachment method. At this point, it is possible to convert to an array of bytes for example.
+      * ```java
+        Attachment attachment = recordService.getAttachment(RECORD_DEFINITION_NAME, DEMO_RECORD_INSTANCE_ID, ATTACHMENT_FIELD_ID);
+ 
+        // Getting the attachment filename.
+        // The filename has a suffix (MediaType) so we need to remove it.
+        fileName = attachment.getFileName();
+        String[] arrayInfosFilename = fileName.split(",MediaType");
+        fileName = arrayInfosFilename[0];
+
+        // Getting attachment content, for now we return it, but it could be sent to another provider.
+        byte[] myContent = attachment.getBinaryData();
+        ```
+  * Run a datapagequery to look for record instances based on a qualification,
+    * Please check the example [Test210500FruitDataPageQuery](#Test210500FruitDataPageQuery),
+  * Create an attachment,
+    * Please check the example [CreateAttachmentFromBase64File](#CreateAttachmentFromBase64File),
+* Complexity: :hot_pepper:
+* Used in the example:
+  * Process: Test record instances in Java,
 
 
 ---
