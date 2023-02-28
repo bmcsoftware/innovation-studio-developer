@@ -10,6 +10,7 @@ History:
 * [Installation (using the zip file)](#installation),
 * [Updating your SDK / Developer Environment (if needed)](#update),
 * [Build and installation using the source code](#build),
+* [How does Lazy Loading work?](#lazy-loading)
 * [Disclaimer](#disclaimer),
 * [Support](#support),
 * [Links](#links),
