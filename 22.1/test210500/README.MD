@@ -1,6 +1,7 @@
 # Test 22.1.03 (com.example.test210500)
 History:
 * Version:
+  * 0.9.2, 2023/03/01, Adding examples and a section about Initializer and Global Load.
   * 0.9.1, 2023/02/26, Adding examples how to work with Record instances in Java, adding actions in a view component, delay a view component registration.
   * 0.9, 2023/02/02, Adding a section about Upgrade and breaking changes. Adapting a bit the MD files.
   * 0.8, 2023/01/26, Updating SDK with 22.1.03 SDK, adding new Process activities (createAttachmentFromBase64File, getListSize, getListValueByIndex), typo corrections, updating documentation links.
@@ -22,6 +23,7 @@ History:
 * [Upgrade / Breaking Changes](#upgrade-breaking-changes),
 * [Videos...](#videos),
 * [Java Objects](#java-objects),
+* [Javascript Initializer and Global Load](#initializer-global-load),
 * [Javascript Inspectors, aka Form Control Components](#inspectors),
 * [Javascript Actions](#actions),
 * [Javascript Record Field View Components](#record-field-view-components),
@@ -136,6 +138,18 @@ Video content:
 | FruitRest                          | [Java](./_details/JAVA.MD#FruitRest)                                           | Rest Api          | :hot_pepper: :hot_pepper: |
 | Test210500GeneratePasswordCommand  | [Java](./_details/JAVA.MD#Test210500GeneratePasswordCommand)                   | Command           | :hot_pepper: :hot_pepper: |
 | Test210500FruitDataPageQuery       | [Java](./_details/JAVA.MD#Test210500FruitDataPageQuery)                        | Datapage Query    | :hot_pepper: :hot_pepper: |
+
+
+<a name="initializer-global-load"></a>
+## Javascript Initializer and Global Load:
+[Click here to access the Javascript Initializer and Global Load details.](./_details/JAVASCRIPT_INITIALIZER_GLOBAL_LOAD.MD)
+
+| Name        | Language                                                       | Type             | Complexity                             |
+|:------------|:---------------------------------------------------------------|    :----         |:---------------------------------------|
+| Initializer | [Javascript](./_details/JAVASCRIPT_INITIALIZER.MD#initializer) | Inspector        | :hot_pepper: :hot_pepper:              |
+| Global Load | [Javascript](./_details/JAVASCRIPT_INITIALIZER.MD#global-load) | Inspector        | :hot_pepper: :hot_pepper: :hot_pepper: |
+
+
 
 <a name="inspectors"></a>
 ## Javascript Inspectors, aka Form Control Components:

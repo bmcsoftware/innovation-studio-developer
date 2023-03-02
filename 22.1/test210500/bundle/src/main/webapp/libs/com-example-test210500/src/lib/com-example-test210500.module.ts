@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RxLocalizationService } from '@helix/platform/shared/api';
+import { RxApplicationRegistryService, RxLocalizationService } from '@helix/platform/shared/api';
 import * as defaultApplicationStrings from './i18n/localized-strings.json';
 import { LabelRegistrationModule } from './view-components/label/label-registration.module';
 import { LmameRegistrationModule } from './view-components/lmame/lmame-registration.module';
@@ -42,6 +42,7 @@ import { ComExampleTest210500GlobalLoadModule } from './global-load/global-load.
 import { OpenBladeRegistrationModule } from './view-components/open-blade/open-blade-registration.module';
 import { ImageClickRegistrationModule } from './view-components/image-click/image-click-registration.module';
 import { DelayRegistrationRegistrationModule } from './view-components/delay-registration/delay-registration-registration.module';
+import { ComExampleTest210500Initializer } from './com-example-test210500-initializer.service';
 
 // We declare here the custom view component and action Registration Modules.
 // Those registration Modules take care of the view component / action
@@ -92,10 +93,26 @@ import { DelayRegistrationRegistrationModule } from './view-components/delay-reg
     AdminPreferencesRegistrationModule,
     // Global Load
     ComExampleTest210500GlobalLoadModule
+  ],
+  providers: [
+    // The bundle Initializer.
+    ComExampleTest210500Initializer
   ]
 })
 export class ComExampleTest210500Module {
-  constructor(private rxLocalizationService: RxLocalizationService) {
+  constructor(private rxLocalizationService: RxLocalizationService,
+              private comExampleTest210500Initializer: ComExampleTest210500Initializer,
+              private rxApplicationRegistryService: RxApplicationRegistryService) {
     this.rxLocalizationService.setDefaultApplicationStrings(defaultApplicationStrings["default"]);
+
+    // We register the application initializer for our application bundle (com.example.test210500).
+    //
+    // The initializer will be called by the Platform at the very start of the bundle "execution", aka
+    // when the application "com.example.test210500" will be served / launched at runtime.
+    // The Platform will call the initializer "comExampleTest210500Initializer", for example accessing:
+    // http://<server>.com:8008/helix/index.html#/com.example.test210500/view/com.example.test210500:TOC
+    //
+    // The Platform will not call the initializer in design time (Innovation Studio).
+    this.rxApplicationRegistryService.register('com.example.test210500', this.comExampleTest210500Initializer);
   }
 }

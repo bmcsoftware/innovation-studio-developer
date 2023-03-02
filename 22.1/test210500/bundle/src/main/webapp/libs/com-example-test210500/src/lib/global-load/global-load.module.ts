@@ -17,6 +17,7 @@ export class ComExampleTest210500GlobalLoadModule {
     // LMA:: Load also the /dist/com-example-test210500-asset-scripts.js, see its path what it is...
 
     console.log('hello world ComExampleTest210500GlobalLoadModule!');
+
     dynamicScriptLoaderServiceService.loadScriptByUrl(assetFolderPath + 'scripts/alert-me3.js', 'alert-me3-js').then((result) => {
       alertMe3();
     });
