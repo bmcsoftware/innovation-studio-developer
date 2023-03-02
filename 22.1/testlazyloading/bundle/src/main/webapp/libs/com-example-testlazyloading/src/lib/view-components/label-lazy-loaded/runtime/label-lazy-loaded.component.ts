@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, throwError } from 'rxjs';
+import { Observable } from 'rxjs';
 import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime';
 import { RxViewComponent } from '@helix/platform/view/api';
 import { ILabelLazyLoadedParameters } from '../design/label-lazy-loaded.interface';
@@ -11,7 +11,7 @@ import { distinctUntilChanged, pluck, takeUntil } from 'rxjs/operators';
   templateUrl: './label-lazy-loaded.component.html'
 })
 @RxViewComponent({
-  name: 'com-example-testlazyloading-label-lazy-loaded',
+  name: 'com-example-testlazyloading-label-lazy-loaded'
 })
 export class LabelLazyLoadedComponent extends BaseViewComponent implements OnInit,IViewComponent {
   // Contains the view component instance id.
