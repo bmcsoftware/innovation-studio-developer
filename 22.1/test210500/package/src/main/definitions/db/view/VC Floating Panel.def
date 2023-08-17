@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:VC Floating Panel
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1677522968584,
+   definition     :   "lastUpdateTime" : 1692230269578,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:VC Floating Panel",
@@ -17,7 +17,7 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1677522968584,
+   definition     :     "lastUpdateTime" : 1692230269578,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "0d6f7d72-164b-4255-b80d-faa28681048c",
@@ -42,7 +42,7 @@ begin view definition
    definition     :     } ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1677522968584,
+   definition     :     "lastUpdateTime" : 1692230269578,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "e7f7b8cc-f9f3-4661-912f-01ee8c663053",

@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:VC Open view in blade
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1677522966526,
+   definition     :   "lastUpdateTime" : 1692230267297,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:VC Open view in blade",
@@ -17,7 +17,7 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1677522966526,
+   definition     :     "lastUpdateTime" : 1692230267297,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "d15e3aaf-4e1a-49f9-9f4e-7df2119176e6",
@@ -44,7 +44,7 @@ begin view definition
    definition     :     "componentDefinitions" : [ ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1677522966526,
+   definition     :     "lastUpdateTime" : 1692230267297,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "a8ddcd97-8b82-4f52-b9cc-ffa59594ee13",

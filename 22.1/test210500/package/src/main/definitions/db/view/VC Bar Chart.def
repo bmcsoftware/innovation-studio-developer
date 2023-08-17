@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:VC Bar Chart
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1677522967598,
+   definition     :   "lastUpdateTime" : 1692230268510,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:VC Bar Chart",
@@ -17,7 +17,7 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1677522967598,
+   definition     :     "lastUpdateTime" : 1692230268510,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "e465e485-0a52-4c52-99be-253f7d2d5a03",
@@ -44,7 +44,7 @@ begin view definition
    definition     :     "componentDefinitions" : [ ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1677522967598,
+   definition     :     "lastUpdateTime" : 1692230268510,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "4dc75f26-557e-41ad-9c27-6b7f2ce7c102",
@@ -70,7 +70,7 @@ begin view definition
    definition     :     "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"af0ac111-4a84-4c05-8364-09c67aeca062\"],\"span\":6},{\"children\":[\"dcb02a63-4d3a-48d9-b6ce-138a4cb80c5d\"],\"span\":6}]}]}",
    definition     :     "componentDefinitions" : [ {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1677522967598,
+   definition     :       "lastUpdateTime" : 1692230268510,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "dcb02a63-4d3a-48d9-b6ce-138a4cb80c5d",
@@ -91,7 +91,7 @@ begin view definition
    definition     :       } ]
    definition     :     }, {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1677522967598,
+   definition     :       "lastUpdateTime" : 1692230268510,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "af0ac111-4a84-4c05-8364-09c67aeca062",

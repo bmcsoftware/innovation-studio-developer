@@ -173,6 +173,13 @@
             <version>1.0</version>
         </dependency>
         <!-- Dependency for Twilio text service :: END  -->
+        <!-- Used to convert from Xml to Json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20230227</version>
+        </dependency>
+        <!-- Used to convert from Xml to Json :: END -->
     </dependencies>
 
     <profiles>

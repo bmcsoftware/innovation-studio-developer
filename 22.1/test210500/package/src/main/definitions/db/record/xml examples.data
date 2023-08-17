@@ -1,0 +1,54 @@
+begin schema data
+   name           : com.example.test210500:xml examples
+   data-mapping   : <?xml version="1.0" encoding="utf-8"?><arDocMapping xmlns="urn:remedy:schemas:ars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"> 
+   data-mapping   :    <element name="entryList">        <formMapping>            <form foreignKeyId="1" formName="com.example.test210500:xml examples" mapType="embedded" 
+   data-mapping   : primaryKeyId="1"/>            <element name="entryItem">                <element dataType="string" name="f1_Display_ID">                    <fieldMapp
+   data-mapping   : ing arFieldId="1"/>                </element>                <element dataType="string" name="f2_Created_By">                    <fieldMapping arField
+   data-mapping   : Id="2"/>                </element>                <element dataType="dateTime" name="f3_Created_Date">                    <fieldMapping arFieldId="3"/
+   data-mapping   : >                </element>                <element dataType="string" name="f4_Assignee">                    <fieldMapping arFieldId="4"/>           
+   data-mapping   :      </element>                <element dataType="string" name="f5_Modified_By">                    <fieldMapping arFieldId="5"/>                </ele
+   data-mapping   : ment>                <element dataType="dateTime" name="f6_Modified_Date">                    <fieldMapping arFieldId="6"/>                </element>
+   data-mapping   :                 <element dataType="string" name="f7_Status">                    <fieldMapping arFieldId="7"/>                </element>               
+   data-mapping   :  <element dataType="string" name="f8_Description">                    <fieldMapping arFieldId="8"/>                </element>                <element 
+   data-mapping   : dataType="string" name="f15_Status_History">                    <fieldMapping arFieldId="15"/>                </element>                <element dataT
+   data-mapping   : ype="string" name="f16_Notifier_Listening">                    <fieldMapping arFieldId="16"/>                </element>                <element dataTy
+   data-mapping   : pe="string" name="f37__ID">                    <fieldMapping arFieldId="379"/>                </element>                <element name="f536870_13_xml_
+   data-mapping   : attachment">                    <element dataType="string" name="attachmentName">                        <fieldMapping arFieldId="536870913" arFieldPar
+   data-mapping   : t="attachmentName"/>                    </element>                    <element dataType="int" name="attachmentOrigSize">                        <field
+   data-mapping   : Mapping arFieldId="536870913" arFieldPart="attachmentOrigSize"/>                    </element>                    <element dataType="base64Binary" name
+   data-mapping   : ="attachmentData">                        <fieldMapping arFieldId="536870913" arFieldPart="attachmentData"/>                    </element>            
+   data-mapping   :     </element>            </element>        </formMapping>    </element></arDocMapping>
+   data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">    
+   data           : <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2023-08-16T23:58:
+   data           : 53+00:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2023-08-16T23:58
+   data           : :53+00:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>test</f8_Description>        <f15_Status_History xsi:nil="true"/
+   data           : >        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGADG1AAP0IDARZ830FRZ830FMDO8</f37__ID>        <f536870_13_xm
+   data           : l_attachment>            <attachmentName>test.xml</attachmentName>            <attachmentOrigSize>2866</attachmentOrigSize>            <attachmentData
+   data           : >PFRyYXZlbGVyaW5mb3JtYXRpb25SZXNwb25zZSB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2No
+   data           : ZW1hLWluc3RhbmNlIj4KICAgIDxwYWdlPjE8L3BhZ2U+CiAgICA8cGVyX3BhZ2U+MTA8L3Blcl9wYWdlPgogICAgPHRvdGFscmVjb3JkPjMyOTY5PC90b3RhbHJlY29yZD4KICAgIDx0b3RhbF9wYWdlc
+   data           : z4zMjk3PC90b3RhbF9wYWdlcz4KICAgIDx0cmF2ZWxlcnM+CiAgICAgICAgPFRyYXZlbGVyaW5mb3JtYXRpb24+CiAgICAgICAgICAgIDxpZD4xMTEzMzwvaWQ+CiAgICAgICAgICAgIDxuYW1lPkRldm
+   data           : Vsb3BlcjwvbmFtZT4KICAgICAgICAgICAgPGVtYWlsPkRldmVsb3BlcjEyQGdtYWlsLmNvbTwvZW1haWw+CiAgICAgICAgICAgIDxhZGRlcmVzPlVTQTwvYWRkZXJlcz4KICAgICAgICAgICAgPGNyZWF
+   data           : 0ZWRhdD4wMDAxLTAxLTAxVDAwOjAwOjAwPC9jcmVhdGVkYXQ+CiAgICAgICAgPC9UcmF2ZWxlcmluZm9ybWF0aW9uPgogICAgICAgIDxUcmF2ZWxlcmluZm9ybWF0aW9uPgogICAgICAgICAgICA8aWQ+
+   data           : MTExMzQ8L2lkPgogICAgICAgICAgICA8bmFtZT5BUzwvbmFtZT4KICAgICAgICAgICAgPGVtYWlsPnF3ZXF3QG1haWwucnU8L2VtYWlsPgogICAgICAgICAgICA8YWRkZXJlcz5VU0E8L2FkZGVyZXM+C
+   data           : iAgICAgICAgICAgIDxjcmVhdGVkYXQ+MDAwMS0wMS0wMVQwMDowMDowMDwvY3JlYXRlZGF0PgogICAgICAgIDwvVHJhdmVsZXJpbmZvcm1hdGlvbj4KICAgICAgICA8VHJhdmVsZXJpbmZvcm1hdGlvbj
+   data           : 4KICAgICAgICAgICAgPGlkPjExMTM1PC9pZD4KICAgICAgICAgICAgPG5hbWU+dmFubzwvbmFtZT4KICAgICAgICAgICAgPGVtYWlsPnZhbi4xOXZAbWFpbC5ydTwvZW1haWw+CiAgICAgICAgICAgIDx
+   data           : hZGRlcmVzPlVTQTwvYWRkZXJlcz4KICAgICAgICAgICAgPGNyZWF0ZWRhdD4wMDAxLTAxLTAxVDAwOjAwOjAwPC9jcmVhdGVkYXQ+CiAgICAgICAgPC9UcmF2ZWxlcmluZm9ybWF0aW9uPgogICAgICAg
+   data           : IDxUcmF2ZWxlcmluZm9ybWF0aW9uPgogICAgICAgICAgICA8aWQ+MTExMzY8L2lkPgogICAgICAgICAgICA8bmFtZT5EZXZlbG9wZXIxMjM8L25hbWU+CiAgICAgICAgICAgIDxlbWFpbD5EZXZlbG9wZ
+   data           : XI1MjNAZ21haWwuY29tPC9lbWFpbD4KICAgICAgICAgICAgPGFkZGVyZXM+VVNBPC9hZGRlcmVzPgogICAgICAgICAgICA8Y3JlYXRlZGF0PjAwMDEtMDEtMDFUMDA6MDA6MDA8L2NyZWF0ZWRhdD4KIC
+   data           : AgICAgICA8L1RyYXZlbGVyaW5mb3JtYXRpb24+CiAgICAgICAgPFRyYXZlbGVyaW5mb3JtYXRpb24+CiAgICAgICAgICAgIDxpZD4xMTEzNzwvaWQ+CiAgICAgICAgICAgIDxuYW1lPkFzaG9yPC9uYW1
+   data           : lPgogICAgICAgICAgICA8ZW1haWw+YXNob3QudmFyZGFueWFuLjIwMDBAZ21haWwuY29tPC9lbWFpbD4KICAgICAgICAgICAgPGFkZGVyZXM+VVNBPC9hZGRlcmVzPgogICAgICAgICAgICA8Y3JlYXRl
+   data           : ZGF0PjAwMDEtMDEtMDFUMDA6MDA6MDA8L2NyZWF0ZWRhdD4KICAgICAgICA8L1RyYXZlbGVyaW5mb3JtYXRpb24+CiAgICAgICAgPFRyYXZlbGVyaW5mb3JtYXRpb24+CiAgICAgICAgICAgIDxpZD4xM
+   data           : TEzODwvaWQ+CiAgICAgICAgICAgIDxuYW1lPjEyMzQ8L25hbWU+CiAgICAgICAgICAgIDxlbWFpbD5naGFnQG1haWwucnU8L2VtYWlsPgogICAgICAgICAgICA8YWRkZXJlcz5VU0E8L2FkZGVyZXM+Ci
+   data           : AgICAgICAgICAgIDxjcmVhdGVkYXQ+MDAwMS0wMS0wMVQwMDowMDowMDwvY3JlYXRlZGF0PgogICAgICAgIDwvVHJhdmVsZXJpbmZvcm1hdGlvbj4KICAgICAgICA8VHJhdmVsZXJpbmZvcm1hdGlvbj4
+   data           : KICAgICAgICAgICAgPGlkPjExMTM5PC9pZD4KICAgICAgICAgICAgPG5hbWU+YXNkYXNkPC9uYW1lPgogICAgICAgICAgICA8ZW1haWw+YXNkYXNkQGRhc2RhLmFzZDwvZW1haWw+CiAgICAgICAgICAg
+   data           : IDxhZGRlcmVzPlVTQTwvYWRkZXJlcz4KICAgICAgICAgICAgPGNyZWF0ZWRhdD4wMDAxLTAxLTAxVDAwOjAwOjAwPC9jcmVhdGVkYXQ+CiAgICAgICAgPC9UcmF2ZWxlcmluZm9ybWF0aW9uPgogICAgI
+   data           : CAgIDxUcmF2ZWxlcmluZm9ybWF0aW9uPgogICAgICAgICAgICA8aWQ+MTExNDA8L2lkPgogICAgICAgICAgICA8bmFtZT5kYTwvbmFtZT4KICAgICAgICAgICAgPGVtYWlsPmF1cml1QGdtYWlsLmNvbT
+   data           : wvZW1haWw+CiAgICAgICAgICAgIDxhZGRlcmVzPlVTQTwvYWRkZXJlcz4KICAgICAgICAgICAgPGNyZWF0ZWRhdD4wMDAxLTAxLTAxVDAwOjAwOjAwPC9jcmVhdGVkYXQ+CiAgICAgICAgPC9UcmF2ZWx
+   data           : lcmluZm9ybWF0aW9uPgogICAgICAgIDxUcmF2ZWxlcmluZm9ybWF0aW9uPgogICAgICAgICAgICA8aWQ+MTExNDI8L2lkPgogICAgICAgICAgICA8bmFtZT5hc2Rhc2Q8L25hbWU+CiAgICAgICAgICAg
+   data           : IDxlbWFpbD5xd3dlcnJ3ZXJ3ZWVxd0BtYWlsLnJ1PC9lbWFpbD4KICAgICAgICAgICAgPGFkZGVyZXM+VVNBPC9hZGRlcmVzPgogICAgICAgICAgICA8Y3JlYXRlZGF0PjAwMDEtMDEtMDFUMDA6MDA6M
+   data           : DA8L2NyZWF0ZWRhdD4KICAgICAgICA8L1RyYXZlbGVyaW5mb3JtYXRpb24+CiAgICAgICAgPFRyYXZlbGVyaW5mb3JtYXRpb24+CiAgICAgICAgICAgIDxpZD4xMTE0MzwvaWQ+CiAgICAgICAgICAgID
+   data           : xuYW1lPmthcmVuPC9uYW1lPgogICAgICAgICAgICA8ZW1haWw+a2FyZW5AbWFpbC5ydTwvZW1haWw+CiAgICAgICAgICAgIDxhZGRlcmVzPlVTQTwvYWRkZXJlcz4KICAgICAgICAgICAgPGNyZWF0ZWR
+   data           : hdD4wMDAxLTAxLTAxVDAwOjAwOjAwPC9jcmVhdGVkYXQ+CiAgICAgICAgPC9UcmF2ZWxlcmluZm9ybWF0aW9uPgogICAgPC90cmF2ZWxlcnM+CjwvVHJhdmVsZXJpbmZvcm1hdGlvblJlc3BvbnNlPg==
+   data           : </attachmentData>        </f536870_13_xml_attachment>    </entryItem></entryList>
+end
+

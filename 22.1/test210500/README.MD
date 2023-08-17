@@ -1,6 +1,7 @@
 # Test 22.1.03 (com.example.test210500)
 History:
 * Version:
+  * 0.9.3, 2023/08/16, Adding an example how to convert Xml to Json (XmlAttachmentToJson) and changing a link to BMC documentation for SDK upgrades.
   * 0.9.2, 2023/03/01, Adding examples and a section about Initializer and Global Load.
   * 0.9.1, 2023/02/26, Adding examples how to work with Record instances in Java, adding actions in a view component, delay a view component registration.
   * 0.9, 2023/02/02, Adding a section about Upgrade and breaking changes. Adapting a bit the MD files.
@@ -54,11 +55,7 @@ Here are the [instructions](https://docs.bmc.com/docs/is221/deploying-your-digit
 
 <a name="update"></a>
 ## Updating your SDK / Developer Environment (if needed):
-* [21.x to 22.1.00](https://docs.bmc.com/docs/is221/upgrading-bmc-helix-innovation-studio-sdk-to-22-1-00-1039588344.html),
-* [22.1.00 to 22.1.01](https://docs.bmc.com/docs/is221/upgrading-bmc-helix-innovation-studio-sdk-to-22-1-01-1139535103.html),
-* [22.1.01 to 22.1.02](https://docs.bmc.com/docs/is221/upgrading-bmc-helix-innovation-studio-sdk-to-22-1-02-1139535102.html),
-* [22.1.02 to 22.1.03](https://docs.bmc.com/docs/is221/upgrading-bmc-helix-innovation-studio-sdk-to-22-1-03-1145632021.html),
-* [22.1.03 to 22.1.04](https://docs.bmc.com/docs/is221/upgrading-bmc-helix-innovation-studio-sdk-to-22-1-04-1172068569.html),
+* [22.x SDK upgrade](https://docs.bmc.com/docs/is221/upgrading-to-the-latest-bmc-helix-innovation-studio-sdk-1039588344.html?src=search),
 
 
 > :memo:  
@@ -134,6 +131,7 @@ Video content:
 | GetListSize                        | [Java](./_details/JAVA.MD#GetListSize)                                         | Activity          | :hot_pepper:              |
 | GetListValueByIndex                | [Java](./_details/JAVA.MD#GetListValueByIndex)                                 | Activity          | :hot_pepper:              |
 | AccessRecordInstances              | [Java](./_details/JAVA.MD#AccessRecordInstances)                               | Activity          | :hot_pepper:              |
+| XmlAttachmentToJson                | [Java](./_details/JAVA.MD#XmlAttachmentToJson)                               | Activity          | :hot_pepper:              |
 | SimpleRest                         | [Java](./_details/JAVA.MD#SimpleRest)                                          | Rest Api          | :hot_pepper:              |
 | FruitRest                          | [Java](./_details/JAVA.MD#FruitRest)                                           | Rest Api          | :hot_pepper: :hot_pepper: |
 | Test210500GeneratePasswordCommand  | [Java](./_details/JAVA.MD#Test210500GeneratePasswordCommand)                   | Command           | :hot_pepper: :hot_pepper: |

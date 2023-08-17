@@ -35,6 +35,7 @@ public class MyApplication extends RxBundle {
         registerService(new ListUtils());
         registerService(new AttachFile());
         registerService(new AccessRecordInstances());
+        registerService(new XmlUtils());
 
         registerStaticWebResource(String.format("/%s", getId()), "/webapp");
     }

@@ -3,7 +3,7 @@ begin record definition
    definition     : {
    definition     :   "resourceType" : "com.bmc.arsys.rx.services.record.domain.RegularRecordDefinition",
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1677522962000,
+   definition     :   "lastUpdateTime" : 1692230263000,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "Demo",
    definition     :   "name" : "com.example.test210500:Country",
@@ -15,7 +15,7 @@ begin record definition
    definition     :   "guid" : "IDGAAC47FY79WAQSHFSTQSHFSTYWSY",
    definition     :   "fieldDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522962771,
+   definition     :     "lastUpdateTime" : 1692230263384,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Display ID",
@@ -89,7 +89,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522962771,
+   definition     :     "lastUpdateTime" : 1692230263384,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Created By",
@@ -149,7 +149,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : true
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.DateTimeFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522962771,
+   definition     :     "lastUpdateTime" : 1692230263384,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Created Date",
@@ -202,7 +202,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522962771,
+   definition     :     "lastUpdateTime" : 1692230263384,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Assignee",
@@ -248,7 +248,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522962771,
+   definition     :     "lastUpdateTime" : 1692230263384,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Modified By",
@@ -294,7 +294,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.DateTimeFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522962771,
+   definition     :     "lastUpdateTime" : 1692230263384,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Modified Date",
@@ -333,7 +333,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.SelectionFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522962771,
+   definition     :     "lastUpdateTime" : 1692230263384,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Status",
@@ -401,7 +401,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522962771,
+   definition     :     "lastUpdateTime" : 1692230263384,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Country Name",
@@ -461,7 +461,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : true
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.SelectionFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522962771,
+   definition     :     "lastUpdateTime" : 1692230263384,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Notifier Listening",
@@ -523,7 +523,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522962771,
+   definition     :     "lastUpdateTime" : 1692230263384,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "ID",
@@ -596,8 +596,9 @@ begin record definition
    definition     :   "upgradeVersion" : 0,
    definition     :   "displayFieldIdInAssociation" : null,
    definition     :   "confidentialDataDescriptor" : null,
+   definition     :   "rlsAlgorithm" : 0,
    definition     :   "indexDefinitions" : [ {
-   definition     :     "indexName" : "I4695_1_379_T4695",
+   definition     :     "indexName" : "I4770_1_379_T4770",
    definition     :     "unique" : true,
    definition     :     "indexFieldIds" : [ 379 ],
    definition     :     "ignoreBlankValues" : false
@@ -605,6 +606,7 @@ begin record definition
    definition     :   "inheritanceDescriptor" : null,
    definition     :   "isSharedInstanceStorage" : false,
    definition     :   "isAbstract" : false,
-   definition     :   "isFinal" : false
+   definition     :   "isFinal" : false,
+   definition     :   "securityTable" : false
    definition     : }
 end

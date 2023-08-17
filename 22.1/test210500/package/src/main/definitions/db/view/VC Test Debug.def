@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:VC Test Debug
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1677522967140,
+   definition     :   "lastUpdateTime" : 1692230268047,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:VC Test Debug",
@@ -17,7 +17,7 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1677522967140,
+   definition     :     "lastUpdateTime" : 1692230268047,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "af8cd053-9525-4351-ac4c-33fd1dd3e730",
@@ -44,7 +44,7 @@ begin view definition
    definition     :     "componentDefinitions" : [ ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1677522967140,
+   definition     :     "lastUpdateTime" : 1692230268047,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "19847685-50ed-4b73-87c6-d5a841d6309c",

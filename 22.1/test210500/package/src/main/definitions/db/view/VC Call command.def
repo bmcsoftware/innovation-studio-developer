@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:VC Call command
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1677522967078,
+   definition     :   "lastUpdateTime" : 1692230267943,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:VC Call command",
@@ -17,7 +17,7 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1677522967078,
+   definition     :     "lastUpdateTime" : 1692230267943,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "a63e3b16-967b-432b-a078-88be02a02d01",
@@ -38,7 +38,7 @@ begin view definition
    definition     :     } ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1677522967078,
+   definition     :     "lastUpdateTime" : 1692230267943,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "44f00075-6b49-4902-8355-cfcb82abe9f1",

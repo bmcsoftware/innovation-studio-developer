@@ -24,10 +24,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/com-example-test210500/src/**/*.ts",
-              "libs/com-example-test210500/src/**/*.html"
-            ]
+            "lintFilePatterns": ["libs/com-example-test210500/src/**/*.ts", "libs/com-example-test210500/src/**/*.html"]
           }
         },
         "test": {
@@ -123,9 +120,7 @@
               }
             ],
             "stylePreprocessorOptions": {
-              "includePaths": [
-                "styles"
-              ]
+              "includePaths": ["styles"]
             },
             "scripts": [
               "scripts/rxjs-6.6.7/rxjs.umd.min.js",
@@ -249,10 +244,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/shell//src/**/*.ts",
-              "apps/shell//src/**/*.html"
-            ]
+            "lintFilePatterns": ["apps/shell//src/**/*.ts", "apps/shell//src/**/*.html"]
           }
         },
         "test": {

@@ -3,7 +3,7 @@ begin record definition
    definition     : {
    definition     :   "resourceType" : "com.bmc.arsys.rx.services.record.domain.RegularRecordDefinition",
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1677522964000,
+   definition     :   "lastUpdateTime" : 1692230265000,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "Demo",
    definition     :   "name" : "com.example.test210500:TwilioConfiguration",
@@ -15,7 +15,7 @@ begin record definition
    definition     :   "guid" : "IDGAAC47FSUC1AQT7OU7QT7OU76JY1",
    definition     :   "fieldDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964688,
+   definition     :     "lastUpdateTime" : 1692230265202,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Display ID",
@@ -89,7 +89,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964688,
+   definition     :     "lastUpdateTime" : 1692230265202,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Created By",
@@ -149,7 +149,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : true
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.DateTimeFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964688,
+   definition     :     "lastUpdateTime" : 1692230265202,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Created Date",
@@ -202,7 +202,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964688,
+   definition     :     "lastUpdateTime" : 1692230265202,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Assignee",
@@ -248,7 +248,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964688,
+   definition     :     "lastUpdateTime" : 1692230265202,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Modified By",
@@ -294,7 +294,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.DateTimeFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964688,
+   definition     :     "lastUpdateTime" : 1692230265202,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Modified Date",
@@ -333,7 +333,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.SelectionFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964688,
+   definition     :     "lastUpdateTime" : 1692230265202,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Status",
@@ -401,7 +401,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964688,
+   definition     :     "lastUpdateTime" : 1692230265202,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Description",
@@ -461,7 +461,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : true
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.SelectionFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964688,
+   definition     :     "lastUpdateTime" : 1692230265202,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Notifier Listening",
@@ -523,7 +523,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964688,
+   definition     :     "lastUpdateTime" : 1692230265202,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "ID",
@@ -569,7 +569,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : true
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964000,
+   definition     :     "lastUpdateTime" : 1692230265000,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Twilio Account SID",
@@ -601,7 +601,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964000,
+   definition     :     "lastUpdateTime" : 1692230265000,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Twilio Auth Token",
@@ -633,7 +633,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1677522964000,
+   definition     :     "lastUpdateTime" : 1692230265000,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Twilio Sent From Phone Number",
@@ -692,8 +692,9 @@ begin record definition
    definition     :   "upgradeVersion" : 0,
    definition     :   "displayFieldIdInAssociation" : null,
    definition     :   "confidentialDataDescriptor" : null,
+   definition     :   "rlsAlgorithm" : 0,
    definition     :   "indexDefinitions" : [ {
-   definition     :     "indexName" : "I4706_1_379_T4706",
+   definition     :     "indexName" : "I4782_1_379_T4782",
    definition     :     "unique" : true,
    definition     :     "indexFieldIds" : [ 379 ],
    definition     :     "ignoreBlankValues" : false
@@ -701,6 +702,7 @@ begin record definition
    definition     :   "inheritanceDescriptor" : null,
    definition     :   "isSharedInstanceStorage" : false,
    definition     :   "isAbstract" : false,
-   definition     :   "isFinal" : false
+   definition     :   "isFinal" : false,
+   definition     :   "securityTable" : false
    definition     : }
 end

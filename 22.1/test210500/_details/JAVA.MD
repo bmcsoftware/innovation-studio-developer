@@ -33,6 +33,7 @@ For now, you would need to create the file structure manually and register the R
 * [GetListSize](#GetListSize),
 * [GetListValueByIndex](#GetListValueByIndex),
 * [AccessRecordInstances](#AccessRecordInstances),
+* [XmlAttachmentToJson](#XmlAttachmentToJson),
 * [SimpleRest](#SimpleRest),
 * [FruitRest](#FruitRest),
 * [Test210500GeneratePasswordCommand](#Test210500GeneratePasswordCommand),
@@ -287,6 +288,52 @@ public HCaptchaAnswer verifyHCaptchaToken
 
 
 ---
+
+<a name="XmlAttachmentToJson"></a>
+### XmlAttachmentToJson:
+* Type: Custom activity,
+* Description: This example shows how to convert an Attachment Object (variable or Attachment from a Record Instance or Output from a Web Api returning Xml) to a Json string. This can be very useful when a Web Api returns Xml. In this case, the result is not a String, but an Attachment Object.
+* ```scope = Scope.PUBLIC``` means that the Activity can be used in all bundles,
+  * It shows how to:
+    * Get an Attachment Object as Input Parameter,
+      * ```java
+         @ActionParameter(name = "xmlAttachment") @NotNull Attachment xmlAttachment
+        ```
+      * We extract the content of the Attachment object:
+        * ```java
+           xmlText = new String(xmlAttachment.getBinaryData(), StandardCharsets.UTF_8);
+          ```
+      * We simply use the objects from the third party library json to convert the xml to Json. Usually the indentation level is set to 100 in the examples.
+        * ```java
+           JSONObject xmlJSONObj = XML.toJSONObject(xmlText);
+           jsonString = xmlJSONObj.toString(indentation);
+          ```
+* Complexity: :hot_pepper:
+* Used in the example:
+  * Processes: "Call XML Rest API and convert to Json" and "Convert XML attachment to Json", also in the view "Demo XML to Json conversion",
+
+> :memo:  
+> This example consumes a free Rest Api website (http://restapi.adequateshop.com/swagger/ui/index#!/Traveler/Traveler_GetTraveler).
+> We are leveraging the third party Maven library "json".
+```xml
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20230227</version>
+</dependency>
+```
+
+> :warning:  
+> In order for the Web Api call to work in the View or the Process you will need to:
+> Go in "Administration" and create a "Web Api Connection" entering those data, please note the connection "Name".
+> ![Web Api Connection](./pictures/webapi_connection_01.png)
+> ![Web Api Connection](./pictures/webapi_connection_02.png)
+> Select on the left side this sample bundle, and on the right side the "Web Api Connection" you created in the first step.
+> ![Web Api Mapping](./pictures/webapi_mapping.png)
+
+
+---
+
 
 <a name="SimpleRest"></a>
 ### SimpleRest:
