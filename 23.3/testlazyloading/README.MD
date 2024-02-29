@@ -10,7 +10,8 @@ History:
 * [Installation (using the zip file)](#installation),
 * [Updating your SDK / Developer Environment (if needed)](#update),
 * [Build and installation using the source code](#build),
-* [How does Lazy Loading work?](#lazy-loading)
+* [How does Lazy Loading work?](#lazy-loading),
+* [Upgrade notes](#upgrade-notes),
 * [Disclaimer](#disclaimer),
 * [Support](#support),
 * [Links](#links),
@@ -217,7 +218,16 @@ When accessing the view "Test Lazy Loading", you can see that the Platform loads
 </details>
 
 
-
+<a name="upgrade-notes"></a>
+# Upgrade notes:  
+In the GitHub repository you can see what steps were taken to upgrade this example from the 22.x SDK to the 23.3 SDK.  
+* The commit [f129506770038b27638335ae5a24fb46166c6638](https://github.com/bmcsoftware/innovation-studio-developer/commit/f129506770038b27638335ae5a24fb46166c6638) contains the 22.x files,
+* The commit [e798a23da04ec740c2dba5d24b6dda84b766339d](https://github.com/bmcsoftware/innovation-studio-developer/commit/e798a23da04ec740c2dba5d24b6dda84b766339d) contains the changes applied manually and automatically to match the 23.3 SDK requirements,
+Note:  
+The steps to upgrade a 22.x to 23.3 SDK are available in this [link]https://docs.bmc.com/docs/innovationsuite/233/upgrading-to-the-latest-bmc-helix-innovation-studio-sdk-1247609631.html?src=search().  
+  
+  
+  
 <a name="disclaimer"></a>
 # Disclaimer:
 These samples are released by Laurent Matheo and are released "as is" as code samples. There is no warranty, liability or support on those examples.  
