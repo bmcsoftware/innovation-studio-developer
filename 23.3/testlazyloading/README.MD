@@ -1,8 +1,7 @@
 # Testing View Component / Bundle Lazy Loading
 History:
 * Version:
-  * 0.2, 2023/03/01, Added more details about the necessary annotation (thanks Alex :)), added an Action to show how decorators work. Updated the sample codeless application and screenshots.
-  * 0.1, 2023/02/28, Initial comments.
+    * 0.1, 2024/02/29, Updated to use the 23.3.x SDK.
 * Author: Laurent Matheo.
 
 
@@ -20,8 +19,8 @@ History:
 
 <a name="what-is-this"></a>
 ## What is this? :)
-This repository shows a very advanced concept available for coded bundles (Application or Library) for Innovation Suite, how to Lazy Load a coded bundle View Components or Actions.  
-This means that the coded bundle coded files (.js and .css), would only be loaded when one of its UI element (View Component or action) is used in a View.    
+This repository shows an advanced concept available for coded bundles (Application or Library) for Innovation Suite, how to Lazy Load a coded bundle View Components or Actions. This is coming now for free and by default when creating a new bundle using the 23.3.x SDK.  
+This means that the coded bundle coded files (.js and .css), would only be loaded when one of its UI element (View Component or View Action) is used in a View.    
   
 For example, let's say that we have:
 * A Pizza tool coded Library that has a View Component "Pizza Tracker",
@@ -36,7 +35,7 @@ For example, let's say that we have:
 #### When the user clicks on an order to see the Order Details:
 * Since this view leverages the View Component "Pizza Tracker", the Platform automatically loads the coded library "Pizza tool" coded files (.js and .css).   
 
-This example leverages the 22.1.03 SDK (Angular).  
+This example leverages the 22.3.00 SDK (Angular).  
 
 
 <a name="installation"></a>
@@ -45,27 +44,19 @@ There are two bundles in this example:
 * The coded library [com.example.testlazyloading-1.0-SNAPSHOT.zip](com.example.testlazyloading-1.0-SNAPSHOT.zip),
 * The codeless application [com.example.uselazyloadinglibrary-1.0.0-INSTALL.zip](./_codeless%20application/com.example.uselazyloadinglibrary-1.0.0-INSTALL.zip),
 
-You can just deploy the files on your development environment (the development environment for Angular (22.x) is not yet available on the [BMC Developer Portal](https://developers.bmc.com/site/global/home/index.gsp).    
-Here are the [instructions](https://docs.bmc.com/docs/is221/deploying-your-digital-service-application-for-the-first-time-to-start-working-in-bmc-helix-innovation-studio-1039589996.html?src=search) to start working with Innovation Studio. 
+You can just deploy the files on your 23.3.00 development environment which is available on the [BMC Developer Portal](https://developers.bmc.com/site/global/home/index.gsp).    
+Here are the [instructions](https://docs.bmc.com/docs/innovationsuite/233/deploying-your-application-for-the-first-time-to-start-working-in-bmc-helix-innovation-studio-1223791377.html?src=search) to start working with Innovation Studio. 
 
 
 <a name="update"></a>
 ## Updating your SDK / Developer Environment (if needed):
-* [21.x to 22.1.00](https://docs.bmc.com/docs/is221/upgrading-bmc-helix-innovation-studio-sdk-to-22-1-00-1039588344.html),
-* [22.1.00 to 22.1.01](https://docs.bmc.com/docs/is221/upgrading-bmc-helix-innovation-studio-sdk-to-22-1-01-1139535103.html),
-* [22.1.01 to 22.1.02](https://docs.bmc.com/docs/is221/upgrading-bmc-helix-innovation-studio-sdk-to-22-1-02-1139535102.html),
-* [22.1.02 to 22.1.03](https://docs.bmc.com/docs/is221/upgrading-bmc-helix-innovation-studio-sdk-to-22-1-03-1145632021.html),
-* [22.1.03 to 22.1.04](https://docs.bmc.com/docs/is221/upgrading-bmc-helix-innovation-studio-sdk-to-22-1-04-1172068569.html),
-
-
-> :memo:  
-> You can also look at the [upgrade](#upgrade-breaking-changes) section.
+* [22.x to 23.3.00](https://docs.bmc.com/docs/innovationsuite/233/upgrading-to-the-latest-bmc-helix-innovation-studio-sdk-1247609631.html?src=search),
 
 
 <a name="build"></a>
 # Build and installation using the source code from com.example.testlazyloading:
 Please follow those steps:
-* Prepare your developer environment installing several [pre-requisites](https://docs.bmc.com/docs/is221/setting-up-your-ide-and-installing-bmc-helix-innovation-studio-sdk-1039589980.html?src=search),
+* Prepare your developer environment installing several [pre-requisites](https://docs.bmc.com/docs/innovationsuite/233/setting-up-your-ide-and-installing-bmc-helix-innovation-studio-sdk-1247609960.html?src=search),
   * You will need nodeJs, maven, Yarn, Grunt and Java (OpenJDK).  
 
 Here are the steps:
@@ -76,17 +67,17 @@ Here are the steps:
     <developerUserName>developer</developerUserName>
     <developerPassword>password</developerPassword>
     <!-- Server name with Jetty port. -->
-    <webUrl>https://developerXXXX.innovate.bmc.com</webUrl>
+    <webUrl>https://yourServer:yourServerPort</webUrl>
     <!-- END: Bundle specific configuration.-->
 ```
-* run this command to build to deploy the coded application on your developer environment as per the [documentation](https://docs.bmc.com/docs/is221/deploying-your-digital-service-application-for-the-first-time-to-start-working-in-bmc-helix-innovation-studio-1039589996.html?src=search):
+* run this command to build to deploy the coded application on your developer environment as per the [documentation](https://docs.bmc.com/docs/innovationsuite/233/deploying-your-application-for-the-first-time-to-start-working-in-bmc-helix-innovation-studio-1223791377.html?src=search):
   * ```bash
     mvn clean install -Pdeploy
     ```
 
 <a name="lazy-loading"></a>
 # How does Lazy Loading work?
-This repository shows a very advanced concept available for coded bundles (Application or Library) for Innovation Suite, how to Lazy Load a coded bundle View Components or Actions.  
+This repository shows an advanced concept available for coded bundles (Application or Library) for Innovation Suite, how to Lazy Load a coded bundle View Components or Actions. This is coming now for free and by default when creating a new bundle using the 23.3.x SDK.    
 This means that the coded bundle coded files (.js and .css), would only be loaded when one of its UI element (View Component or action) is used in a View.
 
 For example, let's say that we have:
@@ -103,8 +94,8 @@ For example, let's say that we have:
 * Since this view leverages the View Component "Pizza Tracker", the Platform automatically loads the coded library "Pizza tool" coded files (.js and .css).
 
 # How to enable Lazy Loading?
-You simply need to modify the file [package.json](./bundle/src/main/webapp/package.json) and set in the "manifest" section the "generate" parameter to true.  
-By default, the value is set to false. "false" means that the coded bundle code (.js and .css) will always be loaded when any view is accessed.
+You simply need to modify the file [package.json](./bundle/src/main/webapp/package.json) and set in the "manifest" section the "generate" parameter to true and the "loadJs" and "loadCss" properties to "lazy". Setting the properties to "always" will deactivate the lazy loading for the Js and / or the Css code and will ensure it will always be loaded.  
+This could be useful for example if there are some global CSS classes used to skin a Container, in this case you would want to "always" load the Css code, so setting "loadCss" to "always".   
 ```json
     "manifest": {
       "generate": true,
@@ -132,18 +123,21 @@ This file is automatically generated and will be part of the coded bundle instal
 ```
 
 # Note on necessary annotations ```@RxViewComponent``` and ```@RxViewAction```:
-In order for the view components and actions to be detected and added in the manifest file described above, they need to be "described".  
-We are using for this Angular Decorators, ```@RxViewComponent``` for a View Component and ```@RxViewAction``` for an Action.  
+In order for the view components and actions to be detected and added in the manifest file described above, they need to be "described". Those decorators are now required in the 23.3 SDK and added automatically when using our schematics commands.    
+We are using for this Angular Decorators, ```@RxViewComponent``` for a View Component and ```@RxViewAction``` for a View Action.  
 As we can see in our example for our [demo View Component](../bundle/src/main/webapp/libs/com-example-testlazyloading/src/lib/view-components/label-lazy-loaded/runtime/label-lazy-loaded.component.ts), the decorator must be set in the View Component "runtime" Angular Component and its ```name``` property must match the Angular Component ```selector``` property:    
 ```typescript
 @Component({
   selector: 'com-example-testlazyloading-label-lazy-loaded',
   styleUrls: ['./label-lazy-loaded.scss'],
-  templateUrl: './label-lazy-loaded.component.html'
+  templateUrl: './label-lazy-loaded.component.html',
+  standalone: true,
+  imports: [CommonModule]
 })
 @RxViewComponent({
   name: 'com-example-testlazyloading-label-lazy-loaded'
 })
+export class LabelLazyLoadedComponent extends BaseViewComponent implements OnInit,IViewComponent {
 ```
 For an Action, the annotation ```@RxViewAction``` is defined in the [Action service](../bundle/src/main/webapp/libs/com-example-testlazyloading/src/lib/actions/lazy-loaded-action/lazy-loaded-action-action.service.ts) and its ```name``` property:  
 ```typescript
@@ -161,7 +155,8 @@ is the same that the ```name``` property defined in the [Action module](../bundl
 
 > :memo:  
 > You do not need to worry about applying the decorators, they are automatically set with the right values when the View Component or Action is generated using our SDK schematics.  
-> However it is interesting to see how we generate the manifest or if you created the coded bundle before the 22.x SDK. You might have to add the decorators manually, IF you want the coded bundle to be lazy loaded.
+> However it is interesting to see how we generate the manifest or if you created the coded bundle before the 22.3.x SDK. You might have to add the decorators manually, IF you want the coded bundle to be lazy loaded.  
+> If the decorators are not used, the View Components will never be loaded or available.
 
 
 

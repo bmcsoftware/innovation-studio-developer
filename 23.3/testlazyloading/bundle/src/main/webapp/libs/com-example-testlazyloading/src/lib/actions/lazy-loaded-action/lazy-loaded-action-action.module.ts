@@ -16,7 +16,6 @@ export class LazyLoadedActionActionModule {
     this.rxViewActionRegistryService.register({
       name: 'comExampleTestlazyloadingLazyLoadedAction',
       label: 'Lazy Loaded Action',
-      bundleId: 'com.example.testlazyloading',
       // Service that will be executed at runtime.
       service: this.lazyLoadedActionActionService,
       // The design manager will validate the input parameters at design time.

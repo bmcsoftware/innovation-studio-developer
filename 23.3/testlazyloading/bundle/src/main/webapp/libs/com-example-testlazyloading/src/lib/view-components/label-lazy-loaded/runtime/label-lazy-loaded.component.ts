@@ -4,11 +4,14 @@ import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime'
 import { RxViewComponent } from '@helix/platform/view/api';
 import { ILabelLazyLoadedParameters } from '../design/label-lazy-loaded.interface';
 import { distinctUntilChanged, pluck, takeUntil } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'com-example-testlazyloading-label-lazy-loaded',
   styleUrls: ['./label-lazy-loaded.scss'],
-  templateUrl: './label-lazy-loaded.component.html'
+  templateUrl: './label-lazy-loaded.component.html',
+  standalone: true,
+  imports: [CommonModule]
 })
 @RxViewComponent({
   name: 'com-example-testlazyloading-label-lazy-loaded'
