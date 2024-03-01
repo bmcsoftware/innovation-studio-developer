@@ -1,0 +1,36 @@
+begin schema data
+   name           : com.example.test210500:Code Sample
+   data-mapping   : <?xml version="1.0" encoding="utf-8"?><arDocMapping xmlns="urn:remedy:schemas:ars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"> 
+   data-mapping   :    <element name="entryList">        <formMapping>            <form foreignKeyId="1" formName="com.example.test210500:Code Sample" mapType="embedded" p
+   data-mapping   : rimaryKeyId="1"/>            <element name="entryItem">                <element dataType="string" name="f1_Display_ID">                    <fieldMappi
+   data-mapping   : ng arFieldId="1"/>                </element>                <element dataType="string" name="f2_Created_By">                    <fieldMapping arFieldI
+   data-mapping   : d="2"/>                </element>                <element dataType="dateTime" name="f3_Created_Date">                    <fieldMapping arFieldId="3"/>
+   data-mapping   :                 </element>                <element dataType="string" name="f4_Assignee">                    <fieldMapping arFieldId="4"/>            
+   data-mapping   :     </element>                <element dataType="string" name="f5_Modified_By">                    <fieldMapping arFieldId="5"/>                </elem
+   data-mapping   : ent>                <element dataType="dateTime" name="f6_Modified_Date">                    <fieldMapping arFieldId="6"/>                </element> 
+   data-mapping   :                <element dataType="string" name="f7_Status">                    <fieldMapping arFieldId="7"/>                </element>                
+   data-mapping   : <element dataType="string" name="f8_Description">                    <fieldMapping arFieldId="8"/>                </element>                <element d
+   data-mapping   : ataType="string" name="f15_Status_History">                    <fieldMapping arFieldId="15"/>                </element>                <element dataTy
+   data-mapping   : pe="string" name="f16_Notifier_Listening">                    <fieldMapping arFieldId="16"/>                </element>                <element dataTyp
+   data-mapping   : e="string" name="f37__ID">                    <fieldMapping arFieldId="379"/>                </element>                <element dataType="string" name
+   data-mapping   : ="f536870_13_code">                    <fieldMapping arFieldId="536870913"/>                </element>                <element dataType="string" name=
+   data-mapping   : "f536870_14_language">                    <fieldMapping arFieldId="536870914"/>                </element>            </element>        </formMapping>
+   data-mapping   :     </element></arDocMapping>
+   data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">    
+   data           : <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2021-05-03T06:13:
+   data           : 38+00:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2021-05-03T06:15
+   data           : :58+00:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>NA</f8_Description>        <f15_Status_History xsi:nil="true"/>
+   data           :         <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGAAC47FY79WAQS8P0QQS8P0QYDOI</f37__ID>        <f536870_13_code
+   data           : >interface User {  name: string;  id: number;}class UserAccount {  name: string;  id: number;  constructor(name: string, id: number) {    this.
+   data           : name = name;    this.id = id;  }}const user: User = new UserAccount('Murphy', 1);</f536870_13_code>        <f536870_14_language>typescript</f536870
+   data           : _14_language>    </entryItem>    <entryItem>        <f1_Display_ID>000000000000002</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>       
+   data           :  <f3_Created_Date>2021-05-03T06:17:34+00:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>       
+   data           :  <f6_Modified_Date>2021-05-03T06:17:34+00:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>NA</f8_Description>        <f
+   data           : 15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGAAC47FY79WAQS8P70QS8P70YE6M
+   data           : </f37__ID>        <f536870_13_code>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;div {  border: 1px solid black;  margin-top: 100px; 
+   data           :  margin-bottom: 100px;  margin-right: 150px;  margin-left: 80px;  background-color: lightblue;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;
+   data           : Using individual margin properties&lt;/h2&gt;&lt;div&gt;This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, 
+   data           : and a left margin of 80px.&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</f536870_13_code>        <f536870_14_language>html</f536870_14_language>    </entry
+   data           : Item></entryList>
+end
+

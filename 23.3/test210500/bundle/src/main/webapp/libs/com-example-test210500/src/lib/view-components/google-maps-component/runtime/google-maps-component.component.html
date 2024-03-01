@@ -1,0 +1,24 @@
+<!--We are using Adapt Alert to show that the Google Maps Api key is missing.-->
+<adapt-alert
+  [hidden]="componentData.apiKey"
+  [config]="alertConfiguration">
+</adapt-alert>
+
+<google-map
+  [ngBusy]="busyConfigSection"
+  *ngIf="areResourcesLoaded"
+  height="500px"
+  width="100%"
+  [zoom]="zoom"
+  [center]="center"
+  [options]="options" >
+
+  <map-marker #markerElem
+              *ngFor="let marker of markers"
+              [position]="marker.position"
+              [label]="marker.label"
+              [title]="marker.title"
+              [options]="marker.options">
+  </map-marker>
+
+</google-map>

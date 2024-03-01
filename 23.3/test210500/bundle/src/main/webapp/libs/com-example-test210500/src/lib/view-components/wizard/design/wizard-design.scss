@@ -1,0 +1,7 @@
+@import "~styles/variables";
+
+// This is a workaround because Adapt Step is overriding the view designer delete button
+// (element top right).
+div {
+  width: 80%;
+}

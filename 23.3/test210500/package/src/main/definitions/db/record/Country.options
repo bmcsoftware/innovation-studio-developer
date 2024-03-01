@@ -1,0 +1,6 @@
+#
+#Thu Aug 17 01:42:34 UTC 2023
+IgnoreRuleExecution=false
+DuplicateDataActionType=MERGE
+Name=com.example.test210500\:Country
+ImportOrder=4

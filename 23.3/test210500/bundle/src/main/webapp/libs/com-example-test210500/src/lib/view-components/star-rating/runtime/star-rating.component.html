@@ -1,0 +1,11 @@
+<adapt-rx-rating
+  [size]="selectedSize"
+  [style]="labelStyle"
+  [classList]="componentInputParametersValues.cssStyles"
+  [required]="componentInputParametersValues.isRequired"
+  [hidden]="componentInputParametersValues.hidden"
+  [label]="componentInputParametersValues.label"
+  [readonly]="componentInputParametersValues.disabled"
+  [(ngModel)]="componentInputParametersValues.numberOfStars"
+  (onRateChange)="onRateChange($event)">
+</adapt-rx-rating>

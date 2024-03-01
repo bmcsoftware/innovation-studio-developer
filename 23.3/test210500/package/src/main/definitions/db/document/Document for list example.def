@@ -1,0 +1,19 @@
+begin document definition
+   name           : com.example.test210500:Document for list example
+   definition     : {
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1692230271395,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "Demo",
+   definition     :   "name" : "com.example.test210500:Document for list example",
+   definition     :   "tags" : null,
+   definition     :   "description" : null,
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "IDGADG1AAP0IDARPEG9JRPEG9JXSOX",
+   definition     :   "allowOverlay" : false,
+   definition     :   "overlayDescriptor" : null,
+   definition     :   "documentSchema" : "{\n    \"data\": []\n}"
+   definition     : }
+end
