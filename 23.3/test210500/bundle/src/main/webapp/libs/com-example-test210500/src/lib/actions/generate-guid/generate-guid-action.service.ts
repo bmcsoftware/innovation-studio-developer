@@ -4,8 +4,12 @@ import { IGenerateGuidActionProperties } from './generate-guid-action.interface'
 import { forkJoin, Observable, of } from 'rxjs';
 import { IPlainObject } from '@helix/platform/shared/api';
 import { RxGuidService } from '@helix/platform/utils';
+import { RxViewAction } from '@helix/platform/view/api';
 
 @Injectable()
+@RxViewAction({
+  name: 'comExampleTest210500SActionGenerateGuid',
+})
 export class GenerateGuidActionService implements IViewActionService<IGenerateGuidActionProperties, never> {
   // Service that contains the Guid service.
   constructor(private rxGuidService: RxGuidService) {

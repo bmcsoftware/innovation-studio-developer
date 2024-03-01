@@ -3,11 +3,21 @@ import { WizardDesignModel } from './wizard-design.model';
 import { AdaptStepsComponent, StepsMenuItem } from '@bmc-ux/adapt-angular';
 import { WIZARD_DESIGN_OPTIONS } from './wizard-design.types';
 import { cloneDeep } from 'lodash';
+import { CommonModule } from '@angular/common';
+// Those modules are necessary since we use the Adapt Step component
+// and use form controls (model).
+import { FormsModule } from '@angular/forms';
+import { AdaptStepsModule } from '@bmc-ux/adapt-angular';
+// This module is required as we consume the Inspector StepEditorComponent
+// which is a form control Component (Step Editor).
+import { StepEditorModule } from '../../../inspectors/step-editor/step-editor.module';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-wizard-design',
   styleUrls: ['./wizard-design.scss'],
-  templateUrl: './wizard-design.component.html'
+  templateUrl: './wizard-design.component.html',
+  standalone: true,
+  imports: [CommonModule, FormsModule, AdaptStepsModule, StepEditorModule]
 })
 export class WizardDesignComponent implements OnInit {
   @ViewChild('adaptStepObject')

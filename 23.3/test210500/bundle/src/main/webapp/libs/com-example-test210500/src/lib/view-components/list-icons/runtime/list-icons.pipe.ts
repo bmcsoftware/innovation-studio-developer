@@ -7,7 +7,8 @@ import { IconFilterTrackingService } from './list-icon.service';
 // It will emit the number of filtered icons through a service.
 // The component subscribes to the service observable to get this count.
 @Pipe({
-  name: 'iconFilter'
+  name: 'iconFilter',
+  standalone: true
 })
 export class IconPipe implements PipeTransform {
   constructor(private iconFilterTrackingService: IconFilterTrackingService) {

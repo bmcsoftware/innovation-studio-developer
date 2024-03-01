@@ -1,19 +1,16 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService } from '@helix/platform/view/api';
-import { DelayRegistrationComponent, DelayRegistrationModule } from './runtime';
-import { DelayRegistrationDesignComponent, DelayRegistrationDesignModel, DelayRegistrationDesignModule } from './design';
+import { DelayRegistrationComponent } from './runtime';
+import { DelayRegistrationDesignComponent, DelayRegistrationDesignModel } from './design';
 import { IViewComponentDescriptor } from '@helix/platform/view/api/registries/view-component-descriptor.types';
 import { RX_RECORD_DEFINITION, RxRecordInstanceService } from '@helix/platform/record/api';
 import { DELAY_REGISTRATION_OPTIONS } from './delay-registration.types';
 
 
-@NgModule({
-  imports: [DelayRegistrationDesignModule, DelayRegistrationModule]
-})
+@NgModule()
 export class DelayRegistrationRegistrationModule {
   constructor(
     private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver,
     private rxRecordInstanceService: RxRecordInstanceService
   ) {
     // Instead of directly passing the object that describes the View Component,
@@ -31,10 +28,9 @@ export class DelayRegistrationRegistrationModule {
       name: '<The name will be replaced>',
       group: 'Test 21.05.00',
       icon: 'clock_o',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(DelayRegistrationComponent),
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(DelayRegistrationDesignComponent),
+      component: DelayRegistrationComponent,
+      designComponent: DelayRegistrationDesignComponent,
       designComponentModel: DelayRegistrationDesignModel,
-      bundleId: 'com.example.test210500',
       // This setting is used to declare which bundles can use the View Component, aka appear in the
       // View Designer palette.
       // This can be an array of bundles using Strings or RegExp expressions.

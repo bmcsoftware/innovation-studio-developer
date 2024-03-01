@@ -15,6 +15,7 @@ import { MATRIX_OPTIONS } from './matrix-action.types';
 import { IViewComponentActionConfig } from '@helix/platform/view/runtime/event-manager/view-component-action-config.interface';
 import { IOpenViewActionParams } from '@helix/platform/view/actions/open-view/open-view-action.types';
 import { RxNotificationService } from '@helix/platform/shared/api';
+import { RxViewAction } from '@helix/platform/view/api';
 
 // In this example we want to load javascripts scripts that are in the assets folder:
 // p5.js for the drawing,
@@ -23,7 +24,11 @@ import { RxNotificationService } from '@helix/platform/shared/api';
 //
 // We also show how to call the Action service to:
 // Open a view passing an input parameter and getting back the output parameter.
+
 @Injectable()
+@RxViewAction({
+  name: 'comExampleTest210500ActionMatrix',
+})
 export class MatrixActionService implements IViewActionService<IMatrixActionProperties, never> {
   // We will use the dynamic script loader service to dynamically load the scripts p5.js and matrix.js.
   constructor(private dynamicScriptLoaderServiceService: DynamicScriptLoaderServiceService,

@@ -7,10 +7,18 @@ import { distinctUntilChanged, map, pluck, take, takeUntil } from 'rxjs/operator
 import { IFieldDefinition, IRecordDefinition, RxRecordDefinitionCacheService } from '@helix/platform/record/api';
 import { find, findIndex, forEach } from 'lodash';
 import { AdaptProgressModel, AdaptProgressType } from '@bmc-ux/adapt-angular';
+import { RxViewComponent } from '@helix/platform/view/api';
+import { CommonModule } from '@angular/common';
+import { AdaptWorkFlowModule } from '@bmc-ux/adapt-angular';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-lifecycle',
-  templateUrl: './lifecycle.component.html'
+  templateUrl: './lifecycle.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptWorkFlowModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500Lifecycle'
 })
 export class LifecycleComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

@@ -40,7 +40,8 @@ export class SliderComponent extends ValueAccessor<string> implements IFormContr
           content: this.options.tooltip.content,
           popoverMode: this.options.tooltip.popoverMode,
           placement: this.options.tooltip.placement,
-          iconName: this.options.tooltip.iconName
+          iconName: this.options.tooltip.iconName,
+          maxWidth: 300
         };
       });
     }

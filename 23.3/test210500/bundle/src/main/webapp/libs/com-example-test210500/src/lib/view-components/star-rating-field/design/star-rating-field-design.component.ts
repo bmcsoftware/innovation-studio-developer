@@ -3,10 +3,15 @@ import { StarRatingFieldDesignModel } from './star-rating-field-design.model';
 import { STAR_RATING_SIZE_OPTIONS } from '../../star-rating/star-rating.types';
 import { combineLatest } from 'rxjs';
 import { IStarRatingFieldDesignTimeParameters } from './star-rating-field.interface';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { AdaptRxRatingModule } from '@bmc-ux/adapt-angular';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-star-rating-field-design',
-  templateUrl: './star-rating-field-design.component.html'
+  templateUrl: './star-rating-field-design.component.html',
+  standalone: true,
+  imports: [CommonModule, FormsModule, AdaptRxRatingModule]
 })
 export class StarRatingFieldDesignComponent implements OnInit {
   @Input()

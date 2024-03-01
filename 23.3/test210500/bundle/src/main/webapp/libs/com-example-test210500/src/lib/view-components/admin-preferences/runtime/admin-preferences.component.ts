@@ -5,11 +5,19 @@ import { IAdminComponentSettings, RxAdminSettingsService, Tooltip } from '@helix
 import { ADMIN_PREFERENCES_OPTIONS } from './admin-preferences.types';
 import { first, forEach } from 'lodash';
 import { IAdminComponentSetting } from '@helix/platform/shared/api/administration/administration.types';
+import { CommonModule } from '@angular/common';
+import { AdaptButtonModule, AdaptCodeViewerModule, AdaptRxLabelModule } from '@bmc-ux/adapt-angular';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-admin-preferences',
   styleUrls: ['./admin-preferences.scss'],
-  templateUrl: './admin-preferences.component.html'
+  templateUrl: './admin-preferences.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptCodeViewerModule, AdaptButtonModule, AdaptRxLabelModule],
+})
+@RxViewComponent({
+  name: 'comExampleTest210500AdminPreferences'
 })
 export class AdminPreferencesComponent extends BaseViewComponent implements IViewComponent, AfterViewInit {
   guid: string;

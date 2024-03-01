@@ -1,22 +1,19 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService, ViewComponentPropertyType } from '@helix/platform/view/api';
-import { LifecycleComponent, LifecycleModule } from './runtime';
-import { LifecycleDesignComponent, LifecycleDesignModel, LifecycleDesignModule } from './design';
+import { LifecycleComponent } from './runtime';
+import { LifecycleDesignComponent, LifecycleDesignModel } from './design';
 
-@NgModule({
-  imports: [LifecycleDesignModule, LifecycleModule]
-})
+@NgModule()
 export class LifecycleRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500Lifecycle',
       name: 'lifecycle',
       icon: 'arrows_cycle',
       group: 'Test 21.05.00',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(LifecycleComponent),
+      component: LifecycleComponent,
       properties: [
         {
           name: 'recordDefinitionName',
@@ -34,9 +31,8 @@ export class LifecycleRegistrationModule {
           name: 'statusList'
         }
       ],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(LifecycleDesignComponent),
-      designComponentModel: LifecycleDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: LifecycleDesignComponent,
+      designComponentModel: LifecycleDesignModel
     });
   }
 }

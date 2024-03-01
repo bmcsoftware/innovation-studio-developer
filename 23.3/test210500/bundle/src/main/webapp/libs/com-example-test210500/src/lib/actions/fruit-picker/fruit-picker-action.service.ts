@@ -5,8 +5,12 @@ import { forkJoin, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { FRUIT_PICKER_REST_ACTION } from './fruit-picker-action.types';
 import { get } from 'lodash';
+import { RxViewAction } from '@helix/platform/view/api';
 
 @Injectable()
+@RxViewAction({
+  name: 'comExampleTest210500ActionFruitPicker',
+})
 export class FruitPickerActionService implements IViewActionService<IFruitPickerActionProperties, never> {
   constructor(private httpClient: HttpClient) {
   }

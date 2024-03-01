@@ -1,25 +1,22 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService, ViewComponentPropertyType } from '@helix/platform/view/api';
-import { TestDebugComponentComponent, TestDebugComponentModule } from './runtime';
-import { TestDebugComponentDesignComponent, TestDebugComponentDesignModel, TestDebugComponentDesignModule } from './design';
+import { TestDebugComponentComponent } from './runtime';
+import { TestDebugComponentDesignComponent, TestDebugComponentDesignModel } from './design';
 
 // This view component contains several different input parameter types and is
 // designed to test the "log-parameters" Component which can be used to debug
 // the different input parameters during the development phase.
-@NgModule({
-  imports: [TestDebugComponentDesignModule, TestDebugComponentModule]
-})
+@NgModule()
 export class TestDebugComponentRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500TestDebugComponent',
       name: 'Testing Debug Component',
       icon: 'android',
       group: 'Test 21.05.00',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(TestDebugComponentComponent),
+      component: TestDebugComponentComponent,
       // We display pretty much all the different inspectors.
       // All of them will be defined in the design.model.ts file.
       properties: [
@@ -85,9 +82,8 @@ export class TestDebugComponentRegistrationModule {
           name: 'gradient'
         }
       ],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(TestDebugComponentDesignComponent),
-      designComponentModel: TestDebugComponentDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: TestDebugComponentDesignComponent,
+      designComponentModel: TestDebugComponentDesignModel
     });
   }
 }

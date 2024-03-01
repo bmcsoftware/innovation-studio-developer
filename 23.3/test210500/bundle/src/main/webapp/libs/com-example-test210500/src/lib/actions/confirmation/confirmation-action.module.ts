@@ -31,7 +31,6 @@ export class ConfirmationActionModule {
       // <bundleId>Action<actionName>
       name: 'comExampleTest210500ActionConfirmation',
       label: 'Confirmation',
-      bundleId: 'com.example.test210500',
       // Service that will be executed at runtime.
       service: this.confirmationActionService,
       // The design manager is used to validate the input parameters at design time.

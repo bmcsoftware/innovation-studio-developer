@@ -6,10 +6,17 @@ import { RxLogService, RxNotificationService } from '@helix/platform/shared/api'
 import { HttpClient } from '@angular/common/http';
 import { GENERATE_PASSWORD_OPTIONS } from './generate-password.types';
 import { distinctUntilChanged, pluck, takeUntil } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-generate-password',
-  templateUrl: './generate-password.component.html'
+  templateUrl: './generate-password.component.html',
+  standalone: true,
+  imports: [CommonModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500GeneratePassword'
 })
 export class GeneratePasswordComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

@@ -1,5 +1,7 @@
+import { IRxRecordGridApi } from "@helix/platform/view/api";
+
 export interface IAccessGridParameters {
-  gridViewComponent: string;
+  gridViewComponent: IRxRecordGridApi;
   rowIndex: string;
-  gridCssClassTag: string;
+  lastRefreshTime: string;
 }

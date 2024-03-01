@@ -2,12 +2,16 @@ import { Injectable } from '@angular/core';
 import { IRxApplicationInitializer, RxCurrentUserService, RxLogService } from '@helix/platform/shared/api';
 import { DynamicScriptLoaderServiceService } from './services/dynamic-service-loader.service';
 import { GetAssetPathService } from './services/get-asset-path.service';
+import { RxApplicationInitializer } from '@helix/platform/shared/api';
 
 // In the initializer, we will call the pure javascript script:
 // /assets/scripts/alert-me-initializer.js
 declare var alertMeInitializer: any;
 
 @Injectable()
+@RxApplicationInitializer({
+  applicationId: 'com.example.test210500',
+})
 export class ComExampleTest210500Initializer implements IRxApplicationInitializer {
   constructor(private rxLogService: RxLogService,
               private dynamicScriptLoaderServiceService: DynamicScriptLoaderServiceService,

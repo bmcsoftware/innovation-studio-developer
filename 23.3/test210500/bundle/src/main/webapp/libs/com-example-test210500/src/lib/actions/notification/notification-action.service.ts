@@ -4,8 +4,12 @@ import { INotificationActionProperties } from './notification-action.interface';
 import { EMPTY, Observable } from 'rxjs';
 import { RxNotificationService } from '@helix/platform/shared/api';
 import { NOTIFICATION_OPTIONS } from './notification-action.types';
+import { RxViewAction } from '@helix/platform/view/api';
 
 @Injectable()
+@RxViewAction({
+  name: 'comExampleTest210500ActionNotification',
+})
 export class NotificationActionService implements IViewActionService<INotificationActionProperties, never> {
   // We will use the OOTB RxNotificationService to display our message.
   constructor(private rxNotificationService: RxNotificationService) {

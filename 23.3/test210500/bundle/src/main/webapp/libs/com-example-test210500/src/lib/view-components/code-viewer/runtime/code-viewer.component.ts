@@ -4,11 +4,20 @@ import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime'
 import { ICodeViewerParameters } from '../design/code-viewer.interface';
 import { distinctUntilChanged, takeUntil } from 'rxjs/operators';
 import { isEqual } from 'lodash';
+import { CommonModule } from '@angular/common';
+import { RxViewComponent } from '@helix/platform/view/api';
+// This module is needed as we leverage the Adapt code viewer component.
+import { AdaptCodeViewerModule } from '@bmc-ux/adapt-angular';
 
 // This View component will display code (typescript, html etc...) as highlighting code leveraging Adapt code viewer component.
 @Component({
   selector: 'com-example-test210500-com-example-test210500-code-viewer',
-  templateUrl: './code-viewer.component.html'
+  templateUrl: './code-viewer.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptCodeViewerModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500CodeViewer'
 })
 export class CodeViewerComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

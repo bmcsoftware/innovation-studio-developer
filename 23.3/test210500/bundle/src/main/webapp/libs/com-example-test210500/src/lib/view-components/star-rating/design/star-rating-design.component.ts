@@ -8,10 +8,16 @@ import { StarRatingDesignModel } from './star-rating-design.model';
 import { IStarRatingParameters } from './star-rating.interface';
 import { combineLatest } from 'rxjs';
 import { STAR_RATING_SIZE_OPTIONS } from '../star-rating.types';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+// Necessary since we are displaying the rx-rating component at design time.
+import { AdaptRxRatingModule } from '@bmc-ux/adapt-angular';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-star-rating-design',
-  templateUrl: './star-rating-design.component.html'
+  templateUrl: './star-rating-design.component.html',
+  standalone: true,
+  imports: [CommonModule, FormsModule, AdaptRxRatingModule]
 })
 export class StarRatingDesignComponent implements OnInit {
   @Input()

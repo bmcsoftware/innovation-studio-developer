@@ -53,7 +53,7 @@
       },
       "architect": {
         "build": {
-          "builder": "ngx-build-plus:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "progress": false,
             "outputPath": "dist/apps/shell",
@@ -78,7 +78,7 @@
               },
               {
                 "glob": "**/*",
-                "input": "scripts/ckeditor-4.20.0/",
+                "input": "scripts/ckeditor-4.22.1/",
                 "output": "assets/libs/ckeditor/"
               },
               {
@@ -109,7 +109,6 @@
             ],
             "styles": [
               "apps/shell/src/styles.scss",
-              "scripts/rappid-3.1.1/rappid.min.css",
               {
                 "input": "libs/com-example-test210500/src/lib/styles/com-example-test210500.scss",
                 "bundleName": "com-example-test210500"
@@ -120,16 +119,10 @@
               }
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["styles"]
+              "includePaths": ["styles", "./node_modules"]
             },
             "scripts": [
-              "scripts/rxjs-6.6.7/rxjs.umd.min.js",
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/lodash/lodash.min.js",
-              "node_modules/d3/dist/d3.min.js",
-              "node_modules/backbone/backbone-min.js",
-              "scripts/ckeditor-4.20.0/ckeditor.min.js",
-              "scripts/rappid-3.1.1/rappid.min.js",
+              "scripts/ckeditor-4.22.1/ckeditor.min.js",
               {
                 "input": "libs/com-example-test210500/src/lib/assets/alert-me.js",
                 "bundleName": "com-example-test210500-asset-scripts"
@@ -143,12 +136,19 @@
             "crossOrigin": "use-credentials",
             "allowedCommonJsDependencies": [
               "@bmc-ux/adapt-angular",
-              "@bmc-ux/obsolete",
+              "@clientio/rappid",
+              "quoted-printable",
+              "utf8",
+              "jsep",
+              "prismjs/prism.js",
+              "backbone",
+              "jquery",
+              "load-script",
+              "moment",
               "lodash",
               "moment-es6",
               "hammerjs",
               "bignumber.js",
-              "backbone",
               "element-resize-detector",
               "file-saver",
               "css-element-queries",
@@ -196,7 +196,6 @@
               },
               "outputHashing": "none",
               "sourceMap": true,
-              "extractCss": true,
               "namedChunks": true,
               "aot": false,
               "commonChunk": false,
@@ -209,7 +208,11 @@
                   "maximumWarning": "25mb",
                   "maximumError": "50mb"
                 }
-              ]
+              ],
+              "indexTransform": "node_modules/@helix/schematics/src/config/webpack.transform-index.js",
+              "customWebpackConfig": {
+                "path": "node_modules/@helix/schematics/src/config/webpack.prod.js"
+              }
             },
             "development": {
               "buildOptimizer": false,
@@ -217,16 +220,26 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "customWebpackConfig": {
+                "path": "node_modules/@helix/schematics/src/config/webpack.dev.js"
+              }
             }
           },
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "ngx-build-plus:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "shell:build:production"
+            },
+            "rsso-debug": {
+              "browserTarget": "shell:build:development",
+              "proxyConfig": "rsso-proxy.conf.js",
+              "ssl": true,
+              "sslCert": "tools/certificate/bmc-rsso-debug-ca.crt",
+              "sslKey": "tools/certificate/bmc-rsso-debug-ca.key"
             },
             "development": {
               "browserTarget": "shell:build:development",
@@ -261,9 +274,13 @@
     "warnings": {
       "versionMismatch": false
     },
-    "defaultCollection": "@helix/schematics",
     "packageManager": "yarn",
-    "analytics": false
+    "analytics": false,
+    "cache": {
+      "enabled": true,
+      "path": "./node_modules/.cache/bmc/helix/.angular"
+    },
+    "schematicCollections": ["@schematics/angular", "@helix/schematics"]
   },
   "schematics": {
     "@nrwl/schematics:application": {
@@ -279,6 +296,5 @@
     "@nrwl/angular:library": {
       "unitTestRunner": "jest"
     }
-  },
-  "defaultProject": "shell"
+  }
 }

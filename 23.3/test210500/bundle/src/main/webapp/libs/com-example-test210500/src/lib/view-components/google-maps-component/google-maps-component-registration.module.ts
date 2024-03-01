@@ -1,7 +1,7 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService, ViewComponentPropertyType } from '@helix/platform/view/api';
-import { GoogleMapsComponentComponent, GoogleMapsComponentModule } from './runtime';
-import { GoogleMapsComponentDesignComponent, GoogleMapsComponentDesignModel, GoogleMapsComponentDesignModule } from './design';
+import { GoogleMapsComponentComponent } from './runtime';
+import { GoogleMapsComponentDesignComponent, GoogleMapsComponentDesignModel } from './design';
 
 // Note:
 // We chose the name "google-maps-component" to avoid a naming collision with
@@ -9,20 +9,17 @@ import { GoogleMapsComponentDesignComponent, GoogleMapsComponentDesignModel, Goo
 //
 // Source:
 // https://jinalshah999.medium.com/official-angular-components-google-map-youtube-player-clipboard-67f04531ffc4
-@NgModule({
-  imports: [GoogleMapsComponentDesignModule,GoogleMapsComponentModule]
-})
+@NgModule()
 export class GoogleMapsComponentRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500GoogleMapsComponent',
       name: 'Google Maps',
       group: 'Test 21.05.00',
       icon: 'mapmarker',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(GoogleMapsComponentComponent),
+      component: GoogleMapsComponentComponent,
       properties: [
         {
           name: 'apiKey',
@@ -39,9 +36,8 @@ export class GoogleMapsComponentRegistrationModule {
           enableExpressionEvaluation: true
         }
       ],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(GoogleMapsComponentDesignComponent),
-      designComponentModel: GoogleMapsComponentDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: GoogleMapsComponentDesignComponent,
+      designComponentModel: GoogleMapsComponentDesignModel
     });
   }
 }

@@ -3,8 +3,12 @@ import { IViewActionService } from '@helix/platform/view/api';
 import { IGetUserInformationActionProperties } from './get-user-information-action.interface';
 import { forkJoin, Observable, of } from 'rxjs';
 import { IPlainObject, RxCurrentUserService } from '@helix/platform/shared/api';
+import { RxViewAction } from '@helix/platform/view/api';
 
 @Injectable()
+@RxViewAction({
+  name: 'comExampleTest210500ActionGetUserInformation',
+})
 export class GetUserInformationActionService implements IViewActionService<IGetUserInformationActionProperties, never> {
   // Service that contains the current user information.
   constructor(private rxCurrentUserService: RxCurrentUserService) {

@@ -4,11 +4,17 @@ import { IDisplayGradientParameters } from './display-gradient.interface';
 import { GradientService } from '../../../inspectors/gradient/gradient.service';
 import { GRADIENT_COMPONENT_OPTIONS } from '../../../inspectors/gradient/gradient.types';
 import { combineLatest } from 'rxjs';
+import {GradientModule} from "../../../inspectors/gradient/gradient.module";
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-display-gradient-design',
   styleUrls: ['./display-gradient-design.scss'],
-  templateUrl: './display-gradient-design.component.html'
+  templateUrl: './display-gradient-design.component.html',
+  standalone: true,
+  imports: [CommonModule, FormsModule, GradientModule]
 })
 export class DisplayGradientDesignComponent implements AfterViewInit{
   // We get the div to use it later to draw the gradient.

@@ -5,6 +5,15 @@ import { IUserPreferencesColorObjects, IUserPreferencesParameters } from '../des
 import { USER_PREFERENCES_OPTIONS } from './user-preferences.types';
 import { UserPreferencesService } from './user-preferences.service';
 import { RxNotificationService } from '@helix/platform/shared/api';
+import { RxViewComponent } from '@helix/platform/view/api';
+import { CommonModule } from '@angular/common';
+// AdaptButtonModule is necessary to use the "adapt buttons" to match the BMC OOTB objects look & feel.
+// AdaptColorPickerModule is necessary to use the Adapt color picker object.
+// AdaptIconModule is necessary to use the Adapt icon object.
+// AdaptPopoverModule is necessary for AdaptIconModule if we use popover properties in adapt icon
+// like placement or adaptPopover to display a "tooltip" style message.
+import { AdaptButtonModule, AdaptColorPickerModule, AdaptIconModule, AdaptPopoverModule } from '@bmc-ux/adapt-angular';
+import { FormsModule } from '@angular/forms';
 
 // In this example we will save colors for the current user in his / her user preferences and
 // "remember" / fetch them the next time the user accesses the page.
@@ -17,7 +26,12 @@ import { RxNotificationService } from '@helix/platform/shared/api';
   selector: 'com-example-test210500-com-example-test210500-user-preferences',
   // LMA:: TODO:: Add css declaration in schematics.
   styleUrls: ['./user-preferences.scss'],
-  templateUrl: './user-preferences.component.html'
+  templateUrl: './user-preferences.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptButtonModule, AdaptColorPickerModule, AdaptIconModule, AdaptPopoverModule, FormsModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500UserPreferences'
 })
 export class UserPreferencesComponent extends BaseViewComponent implements OnInit, IViewComponent {
   // LMA:: TODO:: Those three properties seem useless now?

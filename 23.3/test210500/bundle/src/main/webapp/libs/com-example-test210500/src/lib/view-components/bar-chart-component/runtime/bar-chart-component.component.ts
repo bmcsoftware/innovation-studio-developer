@@ -7,10 +7,19 @@ import { BAR_CHART_OPTIONS } from './bar-chart-component.types';
 import { AdaptStackedChartType } from '@bmc-ux/adapt-charts';
 import { BusyConfig, LoaderType } from '@bmc-ux/adapt-angular';
 import { RxNotificationService } from '@helix/platform/shared/api';
+import { RxViewComponent } from '@helix/platform/view/api';
+import { AdaptChartsModule } from '@bmc-ux/adapt-charts';
+import { AdaptBusyModule, AdaptButtonModule } from '@bmc-ux/adapt-angular';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-bar-chart-component',
-  templateUrl: './bar-chart-component.component.html'
+  templateUrl: './bar-chart-component.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptChartsModule, AdaptBusyModule, AdaptButtonModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500BarChartComponent'
 })
 export class BarChartComponentComponent extends BaseViewComponent implements OnInit, IViewComponent {
   // Adapt chart options, the legend will automatically be generated but

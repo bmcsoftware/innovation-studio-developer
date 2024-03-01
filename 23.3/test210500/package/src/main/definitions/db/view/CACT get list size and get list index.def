@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:CACT get list size and get list index
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1692230266702,
+   definition     :   "lastUpdateTime" : 1709319150673,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:CACT get list size and get list index",
@@ -17,7 +17,7 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1692230266702,
+   definition     :     "lastUpdateTime" : 1709319150673,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "969d32e1-bc27-4fb1-946c-7c382a221780",
@@ -45,7 +45,7 @@ begin view definition
    definition     :     "componentDefinitions" : [ ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1692230266702,
+   definition     :     "lastUpdateTime" : 1709319150673,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "93559f7f-8230-4d7f-b326-c89b464a02e4",
@@ -80,7 +80,7 @@ begin view definition
    definition     :     "layout" : null,
    definition     :     "componentDefinitions" : [ {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1692230266702,
+   definition     :       "lastUpdateTime" : 1709319150673,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "d0452732-ec9c-4cae-9dad-ade08791b296",

@@ -19,7 +19,6 @@ export class GenerateGuidActionModule {
       // <bundleId>Action<actionName>
       name: 'comExampleTest210500SActionGenerateGuid',
       label: 'Generate Guid',
-      bundleId: 'com.example.test210500',
       // Service that will be executed at runtime.
       service: this.generateGuidService,
       // The design manager is used to validate the input parameter values.

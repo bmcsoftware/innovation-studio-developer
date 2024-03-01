@@ -1,22 +1,19 @@
 import { ComponentFactoryResolver, NgModule } from '@angular/core';
 import { RxViewComponentRegistryService } from '@helix/platform/view/api';
-import { CodeViewerComponent, CodeViewerModule } from './runtime';
-import { CodeViewerDesignComponent, CodeViewerDesignModel, CodeViewerDesignModule } from './design';
+import { CodeViewerComponent } from './runtime';
+import { CodeViewerDesignComponent, CodeViewerDesignModel } from './design';
 
-@NgModule({
-  imports: [CodeViewerDesignModule, CodeViewerModule]
-})
+@NgModule()
 export class CodeViewerRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500CodeViewer',
       name: 'Code Viewer',
       icon: 'file_code_o',
       group: 'Test 21.05.00',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(CodeViewerComponent),
+      component: CodeViewerComponent,
       options: {
         canBeEmbeddedInRecordEditor: true
       },
@@ -33,9 +30,8 @@ export class CodeViewerRegistrationModule {
           name: 'prettifyJson'
         }
       ],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(CodeViewerDesignComponent),
-      designComponentModel: CodeViewerDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: CodeViewerDesignComponent,
+      designComponentModel: CodeViewerDesignModel
     });
   }
 }

@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:Test Lmame Label View Components and global css pure javascript assets
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1692230269964,
+   definition     :   "lastUpdateTime" : 1709319152370,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:Test Lmame Label View Components and global css pure javascript assets",
@@ -17,7 +17,7 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1692230269964,
+   definition     :     "lastUpdateTime" : 1709319152370,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "4285133f-7ce5-479b-9add-13568261c46a",
@@ -44,7 +44,7 @@ begin view definition
    definition     :     "componentDefinitions" : [ ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1692230269964,
+   definition     :     "lastUpdateTime" : 1709319152370,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "87f57e10-5a70-442d-856c-6b85450085f3",
@@ -70,7 +70,7 @@ begin view definition
    definition     :     "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"aa6d29a5-3d75-45f5-b60e-8c3c00da7f15\",\"2460f64e-4e76-4534-9739-b324613b8bf4\"],\"span\":6},{\"children\":[\"91defc57-a26e-43ae-a771-8eda7cc47e47\",\"d6b84815-b7cb-4744-b273-75ada7574528\"],\"span\":6}]}]}",
    definition     :     "componentDefinitions" : [ {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1692230269964,
+   definition     :       "lastUpdateTime" : 1709319152370,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "d6b84815-b7cb-4744-b273-75ada7574528",
@@ -93,7 +93,7 @@ begin view definition
    definition     :       } ]
    definition     :     }, {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1692230269964,
+   definition     :       "lastUpdateTime" : 1709319152370,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "91defc57-a26e-43ae-a771-8eda7cc47e47",
@@ -120,7 +120,7 @@ begin view definition
    definition     :       "componentDefinitions" : [ ]
    definition     :     }, {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1692230269964,
+   definition     :       "lastUpdateTime" : 1709319152370,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "aa6d29a5-3d75-45f5-b60e-8c3c00da7f15",
@@ -147,7 +147,7 @@ begin view definition
    definition     :       "componentDefinitions" : [ ]
    definition     :     }, {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1692230269964,
+   definition     :       "lastUpdateTime" : 1709319152370,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "2460f64e-4e76-4534-9739-b324613b8bf4",
@@ -171,7 +171,7 @@ begin view definition
    definition     :     } ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1692230269964,
+   definition     :     "lastUpdateTime" : 1709319152370,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "a809e425-f760-44c2-9fe2-45d959e71b6a",
@@ -198,7 +198,7 @@ begin view definition
    definition     :     "componentDefinitions" : [ ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1692230269964,
+   definition     :     "lastUpdateTime" : 1709319152370,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "b406f0e9-985f-4862-84cb-7e0fb2d2a59b",
@@ -224,7 +224,7 @@ begin view definition
    definition     :     "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"0a21e18a-dec7-465d-bb9e-2ff468907022\"],\"span\":5},{\"children\":[\"8da9c001-0cf9-4100-9f20-1b4ec980fa04\"],\"span\":7}]}]}",
    definition     :     "componentDefinitions" : [ {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1692230269964,
+   definition     :       "lastUpdateTime" : 1709319152370,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "8da9c001-0cf9-4100-9f20-1b4ec980fa04",
@@ -251,7 +251,7 @@ begin view definition
    definition     :       "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"6e9527cf-7dcd-4ff8-a429-b06687fbc220\"]}]}]}",
    definition     :       "componentDefinitions" : [ {
    definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :         "lastUpdateTime" : 1692230269964,
+   definition     :         "lastUpdateTime" : 1709319152370,
    definition     :         "lastChangedBy" : "ARSERVER",
    definition     :         "owner" : "ARSERVER",
    definition     :         "name" : "6e9527cf-7dcd-4ff8-a429-b06687fbc220",
@@ -279,7 +279,7 @@ begin view definition
    definition     :       } ]
    definition     :     }, {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1692230269964,
+   definition     :       "lastUpdateTime" : 1709319152370,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "0a21e18a-dec7-465d-bb9e-2ff468907022",
@@ -306,7 +306,7 @@ begin view definition
    definition     :       "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"df3465a2-cc3c-479f-abfc-c40e3228dd84\"]}]}]}",
    definition     :       "componentDefinitions" : [ {
    definition     :         "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :         "lastUpdateTime" : 1692230269964,
+   definition     :         "lastUpdateTime" : 1709319152370,
    definition     :         "lastChangedBy" : "ARSERVER",
    definition     :         "owner" : "ARSERVER",
    definition     :         "name" : "df3465a2-cc3c-479f-abfc-c40e3228dd84",
@@ -335,7 +335,7 @@ begin view definition
    definition     :     } ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1692230269964,
+   definition     :     "lastUpdateTime" : 1709319152370,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "8e83d4e0-7294-4c47-90a3-be995e6c6388",

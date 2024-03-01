@@ -4,8 +4,12 @@ import { IConfirmationOotbActionProperties } from './confirmation-ootb-action.in
 import { EMPTY, from, Observable, throwError } from 'rxjs';
 import { RX_MODAL, RxModalService } from '@helix/platform/ui-kit';
 import { switchMap } from 'rxjs/operators';
+import { RxViewAction } from '@helix/platform/view/api';
 
 @Injectable()
+@RxViewAction({
+  name: 'comExampleTest210500ActionConfirmationOotb',
+})
 export class ConfirmationOotbActionService implements IViewActionService<IConfirmationOotbActionProperties, any> {
   constructor(private rxModalService: RxModalService) {
   }

@@ -6,7 +6,9 @@ import { Observable, of } from 'rxjs';
 import { IUserPreferencesColorObjects, IUserPreferencesColorValues } from '../design/user-preferences.interface';
 
 // The service must be declared in the providers view component runtime module.
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class UserPreferencesService {
   constructor(private rxUserPreferencesService: RxUserPreferencesService) {
   }

@@ -6,16 +6,26 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { IFRAME_OPTIONS } from '../design/iframe.types';
 import { distinctUntilChanged, takeUntil } from 'rxjs/operators';
 import { isEqual} from 'lodash';
+import { CommonModule } from '@angular/common';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-iframe',
-  templateUrl: './iframe.component.html'
+  templateUrl: './iframe.component.html',
+  standalone: true,
+  imports: [CommonModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500Iframe'
 })
 export class IframeComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;
   config: Observable<any>;
   iframe: string;
-  sandboxOptions = null;
+  // The sandbox options are irrelevant now as we cannot set those options dynamically anymore
+  // in the new version of Angular:
+  // https://angular.io/errors/NG0910
+  // sandboxOptions = null;
   iFrameUrl: SafeUrl;
   componentData: IIframeParameters;
 
@@ -48,7 +58,10 @@ export class IframeComponent extends BaseViewComponent implements OnInit, IViewC
       // Even if we had declared the sandbox options as string[] the values are stored in string
       // so we have to cheat a bit to create a string of values from the string[] which is stored as string...
       // '[\'value1\', \'value2\']' => ['value1', 'value2'] => 'value1, value2'.
-      this.sandboxOptions = this.componentData.sandboxOptions ? JSON.parse(String(this.componentData.sandboxOptions)).join(' ') : '';
+      // The sandbox options are irrelevant now as we cannot set those options dynamically anymore
+      // in the new version of Angular:
+      // https://angular.io/errors/NG0910
+      // this.sandboxOptions = this.componentData.sandboxOptions ? JSON.parse(String(this.componentData.sandboxOptions)).join(' ') : '';
     });
   }
 }

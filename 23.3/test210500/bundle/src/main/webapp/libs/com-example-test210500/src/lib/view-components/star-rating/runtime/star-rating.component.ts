@@ -6,10 +6,20 @@ import { IStarRatingParameters } from '../design/star-rating.interface';
 import { RxLogService } from '@helix/platform/shared/api';
 import { STAR_RATING_SIZE_OPTIONS } from '../star-rating.types';
 import { distinctUntilChanged, takeUntil } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
+// Necessary since we use the rx-rating component.
+import { AdaptRxRatingModule} from '@bmc-ux/adapt-angular';
+import { FormsModule } from '@angular/forms';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-star-rating',
-  templateUrl: './star-rating.component.html'
+  templateUrl: './star-rating.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptRxRatingModule, FormsModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500StarRating'
 })
 export class StarRatingComponent extends BaseViewComponent implements OnInit, IViewComponent {
   // LMA:: Those values seems to come from the Schematics and some seem useless.

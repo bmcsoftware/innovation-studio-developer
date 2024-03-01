@@ -1,16 +1,13 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService, RxViewComponentType, ViewComponentPropertyType } from '@helix/platform/view/api';
-import { StarRatingFieldComponent, StarRatingFieldModule } from './runtime';
-import { StarRatingFieldDesignComponent, StarRatingFieldDesignModel, StarRatingFieldDesignModule } from './design';
+import { StarRatingFieldComponent } from './runtime';
+import { StarRatingFieldDesignComponent, StarRatingFieldDesignModel } from './design';
 import { RX_BASE_FIELD_PROPERTIES } from '@helix/platform/view/components';
 
-@NgModule({
-  imports: [StarRatingFieldDesignModule, StarRatingFieldModule]
-})
+@NgModule()
 export class StarRatingFieldRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500StarRatingField',
@@ -31,7 +28,7 @@ export class StarRatingFieldRegistrationModule {
       canBeInsertedInto(componentTypes: string[]): boolean {
         return componentTypes.includes(RxViewComponentType.RecordEditor);
       },
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(StarRatingFieldComponent),
+      component: StarRatingFieldComponent,
       // Some properties are inherited from the base record editor field design defined in "IBaseRecordEditorFieldProperties":
       //  label, model (value)
       //  fieldId: string;
@@ -61,9 +58,8 @@ export class StarRatingFieldRegistrationModule {
           type: ViewComponentPropertyType.String
         }
       ]),
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(StarRatingFieldDesignComponent),
-      designComponentModel: StarRatingFieldDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: StarRatingFieldDesignComponent,
+      designComponentModel: StarRatingFieldDesignModel
       // The properties here are the same as in the star-rating view component,
       // please refer to this example for more details.
     });

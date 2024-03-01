@@ -3,6 +3,13 @@ import { EMPTY, Observable, Subject } from 'rxjs';
 import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime';
 import { WebcamImage, WebcamInitError } from 'ngx-webcam';
 import { Alert } from '@bmc-ux/adapt-angular';
+import { RxViewComponent } from '@helix/platform/view/api';
+// We are leveraging the ngx-webcam library"
+// https://github.com/basst314/ngx-webcam
+// As our view component collides with the ngx-webcam module we need to alias it.
+import { WebcamModule as NgxWebcamModule } from 'ngx-webcam';
+import { AdaptAlertModule } from '@bmc-ux/adapt-angular';
+import { CommonModule } from '@angular/common';
 
 // We are leveraging the ngx-webcam library:
 // https://github.com/basst314/ngx-webcam
@@ -21,7 +28,12 @@ import { Alert } from '@bmc-ux/adapt-angular';
 @Component({
   selector: 'com-example-test210500-com-example-test210500-webcam',
   styleUrls: ['webcam.scss'],
-  templateUrl: './webcam.component.html'
+  templateUrl: './webcam.component.html',
+  standalone: true,
+  imports: [CommonModule, NgxWebcamModule, AdaptAlertModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500Webcam'
 })
 export class WebcamComponent extends BaseViewComponent implements IViewComponent, OnInit {
   guid: string;

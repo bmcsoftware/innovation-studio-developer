@@ -1,7 +1,7 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService } from '@helix/platform/view/api';
-import { GetDataExampleComponent, GetDataExampleModule } from './runtime';
-import { GetDataExampleDesignComponent, GetDataExampleDesignModel, GetDataExampleDesignModule } from './design';
+import { GetDataExampleComponent } from './runtime';
+import { GetDataExampleDesignComponent, GetDataExampleDesignModel } from './design';
 
 // This view component aims to show how to:
 // Get a specific record instance,
@@ -21,20 +21,17 @@ import { GetDataExampleDesignComponent, GetDataExampleDesignModel, GetDataExampl
 //
 // This view component is designed to be used with specific record definitions
 // and in the view "com.example.test210500:VC Getting Record Definition Data".
-@NgModule({
-  imports: [GetDataExampleDesignModule, GetDataExampleModule]
-})
+@NgModule()
 export class GetDataExampleRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500GetDataExample',
       name: 'Example of consuming record definition data',
       icon: 'binary_data',
       group: 'Test 21.05.00',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(GetDataExampleComponent),
+      component: GetDataExampleComponent,
       // We allow an expression as inputs.
       // We expect grid objects.
       // We will get their selectedRow at runtime and call their refresh methods.
@@ -51,9 +48,8 @@ export class GetDataExampleRegistrationModule {
           enableExpressionEvaluation: true
         }
       ],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(GetDataExampleDesignComponent),
-      designComponentModel: GetDataExampleDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: GetDataExampleDesignComponent,
+      designComponentModel: GetDataExampleDesignModel
     });
   }
 }

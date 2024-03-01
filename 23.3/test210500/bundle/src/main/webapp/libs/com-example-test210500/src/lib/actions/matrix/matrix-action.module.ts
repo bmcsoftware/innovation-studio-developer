@@ -21,7 +21,6 @@ export class MatrixActionModule {
       // <bundleId>Action<actionName>
       name: 'comExampleTest210500ActionMatrix',
       label: 'Matrix',
-      bundleId: 'com.example.test210500',
       // Service that will be executed at runtime.
       service: this.matrixActionService,
       // Input parameters. We have none in this example.

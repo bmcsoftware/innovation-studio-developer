@@ -19,7 +19,6 @@ export class ConfirmationOotbActionModule {
       // <bundleId>Action<actionName>
       name: 'comExampleTest210500ActionConfirmationOotb',
       label: 'Confirmation (OOTB)',
-      bundleId: 'com.example.test210500',
       // Service that will be executed at runtime.
       service: this.confirmationOotbActionService,
       // The design manager will validate the input parameters at design time.

@@ -5,11 +5,19 @@ import { IDisplayGradientParameters } from '../design/display-gradient.interface
 import { GRADIENT_COMPONENT_OPTIONS } from '../../../inspectors/gradient/gradient.types';
 import { GradientService } from '../../../inspectors/gradient/gradient.service';
 import { distinctUntilChanged, pluck, takeUntil } from 'rxjs/operators';
+import {GradientModule} from "../../../inspectors/gradient/gradient.module";
+import { CommonModule } from '@angular/common';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-display-gradient',
   styleUrls: ['./display-gradient.scss'],
-  templateUrl: './display-gradient.component.html'
+  templateUrl: './display-gradient.component.html',
+  standalone: true,
+  imports: [CommonModule, GradientModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500DisplayGradient'
 })
 export class DisplayGradientComponent extends BaseViewComponent implements OnInit, IViewComponent, AfterViewInit {
   // We get the div to use it later to draw the gradient.

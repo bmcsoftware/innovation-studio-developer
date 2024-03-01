@@ -17,7 +17,6 @@ export class GetUserInformationActionModule {
       // <bundleId>Action<actionName>
       name: 'comExampleTest210500ActionGetUserInformation',
       label: 'Get User Information',
-      bundleId: 'com.example.test210500',
       // Service that will be executed at runtime.
       service: this.getUserInformationActionService,
       // The output parameters are not defined in this file but

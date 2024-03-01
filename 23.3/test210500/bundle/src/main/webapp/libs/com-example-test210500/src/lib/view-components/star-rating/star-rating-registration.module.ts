@@ -1,21 +1,18 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService, ViewComponentPropertyType } from '@helix/platform/view/api';
-import { StarRatingComponent, StarRatingModule } from './runtime';
-import { StarRatingDesignComponent, StarRatingDesignModel, StarRatingDesignModule } from './design';
+import { StarRatingComponent } from './runtime';
+import { StarRatingDesignComponent, StarRatingDesignModel } from './design';
 
-@NgModule({
-  imports: [StarRatingDesignModule, StarRatingModule]
-})
+@NgModule()
 export class StarRatingRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500StarRating',
       name: 'Star Rating',
       group: 'Test 21.05.00',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(StarRatingComponent),
+      component: StarRatingComponent,
       icon: 'star',
       options: {
         canBeEmbeddedInRecordEditor: true
@@ -82,9 +79,8 @@ export class StarRatingRegistrationModule {
           enableExpressionEvaluation: true
         }
       ],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(StarRatingDesignComponent),
-      designComponentModel: StarRatingDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: StarRatingDesignComponent,
+      designComponentModel: StarRatingDesignModel
     });
   }
 }

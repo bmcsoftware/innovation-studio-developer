@@ -18,7 +18,7 @@ import { map } from 'rxjs/operators';
 const initialComponentProperties: IAccessGridParameters = {
   gridViewComponent: null,
   rowIndex: '',
-  gridCssClassTag: ''
+  lastRefreshTime: ''
 };
 
 export class AccessGridDesignModel extends ViewDesignerComponentModel implements IViewDesignerComponentModel<IAccessGridParameters> {
@@ -58,7 +58,7 @@ export class AccessGridDesignModel extends ViewDesignerComponentModel implements
       // Input parameters default values.
       gridViewComponent: null,
       rowIndex: '',
-      gridCssClassTag: '',
+      lastRefreshTime:'',
       // Values already saved in View Designer for this field (if any).
       ...initialProperties
     }
@@ -72,24 +72,20 @@ export class AccessGridDesignModel extends ViewDesignerComponentModel implements
           label: 'General',
           controls: [
             {
-              name: 'gridCssClassTag',
+              name: 'lastRefreshTime',
               component: ExpressionFormControlComponent,
               options: {
-                label: 'Grid css class identifier',
-                tooltip: new Tooltip(`As the grid object does not expose the necessary apis to<br>
-                          access the data or object to select a row for example<br>
-                          we add a specific class in the grid we want to access to<br>
-                          and we will search for it in the DOM.<br>
-                          Once the class is added to the grid in view designer, refer<br>
-                          the class name in this Input Parameter.`),
+                label: 'Grid Last Refresh Time',
+                tooltip: new Tooltip(`We will store in this property the grid "last refresh time"<br>
+                          which will indicate / change when the grid gets data.<br>
+                          This will serve as an event to tell us the grid has loaded new data.`),
                 dataDictionary$: this.expressionConfigurator.getDataDictionary(),
                 operators: this.expressionConfigurator.getOperators(),
                 isRequired: true
               } as IExpressionFormControlOptions
             },
             {
-              // LMA:: TODO:: This parameter is pretty useless for now as we cannot access
-              // the inner apis to select a row for example.
+              // Grid component.
               name: 'gridViewComponent',
               component: ExpressionFormControlComponent,
               options: {
@@ -117,7 +113,7 @@ export class AccessGridDesignModel extends ViewDesignerComponentModel implements
     ];
   }
 
-  // LMA:: TODO:: We need one output parameter in order to use SetProperty on one input parameter.
+  // We need one output parameter in order to use SetProperty on one input parameter.
   private prepareDataDictionary(componentName: string): IViewComponentDesignCommonDataDictionaryBranch {
     return {
       label: componentName,
@@ -136,15 +132,15 @@ export class AccessGridDesignModel extends ViewDesignerComponentModel implements
     sandbox: IViewComponentDesignSandbox,
     model: IAccessGridParameters
   ): IViewComponentDesignValidationIssue[] {
-    let validationIssues = [];
+    const validationIssues = [];
 
     // The model contains the input parameter values.
-    if (!model.gridCssClassTag) {
-      validationIssues.push(sandbox.createError('The Grid css class identifier is required.', 'gridCssClassTag'));
+    if (!model.lastRefreshTime) {
+      validationIssues.push(sandbox.createError('The Grid Last refresh time property is required.', 'gridCssClassTag'));
     }
 
     if (!model.gridViewComponent) {
-      validationIssues.push(sandbox.createError('The Grid Object is required.', 'gridViewComponent'));
+      validationIssues.push(sandbox.createError('The Grid Component Object is required.', 'gridViewComponent'));
     }
 
     return validationIssues;

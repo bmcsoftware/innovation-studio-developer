@@ -13,7 +13,7 @@
     <packaging>bundle</packaging>
 
     <name>Test 21.05.00</name>
-    <description>The Test 21.05.00 application.</description>
+    <description>The Test 23.3.00 application.</description>
 
     <properties>
         <!-- Comma separated Bundle Dependencies with version.  -->

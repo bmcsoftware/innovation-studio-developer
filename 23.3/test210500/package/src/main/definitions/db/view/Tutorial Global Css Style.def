@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:Tutorial Global Css Style
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1692230268571,
+   definition     :   "lastUpdateTime" : 1709319151723,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:Tutorial Global Css Style",
@@ -17,7 +17,7 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1692230268571,
+   definition     :     "lastUpdateTime" : 1709319151723,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "18a99f72-9741-4ac7-8c8e-0bef3a04a583",
@@ -44,7 +44,7 @@ begin view definition
    definition     :     "layout" : "{\"outlets\":[{\"name\":\"DEFAULT\",\"columns\":[{\"children\":[\"eed96e6f-112b-4280-b57b-f9016b64368b\"]}]}]}",
    definition     :     "componentDefinitions" : [ {
    definition     :       "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :       "lastUpdateTime" : 1692230268571,
+   definition     :       "lastUpdateTime" : 1709319151723,
    definition     :       "lastChangedBy" : "ARSERVER",
    definition     :       "owner" : "ARSERVER",
    definition     :       "name" : "eed96e6f-112b-4280-b57b-f9016b64368b",
@@ -72,7 +72,7 @@ begin view definition
    definition     :     } ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1692230268571,
+   definition     :     "lastUpdateTime" : 1709319151723,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "49305105-74b7-4cc0-9e63-6c81b4fbd250",

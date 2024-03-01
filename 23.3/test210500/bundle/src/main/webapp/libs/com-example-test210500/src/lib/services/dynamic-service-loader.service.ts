@@ -64,7 +64,9 @@ declare var document: any;
 // /com.example.test210500/scripts/assets/resources/scripts/lma3.js
 // ../com.example.test210500/scripts/assets/resources/scripts/lma3.js
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class DynamicScriptLoaderServiceService {
   private scripts: any = {};
   private rootAssetPath = '';

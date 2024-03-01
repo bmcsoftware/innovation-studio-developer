@@ -1,4 +1,4 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService } from '@helix/platform/view/api';
 import { CaptchaComponent, CaptchaModule } from './runtime';
 import { CaptchaDesignComponent, CaptchaDesignModel, CaptchaDesignModule } from './design';
@@ -12,8 +12,7 @@ import { CaptchaDesignComponent, CaptchaDesignModel, CaptchaDesignModule } from 
 })
 export class CaptchaRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500Captcha',
@@ -23,16 +22,15 @@ export class CaptchaRegistrationModule {
       options: {
         canBeEmbeddedInRecordEditor: true
       },
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(CaptchaComponent),
+      component: CaptchaComponent,
       properties: [
         {
           name: 'apiKey',
           enableExpressionEvaluation: true
         }
       ],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(CaptchaDesignComponent),
-      designComponentModel: CaptchaDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: CaptchaDesignComponent,
+      designComponentModel: CaptchaDesignModel
     });
   }
 }

@@ -5,10 +5,17 @@ import { ICallCommandParameters, ICallCommandPayload, ICallCommandResult } from 
 import { RxCommandFactoryService, RxCurrentUserService, RxNotificationService } from '@helix/platform/shared/api';
 import { CALL_COMMAND_OPTIONS } from './call-command.types';
 import { catchError } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-call-command',
-  templateUrl: './call-command.component.html'
+  templateUrl: './call-command.component.html',
+  standalone: true,
+  imports: [CommonModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500CallCommand'
 })
 export class CallCommandComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

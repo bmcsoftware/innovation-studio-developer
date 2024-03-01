@@ -1,19 +1,16 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService } from '@helix/platform/view/api';
-import { DisplayGradientComponent, DisplayGradientModule } from './runtime';
-import { DisplayGradientDesignComponent, DisplayGradientDesignModel, DisplayGradientDesignModule } from './design';
+import { DisplayGradientComponent } from './runtime';
+import { DisplayGradientDesignComponent, DisplayGradientDesignModel } from './design';
 
 // This example is pretty simple and aims to show how to leverage custom field inspectors (component)
 // in the attribute configuration.
 // Here the "gradient" input parameter will leverage the custom component "GradientComponent:
 // created initially for the fruit-picker action.
-@NgModule({
-  imports: [DisplayGradientDesignModule, DisplayGradientModule]
-})
+@NgModule()
 export class DisplayGradientRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500DisplayGradient',
@@ -23,7 +20,7 @@ export class DisplayGradientRegistrationModule {
       options: {
         canBeEmbeddedInRecordEditor: true
       },
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(DisplayGradientComponent),
+      component: DisplayGradientComponent,
       properties: [
         // The gradient will use a custom inspector previously created for the
         // action fruit-picker.
@@ -32,9 +29,8 @@ export class DisplayGradientRegistrationModule {
           name: 'gradient'
         }
       ],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(DisplayGradientDesignComponent),
-      designComponentModel: DisplayGradientDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: DisplayGradientDesignComponent,
+      designComponentModel: DisplayGradientDesignModel
     });
   }
 }

@@ -15,11 +15,20 @@ import { KeyValueObject, SelectedAdvancedFilter } from '@bmc-ux/adapt-angular';
 import { RX_ASSOCIATION_DEFINITION, RxAssociationInstanceDataPageService } from '@helix/platform/association/api';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { takeUntil } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
+import { AdaptButtonModule, AdaptCodeViewerModule } from '@bmc-ux/adapt-angular';
+import { RxJsonViewerModule } from '@helix/platform/ui-kit';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-get-data-example',
   styleUrls: ['get-data-example.scss'],
-  templateUrl: './get-data-example.component.html'
+  templateUrl: './get-data-example.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptButtonModule, RxJsonViewerModule, AdaptCodeViewerModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500GetDataExample'
 })
 export class GetDataExampleComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

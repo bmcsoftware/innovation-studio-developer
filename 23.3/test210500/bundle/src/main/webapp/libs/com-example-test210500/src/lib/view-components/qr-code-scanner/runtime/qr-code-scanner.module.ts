@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { QrCodeScannerComponent } from './qr-code-scanner.component';
+import { CommonModule } from '@angular/common';
 import { AdaptAlertModule, AdaptRxSelectModule } from '@bmc-ux/adapt-angular';
 import { FormsModule } from '@angular/forms';
 // Module used to scan qr codes.

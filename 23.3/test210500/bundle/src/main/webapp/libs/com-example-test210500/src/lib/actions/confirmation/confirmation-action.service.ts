@@ -5,10 +5,14 @@ import { forkJoin, from, Observable, of, throwError } from 'rxjs';
 import { AdaptModalService, ModalDialog } from '@bmc-ux/adapt-angular';
 import { ConfirmationActionComponent } from './dialog-component/confirmation-action.component';
 import { switchMap } from 'rxjs/operators';
+import { RxViewAction } from '@helix/platform/view/api';
 
 // the "any" type is necessary here due to the use of AdaptModalService.
 // It needs to match the the Observable type in the execute() method.
 @Injectable()
+@RxViewAction({
+  name: 'comExampleTest210500ActionConfirmation',
+})
 export class ConfirmationActionService implements IViewActionService<IConfirmationActionProperties, any> {
   constructor(private adaptModalService: AdaptModalService) {
   }

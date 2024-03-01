@@ -1,16 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { BaseViewComponent, IViewComponent, VIEW_COMPONENT_DEFAULT_EVENT_NAME } from '@helix/platform/view/runtime';
-import { RxViewComponent } from '@helix/platform/view/api';
 import { IImageClickParameters } from '../design/image-click.interface';
 import { GetAssetPathService } from '../../../services/get-asset-path.service';
 import { distinctUntilChanged, pluck, takeUntil } from 'rxjs/operators';
 import { RxNotificationService } from '@helix/platform/shared/api';
+import { CommonModule } from '@angular/common';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 @Component({
   selector: 'com-example-test210500-image-click',
   styleUrls: ['./image-click.scss'],
-  templateUrl: './image-click.component.html'
+  templateUrl: './image-click.component.html',
+  standalone: true,
+  imports: [CommonModule]
 })
 @RxViewComponent({
   name: 'com-example-test210500-image-click',

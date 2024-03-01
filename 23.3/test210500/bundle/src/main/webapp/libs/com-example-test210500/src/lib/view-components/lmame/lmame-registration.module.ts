@@ -1,30 +1,26 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService, ViewComponentPropertyType } from '@helix/platform/view/api';
-import { LmameComponent, LmameModule } from './runtime';
-import { LmameDesignComponent, LmameDesignModel, LmameDesignModule } from './design';
+import { LmameComponent } from './runtime';
+import { LmameDesignComponent, LmameDesignModel } from './design';
 
-@NgModule({
-  imports: [LmameDesignModule, LmameModule]
-})
+@NgModule()
 export class LmameRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500Lmame',
       name: 'Lmame',
       group: 'Test 21.05.00',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(LmameComponent),
+      component: LmameComponent,
       properties: [
         {
           name: 'lmame',
           type: ViewComponentPropertyType.String
         }
       ],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(LmameDesignComponent),
-      designComponentModel: LmameDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: LmameDesignComponent,
+      designComponentModel: LmameDesignModel
     });
   }
 }

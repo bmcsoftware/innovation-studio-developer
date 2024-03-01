@@ -17,7 +17,9 @@ import { last } from 'lodash';
 // http://localhost:4200/helix/assets/libs/test210500/resources/pictures/lain.jpg
 // Prod:
 // http://192.168.159.131:8008/com.example.test210500/scripts/assets/resources/pictures/lain.jpg
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class GetAssetPathService {
   getAssetRootPath(bundleId: string): string {
     const artefactId = last(bundleId.split('.'));

@@ -4,6 +4,8 @@ import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime'
 import { DynamicScriptLoaderServiceService } from '../../../services/dynamic-service-loader.service';
 import { GetAssetPathService } from '../../../services/get-asset-path.service';
 import { distinctUntilChanged, pluck, takeUntil } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 // In this example we want to trigger a javascript method from a pure javascript file
 // which is in bundle/src/main/webapp/libs/com-example-test210500/src/lib/assets/scripts/lma3.js.
@@ -15,7 +17,12 @@ declare var alertMe3: any;
 @Component({
   selector: 'com-example-test210500-com-example-test210500-lmame',
   styleUrls: ['lmame.component.scss'],
-  templateUrl: './lmame.component.html'
+  templateUrl: './lmame.component.html',
+  standalone: true,
+  imports: [CommonModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500Lmame'
 })
 export class LmameComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

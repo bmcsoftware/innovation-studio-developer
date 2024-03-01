@@ -106,7 +106,8 @@ export class GradientComponent extends ValueAccessor<string> implements IFormCon
           content: this.options.tooltip.content,
           popoverMode: this.options.tooltip.popoverMode,
           placement: this.options.tooltip.placement,
-          iconName: this.options.tooltip.iconName
+          iconName: this.options.tooltip.iconName,
+          maxWidth: 300
         };
       });
     }

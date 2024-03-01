@@ -1,22 +1,19 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService } from '@helix/platform/view/api';
-import { WizardComponent, WizardModule } from './runtime';
-import { WizardDesignComponent, WizardDesignModel, WizardDesignModule } from './design';
+import { WizardComponent } from './runtime';
+import { WizardDesignComponent, WizardDesignModel } from './design';
 
-@NgModule({
-  imports: [WizardDesignModule, WizardModule]
-})
+@NgModule()
 export class WizardRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500Wizard',
       name: 'Wizard',
       icon: 'left-list',
       group: 'Test 21.05.00',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(WizardComponent),
+      component: WizardComponent,
       properties: [
         {
           name: 'stepList'
@@ -26,9 +23,8 @@ export class WizardRegistrationModule {
           enableExpressionEvaluation: true
         }
       ],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(WizardDesignComponent),
-      designComponentModel: WizardDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: WizardDesignComponent,
+      designComponentModel: WizardDesignModel
     });
   }
 }

@@ -1,18 +1,7 @@
 # Test 22.1.03 (com.example.test210500)
 History:
 * Version:
-  * 0.9.3, 2023/08/16, Adding an example how to convert Xml to Json (XmlAttachmentToJson) and changing a link to BMC documentation for SDK upgrades.
-  * 0.9.2, 2023/03/01, Adding examples and a section about Initializer and Global Load.
-  * 0.9.1, 2023/02/26, Adding examples how to work with Record instances in Java, adding actions in a view component, delay a view component registration.
-  * 0.9, 2023/02/02, Adding a section about Upgrade and breaking changes. Adapting a bit the MD files.
-  * 0.8, 2023/01/26, Updating SDK with 22.1.03 SDK, adding new Process activities (createAttachmentFromBase64File, getListSize, getListValueByIndex), typo corrections, updating documentation links.
-  * 0.7, 2021/12/06, Correcting typos, adding an example on how to open a view in a blade programmatically (open-blade), adding entry for the QR Code scanner example which was missing,
-  * 0.6, 2021/11/03, Correcting typos, adding a section on Google Material, correcting the browser logging section, adding additional steps for localization process,
-  * 0.5, 2021/10/09, Updating SDK with 21.3.00 SDK,
-  * 0.4, 2021/09/15, the project is now hosted on BMC Software official Open Source GitHub repository. The license is now BSD 3 (see LICENSE file (https://github.com/bmcsoftware/innovation-studio-developer/blob/main/LICENSE)),
-  * 0.3, 2021/06/02, Updating SDK / samples with 2021/06/01 server and SDK,
-  * 0.2, 2021/05/20, First list of components done... First cleanup done...
-  * 0.1, 2021/05/17, Initial comments / cleanup.
+  * 0.1, 2024/02/29, Upgrading the bundle from 22.x to 23.3 SDK.
 * Author: Laurent Matheo.
 
 

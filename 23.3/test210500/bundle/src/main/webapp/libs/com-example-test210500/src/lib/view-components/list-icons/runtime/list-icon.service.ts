@@ -6,7 +6,9 @@ import { Observable, Subject } from 'rxjs';
 // For this we have a service that has an Observable passing the number of filtered icons.
 // The pipe is emitting the number of filtered icons and the component subscribes to the
 // service observable and display the Adapt Alert when necessary.
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class IconFilterTrackingService {
   // The component subscribes to this observable.
   isFilterComplete$: Observable<number>;

@@ -2,6 +2,10 @@ import { Component, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime';
 import { SignaturePad } from 'angular2-signaturepad';
+import { CommonModule } from '@angular/common';
+import { SignaturePadModule } from 'angular2-signaturepad';
+import { AdaptButtonModule } from '@bmc-ux/adapt-angular';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 // This example shows how to display a digital signature field, allowing
 // an end user to sign with the mouse or finger on a tablet or phone for example.
@@ -14,7 +18,12 @@ import { SignaturePad } from 'angular2-signaturepad';
 @Component({
   selector: 'com-example-test210500-com-example-test210500-digital-signature',
   styleUrls: ['./digital-signature.scss'],
-  templateUrl: './digital-signature.component.html'
+  templateUrl: './digital-signature.component.html',
+  standalone: true,
+  imports: [CommonModule, SignaturePadModule, AdaptButtonModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500DigitalSignature'
 })
 export class DigitalSignatureComponent extends BaseViewComponent implements IViewComponent {
   @ViewChild('signaturePad', {static: true})

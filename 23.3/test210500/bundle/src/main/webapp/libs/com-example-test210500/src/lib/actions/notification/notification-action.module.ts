@@ -23,7 +23,6 @@ export class NotificationActionModule {
       // <bundleId>Action<actionName>
       name: 'comExampleTest210500ActionNotification',
       label: 'Notification',
-      bundleId: 'com.example.test210500',
       // Service that will be executed at runtime.
       service: this.notificationActionService,
       // Input parameters. The output parameters are not defined in this file.

@@ -7,6 +7,8 @@ import { GetAssetPathService } from '../../../services/get-asset-path.service';
 import { RxGuidService } from '@helix/platform/utils';
 import { FLOATING_PANEL_OPTIONS } from './floating-panel.types';
 import { takeUntil } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 // jsPanel is a pure javascript library so needs to be declared as any
 // to avoid compilation errors.
@@ -21,7 +23,12 @@ declare var jsPanel: any;
 @Component({
   selector: 'com-example-test210500-com-example-test210500-floating-panel',
   styleUrls: ['./floating-panel.scss'],
-  templateUrl: './floating-panel.component.html'
+  templateUrl: './floating-panel.component.html',
+  standalone: true,
+  imports: [CommonModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500FloatingPanel'
 })
 export class FloatingPanelComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

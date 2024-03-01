@@ -1,25 +1,22 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService, ViewComponentPropertyType } from '@helix/platform/view/api';
-import { QrCodeGeneratorComponent, QrCodeGeneratorModule } from './runtime';
-import { QrCodeGeneratorDesignComponent, QrCodeGeneratorDesignModel, QrCodeGeneratorDesignModule } from './design';
+import { QrCodeGeneratorComponent } from './runtime';
+import { QrCodeGeneratorDesignComponent, QrCodeGeneratorDesignModel } from './design';
 
 // This view component allows you to create a QR Code with a label and / or a picture in its center.
 // We are using this npm library:
 // https://github.com/werthdavid/ngx-kjua
-@NgModule({
-  imports: [QrCodeGeneratorDesignModule, QrCodeGeneratorModule]
-})
+@NgModule()
 export class QrCodeGeneratorRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500QrCodeGenerator',
       name: 'QR Code (Create)',
       icon: 'left-qrcode',
       group: 'Test 21.05.00',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(QrCodeGeneratorComponent),
+      component: QrCodeGeneratorComponent,
       options: {
         canBeEmbeddedInRecordEditor: true
       },
@@ -77,9 +74,8 @@ export class QrCodeGeneratorRegistrationModule {
           type: ViewComponentPropertyType.Number
         }
       ],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(QrCodeGeneratorDesignComponent),
-      designComponentModel: QrCodeGeneratorDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: QrCodeGeneratorDesignComponent,
+      designComponentModel: QrCodeGeneratorDesignModel
     });
   }
 }

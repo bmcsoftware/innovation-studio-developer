@@ -4,13 +4,27 @@ import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime'
 import { first, forEach, map, sortBy, startsWith } from 'lodash';
 import { IIcon } from '../design/list-icons.interface';
 import { Alert } from '@bmc-ux/adapt-angular';
+import { CommonModule } from '@angular/common';
+import { AdaptAlertModule, AdaptRxSearchModule } from '@bmc-ux/adapt-angular';
+import { FormsModule } from '@angular/forms';
 import { IconFilterTrackingService } from './list-icon.service';
+import { IconPipe } from './list-icons.pipe';
+import { RxViewComponent } from '@helix/platform/view/api';
 
+// We are using the Adapt search component to perform the search.
+// For this we need to import the AdaptRxSearchModule.
+// Since we are using ngModel to track the value we also need to import
+// Angular FormsModule.
 @Component({
   selector: 'com-example-test210500-com-example-test210500-list-icons',
   // LMA:: TODO:: Add a default scss file in the schematics.
   styleUrls: ['./list-icons.scss'],
-  templateUrl: './list-icons.component.html'
+  templateUrl: './list-icons.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptRxSearchModule, FormsModule, AdaptAlertModule, IconPipe]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500ListIcons'
 })
 export class ListIconsComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

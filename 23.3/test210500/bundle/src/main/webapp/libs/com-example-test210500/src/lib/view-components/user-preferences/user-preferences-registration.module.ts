@@ -1,15 +1,12 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService } from '@helix/platform/view/api';
-import { UserPreferencesComponent, UserPreferencesModule } from './runtime';
-import { UserPreferencesDesignComponent, UserPreferencesDesignModel, UserPreferencesDesignModule } from './design';
+import { UserPreferencesComponent } from './runtime';
+import { UserPreferencesDesignComponent, UserPreferencesDesignModel } from './design';
 
-@NgModule({
-  imports: [UserPreferencesDesignModule, UserPreferencesModule]
-})
+@NgModule()
 export class UserPreferencesRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500UserPreferences',
@@ -17,12 +14,11 @@ export class UserPreferencesRegistrationModule {
       group: 'Test 21.05.00',
       // LMA:: TODO:: Add icon by default...
       icon: 'cloud_user',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(UserPreferencesComponent),
+      component: UserPreferencesComponent,
       // No input parameters in this example.
       properties: [],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(UserPreferencesDesignComponent),
-      designComponentModel: UserPreferencesDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: UserPreferencesDesignComponent,
+      designComponentModel: UserPreferencesDesignModel
     });
   }
 }

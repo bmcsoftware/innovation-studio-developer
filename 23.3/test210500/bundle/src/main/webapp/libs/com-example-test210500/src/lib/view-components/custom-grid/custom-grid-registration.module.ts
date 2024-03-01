@@ -1,7 +1,7 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService } from '@helix/platform/view/api';
-import { CustomGridComponent, CustomGridModule } from './runtime';
-import { CustomGridDesignComponent, CustomGridDesignModel, CustomGridDesignModule } from './design';
+import { CustomGridComponent } from './runtime';
+import { CustomGridDesignComponent, CustomGridDesignModel } from './design';
 
 // This example shows how to leveral the OOTB BMC RecordGridComponent
 // to display record definition data, as well as adding custom columns.
@@ -16,13 +16,10 @@ import { CustomGridDesignComponent, CustomGridDesignModel, CustomGridDesignModul
 // this.fruitsRecordGrid.api.getSelectedRowCount()
 // this.fruitsRecordGrid.api.getFirstSelectedRow()
 // this.fruitsRecordGrid.api.getSelectedRows()
-@NgModule({
-  imports: [CustomGridDesignModule, CustomGridModule]
-})
+@NgModule()
 export class CustomGridRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500CustomGrid',
@@ -44,12 +41,11 @@ export class CustomGridRegistrationModule {
       // com-example-test210500-custom-grid-icon
       icon: 'com-example-test210500-custom-grid-icon',
       group: 'Test 21.05.00',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(CustomGridComponent),
+      component: CustomGridComponent,
       // There are no input parameters in this example.
       properties: [],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(CustomGridDesignComponent),
-      designComponentModel: CustomGridDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: CustomGridDesignComponent,
+      designComponentModel: CustomGridDesignModel
     });
   }
 }

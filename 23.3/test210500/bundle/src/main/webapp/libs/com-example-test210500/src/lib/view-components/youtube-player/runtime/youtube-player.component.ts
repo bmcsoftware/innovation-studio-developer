@@ -3,10 +3,24 @@ import { Observable } from 'rxjs';
 import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime';
 import { DynamicScriptLoaderServiceService } from '../../../services/dynamic-service-loader.service';
 import { distinctUntilChanged, pluck, takeUntil } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { RxViewComponent } from '@helix/platform/view/api';
 
+// This example shows how to consume an Angular module youtube-player here:
+// \webapp\libs\com-example-test210500>npm install @angular/youtube-player --save
+// This should lead to an entry in the library package.json dependencies, for example:
+// "dependencies": {
+//     "@angular/youtube-player": "^11.2.10"
+// }
 @Component({
   selector: 'com-example-test210500-com-example-test210500-youtube-player',
-  templateUrl: './youtube-player.component.html'
+  templateUrl: './youtube-player.component.html',
+  standalone: true,
+  imports: [CommonModule, YouTubePlayerModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500YoutubePlayer'
 })
 export class YoutubePlayerComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

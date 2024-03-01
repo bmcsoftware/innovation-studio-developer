@@ -6,10 +6,20 @@ import { IStarRatingFieldRuntimeParameters } from '../design/star-rating-field.i
 import { STAR_RATING_SIZE_OPTIONS} from '../../star-rating/star-rating.types';
 import { takeUntil } from 'rxjs/operators';
 import { isNull } from 'lodash';
+import { RxViewComponent } from '@helix/platform/view/api';
+import { CommonModule } from '@angular/common';
+import { AdaptRxRatingModule } from '@bmc-ux/adapt-angular';
+import { FormsModule } from '@angular/forms';
+import { ReadOnlyFieldModule } from '@helix/platform/ui-kit';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-star-rating-field',
-  templateUrl: './star-rating-field.component.html'
+  templateUrl: './star-rating-field.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptRxRatingModule, FormsModule, ReadOnlyFieldModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500StarRatingField'
 })
 export class StarRatingFieldComponent extends BaseRecordEditorFieldComponent implements IViewComponent, OnInit, AfterViewInit {
   @ViewChild('starRatingFieldComponent', {read: NgModel})

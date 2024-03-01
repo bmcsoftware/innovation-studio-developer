@@ -9,10 +9,26 @@ import { Alert, BusyConfig, LoaderType } from '@bmc-ux/adapt-angular'
 import { TranslateService } from '@ngx-translate/core';
 import { distinctUntilChanged, takeUntil } from 'rxjs/operators';
 import { isEqual } from 'lodash';
+import { CommonModule } from '@angular/common';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { AdaptAlertModule, AdaptBusyModule } from '@bmc-ux/adapt-angular';
+import { TranslateModule } from '@ngx-translate/core';
+import { RxViewComponent } from '@helix/platform/view/api';
 
+// This example shows how to consume an Angular module google-maps here:
+// \webapp\libs\com-example-test210500>npm install @angular/google-maps --save
+// This should lead to an entry in the library package.json dependencies, for example:
+// "dependencies": {
+//     "@angular/google-maps": "^11.2.10"
+// }
 @Component({
   selector: 'com-example-test210500-com-example-test210500-google-maps-component',
-  templateUrl: './google-maps-component.component.html'
+  templateUrl: './google-maps-component.component.html',
+  standalone: true,
+  imports: [CommonModule, GoogleMapsModule, AdaptBusyModule, AdaptAlertModule, TranslateModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500GoogleMapsComponent'
 })
 export class GoogleMapsComponentComponent extends BaseViewComponent implements OnInit, IViewComponent {
   @ViewChild(GoogleMap, {static: false})

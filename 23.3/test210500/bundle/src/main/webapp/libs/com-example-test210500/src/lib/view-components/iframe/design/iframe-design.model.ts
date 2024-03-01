@@ -22,11 +22,14 @@ import { IFRAME_OPTIONS } from './iframe.types';
 import { combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
 
+// The sandbox options are irrelevant now as we cannot set those options dynamically anymore
+// in the new version of Angular:
+// https://angular.io/errors/NG0910
 const initialComponentProperties: IIframeParameters = {
   addAllowFromDomain: false,
   cssClasses: '',
   cssStyles: '',
-  sandboxOptions: [],
+  // sandboxOptions: [],
   url: ''
 };
 
@@ -71,7 +74,10 @@ export class IframeDesignModel extends ViewDesignerComponentModel implements IVi
       //  We have to cast the "sandboxOptions" value to array of strings as it is stored as a string in the properties
       // even if declared as array of strings in the registration module.
       // This is because we allow multiple values to be selected.
-      sandboxOptions: initialProperties.sandboxOptions ? JSON.parse(String(initialProperties.sandboxOptions)) : []
+      // The sandbox options are irrelevant now as we cannot set those options dynamically anymore
+      // in the new version of Angular:
+      // https://angular.io/errors/NG0910
+      // sandboxOptions: initialProperties.sandboxOptions ? JSON.parse(String(initialProperties.sandboxOptions)) : []
     }
   }
 
@@ -91,24 +97,27 @@ export class IframeDesignModel extends ViewDesignerComponentModel implements IVi
                 isRequired: true
               } as IExpressionFormControlOptions
             },
-            {
-              name: 'sandboxOptions',
-              component: SelectFormControlComponent,
-              options: {
-                label: 'Sanbox options',
-                options: IFRAME_OPTIONS.sandboxOptions.map((sandboxOption: string) => {
-                  return {
-                    id: sandboxOption,
-                    name: sandboxOption
-                  }
-                }),
-                sortAlphabetically: false,
-                // We allow multiple values to be selected.
-                multiple: true,
-                tooltip: new Tooltip(`Allows to specify the sanbox security options to be applied to the iFrame Html object.<br>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">Reference.</a>`)
-              } as ISelectFormControlOptions
-            },
+            // The sandbox options are irrelevant now as we cannot set those options dynamically anymore
+            // in the new version of Angular:
+            // https://angular.io/errors/NG0910
+            // {
+            //   name: 'sandboxOptions',
+            //   component: SelectFormControlComponent,
+            //   options: {
+            //     label: 'Sanbox options',
+            //     options: IFRAME_OPTIONS.sandboxOptions.map((sandboxOption: string) => {
+            //       return {
+            //         id: sandboxOption,
+            //         name: sandboxOption
+            //       }
+            //     }),
+            //     sortAlphabetically: false,
+            //     // We allow multiple values to be selected.
+            //     multiple: true,
+            //     tooltip: new Tooltip(`Allows to specify the sanbox security options to be applied to the iFrame Html object.<br>
+            //     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">Reference.</a>`)
+            //   } as ISelectFormControlOptions
+            // },
             {
               name: 'addAllowFromDomain',
               component: SwitchFormControlComponent,

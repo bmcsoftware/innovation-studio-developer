@@ -21,7 +21,6 @@ export class FruitPickerActionModule {
       // <bundleId>Action<actionName>
       name: 'comExampleTest210500ActionFruitPicker',
       label: 'Fruit Picker',
-      bundleId: 'com.example.test210500',
       // Service that will be executed at runtime.
       service: this.fruitPickerActionService,
       // The design manager will validate the input parameters at design time.

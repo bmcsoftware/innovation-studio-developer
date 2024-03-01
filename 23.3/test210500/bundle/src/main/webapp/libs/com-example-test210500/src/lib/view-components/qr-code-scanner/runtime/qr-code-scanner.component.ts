@@ -4,7 +4,16 @@ import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime'
 import { BarcodeFormat } from '@zxing/library';
 import { Alert, RxSelectionChangeEvent } from '@bmc-ux/adapt-angular';
 import { first, forEach } from 'lodash';
+import { CommonModule } from '@angular/common';
+import { AdaptAlertModule, AdaptRxSelectModule } from '@bmc-ux/adapt-angular';
+import { FormsModule } from '@angular/forms';
+import { RxViewComponent } from '@helix/platform/view/api';
+// Module used to scan qr codes.
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
 
+// This view component leverages the npm library ngx-scanner:
+// https://github.com/zxing-js/ngx-scanner
+//
 // Documentation:
 // https://github.com/zxing-js/ngx-scanner/wiki
 // Three npm modules are necessary (all MIT):
@@ -33,7 +42,12 @@ import { first, forEach } from 'lodash';
 @Component({
   selector: 'com-example-test210500-com-example-test210500-qr-code-scanner',
   styleUrls: ['qr-code-scanner.component.scss'],
-  templateUrl: './qr-code-scanner.component.html'
+  templateUrl: './qr-code-scanner.component.html',
+  standalone: true,
+  imports: [CommonModule, ZXingScannerModule, AdaptAlertModule, AdaptRxSelectModule, FormsModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500QrCodeScanner'
 })
 export class QrCodeScannerComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

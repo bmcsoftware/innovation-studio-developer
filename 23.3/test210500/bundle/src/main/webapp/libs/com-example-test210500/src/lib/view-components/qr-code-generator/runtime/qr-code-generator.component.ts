@@ -8,12 +8,22 @@ import {
 } from '../design/qr-code-generator.interface';
 import { QR_CODE_GENERATOR_OPTIONS } from '../design/qr-code-generator.types';
 import { takeUntil } from 'rxjs/operators';
+import { RxViewComponent } from '@helix/platform/view/api';
+import { CommonModule } from '@angular/common';
+// Third party module used to generate the Qr code:
+// https://github.com/werthdavid/ngx-kjua
+import { NgxKjuaModule } from 'ngx-kjua';
 
 // QR Code generator documentation:
 // https://larsjung.de/kjua/
 @Component({
   selector: 'com-example-test210500-com-example-test210500-qr-code-generator',
-  templateUrl: './qr-code-generator.component.html'
+  templateUrl: './qr-code-generator.component.html',
+  standalone: true,
+  imports: [CommonModule, NgxKjuaModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500QrCodeGenerator'
 })
 export class QrCodeGeneratorComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

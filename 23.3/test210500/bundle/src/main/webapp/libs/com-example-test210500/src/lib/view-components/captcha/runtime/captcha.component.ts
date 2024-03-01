@@ -3,12 +3,16 @@ import { Observable } from 'rxjs';
 import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime';
 import { ICaptchaParameters } from '../design/captcha.interface';
 import { RxNotificationService } from '@helix/platform/shared/api';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 // Official documentation:
 // https://github.com/hCaptcha/ng-hcaptcha
 @Component({
   selector: 'com-example-test210500-com-example-test210500-captcha',
   templateUrl: './captcha.component.html'
+})
+@RxViewComponent({
+  name: 'comExampleTest210500Captcha'
 })
 export class CaptchaComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

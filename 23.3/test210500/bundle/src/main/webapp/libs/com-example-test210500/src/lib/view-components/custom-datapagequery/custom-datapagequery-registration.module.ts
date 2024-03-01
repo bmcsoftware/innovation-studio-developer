@@ -1,31 +1,27 @@
-import { ComponentFactoryResolver, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RxViewComponentRegistryService, ViewComponentPropertyType } from '@helix/platform/view/api';
-import { CustomDatapagequeryComponent, CustomDatapagequeryModule } from './runtime';
-import { CustomDatapagequeryDesignComponent, CustomDatapagequeryDesignModel, CustomDatapagequeryDesignModule } from './design';
+import { CustomDatapagequeryComponent } from './runtime';
+import { CustomDatapagequeryDesignComponent, CustomDatapagequeryDesignModel } from './design';
 
-@NgModule({
-  imports: [CustomDatapagequeryDesignModule, CustomDatapagequeryModule]
-})
+@NgModule()
 export class CustomDatapagequeryRegistrationModule {
   constructor(
-    private rxViewComponentRegistryService: RxViewComponentRegistryService,
-    private componentFactoryResolver: ComponentFactoryResolver
+    private rxViewComponentRegistryService: RxViewComponentRegistryService
   ) {
     rxViewComponentRegistryService.register({
       type: 'comExampleTest210500CustomDatapagequery',
       name: 'Consuming a custom datapagequery',
       icon: 'left-table_adapt',
       group: 'Test 21.05.00',
-      componentFactory: this.componentFactoryResolver.resolveComponentFactory(CustomDatapagequeryComponent),
+      component: CustomDatapagequeryComponent,
       properties: [
         {
           name: 'customDatapagequery',
           type: ViewComponentPropertyType.String
         }
       ],
-      designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(CustomDatapagequeryDesignComponent),
-      designComponentModel: CustomDatapagequeryDesignModel,
-      bundleId: 'com.example.test210500'
+      designComponent: CustomDatapagequeryDesignComponent,
+      designComponentModel: CustomDatapagequeryDesignModel
     });
   }
 }

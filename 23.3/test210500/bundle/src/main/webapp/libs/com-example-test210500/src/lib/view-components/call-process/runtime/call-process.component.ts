@@ -7,13 +7,20 @@ import { CALL_PROCESS_OPTIONS } from './call-process.types';
 import { RxLaunchProcessViewActionService } from '@helix/platform/view/actions';
 import { ILaunchProcessViewActionParams } from '@helix/platform/view/actions/launch-process/launch-process-view-action.types';
 import { distinctUntilChanged, pluck, takeUntil } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 // This view component looks a lot like "generate-password".
 // Please see this view component for the code comment.
 @Component({
   selector: 'com-example-test210500-com-example-test210500-call-process',
   templateUrl: './call-process.component.html',
-  providers: [RxLaunchProcessViewActionService]
+  providers: [RxLaunchProcessViewActionService],
+  standalone: true,
+  imports: [CommonModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500CallProcess'
 })
 export class CallProcessComponent extends BaseViewComponent implements OnInit, IViewComponent {
   guid: string;

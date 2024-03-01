@@ -1,6 +1,7 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime';
+// The RecordGridComponent is necessary since we use the BMC OOTB grid.
 import {
   IRecordGridConfig,
   IRecordGridDataPageParams,
@@ -13,11 +14,21 @@ import { IDataPageResult, RxNotificationService } from '@helix/platform/shared/a
 import { IRecordDefinition, RX_RECORD_DEFINITION } from '@helix/platform/record/api';
 import { CUSTOM_DATAPAGEQUERY_OPTIONS } from './custom-datapagequery.types';
 import { IRowDataItem } from '@helix/platform/view/api';
+// Custom datapage query declaration.
 import { CustomDatapagequeryDataPageService } from './custom-datapagequery-data-page.service';
+import { CommonModule } from '@angular/common';
+import { RxViewComponent } from '@helix/platform/view/api';
+// This module is necessary since we are using an Adapt button in the grid.
+import { AdaptButtonModule } from '@bmc-ux/adapt-angular';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-custom-datapagequery',
-  templateUrl: './custom-datapagequery.component.html'
+  templateUrl: './custom-datapagequery.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptButtonModule, RecordGridComponent]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500CustomDatapagequery'
 })
 export class CustomDatapagequeryComponent extends BaseViewComponent implements OnInit, IViewComponent {
   // Necessary to access the grid apis.

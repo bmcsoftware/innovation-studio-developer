@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, throwError } from 'rxjs';
+import { EMPTY, Observable } from 'rxjs';
 import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime';
 import { IOpenBladeParameters } from '../design/open-blade.interface';
 import { catchError, distinctUntilChanged, takeUntil } from 'rxjs/operators';
@@ -7,11 +7,19 @@ import { get, isEqual } from 'lodash';
 import { RxOpenViewActionService } from '@helix/platform/view/actions';
 import { IOpenViewActionParams } from '@helix/platform/view/actions/open-view/open-view-action.types';
 import { OpenViewActionType } from '@helix/platform/view/api';
+import { CommonModule } from '@angular/common';
+import { AdaptButtonModule } from '@bmc-ux/adapt-angular';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 @Component({
   selector: 'com-example-test210500-open-blade',
   styleUrls: ['./open-blade.scss'],
-  templateUrl: './open-blade.component.html'
+  templateUrl: './open-blade.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptButtonModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500OpenBlade'
 })
 export class OpenBladeComponent extends BaseViewComponent implements OnInit,IViewComponent {
   // Contains the view component instance id.
@@ -23,11 +31,11 @@ export class OpenBladeComponent extends BaseViewComponent implements OnInit,IVie
   viewResult = '';
 
   // Note:
-  // It is very important for 21.05 and 21.3 to import the RxOpenViewActionService module
+  // It is very important to import the RxOpenViewActionService module
   // "OpenViewActionModule" in the view component module for now to avoid a dependency error
   // at runtime.
   // The error would not appear in debug mode but would appear in other cases.
-  // Here please check file "open-blade-registration.module.ts".
+  // Here please check file "open-blade-registration.module.ts".11
   constructor(private rxOpenViewActionService: RxOpenViewActionService) {
     super();
   }
@@ -70,7 +78,7 @@ export class OpenBladeComponent extends BaseViewComponent implements OnInit,IVie
         catchError((error) => {
           this.viewResult = 'The view has been closed, with Cancel action.';
 
-          return throwError(error);
+          return EMPTY;
         })
       ).subscribe((viewOutput) => {
       // viewOutput would contain the view output parameters with this format:

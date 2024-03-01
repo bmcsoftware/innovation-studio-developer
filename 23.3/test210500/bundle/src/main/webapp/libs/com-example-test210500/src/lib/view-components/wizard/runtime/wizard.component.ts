@@ -6,10 +6,19 @@ import { AdaptStepsComponent, StepsMenuItem } from '@bmc-ux/adapt-angular';
 import { RxLogService } from '@helix/platform/shared/api';
 import { distinctUntilChanged, pluck, takeUntil } from 'rxjs/operators';
 import { isEqual, isUndefined, isNull, isNumber, isNaN } from 'lodash';
+import { CommonModule } from '@angular/common';
+import { AdaptStepsModule } from '@bmc-ux/adapt-angular';
+import { FormsModule } from '@angular/forms';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 @Component({
   selector: 'com-example-test210500-com-example-test210500-wizard',
-  templateUrl: './wizard.component.html'
+  templateUrl: './wizard.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptStepsModule, FormsModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500Wizard'
 })
 export class WizardComponent extends BaseViewComponent implements OnInit, IViewComponent {
   @ViewChild('adaptStepObject')

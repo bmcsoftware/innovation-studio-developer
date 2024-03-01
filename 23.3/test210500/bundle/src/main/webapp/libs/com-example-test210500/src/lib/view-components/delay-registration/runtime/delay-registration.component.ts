@@ -4,11 +4,14 @@ import { BaseViewComponent, IViewComponent } from '@helix/platform/view/runtime'
 import { RxViewComponent } from '@helix/platform/view/api';
 import { IDelayRegistrationParameters } from '../design/delay-registration.interface';
 import { distinctUntilChanged, pluck, takeUntil } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'com-example-test210500-delay-registration',
   styleUrls: ['./delay-registration.scss'],
-  templateUrl: './delay-registration.component.html'
+  templateUrl: './delay-registration.component.html',
+  standalone: true,
+  imports: [CommonModule]
 })
 @RxViewComponent({
   name: 'com-example-test210500-delay-registration',

@@ -6,12 +6,21 @@ import { Tooltip } from '@helix/platform/shared/api';
 import { GRADIENT_COMPONENT_OPTIONS } from '../../../inspectors/gradient/gradient.types';
 import { GradientService } from '../../../inspectors/gradient/gradient.service';
 import { takeUntil } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
+import { DisplayGradientModule } from '../../display-gradient/runtime';
+import { AdaptCodeViewerModule, AdaptRxLabelModule } from '@bmc-ux/adapt-angular';
+import { RxViewComponent } from '@helix/platform/view/api';
 
 // This View Component will just display the defined gradient and the different input parameters.
 @Component({
   selector: 'com-example-test210500-com-example-test210500-test-debug-component',
   styleUrls: ['./test-debug-component.scss'],
-  templateUrl: './test-debug-component.component.html'
+  templateUrl: './test-debug-component.component.html',
+  standalone: true,
+  imports: [CommonModule, DisplayGradientModule, AdaptRxLabelModule, AdaptCodeViewerModule]
+})
+@RxViewComponent({
+  name: 'comExampleTest210500TestDebugComponent'
 })
 export class TestDebugComponentComponent extends BaseViewComponent implements OnInit, IViewComponent, AfterViewInit {
   // We get the div to use it later to draw the gradient.
