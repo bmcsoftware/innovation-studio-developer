@@ -1,7 +1,9 @@
-# Test 22.1.03 (com.example.test210500)
+# !!! The Documentation and the sample description are not yet updated !!! 
+  
+# Test 23.3.00 (com.example.test210500)
 History:
 * Version:
-  * 0.1, 2024/02/29, Upgrading the bundle from 22.x to 23.3 SDK.
+  * 0.1, 2024/02/29, Upgrading the bundle from 22.x to 23.3 SDK. This is the initial implementation, the documentation, guides, and samples documentation have not yet been updated. The hCaptcha example does not function properly for now.
 * Author: Laurent Matheo.
 
 
