@@ -11,9 +11,9 @@
 <a name="introduction"></a>
 ## Introduction
 > :memo:  
-> Please refer to the [BMC documentation](https://docs.bmc.com/docs/is221/localizing-a-digital-service-application-1039590035.html?src=search) for more information.
+> Please refer to the [BMC documentation](https://docs.bmc.com/docs/innovationsuite/233/localizing-an-application-1223791413.html?src=search) for more information.
   
-It is already possible to localize [codeless objects and strings](https://docs.bmc.com/docs/is221/localizing-a-digital-service-application-1039590035.html?src=search#LocalizingaDigitalServiceapplication-TolocalizeOOTBviewcomponentdefinitions) used in View Designer or even in some [fields](https://docs.bmc.com/docs/is221/localizing-field-values-1039589948.html?src=search). This allows you to provide an interface in your end-user locale.  
+It is already possible to localize [codeless objects and strings](https://docs.bmc.com/docs/innovationsuite/233/localizing-an-application-1223791413.html?src=search#Localizinganapplication-TolocalizeOOTBviewcomponentdefinitions) used in View Designer or even in some [fields](https://docs.bmc.com/docs/innovationsuite/233/localizing-field-values-1223790081.html?src=search). This allows you to provide an interface in your end-user locale.  
 
 It is also possible to localize the strings used in your Javascript or Java code, for example the error messages or labels.  
 For example in the [google-maps-component](../_details/JAVASCRIPT_VIEW_COMPONENTS.MD#google-maps-component) View Component one warning message is actually localized:  

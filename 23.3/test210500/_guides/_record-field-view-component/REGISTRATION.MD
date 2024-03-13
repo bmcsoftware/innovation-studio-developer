@@ -29,8 +29,8 @@ The [registration.module](../../bundle/src/main/webapp/libs/com-example-test2105
   * > :memo:  
     You can look at the documentation to see which icon can be used, or run the view component [list-icons](../../bundle/src/main/webapp/libs/com-example-test210500/src/lib/view-components/list-icons) to perform a search on available icons,  
   ![Record field view component in palette](../../_details/pictures/view-component-field-palette.png)
-* <ins>bundleId</ins>: The application or library bundleId,
-* <ins>componentFactory</ins>: Registering the runtime angular Component,
+* <ins>component</ins>: Registering the runtime angular Component,
+* <ins>designComponent</ins>: Registering the design angular Component,
 * <ins>designComponentModel</ins>: Angular service that will be executed at design time which declares the View Component Input and Output parameters, and the Input Parameters validation logic,
 * <ins>**options**</ins>: This tells that this View Component can be embedded inside a **record editor** view component, which is required for a "record field view component",
     ```typescript
@@ -72,7 +72,7 @@ In the "star-rating-field" example we added only two Input Parameters, specific 
     canBeInsertedInto(componentTypes: string[]): boolean {
         return componentTypes.includes(RxViewComponentType.RecordEditor);
     },
-    componentFactory: this.componentFactoryResolver.resolveComponentFactory(StarRatingFieldComponent),
+    component: StarRatingFieldComponent,
     // Some properties are inherited from the base record editor field design defined in "IBaseRecordEditorFieldProperties":
     //  label, model (value)
     //  fieldId: string;
@@ -102,9 +102,8 @@ In the "star-rating-field" example we added only two Input Parameters, specific 
             type: ViewComponentPropertyType.String
         }
     ]),
-    designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(StarRatingFieldDesignComponent),
-    designComponentModel: StarRatingFieldDesignModel,
-    bundleId: 'com.example.test210500'
+    designComponent: StarRatingFieldDesignComponent,
+    designComponentModel: StarRatingFieldDesignModel
 });
 ```
 
@@ -146,15 +145,3 @@ Both Input Parameters have the same properties:
 > })
 > ``` 
 > This should be done automatically if you used the BMC Schematics.
-
-The "registration.module" also imports both the design time and runtime Angular Component modules:
-```typescript
-import { StarRatingFieldModule } from './runtime';
-import { StarRatingFieldDesignModule } from './design';
-// ...
-@NgModule({
-  imports: [StarRatingFieldDesignModule, StarRatingFieldModule]
-})
-```
-> :memo:  
-> Those modules are automatically imported in the if you used the BMC Schematics.

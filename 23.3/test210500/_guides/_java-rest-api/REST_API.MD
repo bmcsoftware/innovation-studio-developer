@@ -13,7 +13,7 @@
 <a name="introduction"></a>
 ## Introduction
 > :memo:  
-> The flow from this tutorial is coming from the [BMC Documentation](https://docs.bmc.com/docs/is221/creating-a-custom-interface-with-rest-1039590004.html).
+> The flow from this tutorial is coming from the [BMC Documentation](https://docs.bmc.com/docs/innovationsuite/233/creating-a-custom-interface-with-rest-1223791389.html).
 
 The Innovation Studio provides Rest Apis to access some of its objects, for example to fetch record instances.   
 It is also possible to create custom Rest Apis in your Application or Library to pinpoint a specific function like ordering lunch, updating a lunch order etc...    
@@ -75,7 +75,7 @@ Here is the full code of the GET rest api:
 * @AccessControlledMethod(authorization = AccessControlledMethod.AuthorizationLevel.ValidUser): 
     * This means that in order to consume this Rest Api a valid user is required,
     * > :memo:  
-      This means that if a third party application tries to consume this Rest Api (Postman for example), this application would need first to perform a login operation to get a JWT authentication token as described in the [documentation](https://docs.bmc.com/docs/is221/login-information-1039590009.html?src=search),
+      This means that if a third party application tries to consume this Rest Api (Postman for example), this application would need first to perform a login operation to get a JWT authentication token as described in the [documentation](https://docs.bmc.com/docs/innovationsuite/233/login-information-1223791394.html),
 * @Produces(MediaType.APPLICATION_JSON):
   * What kind of datatype this api will return, here it will be json,
   * > :memo:  
@@ -155,7 +155,7 @@ this.getPassword(this.componentData.username).subscribe((restApiResponse: IRestA
 
 <a name="consuming-rest-api-third-party"></a>
 ## Consuming the Rest Api in a third party application
-When consuming the rest api via a third party application (Postman for example), this application would need first to perform a login operation to get a JWT authentication token as described in the [documentation](https://docs.bmc.com/docs/is221/login-information-1039590009.html?src=search).  
+When consuming the rest api via a third party application (Postman for example), this application would need first to perform a login operation to get a JWT authentication token as described in the [documentation](https://docs.bmc.com/docs/innovationsuite/233/login-information-1223791394.html).  
 If the operation modifies data (PUT, DELETE, POST for example), the request header "x-requested-by" is mandatory with a value ("X") for example.
 
 Getting the Jwt token leveraging the "/loginrequest" api call:  

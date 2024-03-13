@@ -56,16 +56,14 @@ A view component has usually this file structure, separated in two folders:
 * /design:
   * Files necessary for the design time in View designer,
     * Display in the palette and the canvas, how to display the Input Parameters, validation code,
-    * Their code will be executed at **design time**, in View Designer, 
-  * .module: Design time module referencing the design time component,
+    * Their code will be executed at **design time**, in View Designer,
   * .design.model: Declares the view component Input and Output parameters as well as the Input Parameters validation,
   * .design.component (ts and html): Angular component that will be displayed in the View designer canvas,
   * .interface: Necessary interface, usually the Input Parameters,
 * /runtime:
   * Files necessary for runtime operation,
     * Display in the runtime view, how to consume the Input Parameters, execute code and broadcast Output Parameters,
-    * Their code will be executed at **runtime**, 
-  * .module: runtime module referencing the runtime component,
+    * Their code will be executed at **runtime**,
   * .component (ts and html): Angular component that will be displayed at runtime, in the view,
 
 > :memo:  
@@ -83,17 +81,17 @@ You can use our schematics to generate a skeleton code.
   
 Go in the webapp folder and type:
 ```bash
-yarn run ng g rx-field-view-component "<view-component-name>"
+npx ng g rx-field-view-component "<view-component-name>"
 ```
 For example:
 ```bash
-yarn run ng g rx-field-view-component "star-rating-field"
+npx ng g rx-field-view-component "star-rating-field"
 ```
 
 > :memo:  
 > To do a "dry run", which means trying to create the view component without actually creating or updating the files, add "--dry-run" at the end of the command line, for example:
 > ```bash
-> yarn run ng g rx-field-view-component "star-rating-field" --dry-run
+> npx ng g rx-field-view-component "star-rating-field" --dry-run
 > ```
 
 > :memo:  

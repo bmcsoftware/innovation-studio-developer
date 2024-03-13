@@ -1,4 +1,4 @@
-<h1 style="text-align:center">Creating an Action</h1>
+<h1 style="text-align:center">Creating a View Action</h1>
 
 ## Table Of Contents:
 * [Introduction](#introduction)
@@ -9,11 +9,11 @@
 * [Confirmation code walk-through](#confirmation)
   * [Design Time](./DESIGN_TIME.MD)
   * [Runtime](./RUNTIME.MD)
-
-
+  
+  
 <a name="introduction"></a>
 ## Introduction
-Custom action is a service (Angular service) that allows you to map an action to the UI elements in the View designer. You can create a custom action (JavaScript action) that can be mapped to an action button or a cell in a record grid in a view definition.
+A Custom action (View Action) is a service (Angular service) that allows you to map an action to the UI elements in the View designer. You can create a custom action (JavaScript action) that can be mapped to an action button or a cell in a record grid in a view definition.
   
 For example, if you want to display a confirmation window (that displays a modal confirmation window) on the click of an action button, you can create an action for the confirmation modal window (via code), and then map the action to an action button in the View designer.
 
@@ -74,17 +74,17 @@ You can use our schematics to generate a skeleton code.
 
 Go in the webapp folder and type:
 ```bash
-yarn run ng g rx-view-action "<action-name>"
+npx ng g rx-view-action "<action-name>"
 ```
 For example:
 ```bash
-yarn run ng g rx-view-action "confirmation"
+npx ng g rx-view-action "confirmation"
 ```
 
 > :memo:  
 > To do a "dry run", which means trying to create the action without actually creating or updating the files, add "--dry-run" at the end of the command line, for example:
 > ```bash
-> yarn run ng g rx-view-action "confirmation" --dry-run
+> npx ng g rx-view-action "confirmation" --dry-run
 > ```
 
 > :memo:  

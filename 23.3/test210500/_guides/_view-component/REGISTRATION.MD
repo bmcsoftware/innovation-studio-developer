@@ -24,8 +24,8 @@ The [registration.module](../../bundle/src/main/webapp/libs/com-example-test2105
   * > :memo:  
     You can look at the documentation to see which icon can be used, or run the view component [list-icons](../../bundle/src/main/webapp/libs/com-example-test210500/src/lib/view-components/list-icons) to perform a search on available icons,
   ![view component in palette](../../_details/pictures/view-component-palette.png)
-* <ins>bundleId</ins>: The application or library bundleId,
-* <ins>componentFactory</ins>: Registering the runtime angular Component,
+* <ins>component</ins>: Registering the runtime angular Component,
+* <ins>designComponent</ins>: Registering the design time angular Component,
 * <ins>designComponentModel</ins>: Angular service that will be executed at design time which declares the View Component Input and Output parameters, and the Input Parameters validation logic,
 * properties: Array of Input parameters,
     * > :memo:  
@@ -47,7 +47,7 @@ In the "star-rating" example we added many Input Parameters as you can see below
     type: 'comExampleTest210500StarRating',
     name: 'Star Rating',
     group: 'Test 21.05.00',
-    componentFactory: this.componentFactoryResolver.resolveComponentFactory(StarRatingComponent),
+    component: StarRatingComponent,
     icon: 'star',
     options: {
         canBeEmbeddedInRecordEditor: true
@@ -94,9 +94,8 @@ In the "star-rating" example we added many Input Parameters as you can see below
             enableExpressionEvaluation: true
         }
     ],
-    designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(StarRatingDesignComponent),
-    designComponentModel: StarRatingDesignModel,
-    bundleId: 'com.example.test210500'
+    designComponent: StarRatingDesignComponent,
+    designComponentModel: StarRatingDesignModel
 });
 ```
 
@@ -144,14 +143,3 @@ Some Input Parameters have different properties:
 > ``` 
 > This should be done automatically if you used the BMC Schematics.
 
-The "registration.module" also imports both the design time and runtime Angular Component modules:
-```typescript
-import { StarRatingModule } from './runtime';
-import { StarRatingDesignModule } from './design';
-// ...
-@NgModule({
-  imports: [StarRatingDesignModule, StarRatingModule]
-})
-```
-> :memo:  
-> Those modules are automatically imported in the if you used the BMC Schematics.

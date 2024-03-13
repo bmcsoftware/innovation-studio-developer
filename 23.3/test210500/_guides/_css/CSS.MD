@@ -2,6 +2,7 @@
 
 ## Table Of Contents:
 * [Introduction](#introduction)
+* [Impact on lazy loading (Manifest)](#manifest)
 * [Library default css file](#library-css-file)
 * [Additional css file](#additional-css-file)
 * [Dynamically loaded css file](#dynamically-loaded-css-file)
@@ -23,6 +24,21 @@ There are a couple of ways to achieve this that are detailed below.
 > :warning:  
 > To avoid collision with existing Css Classes be sure to respect the [coding and naming guidelines](../_guides/CODING_NAMING_GUIDELINES.MD).
 > 
+
+
+<a name="manifest"></a>
+## Impact on lazy loading (Manifest)
+The manifest will automatically list the different View Components, View Actions and Initializers contained in a bundle. This will be used later to know which UI element belongs to and allow lazy loading, aka only load a coded bundle code if one of its element is used in a View.  
+Please refer to the bundle example [testlazyloading](../../../testlazyloading/README.MD) for more details.  
+if you created [global Css](../../_details/ASSETS.MD#global-css-class) to apply a Css class to a container for example, you might have to change the loadCss property to always be loaded. For example if the Css class is in a library and used in another bundle (for example an application), we need to always load the Css so it can be applied. In this case, you can change the property `loadCss` to `always` in the file [package.json](../../bundle/src/main/webapp/package.json):
+```json
+  "config": {
+    "manifest": {
+      "generate": true,
+      "loadJs": "lazy",
+      "loadCss": "always"
+    }
+```
 
 
 <a name="library-css-file"></a>

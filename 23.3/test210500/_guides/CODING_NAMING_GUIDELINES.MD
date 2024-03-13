@@ -3,6 +3,7 @@
 ## Table Of Contents:
 * [Naming Guidelines](#naming-guidelines)  
 * [Coding Guidelines](#coding-guidelines)  
+* [Third party libraries](#third-party-libraries)  
 
 
 <a name="naming-guidelines"></a>
@@ -66,7 +67,7 @@ It is recommended to prefix the localized strings with bundle Id, for example in
 
 <a name="coding-guidelines"></a>
 ## Coding Guidelines
-Please refer to [this documentation](https://docs.bmc.com/docs/is221/best-practices-for-developing-application-code-1039589979.html?src=search).  
+Please refer to [this documentation](https://docs.bmc.com/docs/innovationsuite/233/best-practices-for-developing-application-code-1223791356.html?src=search).  
 
 Additionally, you should avoid to:
 * Use different version of libraries provided by BMC,
@@ -75,3 +76,18 @@ Additionally, you should avoid to:
 * Implement any code that relies on filesystem access,
 * Override the BMC classes to avoid unwanted side effects,
   * If you feel a feature is missing, for example in Skinning and Branding please fill an "Idea" in the BMC Community
+* Be wary of third party library types (licenses), listed in the document "BMC Cloud Services Master Agreement" 4.2.2 chapter (see [this page](https://www.bmc.com/legal/agreements.html)), 
+
+---
+
+<a name="third-party-libraries"></a>
+## Third party libraries
+As mentioned in the previous section, you need to be wary of third party library types:
+* From a license standpoint, some licenses are not allowed on BMC environment. Those licenses are listed in the document "BMC Cloud Services Master Agreement" 4.2.2 chapter (see [this page](https://www.bmc.com/legal/agreements.html)), 
+* It is recommended not to use some third party libraries as they might conflict with BMC styles or own BMC implementation, some examples are:
+  * Google Material
+    * While this is a very powerful and fantastic library, most of the Google Material elements have equivalent provided by BMC in our Adapt graphical library. Leveraging those Adapt components will ensure that they will be integrated optimally with other OOTB elements and look like the other elements used in Innovation Studio,
+  * primeNG
+    * This is also a fantastic library, however BMC uses already this library, for example for its grid, and leveraging other primeNG components might override some css properties like colors, or styles, breaking some BMC objects behavior,
+    * Most of the primeNg elements have equivalent provided by BMC in our Adapt graphical library. Leveraging those Adapt components will ensure that they will be integrated optimally with other OOTB elements and look like the other elements used in Innovation Studio,
+    * It is HIGHLY recommended not to use primeNG for those reasons,

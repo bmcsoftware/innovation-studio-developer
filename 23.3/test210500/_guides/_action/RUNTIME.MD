@@ -24,6 +24,15 @@ The [service](../../bundle/src/main/webapp/libs/com-example-test210500/src/lib/a
 ![Runtime screenshot](../../_details/pictures/confirmation-runtime.png)
 </details>
 
+It is very important to keep the decorator `@RxViewAction` as it is used in the manifest file that will list all UI elements (View Actions, View Components, Initializer) available in the bundle. The manifest file is automatically created during the build.  
+The entry should be created automatically and set with the right `name` value if you used BMC schematics command line to generate the View Action:  
+```ts
+@Injectable()
+@RxViewAction({
+  name: 'comExampleTest210500ActionConfirmation',
+})
+```
+
 As explained earlier we expect the Action to be synchronous, aka the future actions should not be executed until the user Confirmed or Cancelled the confirmation modal window.  
 The **execute()** method will be called automatically when the action is executed and will contain the different Input Parameter values. It should output an Observable:
 ```typescript

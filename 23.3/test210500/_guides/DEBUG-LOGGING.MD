@@ -80,13 +80,13 @@ You do not need to deploy the bundle again to test the changes:
 > Once the debug session is finished of course you will need to deploy the bundle so end users can enjoy the latest changes.
 
 > :warning:  
-> Do not forget, when debugging Angular code, to set the RX_SDK_HOME folder to the SDK folder path as explained in the [documentation](https://docs.bmc.com/docs/is221/setting-up-your-ide-and-installing-bmc-helix-innovation-studio-sdk-1039589980.html?src=search), for example on Windows:
+> Do not forget, when debugging Angular code, to set the RX_SDK_HOME folder to the SDK folder path as explained in the [documentation](https://docs.bmc.com/docs/innovationsuite/233/setting-up-your-ide-and-installing-bmc-helix-innovation-studio-sdk-1247609960.html?src=search), for example on Windows:
 >  ```bash
-> SET RX_SDK_HOME=C:\dev\sdk\com.bmc.arsys.rx.sdk-22.1.03
+> SET RX_SDK_HOME=C:\dev\sdk\com.bmc.arsys.rx.sdk-23.3.00
 > ```
 > On Mac Os:
 >  ```bash
-> export RX_SDK_HOME=/Users/<userName>/sdk/com.bmc.arsys.rx.sdk-22.1.03
+> export RX_SDK_HOME=/Users/<userName>/sdk/com.bmc.arsys.rx.sdk-23.3.00
 > ```
 
 
@@ -146,24 +146,13 @@ You do not need to deploy the bundle again to test the changes:
 > Once the debug session is finished of course you will need to deploy the bundle so end users can enjoy the latest changes.
 
 > :warning:  
-> Do not forget, when debugging Angular code, to set the RX_SDK_HOME folder to the SDK folder path as explained in the [documentation](https://docs.bmc.com/docs/is221/setting-up-your-ide-and-installing-bmc-helix-innovation-studio-sdk-1039589980.html?src=search), for example on Windows:
+> Do not forget, when debugging Angular code, to set the RX_SDK_HOME folder to the SDK folder path as explained in the [documentation](https://docs.bmc.com/docs/innovationsuite/233/setting-up-your-ide-and-installing-bmc-helix-innovation-studio-sdk-1247609960.html?src=search), for example on Windows:
 >  ```bash
-> SET RX_SDK_HOME=C:\dev\sdk\com.bmc.arsys.rx.sdk-22.1.03
+> SET RX_SDK_HOME=C:\dev\sdk\com.bmc.arsys.rx.sdk-23.3.00
 > ```
 > On Mac Os:
 >  ```bash
-> export RX_SDK_HOME=/Users/<userName>/sdk/com.bmc.arsys.rx.sdk-22.1.03
-> ```
-
-
-> :warning:  
-> Do not forget, when debugging Angular code, to set the RX_SDK_HOME folder to the SDK folder path as explained in the [documentation](https://docs.bmc.com/docs/is221/setting-up-your-ide-and-installing-bmc-helix-innovation-studio-sdk-1039589980.html?src=search), for example on Windows:
->  ```bash
-> SET RX_SDK_HOME=C:\dev\sdk\com.bmc.arsys.rx.sdk-22.1.03
-> ```
-> On Mac Os:
->  ```bash
-> export RX_SDK_HOME=/Users/<userName>/sdk/com.bmc.arsys.rx.sdk-22.1.03
+> export RX_SDK_HOME=/Users/<userName>/sdk/com.bmc.arsys.rx.sdk-23.3.00
 > ```
 
 
@@ -231,13 +220,13 @@ Like described in the [How to debug Angular code (runtime)?](#angular-runtime) s
     ```
 
 > :warning:  
-> Do not forget, when debugging Angular code, to set the RX_SDK_HOME folder to the SDK folder path as explained in the [documentation](https://docs.bmc.com/docs/is221/setting-up-your-ide-and-installing-bmc-helix-innovation-studio-sdk-1039589980.html?src=search), for example on Windows:
+> Do not forget, when debugging Angular code, to set the RX_SDK_HOME folder to the SDK folder path as explained in the [documentation](https://docs.bmc.com/docs/innovationsuite/233/setting-up-your-ide-and-installing-bmc-helix-innovation-studio-sdk-1247609960.html?src=search), for example on Windows:
 >  ```bash
-> SET RX_SDK_HOME=C:\dev\sdk\com.bmc.arsys.rx.sdk-122.1.03
+> SET RX_SDK_HOME=C:\dev\sdk\com.bmc.arsys.rx.sdk-23.3.00
 > ```
 > On Mac Os:
 >  ```bash
-> export RX_SDK_HOME=/Users/<userName>/sdk/com.bmc.arsys.rx.sdk-22.1.03
+> export RX_SDK_HOME=/Users/<userName>/sdk/com.bmc.arsys.rx.sdk-23.3.00
 > ```
 
 
@@ -261,7 +250,7 @@ A file will be generated in the server with the name matching your bundle name. 
 > It is recommended to let the file name as proposed.
 
 > :memo: 
-> This logger is also used when getting debug information in the UI as described in the ["browser logging" documentation](https://docs.bmc.com/docs/is221/enabling-browser-logging-in-an-application-1039590051.html?src=search).  
+> This logger is also used when getting debug information in the UI as described in the ["browser logging" documentation](https://docs.bmc.com/docs/innovationsuite/233/enabling-browser-logging-for-a-bmc-helix-innovation-studio-application-1223793973.html?src=search).  
 > Please see the ["browser logging"](#browser-logging) section below.
 
 
@@ -283,7 +272,7 @@ this.rxLogService.warning('Executing the view component focus method.');
 
 <a name="browser-logging"></a>
 ### Browser logging
-It is possible to activate ["browser logging"](https://docs.bmc.com/docs/is221/enabling-browser-logging-in-an-application-1039590051.html?src=search) as described in the documentation.  
+It is possible to activate ["browser logging"](https://docs.bmc.com/docs/innovationsuite/233/enabling-browser-logging-for-a-bmc-helix-innovation-studio-application-1223793973.html?src=search) as described in the documentation.  
 Enabling browsing login will allow you to see:
 * [Angular](#logs-angular) logs,
 * [Java](#logs-java) logs,
@@ -314,5 +303,4 @@ In order to reset the log categories, simply use the setCategories() method with
 
 <a name="process-rule"></a>
 ## How to debug a Process or a Rule?
-You can refer to the official [documentation](https://docs.bmc.com/docs/is221/enabling-and-downloading-logs-from-bmc-helix-innovation-studio-1039590046.html) on how to enable Process logs in the Administration console.  
-[TODO] A file "process.log" will be created in the server, containing the process and rules logs.
+You can refer to the official [documentation](https://docs.bmc.com/docs/innovationsuite/233/viewing-and-downloading-process-logs-for-a-bmc-helix-innovation-studio-application-1223793974.html?src=search) on how to enable Process logs in the Administration console.  
