@@ -12,6 +12,35 @@ It is advised to create them in the library "services" folder, for example:
 src/main/webapp/libs/com-example-test210500/src/lib/services
 ```
 
+## Best practices for a Service:
+In order to avoid injection error, it is strongly recommended to modify the Services to be providedIn root to be available to all components, for example [custom-datapagequery-data-page.service.ts](../bundle/src/main/webapp/libs/com-example-test210500/src/lib/view-components/custom-datapagequery/runtime/custom-datapagequery-data-page.service.ts):
+```ts
+@Injectable({
+  providedIn: 'root'
+})
+```
+
+## Best practices for a Pipe:
+It is also recommended for the Pipes to be standalone, for example [list-icons.pipe.ts](../bundle/src/main/webapp/libs/com-example-test210500/src/lib/view-components/list-icons/runtime/list-icons.pipe.ts):
+```ts
+@Pipe({
+  name: 'iconFilter',
+  standalone: true
+})
+```
+Then the pipe can be imported in another standalone Component, such as in the example [list-icons](../bundle/src/main/webapp/libs/com-example-test210500/src/lib/view-components/list-icons/runtime/list-icons.component.ts) in the imports section:
+```ts
+import { IconPipe } from './list-icons.pipe';
+// (...)
+@Component({
+  selector: 'com-example-test210500-com-example-test210500-list-icons',
+  styleUrls: ['./list-icons.scss'],
+  templateUrl: './list-icons.component.html',
+  standalone: true,
+  imports: [CommonModule, AdaptRxSearchModule, FormsModule, AdaptAlertModule, IconPipe]
+})
+```
+
 
 ## Service List
 > :memo:  
@@ -20,7 +49,6 @@ src/main/webapp/libs/com-example-test210500/src/lib/services
 
 * [GetAssetPathService](#GetAssetPathService),
 * [DynamicScriptLoaderServiceService](#DynamicScriptLoaderServiceService),
-* [GetComponentService](#GetComponentService),
 
 ---
 
@@ -157,47 +185,3 @@ src/main/webapp/libs/com-example-test210500/src/lib/services
 
 > **:warning:**  
 > When testing your application or library using the debug mode (npm start --apihost=192.168.159.135) the path to access the scripts / resources in the assets' folder is different from production, hence the use of the GetAssetPathService service. The GetAssetPathService service is detailed above.
-
----
-
-<a name="GetComponentService"></a>
-### GetComponentService:
-* Description:
-    * Sometimes it is necessary to access an Angular Component instance to access its data or methods. The preferred way is use the @ViewChild() annotation for this as used in many of this application examples:
-      ```typescript
-          @ViewChild('signaturePad', {static: true})
-          signaturePad: SignaturePad;
-          //
-          this.signaturePad.clear();
-      ```
-    * Though on some very rare occasion it is not possible to use @ViewChild() as we have only the DOM Native Element,
-    * In those cases this service allows to get the Angular Component instance from a DOM native Element.
-    * For example here we are looking for one specific BMC OOTB grid object in order to access its data:
-    ```typescript
-        const allGridsElements = document.querySelectorAll('rx-record-grid');
-
-        forEach(Array.from(allGridsElements), (grid) => {
-          const gridComponent: RecordGridComponent = this.getComponentService.getComponentByNativeElement(grid);
-    
-          if (gridComponent.customCssClasses.includes(className)) {
-            this.recordGridComponent = gridComponent;
-          }
-        });
-        // ...
-        this.recordGridComponent.adaptTable.tableService.valueSource$.subscribe((dataRows) => {
-            this.currentRows = dataRows;
-            // We send the grid data in the output parameter as a stringified Json.
-            this.currentRowsJson = JSON.stringify(this.currentRows, undefined, 2);
-            this.notifyPropertyChanged('gridData', this.currentRowsJson);
-        });
-    ```
-* Complexity: :angel:
-* Used in the example:
-    * Views: VC Accessing grid,
-    * View Components: access-grid,
-* Credits:
-  * https://github.com/angular/angular/issues/8277#issuecomment-726057745,
-
-> **:warning:**  
-> As stated earlier, the preferred way is to use the @ViewChild() annotation as recommended by the Angular team. This service aims to work as a workaround.  
-> If a BMC Component misses api interfaces, please post a message, or an Idea on the BMC Communities to enhance it.

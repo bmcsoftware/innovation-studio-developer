@@ -41,7 +41,7 @@ You can have a look at the "gradient" example where the GradientService is descr
 export class GradientComponent extends ValueAccessor<string> implements IFormControlComponent, AfterViewInit {
 ```
 
-The other solution is to set the Service injectable at root level:
+The other solution is to set the Service injectable at root level, which is usually [recommended](JAVASCRIPT_SERVICES.MD):
 ```typescript
 @Injectable({
   providedIn: 'root'
@@ -50,14 +50,19 @@ export class GradientService {
 ```
 
 ### Using an Inspector in a View Component or Action:
-The inspector module needs to be imported in the registration, design module or runtime modules when used. For example, you can look how the "Gradient" inspector is used in the "display-gradient" view component.  
+The inspector module needs to be imported in the registration, design module or runtime modules when used. For example, you can look how the "Gradient" inspector is used in the [display-gradient](../bundle/src/main/webapp/libs/com-example-test210500/src/lib/view-components/display-gradient/runtime/display-gradient.component.ts) runtime component.  
 It will depend on your use case:
 ```typescript
-import { GradientModule } from '../../../componentsFormControl/gradient/gradient.module';
+import {GradientModule} from "../../../inspectors/gradient/gradient.module";
 // (...)
-@NgModule({
-  imports: [DisplayGradientDesignModule, DisplayGradientModule]
+@Component({
+  selector: 'com-example-test210500-com-example-test210500-display-gradient-design',
+  styleUrls: ['./display-gradient-design.scss'],
+  templateUrl: './display-gradient-design.component.html',
+  standalone: true,
+  imports: [CommonModule, FormsModule, GradientModule]
 })
+export class DisplayGradientDesignComponent implements AfterViewInit{
 export class DisplayGradientRegistrationModule {
 ```
 

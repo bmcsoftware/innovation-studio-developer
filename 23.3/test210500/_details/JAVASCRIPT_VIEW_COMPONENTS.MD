@@ -13,8 +13,8 @@ Usually a View Component is created when there is a lack in the components provi
 
 ### What is the difference between a Standalone View Component, and a Record Field View Component?:
 * Standalone View Component:
-  * It can be used anywhere in the View Designer and does not rely on a Record Editor to get data.
-  * It can be a chart for example, or a lifecycle bar.
+  * It can be used anywhere in the View Designer and does not rely on a Record Editor to get data,
+  * It can be a chart for example, or a lifecycle bar,
 * [Record Field View Component](./JAVASCRIPT_RECORD_FIELD_VIEW_COMPONENTS.MD):
   * It is designed to be used within a Record Editor field and is mapped to one of its field (for example a Numeric field),
   * It inherits the default base attributes (value, disabled, hidden) which do not need to be declared as input parameters,
@@ -24,17 +24,17 @@ Usually a View Component is created when there is a lack in the components provi
 You can use our schematics to generate a skeleton code.
 Go in the webapp folder and type:
 ```bash
-yarn run ng g rx-view-component "<view-component-name>"
+npx ng g rx-view-component "<view-component-name>"
 ```
 For example:
 ```bash
-yarn run ng g rx-view-component "gradient"
+npx ng g rx-view-component "gradient"
 ```
 
 > :memo:  
 > To do a "dry run", which means trying to create the action without actually creating or updating the files, add "--dry-run" at the end of the command line, for example:
 > ```bash
-> yarn run ng g rx-field-view-component "gradient" --dry-run
+> npx ng g rx-field-view-component "gradient" --dry-run
 > ```
 
 ## View Component list
@@ -297,21 +297,12 @@ yarn run ng g rx-view-component "gradient"
 
 * Description:
   * This view component allows to:
-    * Display an url in an iFrame,
-    * Set the different iFrame sandbox properties,
+    * Display an url in an iFrame, 
     * Add "allow-from-domain" query parameter if needed, and the url is a Helix Url,
   * Shows how to:
     * Design Time:
       * Standard implementation implementing the BMC **IViewDesignerComponentModel** and extending **ViewDesignerComponentModel** which is the recommended way,
       * Declare different Input parameters and showing how to use different Field types **ExpressionFormControlComponent**, **ISelectFormControlOptions** and **SwitchFormControlComponent**,
-        * Create a list of values to be displayed in a selection field and allowing multi-selection,
-          * As per boolean fields, the values need to be parsed since stored as a string in the view definition:
-          ```typescript
-            //  We have to cast the "sandboxOptions" value to array of strings as it is stored as a string in the properties
-            // even if declared as array of strings in the registration module.
-            // This is because we allow multiple values to be selected.
-            sandboxOptions: initialProperties.sandboxOptions ? JSON.parse(String(initialProperties.sandboxOptions)) : []
-          ```
         * Cast boolean value in the **getInitialProperties()** method that sets the initial input parameter values (see [code-viewer](#code-viewer) component :memo:),
       * Create several Input parameter "controls" to group input parameters under different "accordion",
       * Use the BMC css class picker leveraging **TagsFormControlComponent** and its validator **validateCssClassName**,
@@ -1252,12 +1243,15 @@ yarn run ng g rx-view-component "gradient"
 ---
 
 <a name="captcha"></a>
-### captcha:
+### captcha (non functional):
   <details> 
-  <summary>captcha</summary>  
+  <summary>captcha (non functional)</summary>  
 
 ![captcha](./pictures/view-component-captcha.png)
   </details>
+
+> :warning:  
+> This example does not work yet in 23.3 due to a [problem](https://github.com/leNicDev/ng-hcaptcha/issues/80) in the NPM library.
 
 * Description:
   * Shows how to leverage [hCaptcha](https://www.hcaptcha.com/) captcha,
@@ -1316,8 +1310,6 @@ yarn run ng g rx-view-component "gradient"
 
 * Description:
   * Access a BMC grid object Angular Component instance to get its data and select a specific row for example,
-    * > :warning:  
-      For now the grid object do not expose all of its api objects, so we need to use the custom **GetComponentService** [service](./JAVASCRIPT_SERVICES.MD#GetComponentService) to fetch the Component instance from the Native Element. This must be considered as a workaround for now,
   * Shows how to:
     * Design time:
       * Define two input parameters type **ExpressionFormControlComponent**, and their validation as well as one output parameter,
@@ -1357,26 +1349,13 @@ yarn run ng g rx-view-component "gradient"
         }
       }
       ```
-      * We leverage the custom **GetComponentService** [service](./JAVASCRIPT_SERVICES.MD#GetComponentService) to get the Angular Component instance from the grid and access its methods,
-        * We search in the DOM Document for a grid with a specific class, the class name has been also provided in the View Component through the "gridCssClassTag" input parameter,
-        * > :warning:  
-          For now the grid object do not expose all of its api objects so this must be considered as a workaround for now,
-      * Once we have the grid Component instance we can:
-        * Subscribe to the data changes to display them:
+      * We leverage the Grid Component OOTB apis to unselect rows, or select a specific row:
+        * Subscribe to the data changes to display them. Even if only one row is selected the selection needs to be passed as an Array:
         ```typescript
-              this.recordGridComponent.adaptTable.tableService.valueSource$.subscribe((dataRows) => {
-                // ...                
-              });
-        ```
-        * Use the Adapt apis (which actually leverage the **PrimeNG table** object) to select one row. For this we need first to unselect the previously selected rows, then select one row. Even if only one row is selected the selection needs to be passed as an Array:
-        ```typescript
-              const selectedRows = this.recordGridComponent.adaptTable.getRowSelectionArray();
-        
-              if (selectedRows) {
-                this.recordGridComponent.adaptTable.removeFromRowSelection(selectedRows);
-              }
-              // ...
-              this.recordGridComponent.adaptTable.addToRowSelection([this.currentRows[index]])
+                // Unselecting all rows:
+                this.recordGridComponent.setSelectedRows([]);
+                // Selecting one specific row
+                this.recordGridComponent.setSelectedRows([this.recordGridComponent.getVisibleRows()[index]])
         ```
 * Complexity: :hot_pepper: :hot_pepper:
 * Used in the example:
@@ -2385,18 +2364,19 @@ yarn run ng g rx-view-component "gradient"
   * View: VC QR code generator,
 
 > **:memo:**  
-> Be sure that the NPM library(ies) used in the library are not already provided by the Platform (Lodash for example). If third party NPM libraries are necessary be sure to add them at the library level, for example:
+> Be sure that the NPM library(ies) used in the library are not already provided by the Platform (Lodash for example). If third party NPM libraries are necessary be sure to add them at the library level, for example here we need two libraries, ngx-kjua and its dependency kjua-svg:
 > ```bash
 > cd src/main/webapp/libs/com-example-test210500
 > npm install ngx-kjua --save
+> npm install kjua-svg --save
 > ```  
 > That should add the library in the package.json dependencies section:
 > ```json
 >  "dependencies": {
->    "ngx-kjua": "^1.12.3"
+>    "kjua-svg": "^1.13.1",
+>    "ngx-kjua": "2.0.4"
 > }
 >```  
-
 
 ---
 

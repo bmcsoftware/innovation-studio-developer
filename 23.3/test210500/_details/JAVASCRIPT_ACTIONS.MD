@@ -13,17 +13,17 @@ Actions can be asynchronous, though this is not usually how they are used.
 You can use our schematics to generate a skeleton code.
 Go in the webapp folder and type:
 ```bash
-yarn run ng g rx-view-action "<action-name>"
+npx ng g rx-view-action "<action-name>"
 ```
 For example:
 ```bash
-yarn run ng g rx-view-action "launch-url"
+npx ng g rx-view-action "launch-url"
 ```
 
 > :memo:  
 > To do a "dry run", which means trying to create the action without actually creating or updating the files, add "--dry-run" at the end of the command line, for example:
 > ```bash
-> yarn run ng g rx-view-action "launch-url" --dry-run
+> npx ng g rx-view-action "launch-url" --dry-run
 > ```
 
 

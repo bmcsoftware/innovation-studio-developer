@@ -13,8 +13,8 @@ Usually a View Component is created when there is a lack in the components provi
 
 ## What is the difference between a Standalone View Component, and a Record Field View Component?:
 * [Standalone View Component](./JAVASCRIPT_VIEW_COMPONENTS.MD):
-  * It can be used anywhere in the View Designer and does not rely on a Record Editor to get data.
-  * It can be a chart for example, or a lifecycle bar.
+  * It can be used anywhere in the View Designer and does not rely on a Record Editor to get data,
+  * It can be a chart for example, or a lifecycle bar,
 * Record Field View Component:
   * It is designed to be used within a Record Editor field and is mapped to one of its field (for example a Numeric field),
   * It inherits the default base attributes (value, disabled, hidden) which do not need to be declared as input parameters,
@@ -24,17 +24,17 @@ Usually a View Component is created when there is a lack in the components provi
 You can use our schematics to generate a skeleton code.
 Go in the webapp folder and type:
 ```bash
-yarn run ng g rx-field-view-component "<view-component-name>"
+npx ng g rx-field-view-component "<view-component-name>"
 ```
 For example:
 ```bash
-yarn run ng g rx-field-view-component "star-rating"
+npx ng g rx-field-view-component "star-rating"
 ```
 
 > :memo:  
 > To do a "dry run", which means trying to create the action without actually creating or updating the files, add "--dry-run" at the end of the command line, for example:
 > ```bash
-> yarn run ng g rx-field-view-component "star-rating" --dry-run
+> npx ng g rx-field-view-component "star-rating" --dry-run
 > ```
 
 ## Record Field View Component list
@@ -49,6 +49,8 @@ yarn run ng g rx-field-view-component "star-rating"
 
 <a name="star-rating-field"></a>
 ### star-rating-field
+You can see a full tutorial of this Record Field View Component in this [guide](../_guides/_record-field-view-component/VIEW_COMPONENT.MD).
+
 <details> 
 <summary>star-rating-field screenshot</summary>  
 

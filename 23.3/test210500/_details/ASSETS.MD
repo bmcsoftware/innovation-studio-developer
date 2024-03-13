@@ -7,11 +7,12 @@
 * [Picture example](#example-picture)  
 * [Pure Javascript script and css](#example-script-css)  
 * [Global css class](#global-css)  
-  
-  
+* [Note on manifest file and its impact on global Css styles](#manifest)  
+
+
 <a name="assets"></a>
 ## What is the /assets/ folder?
-Sometimes it is necessary to refer to objects that are not Angular Components, Actions or Services, for example fonts, pure javascript libraries or stylesheets.  
+Sometimes it is necessary to refer to objects that are not Angular Components, Actions or Services, for example fonts, pure javascript libraries or Css stylesheets.  
 It is possible to refer / load pure javascript scripts or stylesheets using the custom service [DynamicScriptLoaderServiceService](./JAVASCRIPT_SERVICES.MD#DynamicScriptLoaderServiceService) at runtime, but sometimes it is not possible, or it might be better to host specific versions.  
 In this case it is possible to put those resources in the library /assets/ folder:  
 ```bash
@@ -93,12 +94,14 @@ In this example we are going to copy the "pictures" and "scripts" folder:
 ```
 
 > :warning:  
-> Do NOT set a script in the "angular.json" `scripts` section as it would override your View Components, Actions and other objects.
+> Do NOT set a script in the "angular.json" `scripts` section as it would override your View Components, View Actions and other objects.
 
 
 <a name="global-css"></a>
 ## How to create "global" css styles that are loaded at the same time as your application?
 Sometimes it is useful to have "global" css classes available, for to use for example to style a **Container** object in View Designer.  
+
+### Store the Css classes in the main library Scss file
 One solution is to add those classes in your library main scss file:
 ```bash
 src/main/webapp/libs/c<library-name>/src/lib/styles/<library-name>.scss
@@ -119,6 +122,7 @@ src/main/webapp/libs/com-example-test210500/src/lib/styles/com-example-test21050
 ```
 This file will automatically be loaded when the application loads.
 
+### Dedicated scss file
 Another solution is to put a .scss file containing those classes in the /assets/ folder and declare it in the [angular.json](../bundle/src/main/webapp/angular.json) in the `styles` section.  
 For example, we want to make sure this file content is loaded at application startup:
 ```bash
@@ -158,6 +162,9 @@ In our case:
 
 > :warning:  
 > To avoid collision with existing classes be sure to respect the [coding and naming guidelines](../_guides/CODING_NAMING_GUIDELINES.MD).
+
+> :warning:  
+> Be sure to check the section about the [manifest generation](#manifest) to see the impact on when the Global Css classes are loaded.
 
 
 <a name="access"></a>
@@ -246,3 +253,37 @@ In the View Designer you can then use this class in a **Container** Component fo
 
 > :warning:  
 > To avoid collision with existing Css Classes be sure to respect the [coding and naming guidelines](../_guides/CODING_NAMING_GUIDELINES.MD).
+
+> :warning:  
+> Be sure to check the section about the [manifest generation](#manifest) to see the impact on when the Global Css classes are loaded.
+
+
+---
+
+<a name="manifest"></a>
+## Note on manifest file and its impact on global Css styles
+As per the [documentation](https://docs.bmc.com/docs/innovationsuite/233/upgrading-to-the-latest-bmc-helix-innovation-studio-sdk-1247609631.html?src=search), the manifest must now be generated.  
+The manifest will automatically list the different View Components, View Actions and Initializers contained in a bundle. This will be used later to know which UI element belongs to and allow lazy loading, aka only load a coded bundle code if one of its element is used in a View.  
+Please refer to the bundle example [testlazyloading](../../testlazyloading/README.MD) for more details.  
+In order to allow the manifest creation, you need to modify the file [package.json](../../bundle/src/main/webapp/package.json) and be sure that the manifest creation is enabled (`"generate": true`):
+```json
+  "config": {
+    "manifest": {
+      "generate": true,
+      "loadJs": "lazy",
+      "loadCss": "lazy"
+    }
+```
+
+Moreover, if you created global Css to apply a Css class to a container [for example](../_guides/_css/CSS.MD), you might have to change the loadCss property to always be loaded. For example if the Css class is in a library and used in another bundle (for example an application), we need to always load the Css so it can be applied. In this case, you can change the property `loadCss` to `always` in the file [package.json](../bundle/src/main/webapp/package.json):
+```json
+  "config": {
+    "manifest": {
+      "generate": true,
+      "loadJs": "lazy",
+      "loadCss": "always"
+    }
+```
+
+> :memo:  
+> Please refer to the bundle example [testlazyloading](../../testlazyloading/README.MD) for more details.

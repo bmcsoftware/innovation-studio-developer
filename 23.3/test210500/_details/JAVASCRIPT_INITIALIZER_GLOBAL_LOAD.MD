@@ -10,6 +10,8 @@
 * [Difference between Initializer and Global Load solution](#difference),
 * [Initializer](#initializer),
 * [Global Load](#global-load),
+* [Note on manifest file and its impact on global Javascript files](#manifest),
+
 
 ---
 
@@ -27,6 +29,9 @@ Different use cases:
 > :memo:  
 > Both features are considered very advanced and are rarely used.
 
+
+> :warning:  
+> Be sure to check the section about the [manifest generation](#manifest) to see the impact on when the Global Css classes are loaded.
 
 
 ---
@@ -67,6 +72,17 @@ There is no schematics to create an Initializer as this is a very special object
               // (...)
               this.rxApplicationRegistryService.register('com.example.test210500', this.comExampleTest210500Initializer);
       ```
+* This service must be described using a decorator `@RxApplicationInitializer()` with as `applicationId` the Initializer bundleId passed in the `rxApplicationRegistryService.register()` method available in its module.ts
+  * For example the bundleId in the [com-example-test210500.module.ts](../bundle/src/main/webapp/libs/com-example-test210500/src/lib/com-example-test210500-initializer.service.ts) is:
+    * ```ts
+      this.rxApplicationRegistryService.register('com.example.test210500', this.comExampleTest210500Initializer);
+      ```
+  * In the Initializer service file [com-example-test210500-initializer.service.ts](../../bundle/src/main/webapp/libs/com-example-test210500/src/lib/com-example-test210500-initializer.service.ts) we would have:
+    * ```ts
+      @RxApplicationInitializer({
+        applicationId: 'com.example.test210500',
+      })
+      ```
 * Complexity: :hot_pepper: :hot_pepper:
 
 
@@ -105,3 +121,39 @@ Its code will then be immediately executed when the coded bundle coded is loaded
     ```
 * At runtime, you can see in the web browser console the message ```hello world ComExampleTest210500GlobalLoadModule!``` and also the result of the pure javascript method called (```alertMe3()```).
 * Complexity: :hot_pepper: :hot_pepper: :hot_pepper:
+
+
+> :warning:  
+> Be sure to check the section about the [manifest generation](#manifest) to see the impact on when the Global Css classes are loaded.
+
+
+
+---
+
+<a name="manifest"></a>
+## Note on manifest file and its impact on global Javascript files
+As per the [documentation](https://docs.bmc.com/docs/innovationsuite/233/upgrading-to-the-latest-bmc-helix-innovation-studio-sdk-1247609631.html?src=search), the manifest must now be generated.  
+The manifest will automatically list the different View Components, View Actions and Initializers contained in a bundle. This will be used later to know which UI element belongs to and allow lazy loading, aka only load a coded bundle code if one of its element is used in a View.  
+Please refer to the bundle example [testlazyloading](../../testlazyloading/README.MD) for more details.  
+In order to allow the manifest creation, you need to modify the file [package.json](../../bundle/src/main/webapp/package.json) and be sure that the manifest creation is enabled (`"generate": true`):
+```json
+  "config": {
+    "manifest": {
+      "generate": true,
+      "loadJs": "lazy",
+      "loadCss": "lazy"
+    }
+```
+
+Moreover, if you created global Javascript files that need to be loaded all the time, even when not directly accessing your coded bundle, you might have to change the `loadJs` property to always be loaded. For example if the javascript file is in a library and expected to be globally loaded even when accessing another bundle (for example an application), we need to always load the Javascript so it can be applied. In this case, you can change the property `loadJs` to `always` in the file [package.json](../bundle/src/main/webapp/package.json):
+```json
+  "config": {
+    "manifest": {
+      "generate": true,
+      "loadJs": "always",
+      "loadCss": "lazy"
+    }
+```
+
+> :memo:  
+> Please refer to the bundle example [testlazyloading](../../testlazyloading/README.MD) for more details.
