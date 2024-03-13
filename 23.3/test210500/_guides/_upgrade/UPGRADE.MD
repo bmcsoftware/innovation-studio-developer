@@ -53,8 +53,15 @@ Here are the detailed steps that we followed to update this coded application fr
   
 ### pom.xml modification
 Changed the main [pom.xml](../../pom.xml) file sdk version to use the 23.3.00 SDK (`23.3.00-SNAPSHOT`):
-    * ```xml
+  * ```xml
       <rx-sdk.version>23.3.00-SNAPSHOT</rx-sdk.version>
+      ```  
+
+
+### pom.xml modification
+Changed the main [angular.json](../../bundle/src/main/webapp/angular.json) file to remove this property:
+  * ```json
+      "extractCss": true
       ```
 
 

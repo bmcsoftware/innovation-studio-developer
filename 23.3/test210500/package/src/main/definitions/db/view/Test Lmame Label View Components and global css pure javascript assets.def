@@ -1,7 +1,7 @@
 begin view definition
    name           : com.example.test210500:Test Lmame Label View Components and global css pure javascript assets
    definition     : {
-   definition     :   "version" : null,
+   definition     :   "version" : "1.0-SNAPSHOT",
    definition     :   "lastUpdateTime" : 1709319152370,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",

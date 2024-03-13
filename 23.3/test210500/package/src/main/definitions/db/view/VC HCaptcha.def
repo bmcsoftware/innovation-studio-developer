@@ -1,7 +1,7 @@
 begin view definition
    name           : com.example.test210500:VC HCaptcha
    definition     : {
-   definition     :   "version" : null,
+   definition     :   "version" : "1.0-SNAPSHOT",
    definition     :   "lastUpdateTime" : 1709335882737,
    definition     :   "lastChangedBy" : "Demo",
    definition     :   "owner" : "Demo",

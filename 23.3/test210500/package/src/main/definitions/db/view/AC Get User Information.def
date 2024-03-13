@@ -1,7 +1,7 @@
 begin view definition
    name           : com.example.test210500:AC Get User Information
    definition     : {
-   definition     :   "version" : null,
+   definition     :   "version" : "1.0-SNAPSHOT",
    definition     :   "lastUpdateTime" : 1709319151660,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",

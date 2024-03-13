@@ -1,7 +1,7 @@
 begin view definition
    name           : com.example.test210500:CACT Create attachment from a Custom Process Activity
    definition     : {
-   definition     :   "version" : null,
+   definition     :   "version" : "1.0-SNAPSHOT",
    definition     :   "lastUpdateTime" : 1709319150836,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",

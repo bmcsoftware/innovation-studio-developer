@@ -1,7 +1,7 @@
 begin view definition
    name           : com.example.test210500:VC Digital signature
    definition     : {
-   definition     :   "version" : null,
+   definition     :   "version" : "1.0-SNAPSHOT",
    definition     :   "lastUpdateTime" : 1709319152284,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",

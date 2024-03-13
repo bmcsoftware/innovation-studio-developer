@@ -72,7 +72,7 @@ export class FruitPickerActionDesignModel extends RxViewDesignerActionModel {
       queryExpression: FRUIT_PICKER_ACTION.queryExpression
     };
 
-    this.rxRecordInstanceDataPageService.get({params}).subscribe((results: IDataPageResult) => {
+    this.rxRecordInstanceDataPageService.post({params}).subscribe((results: IDataPageResult) => {
       // If there are no data in the record definition we use a default list for the example (FRUIT_PICKER_DEFAULT_FRUITS).
       // We need to build the list of available fruits.
       let fruitList: ISelectOption[] = map(results.data, (fruitRecordInstance: KeyValueObject) => {

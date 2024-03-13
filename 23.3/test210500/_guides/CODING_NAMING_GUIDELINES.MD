@@ -63,6 +63,61 @@ It is recommended to prefix the localized strings with bundle Id, for example in
 }
 ```
 
+### Datapage query calls:
+In previous releases we used the `rxRecordInstanceDataPageService.get()` method to access data from a record instance, for example in [fruit-picker-action.design-model.ts](../bundle/src/main/webapp/libs/com-example-test210500/src/lib/actions/fruit-picker/fruit-picker-action.design-model.ts):
+```ts
+import { RxRecordInstanceDataPageService } from '@helix/platform/record/api';
+// (...)
+// The fruit list is stored in a record definition, so we fetch the record instances to build the list.
+// The default value will be applied later via the getInitialProperties() with:
+// fruit: 'banana'
+const params: IDataPageParams = {
+  // Record Definition to fetch data into.
+  recorddefinition: FRUIT_PICKER_ACTION.recordDefinitionName,
+  // List of field Ids we want to fetch. This is an array of field Ids.
+  propertySelection: [FRUIT_PICKER_ACTION.fruitFieldId],
+  // Page size (-1 = all).
+  pageSize: -1,
+  // Start Index (if we want to handle the pagination), 0 means we want to get
+  // from the first record instance.
+  startIndex: 0,
+  // Query criteria. We want to get all fruits.
+  queryExpression: FRUIT_PICKER_ACTION.queryExpression
+};
+// (...)
+this.rxRecordInstanceDataPageService.get({params})
+```
+In the new release, it is recommended to use the `.post()` method instead (so `rxRecordInstanceDataPageService.post()`). The reason is that in the past the parameters were generating a very long string passed to the server, reaching the server limit for GET call url length. This problem is addressed with the POST method now:
+```ts
+import { RxRecordInstanceDataPageService } from '@helix/platform/record/api';
+// (...)
+// The fruit list is stored in a record definition, so we fetch the record instances to build the list.
+// The default value will be applied later via the getInitialProperties() with:
+// fruit: 'banana'
+const params: IDataPageParams = {
+  // Record Definition to fetch data into.
+  recorddefinition: FRUIT_PICKER_ACTION.recordDefinitionName,
+  // List of field Ids we want to fetch. This is an array of field Ids.
+  propertySelection: [FRUIT_PICKER_ACTION.fruitFieldId],
+  // Page size (-1 = all).
+  pageSize: -1,
+  // Start Index (if we want to handle the pagination), 0 means we want to get
+  // from the first record instance.
+  startIndex: 0,
+  // Query criteria. We want to get all fruits.
+  queryExpression: FRUIT_PICKER_ACTION.queryExpression
+};
+// (...)
+this.rxRecordInstanceDataPageService.post({params})
+```
+
+However, we still support of course the `.get()` method.
+
+> :memo:  
+> If you are still using the `.get()` method, you will see a warning message in the Web Browser logs:  
+> `RxRecordInstanceDataPageService: The get() method is deprecated. Use post() instead.`
+
+
 ---
 
 <a name="coding-guidelines"></a>

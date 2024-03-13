@@ -170,7 +170,7 @@ export class GetDataExampleComponent extends BaseViewComponent implements OnInit
 
     this.isDisabled = true;
 
-    this.rxRecordInstanceDataPageService.get({params}).subscribe((results: IDataPageResult) => {
+    this.rxRecordInstanceDataPageService.post({params}).subscribe((results: IDataPageResult) => {
         this.recordInstances = results.data;
       },
       () => {

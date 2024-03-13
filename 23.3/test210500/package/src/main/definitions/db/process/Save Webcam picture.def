@@ -1,7 +1,7 @@
 begin process definition
    name           : com.example.test210500:Save Webcam picture
    definition     : {
-   definition     :   "version" : null,
+   definition     :   "version" : "1.0-SNAPSHOT",
    definition     :   "lastUpdateTime" : 1709319150361,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "Demo",

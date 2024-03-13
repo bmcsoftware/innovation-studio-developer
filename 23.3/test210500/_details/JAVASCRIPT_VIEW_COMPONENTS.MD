@@ -971,12 +971,12 @@ npx ng g rx-view-component "gradient"
               queryExpression: GET_DATA_EXAMPLE_OPTIONS.queryExpression
             };
         
-            this.rxRecordInstanceDataPageService.get({params}).subscribe((results: IDataPageResult) => {
+            this.rxRecordInstanceDataPageService.post({params}).subscribe((results: IDataPageResult) => {
             // ...
             });
           }
         ```
-      * Get associated data using **RxAssociationInstanceDataPageService** BMC service using its **get()** method:
+      * Get associated data using **RxAssociationInstanceDataPageService** BMC service using its **post()** method (**get()** is still supported, but post is now the best practice):
         * You can set in the object parameter the association definition to tap into, which node to tap into since an association has a left (nodeA) or right (nodeB) side, the parent record instance Id, the fields to fetch etc...,
         * You can query from either side of the association,
         ```typescript
@@ -1851,7 +1851,7 @@ npx ng g rx-view-component "gradient"
             delete params.searchText;
         
             // return data;
-            return this.rxRecordInstanceDataPageService.get({params});
+            return this.rxRecordInstanceDataPageService.post({params});
           }
         ```
 * Complexity: :hot_pepper: :hot_pepper:

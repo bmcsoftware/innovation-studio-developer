@@ -200,7 +200,7 @@ export class CustomGridComponent extends BaseViewComponent implements OnInit, IV
     delete params.searchText;
 
     // return data;
-    return this.rxRecordInstanceDataPageService.get({params});
+    return this.rxRecordInstanceDataPageService.post({params});
   }
 
   // This is necessary if we declare custom columns and we need to define the columns
