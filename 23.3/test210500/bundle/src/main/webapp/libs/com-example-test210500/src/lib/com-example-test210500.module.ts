@@ -43,6 +43,7 @@ import { OpenBladeRegistrationModule } from './view-components/open-blade/open-b
 import { ImageClickRegistrationModule } from './view-components/image-click/image-click-registration.module';
 import { DelayRegistrationRegistrationModule } from './view-components/delay-registration/delay-registration-registration.module';
 import { ComExampleTest210500Initializer } from './com-example-test210500-initializer.service';
+import { ImageContainerRegistrationModule } from './view-components/image-container/image-container-registration.module';
 
 // We declare here the custom view component and action Registration Modules.
 // Those registration Modules take care of the view component / action
@@ -82,6 +83,7 @@ import { ComExampleTest210500Initializer } from './com-example-test210500-initia
     OpenBladeRegistrationModule,
     ImageClickRegistrationModule,
     DelayRegistrationRegistrationModule,
+    ImageContainerRegistrationModule,
     // Custom Actions.
     GetUserInformationActionModule,
     NotificationActionModule,

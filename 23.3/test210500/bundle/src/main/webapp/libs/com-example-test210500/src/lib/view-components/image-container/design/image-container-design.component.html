@@ -1,0 +1,13 @@
+<!-- The canvas outlet allows components to be dragged and dropped
+inside of it.
+The different methods will define:
+    which components can be dragged and dropped,
+    actions to apply when a component is actually dragged and dropped,
+-->
+<rx-canvas-outlet
+  [dropListOrientation]="'horizontal'"
+  (beforeViewComponentDrop)="onBeforeViewComponentDrop($event)"
+  [dropPredicate]="actionButtonDropPredicate"
+></rx-canvas-outlet>
+<span class="d-icon-image_square"></span>
+
