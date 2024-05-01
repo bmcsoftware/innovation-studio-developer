@@ -1,6 +1,6 @@
 begin localizable string
    name           : LSGAAC47EV7N9AQU24TNQU24TNX6EY
-   timestamp      : 1709319152
+   timestamp      : 1710367122
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -14,7 +14,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ861QRZ861QM4W2
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -26,7 +26,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBFLIQTBFLIHY7U
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -38,7 +38,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBHVPQTBHVPIID9
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -53,7 +53,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSFN1JQSFN1JXLYS
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -65,7 +65,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGULIQSGULIXM5E
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -77,7 +77,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILR2
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -89,7 +89,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQRFCCRQRFCC1IGY
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -101,7 +101,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSI41TQSI41TATQN
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -113,7 +113,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILQX
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -125,7 +125,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRX95VQRX95VHRMP
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -137,7 +137,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS220KQS220K5P5F
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -149,7 +149,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7OU7QT7OU76JY5
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -161,7 +161,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7R36QT7R366K4Y
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -173,7 +173,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPVKFMRPVKFMGAE3
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -185,7 +185,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS6TX0QS6TX0ZWE4
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -197,7 +197,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS220KQS220K5P5G
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -208,8 +208,20 @@ begin localizable string
    string-text    : "Hello World!"
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS26Z6ZS26Z6ZW5ZF
+   timestamp      : 1714000787
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 0d97879b-eaaf-4fc6-b642-9736ee99e10a
+   owner-objects  : 17\74eaa8a6-50de-46fc-87f3-2bd9b9786981
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : <p>The <span style="color:#16a085">button</span> below has been directly added to the Container Component, so its style has been overriden to Secondary</p>
+end
+begin localizable string
    name           : LSGADG1AAP0IDARPE09GRPE09GY5NI
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -221,7 +233,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS1H8IQS1H8I5N8T
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -235,7 +247,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQSO00MQSO00MJT5F
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -247,7 +259,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT1GNAQT1GNAE8ND
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -259,7 +271,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBH45QTBH45IGBP
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -270,8 +282,37 @@ begin localizable string
    string-text    : "This is the end... My only friend... The end..."
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS27AOIS27AOIWK64
+   timestamp      : 1714002344
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 103a7c5b-ffa2-4acf-a179-e2587e608bc6
+   owner-objects  : 17\d1d0d09e-0941-445c-b5bf-d561282fee69
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : <p><span style="font-size:24px">[VC] Accessing a grid object</span></p><ul><li>This example shows how to add Components to a Coded View Components.</li><&
+   string-text    : li>For example, adding Action buttons, Rich text and Button bar fields inside a coded View Component, here displaying a simple picture. It could be usefu&
+   string-text    : l if you want to embed button bars and buttons within your View Component rather than using Container.</li><li>This is leveraging the Container property &
+   string-text    : for a View Component, as well as the Outlet concept.</li><li>It is possible to:<ul><li>Define the list of components that can be added,</li><li>Actions t&
+   string-text    : hat happen when you drag &amp; drop an allowed component,<ul><li>In our case, when we drag &amp; drop a button directly in our "Image Container" View com&
+   string-text    : ponent, we change its style from Primary to Secondary.</li></ul></li></ul></li><li>At Runtime we just display the Outlet.</li></ul><p>&nbsp;</p>
+end
+begin localizable string
+   name           : LSGADG1AAQOS9AS27CBRS27CBRWPUN
+   timestamp      : 1714004127
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 11abae54-ae9c-4955-893a-7a40ef63f30b
+   owner-objects  : 17\11784f06-766c-4944-9c5b-9608ed727399
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Embedding Components
+end
+begin localizable string
    name           : LSGAAC47FY79WAQS0V8UQS0V8U40BT
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -283,7 +324,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT1IDZQT1IDZEOPP
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -295,7 +336,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU13DUQU13DUOE81
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -312,8 +353,20 @@ begin localizable string
    string-text    : MD</a> file.</p>
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS26Z6ZS26Z6ZW5ZG
+   timestamp      : 1714000787
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 168aa5e6-24ec-485e-9bd2-b7ec4f8acb92
+   owner-objects  : 17\85f7585c-a345-4029-9fba-d8e6c2f99027
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : "I am a secondary button!"
+end
+begin localizable string
    name           : LSGAAC47FY79WAQS6VSNQS6VSNAEAM
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -324,8 +377,20 @@ begin localizable string
    string-text    : Assignee
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS26Z6ZS26Z6ZW5ZD
+   timestamp      : 1714000787
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 1754710a-c9f6-4007-81b4-653481dfb8bf
+   owner-objects  : 17\5d4c9110-0448-423d-a94e-e0a5c0272a62
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : <p>The <strong><span style="color:#e67e22">primary buttons </span></strong>below are within a Button Bar</p>
+end
+begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILQV
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -337,7 +402,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRM4S6QRM4S6WGZA
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -349,7 +414,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSCZP2QSCZP2X03Y
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -361,7 +426,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7OU7QT7OU76JY8
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -373,7 +438,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE09GRPE09GY5NG
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -385,7 +450,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTCS0WQTCS0WE5PD
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -397,7 +462,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSJ28FQSJ28FEPMV
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -409,7 +474,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBGXXQTBGXXIEEK
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -421,7 +486,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSCZP3QSCZP3X04F
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -433,7 +498,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE09GRPE09GY5N0
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -445,7 +510,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU17PFQU17PFON9V
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -460,7 +525,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU14WDQU14WDO2HI
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -477,7 +542,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ85H5RZ85H5M0YH
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -489,7 +554,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE0OERPE0OEY68O
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -501,7 +566,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBGXXQTBGXXIEE9
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -513,7 +578,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGULIQSGULIXM5H
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -525,7 +590,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FERDVAREIE5UREIE5U0QPH
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -538,7 +603,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSN944QSN944GJT4
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -550,7 +615,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTFX33QTFX33DB1F
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -562,7 +627,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHFVTQSHFVTYXGX
-   timestamp      : 1709319152
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -574,7 +639,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7OU7QT7OU76JY3
-   timestamp      : 1709319152
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -586,7 +651,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ84V2RZ84V2MJQI
-   timestamp      : 1709319152
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -598,7 +663,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGULIQSGULIXM5F
-   timestamp      : 1709319152
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -610,7 +675,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT0EY4QT0EY40515
-   timestamp      : 1709319152
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -622,7 +687,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSI8JPQSI8JPBJV3
-   timestamp      : 1709319152
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -634,7 +699,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSKIY0QSKIY0GDWM
-   timestamp      : 1709319152
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -646,7 +711,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ84V2RZ84V2MJQ0
-   timestamp      : 1709319152
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -658,7 +723,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSFN3WQSFN3WXM0A
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -670,7 +735,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQR79SRQR79S3G1O
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -682,7 +747,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSL756QSL756F5WQ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -694,7 +759,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQRFCCRQRFCC1IHA
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -706,7 +771,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS1GCDQS1GCD5790
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -718,7 +783,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS8N3GQS8N3GXV9J
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -730,7 +795,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ84V2RZ84V2MJQJ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -742,7 +807,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE09GRPE09GY5NE
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -754,7 +819,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSCZP3QSCZP3X04E
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -766,7 +831,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7OY5QT7OY5604O
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -778,7 +843,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7OU7QT7OU76JY7
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -790,7 +855,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS9X9KQS9X9KAV2W
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -802,7 +867,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS8P35QS8P35YEA6
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -814,7 +879,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTC0BKQTC0BKC2ZN
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -826,7 +891,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS1JOKQS1JOK5W8A
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -840,7 +905,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHHDQQSHHDQZC4O
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -852,7 +917,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSFN52QSFN52XM60
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -864,7 +929,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHH0RQSHH0RZDG8
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -876,7 +941,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE0RRRPE0RRY77W
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -888,7 +953,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU249VQU249VX5BD
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -903,7 +968,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS8P6EQS8P6EYE0Y
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -915,7 +980,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU139WQU139WOG06
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -929,8 +994,20 @@ begin localizable string
    string-text    : atePasswordCommand (Command) 🌶️&nbsp;🌶️</li><li>Test210500FruitDataPageQuery (Datapage Query) 🌶️&nbsp;🌶️</li></ul>
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS26Z6ZS26Z6ZW5ZH
+   timestamp      : 1714000787
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 396e2b36-3e7a-409e-91ea-a1dd4db46dc2
+   owner-objects  : 17\9b78e50b-872e-4a16-967f-a62df8155576
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : I am a secondary button
+end
+begin localizable string
    name           : LSGAAC47FY79WAQSAY14QSAY14W0VL
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -942,7 +1019,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT0EY4QT0EY40516
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -966,7 +1043,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTHTSOQTHTSOR09X
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -978,7 +1055,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGU9DQSGU9DXMGL
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -990,7 +1067,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU14JHQU14JHOJLA
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1005,7 +1082,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE0CERPE0CEY2PW
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1017,7 +1094,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU13JOQU13JOOFGF
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1029,7 +1106,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU26GTQU26GTXLWY
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1043,7 +1120,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTDB8GQTDB8GF7YO
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1055,7 +1132,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7OY5QT7OY5604P
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1067,7 +1144,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE09GRPE09GY5NJ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1079,7 +1156,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ837JRZ837JMETK
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1091,7 +1168,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILQU
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1103,7 +1180,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRU49OQRU49OY9WB
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1115,7 +1192,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSCZP2QSCZP2X03Z
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1127,7 +1204,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS6U1CQS6U1CZXSN
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1139,7 +1216,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSL8CNQSL8CNF8L9
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1151,7 +1228,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE1EFRPE1EFY97A
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1163,7 +1240,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSFFYNQSFFYNVNJC
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1175,7 +1252,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHH0RQSHH0RZDG2
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1187,7 +1264,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ84V2RZ84V2MJQ3
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1199,7 +1276,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSL8DKQSL8DKF8Q1
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1211,7 +1288,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS9Y0LQS9Y0LAY60
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1223,7 +1300,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7R36QT7R366K4X
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1235,7 +1312,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7OU7QT7OU76JY2
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1247,7 +1324,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPV7PERPV7PEFM3Y
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1259,7 +1336,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSCZP3QSCZP3X04D
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1271,7 +1348,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHFXTQSHFXTYX52
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1283,7 +1360,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSL8EYQSL8EYF8UP
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1295,7 +1372,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU17Y6QU17Y6OONK
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1308,7 +1385,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHH0RQSHH0RZDG4
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1320,7 +1397,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSDAGIQSDAGIX21V
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1332,7 +1409,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSMI9JQSMI9JI9KT
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1344,7 +1421,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS4II3QS4II3AKCJ
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1356,7 +1433,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILQR
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1368,7 +1445,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRX9VRQRX9VRHT6Y
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1380,7 +1457,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHFVTQSHFVTYXGW
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1392,7 +1469,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ85H5RZ85H5M0YG
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1404,7 +1481,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPTZXMRPTZXMX0TI
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1419,7 +1496,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU14MDQU14MDO1CT
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1434,7 +1511,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS8P87QS8P87YELU
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1446,7 +1523,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU1830QU1830OQ2B
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1462,7 +1539,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU25GNQU25GNX78M
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1476,7 +1553,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ84V2RZ84V2MJQ4
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1488,7 +1565,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7PITQT7PIT61MY
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1500,7 +1577,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS6HB9QS6HB9XJ2W
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1512,7 +1589,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSFFX6QSFFX6VNB4
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1524,7 +1601,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ83JPRZ83JPMDME
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1536,7 +1613,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBGXXQTBGXXIEEL
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1548,7 +1625,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSNLT0QSNLT0G9TR
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1560,7 +1637,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE0CERPE0CEY2PV
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1574,7 +1651,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGULIQSGULIXM5D
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1586,7 +1663,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGU9DQSGU9DXMG9
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1597,8 +1674,20 @@ begin localizable string
    string-text    : text field
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS26OPYS26OPYV1JO
+   timestamp      : 1714000787
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 5935f5d2-2a39-49f2-bb32-366b6ec2a3c5
+   owner-objects  : 17\ee0e7675-58d3-403a-a172-3aea02a64e77
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Click me
+end
+begin localizable string
    name           : LSGAAC47FY79WAQSCZP3QSCZP3X04J
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1610,7 +1699,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBHKUQTBHKUIGR2
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1622,7 +1711,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS41VVQS41VVAZ0B
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1634,7 +1723,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ83OBRZ83OBMFL6
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1646,7 +1735,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHHDQQSHHDQZC4M
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1658,7 +1747,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS1GIAQS1GIA58IP
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1670,7 +1759,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSDAGIQSDAGIX21T
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1682,7 +1771,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILQS
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1694,7 +1783,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXP7XQRXP7XI66C
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1706,7 +1795,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBHVPQTBHVPIIDL
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1720,7 +1809,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU18CPQU18CPOPG2
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1736,7 +1825,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS6S6ZQS6S6ZZPX2
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1748,7 +1837,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQR79SRQR79S3G1N
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1760,7 +1849,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FERDVAREIE5UREIE5U0QPG
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1772,7 +1861,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTDB8GQTDB8GF7YM
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1784,7 +1873,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7LAXQT7LAXP77A
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1796,7 +1885,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7LAXQT7LAXP77B
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1808,7 +1897,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSCZP3QSCZP3X04I
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1820,7 +1909,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FERDVAREIE2HREIE2H0QFZ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1832,7 +1921,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHG3CQSHG3CYZJW
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1844,7 +1933,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU255KQU255KX8N3
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1860,7 +1949,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS6VSNQS6VSNAEAL
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1872,7 +1961,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGUNJQSGUNJXMOG
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1884,7 +1973,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ84Q0RZ84Q0MJHZ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1896,7 +1985,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTDYOUQTDYOU68JF
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1908,7 +1997,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSFFX6QSFFX6VNB5
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1920,7 +2009,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS6VSNQS6VSNAEAP
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1932,7 +2021,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQUDZEOQUDZEOCUJO
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1944,7 +2033,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU258LQU258LX9AL
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1958,9 +2047,9 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FERDVAREIENTREIENT0RWK
-   timestamp      : 1709335832
+   timestamp      : 1710367123
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.test210500
    stringId       : 6a62ce99-3ff6-4600-8327-d29487331ae4
    owner-objects  : 17\d15e3aaf-4e1a-49f9-9f4e-7df2119176e6
@@ -1973,7 +2062,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ84V2RZ84V2MJQ2
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1985,7 +2074,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU186WQU186WOQR3
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -1999,7 +2088,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT1IDZQT1IDZEOPQ
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2011,7 +2100,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGTXDQSGTXDX9ML
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2023,7 +2112,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBGXXQTBGXXIEEM
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2035,7 +2124,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILQZ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2047,7 +2136,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRX9MLQRX9MLHS3R
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2059,7 +2148,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU250AQU250AX7WB
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2071,8 +2160,21 @@ begin localizable string
    string-text    : xNotificationService,</li><li>Design Time:<ul><li>Display the notification type in a dropdown field,</li></ul></li></ul></li></ul>
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS11NTQS11NTQNW7Q
+   timestamp      : 1712072798
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 6e24b11d-0dd3-4ddb-b6a1-fea5025060fe
+   owner-objects  : 17\73e07d78-4be1-4a9b-ad3b-b5c2156c534b
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : <p>The following&nbsp;<strong><span contenteditable="false" rx-expression="${view.inputParams.test}"></span></strong>&nbsp;<strong>assets</strong> will b&
+   string-text    : e updated in this job</p>
+end
+begin localizable string
    name           : LSGADG1AAP0IDARZ83JPRZ83JPMDMD
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2083,8 +2185,20 @@ begin localizable string
    string-text    : Rejected
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS26OPYS26OPYV1JL
+   timestamp      : 1714000787
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 6f078b2f-0a60-4b0c-a200-f423b36b432a
+   owner-objects  : 17\91d98194-5f70-4061-8038-fa81c5e3648c
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : You can also click me
+end
+begin localizable string
    name           : LSGAAC47FY79WAQSI3M8QSI3M8AQY9
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2096,7 +2210,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRZPWQQRZPWQQKGE
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2108,7 +2222,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQRFCCRQRFCC1IHB
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2120,7 +2234,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS1JOKQS1JOK5W8B
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2132,7 +2246,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU13QMQU13QMOHG1
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2144,7 +2258,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSCZP3QSCZP3X04G
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2156,7 +2270,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS8P35QS8P35YEA9
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2168,7 +2282,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU25C5QU25C5X7C3
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2182,7 +2296,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSNKNKQSNKNKG4X9
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2194,7 +2308,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU18H1QU18H1OPOD
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2210,7 +2324,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILRI
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2222,7 +2336,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRX9MLQRX9MLHS3P
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2234,7 +2348,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU263XQU263XXMO8
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2249,7 +2363,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE0OERPE0OEY68P
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2261,7 +2375,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSNKNKQSNKNKG4X8
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2273,7 +2387,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ839MRZ839MMFBW
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2285,7 +2399,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU26F6QU26F6XLRN
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2300,7 +2414,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQR79SRQR79S3G1S
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2312,7 +2426,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBHVPQTBHVPIIDK
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2326,7 +2440,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSCZQZQSCZQZX0KZ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2338,7 +2452,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHFXTQSHFXTYX54
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2350,7 +2464,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT1GNAQT1GNAE8NF
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2362,7 +2476,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS8P35QS8P35YEA7
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2374,7 +2488,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHGAPQSHGAPYXTW
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2386,7 +2500,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU1476QU1476O09T
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2399,7 +2513,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ84KKRZ84KKMIOS
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2421,7 +2535,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ83OBRZ83OBMFL7
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2433,7 +2547,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS8PEWQS8PEWYCY9
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2445,7 +2559,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSAY14QSAY14W0VM
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2457,7 +2571,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSFD5WQSFD5WV2VD
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2469,7 +2583,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSL8CNQSL8CNF8LK
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2481,7 +2595,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ83JPRZ83JPMDMG
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2493,7 +2607,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSCZP2QSCZP2X04A
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2505,7 +2619,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQR79SRQR79S3G1T
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2517,7 +2631,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTEO81QTEO8195SB
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2529,7 +2643,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS8EFHQS8EFHVOM6
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2541,7 +2655,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSMI9JQSMI9JI9KP
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2553,7 +2667,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU24WQQU24WQX651
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2566,7 +2680,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSI8JPQSI8JPBJV5
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2578,7 +2692,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGU9MQSGU9MXMJB
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2590,7 +2704,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILR0
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2602,7 +2716,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRX85RQRX85RHN7E
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2614,7 +2728,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ83JPRZ83JPMDMA
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2626,7 +2740,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ83JPRZ83JPMDMF
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2638,7 +2752,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBHKUQTBHKUIGRJ
-   timestamp      : 1709319152
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2650,7 +2764,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSL10LQSL10LEQYR
-   timestamp      : 1709319152
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2662,7 +2776,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSCZP3QSCZP3X040
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2674,7 +2788,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHH0RQSHH0RZDG0
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2686,7 +2800,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU1790QU1790OMWW
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2700,7 +2814,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILQY
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2712,7 +2826,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRX9MLQRX9MLHS3S
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2724,7 +2838,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSNK5CQSNK5CG3YZ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2736,7 +2850,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS1GCDQS1GCD5791
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2748,7 +2862,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGU9DQSGU9DXMG5
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2760,7 +2874,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU14RWQU14RWO1QT
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2774,7 +2888,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQRFCCRQRFCC1IGW
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2786,7 +2900,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHGAPQSHGAPYXTY
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2798,7 +2912,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS1JOKQS1JOK5W7Z
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2810,7 +2924,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQR79SRQR79S3G1P
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2822,7 +2936,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU26ALQU26ALXLGY
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2836,7 +2950,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTDYOUQTDYOU68JH
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2848,7 +2962,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FERDVAREIEOWREIEOW0SBZ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2860,7 +2974,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE0OERPE0OEY68N
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2872,7 +2986,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTDYOUQTDYOU68JG
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2884,7 +2998,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSNMJ1QSNMJ1GLOT
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2896,7 +3010,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU17T2QU17T2OOB4
-   timestamp      : 1709319152
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2912,9 +3026,9 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU1441QU1441O0H4
-   timestamp      : 1709333814
+   timestamp      : 1710367124
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.test210500
    stringId       : 9fe3fb58-fb30-42f2-aff8-a45668c4cef7
    owner-objects  : 17\8b6dda66-3127-44fd-9238-d7dcbc7c8074
@@ -2929,7 +3043,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS8P35QS8P35YEA5
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2941,7 +3055,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGU9DQSGU9DXMGK
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2953,7 +3067,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS6VSNQS6VSNAEAN
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2965,7 +3079,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSI8JPQSI8JPBJV4
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2977,7 +3091,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBH45QTBH45IGBN
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -2989,7 +3103,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU141WQU141WOJW8
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3003,9 +3117,9 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU14O5QU14O5O13H
-   timestamp      : 1709335861
+   timestamp      : 1710367123
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.test210500
    stringId       : a5481c39-2389-441e-993a-2feafd7e3785
    owner-objects  : 17\54724652-af6f-412e-9740-b120cbc316c8
@@ -3018,7 +3132,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSAY14QSAY14W0VK
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3030,7 +3144,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FERDVAREIE5UREIE5U0QPF
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3042,7 +3156,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHHDQQSHHDQZC4N
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3054,7 +3168,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTDCCCQTDCCCFKI7
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3066,7 +3180,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSNO1IQSNO1IGU3P
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3078,7 +3192,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSAEUJQSAEUJ4OJ3
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3090,7 +3204,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS1GCDQS1GCD5792
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3101,8 +3215,20 @@ begin localizable string
    string-text    : Password
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS26OPYS26OPYV1JN
+   timestamp      : 1713986854
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : ac130b2c-bb59-4a4a-828f-c137ce5c558c
+   owner-objects  : 17\77e9fd0e-e36b-4bb1-8014-d33fb9340b3f
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : "my message"
+end
+begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILQT
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3114,7 +3240,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRU4Y8QRU4Y8YLNW
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3126,7 +3252,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU24P2QU24P2X5MX
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3141,9 +3267,9 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU139WQU139WOG04
-   timestamp      : 1709335491
+   timestamp      : 1710367124
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.test210500
    stringId       : ac52eb15-f69b-46cd-b12c-b744f703d65d
    owner-objects  : 17\b9a28bba-cd5c-4415-8b36-d1b88e8fe36e
@@ -3158,7 +3284,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE0OERPE0OEY68M
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3174,7 +3300,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSK0TEQSK0TEG1KK
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3186,7 +3312,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSL8EYQSL8EYF8UQ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3198,7 +3324,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS4I4WQS4I4WAKXE
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3210,7 +3336,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSCZP3QSCZP3X04C
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3222,7 +3348,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ84V2RZ84V2MJQ1
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3234,7 +3360,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQR79SRQR79S3G1Q
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3246,7 +3372,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSAEUJQSAEUJ4OJ4
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3258,7 +3384,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHFVTQSHFVTYXGV
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3270,7 +3396,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILR4
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3282,7 +3408,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRM6H3QRM6H3W2RQ
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3294,7 +3420,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE09GRPE09GY5NF
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3306,7 +3432,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU26P9QU26P9XOAC
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3320,7 +3446,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHHDQQSHHDQZC4P
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3332,7 +3458,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSEXQDQSEXQDUPKA
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3344,7 +3470,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS03DUQS03DU2H1T
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3356,7 +3482,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGULIQSGULIXM5G
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3368,7 +3494,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS9SSWQS9SSWA1ZR
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3380,7 +3506,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7OU7QT7OU76JY6
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3392,7 +3518,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS6W13QS6W13AG10
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3404,7 +3530,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHHDQQSHHDQZC4R
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3416,9 +3542,9 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU26M8QU26M8XNOS
-   timestamp      : 1709335882
+   timestamp      : 1710367123
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.test210500
    stringId       : b647c1e8-141f-4b28-bfb6-11354fceb77c
    owner-objects  : 17\f6c54d34-eecf-4378-a37a-f19a1da4c4a2
@@ -3433,7 +3559,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTI80PQTI80PUBPN
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3445,7 +3571,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU25RMQU25RMXKCZ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3462,7 +3588,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU17XAQU17XAOO99
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3478,7 +3604,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQR79SRQR79S3G1R
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3490,7 +3616,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHH0RQSHH0RZDG3
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3502,7 +3628,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGQQLQSGQQLXGO5
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3514,7 +3640,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHHDQQSHHDQZC4Q
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3526,7 +3652,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSL10LQSL10LEQYU
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3538,7 +3664,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS6VSNQS6VSNAEAO
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3550,7 +3676,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTE5EEQTE5EE838C
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3562,7 +3688,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTDB8GQTDB8GF7YN
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3574,7 +3700,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE09GRPE09GY5NH
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3586,7 +3712,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU17M9QU17M9ON0L
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3600,7 +3726,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGQQLQSGQQLXGO7
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3612,7 +3738,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTDYOUQTDYOU68JI
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3624,7 +3750,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHH0RQSHH0RZDG6
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3635,8 +3761,20 @@ begin localizable string
    string-text    : Create New Restaurant
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS26Z6ZS26Z6ZW5ZC
+   timestamp      : 1714000787
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : c1ed9415-9d63-47ae-8b35-3dbc492ddecc
+   owner-objects  : 17\e3a95791-2966-49fe-9d85-ed39a378fdcd
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : "Nice work!"
+end
+begin localizable string
    name           : LSGAAC47FY79WAQSCZP2QSCZP2X03X
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3648,7 +3786,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQRFCCRQRFCC1IHC
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3660,7 +3798,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ83JPRZ83JPMDMB
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3672,7 +3810,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSF2DOQSF2DOW24K
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3684,7 +3822,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHH0RQSHH0RZDG1
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3696,7 +3834,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQRFCCRQRFCC1IGZ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3708,7 +3846,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGULIQSGULIXM5J
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3720,7 +3858,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSNOGBQSNOGBGTQ2
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3732,7 +3870,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS8P35QS8P35YEA8
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3744,7 +3882,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHH0RQSHH0RZDGJ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3756,7 +3894,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGTXDQSGTXDX9MK
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3768,7 +3906,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ86IWRZ86IWM4K2
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3780,7 +3918,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILR1
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3792,7 +3930,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRX9TLQRX9TLHTJO
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3804,7 +3942,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU18K9QU18K9ORF6
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3819,7 +3957,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS1ACLQS1ACL4SXE
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3832,7 +3970,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSFH9RQSFH9RVTNH
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3844,7 +3982,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSFN3WQSFN3WXMJZ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3856,7 +3994,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILRH
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3868,7 +4006,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQR1E9HQR1E9H5XLP
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3880,7 +4018,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILRD
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3893,7 +4031,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXLP3QRXLP3IAZM
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3906,7 +4044,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT777FQT777FPCXX
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3919,7 +4057,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS0BWHQS0BWH0X0T
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3931,7 +4069,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS1GFDQS1GFD57UE
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3943,7 +4081,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPEG2KRPEG2KXR6Q
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3955,7 +4093,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSDAGIQSDAGIX21U
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3967,7 +4105,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT1IDZQT1IDZEOPO
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3979,7 +4117,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBHKUQTBHKUIGR3
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -3991,7 +4129,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTCS0WQTCS0WE5PC
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4003,7 +4141,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSFD5WQSFD5WV2VF
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4015,7 +4153,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQSO00MQSO00MJT5G
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4027,7 +4165,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU139WQU139WOG05
-   timestamp      : 1709335473
+   timestamp      : 1714004237
    owner          : Demo
    last-changed   : Demo
    bundle         : com.example.test210500
@@ -4042,11 +4180,12 @@ begin localizable string
    string-text    : <li>list-icons 🌶️</li><li>user-preferences 🌶️</li><li>admin-preferences🌶️&nbsp;🌶️</li><li><span style="color:#e74c3c"><strong><s>capt&
    string-text    : cha</s> 🌶️ (BROKEN, WIP)</strong></span></li><li>access-grid 🌶️&nbsp;🌶️</li><li>floating-panel 🌶️</li><li>test-debug-component 🌶️&
    string-text    : </li><li>custom-datapagequery 🌶️&nbsp;🌶️</li><li>custom-grid 🌶️&nbsp;🌶️</li><li>lifecycle 🌶️&nbsp;🌶️&nbsp;🌶️</li><li>w&
-   string-text    : izard 🌶️</li><li>star-rating 🌶️&nbsp;🌶️</li><li>qr-code-generator 🌶️&nbsp;🌶️</li></ul>
+   string-text    : izard 🌶️</li><li>star-rating 🌶️&nbsp;🌶️</li><li>qr-code-generator 🌶️&nbsp;🌶️</li><li>delay-registration 🌶️&nbsp;🌶️</li&
+   string-text    : ><li>image-container&nbsp;🌶️&nbsp;</li></ul>
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSFH5FQSFH5FVTFG
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4058,7 +4197,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSEXQDQSEXQDUPKB
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4070,7 +4209,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARQRFCCRQRFCC1IGX
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4082,7 +4221,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGQQLQSGQQLXGO8
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4094,7 +4233,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILQW
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4106,7 +4245,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRX9MLQRX9MLHS3Q
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4118,7 +4257,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT1IFVQT1IFVEPAY
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4130,7 +4269,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHG3CQSHG3CYZJV
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4142,7 +4281,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSAY14QSAY14W0VN
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4154,7 +4293,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS1G45QS1G4558YL
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4165,8 +4304,20 @@ begin localizable string
    string-text    : Generate Password / Call Process
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS26OPYS26OPYV1JM
+   timestamp      : 1713986854
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : e095c18c-7ce7-49b7-bd08-7ee86678f35a
+   owner-objects  : 17\e43bc52c-b5c7-4465-a106-bf2ddf6f8701
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : New button
+end
+begin localizable string
    name           : LSGAAC47FY79WAQSFFX6QSFFX6VNB6
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4178,7 +4329,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7PH1QT7PH1616P
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4190,7 +4341,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHH0RQSHH0RZDG5
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4201,8 +4352,20 @@ begin localizable string
    string-text    : Update
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS26Z6ZS26Z6ZW5ZE
+   timestamp      : 1714000787
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : e39a9e59-4fd9-4077-95a8-173393f9165b
+   owner-objects  : 17\15ce4557-6dd1-4611-91fc-3fbacb762634
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : "Thanks for clicking on me!"
+end
+begin localizable string
    name           : LSGAAC47FY79WAQSGUPOQSGUPOXMZ5
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4214,7 +4377,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPE0DNRPE0DNY3AP
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4226,7 +4389,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS1JOKQS1JOK5W8C
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4238,7 +4401,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSL10LQSL10LEQYS
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4250,7 +4413,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSNKNKQSNKNKG4X7
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4262,7 +4425,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARZ83JPRZ83JPMDMC
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4274,7 +4437,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTE5EEQTE5EE838B
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4286,7 +4449,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSEXFGQSEXFGUNHE
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4298,7 +4461,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILRJ
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4310,7 +4473,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXP7XQRXP7XI66B
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4322,7 +4485,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU24X4QU24X4X69J
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4334,7 +4497,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHFXTQSHFXTYX53
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4346,7 +4509,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQSO2DPQSO2DP0BCC
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4358,7 +4521,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT1IDZQT1IDZEOPS
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4370,7 +4533,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT1GNAQT1GNAE8NE
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4382,7 +4545,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSINKRQSINKRBVXD
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4394,7 +4557,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSMI9JQSMI9JI9KR
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4406,7 +4569,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSCZP2QSCZP2X04B
-   timestamp      : 1709319152
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4418,7 +4581,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT7OU7QT7OU76JY4
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4430,7 +4593,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47D0JQ4AQRXQVDQRXQVDIME7
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4442,7 +4605,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQTBH45QTBH45IGBO
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4454,7 +4617,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHGAPQSHGAPYXTX
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4466,7 +4629,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSM6G3QSM6G3J5RU
-   timestamp      : 1709319153
+   timestamp      : 1710367123
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4478,7 +4641,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FSUC1AQT1IDZQT1IDZEOPR
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4490,7 +4653,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQS9X9KQS9X9KAV2X
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4502,7 +4665,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSNK5CQSNK5CG3YY
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4514,7 +4677,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHH0RQSHH0RZDG7
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4526,7 +4689,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGU9DQSGU9DXMG6
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4538,7 +4701,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSL8EYQSL8EYF8UR
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4550,7 +4713,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGUQDQSGUQDXNCJ
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4562,7 +4725,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSL7CJQSL7CJF442
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500
@@ -4574,7 +4737,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAP0IDARPV7PERPV7PEFM3Z
-   timestamp      : 1709319153
+   timestamp      : 1710367124
    owner          : Demo
    last-changed   : ARSERVER
    bundle         : com.example.test210500

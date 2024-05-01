@@ -1,8 +1,8 @@
 begin document definition
    name           : com.example.test210500:Document for list example
    definition     : {
-   definition     :   "version" : "1.0-SNAPSHOT",
-   definition     :   "lastUpdateTime" : 1709319153308,
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1710367124324,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "Demo",
    definition     :   "name" : "com.example.test210500:Document for list example",

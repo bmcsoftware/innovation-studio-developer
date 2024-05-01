@@ -1,10 +1,10 @@
 begin view definition
    name           : com.example.test210500:VC Open view in blade
    definition     : {
-   definition     :   "version" : "1.0-SNAPSHOT",
-   definition     :   "lastUpdateTime" : 1709335832779,
-   definition     :   "lastChangedBy" : "Demo",
-   definition     :   "owner" : "Demo",
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1710367119295,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:VC Open view in blade",
    definition     :   "tags" : null,
    definition     :   "description" : null,
@@ -17,9 +17,9 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1709335832779,
-   definition     :     "lastChangedBy" : "Demo",
-   definition     :     "owner" : "Demo",
+   definition     :     "lastUpdateTime" : 1710367119295,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "d15e3aaf-4e1a-49f9-9f4e-7df2119176e6",
    definition     :     "tags" : null,
    definition     :     "description" : null,
@@ -45,9 +45,9 @@ begin view definition
    definition     :     "componentDefinitions" : [ ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1709335832779,
-   definition     :     "lastChangedBy" : "Demo",
-   definition     :     "owner" : "Demo",
+   definition     :     "lastUpdateTime" : 1710367119295,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "a8ddcd97-8b82-4f52-b9cc-ffa59594ee13",
    definition     :     "tags" : null,
    definition     :     "description" : null,

@@ -1,8 +1,8 @@
 begin process definition
    name           : com.example.test210500:Test record instances in Java
    definition     : {
-   definition     :   "version" : "1.0-SNAPSHOT",
-   definition     :   "lastUpdateTime" : 1709319150247,
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1710367117809,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "Demo",
    definition     :   "name" : "com.example.test210500:Test record instances in Java",
@@ -14,7 +14,7 @@ begin process definition
    definition     :   "guid" : "rx-5cd540a6-4d5a-4bbd-b9f3-938d1e5808ae",
    definition     :   "flowElements" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.StartEventDefinition",
-   definition     :     "lastUpdateTime" : 1709319150247,
+   definition     :     "lastUpdateTime" : 1710367117809,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "Start",
@@ -25,7 +25,7 @@ begin process definition
    definition     :     "guid" : "rx-2510eb4f-87cd-48af-92f9-6de81f6fb091"
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.EndEventDefinition",
-   definition     :     "lastUpdateTime" : 1709319150247,
+   definition     :     "lastUpdateTime" : 1710367117809,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "End",
@@ -37,7 +37,7 @@ begin process definition
    definition     :     "event" : null
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
-   definition     :     "lastUpdateTime" : 1709319150247,
+   definition     :     "lastUpdateTime" : 1710367117809,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "Sequence Flow",
@@ -51,7 +51,7 @@ begin process definition
    definition     :     "condition" : ""
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
-   definition     :     "lastUpdateTime" : 1709319150247,
+   definition     :     "lastUpdateTime" : 1710367117809,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "Demo Record Instance In Java",
@@ -67,7 +67,7 @@ begin process definition
    definition     :     "runAsUser" : null
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
-   definition     :     "lastUpdateTime" : 1709319150247,
+   definition     :     "lastUpdateTime" : 1710367117809,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "Sequence Flow",

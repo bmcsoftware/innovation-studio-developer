@@ -73,6 +73,7 @@ npx ng g rx-view-component "gradient"
 * [open-blade](#open-blade),
 * [image-click](#image-click),
 * [delay-registration](#delay-registration),
+* [image-container](#image-container),
 
 
 ---
@@ -2427,7 +2428,7 @@ npx ng g rx-view-component "gradient"
 <details> 
 <summary>image-click</summary>
 
-![open-blade](./pictures/image-click.png)
+![image-click](./pictures/image-click.png)
 </details>
 
 * Description:
@@ -2503,7 +2504,7 @@ npx ng g rx-view-component "gradient"
 <details> 
 <summary>delay-registration</summary>
 
-![open-blade](./pictures/delay-registration.png)
+![delay-registration](./pictures/delay-registration.png)
 </details>
 
 * Description:
@@ -2556,6 +2557,79 @@ npx ng g rx-view-component "gradient"
 
 > **:warning:**  
 > This is considered as a very advanced feature.
+
+
+---
+
+
+---
+
+
+<a name="image-container"></a>
+### image-container:
+<details> 
+<summary>image-container-design-time</summary>
+
+![image-container](./pictures/image-container-design-time.png)
+</details>
+
+<details> 
+<summary>image-container-runtime</summary>
+
+![image-container](./pictures/image-container-runtime.png)
+</details>
+
+* Description:
+  * Usually a coded View Component is a single unit, for example a star rating component. It does not embed additional elements.
+  * However, on some occasion it might be interesting to add other Components, like Action buttons to a View Component. This is something that Innovation Studio does for some of the OOTB UI elements like a Button bar that can embed Action Buttons, or a Grid that can embed Action buttons as well.
+  * This example shows to achieve the same functionality.
+  * In the View Component registration module,
+    * We need to define the component as a container:
+      * `isContainerComponent: true,`,
+    * We also need to define the zone where the other components will be stored, this is called an Outlet. Usually we only use the "default" outlet:
+        * ```ts
+                outlets: [
+                    {
+                        name: RX_VIEW_DEFINITION.defaultOutletName
+                    }
+                ]
+          ```
+  * In the Design time Component, we need to add the Outlet, define the Components that can be dropped in the Outlet and what happens when the elements are dropped in the Outlet. When saving the view, the Components will automatically be added without more code necessary. So, we need to:
+    * Define in the HTML template where the Component can be dragged and dropped, using the `rx-canvas-outlet` element:
+      * ```html
+           <rx-canvas-outlet
+           [dropListOrientation]="'horizontal'"
+           (beforeViewComponentDrop)="onBeforeViewComponentDrop($event)"
+           [dropPredicate]="actionButtonDropPredicate"
+         ></rx-canvas-outlet>
+        ```
+      * we have to implement two methods in the Design time component,
+        * `dropPredicate`: returns true if the Component can be added to the Outlet, here we allow Button bar, Action button and Rich Text Components,
+          * ```ts
+            actionButtonDropPredicate(data: IViewComponentDropPredicateData): boolean {
+                return data.draggedViewComponentDescriptor.type === RxViewComponentType.ActionButton ||
+                    data.draggedViewComponentDescriptor.type === RxViewComponentType.ButtonBar ||
+                    data.draggedViewComponentDescriptor.type === RxViewComponentType.RichText;
+            }
+            ```
+        * `beforeViewComponentDrop`: called when the component is dropped in the Outlet. We can then alter some of the Component properties. In our example we change the Button default type from Primary to Secondary:
+          * ```ts
+            onBeforeViewComponentDrop(data: IViewComponentDropData): void {
+                if (data.draggedViewComponentDescriptor.type === RxViewComponentType.ActionButton) {
+                    data.initialPropertiesByName = {
+                        ...data.initialPropertiesByName,
+                        style: ActionButtonStyle.Secondary
+                    } as IActionButtonProperties;
+                }
+            }
+            ```
+  * In Runtime, we just need to place the Outlet in the Component html template,it will define the "zone" where the Embedded components are displayed. Innovation Studio will automatically insert the Components:
+    * ```ts
+      <rx-runtime-view-canvas-outlet></rx-runtime-view-canvas-outlet>
+      ```
+* Complexity: :hot_pepper: 
+* Used in the example:
+  * image-container,
 
 
 ---

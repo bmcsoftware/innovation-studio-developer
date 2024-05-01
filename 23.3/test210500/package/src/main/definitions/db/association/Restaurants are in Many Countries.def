@@ -1,8 +1,8 @@
 begin association definition
    name           : com.example.test210500:Restaurants are in Many Countries
    definition     : {
-   definition     :   "version" : "1.0-SNAPSHOT",
-   definition     :   "lastUpdateTime" : 1709319149000,
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1710367117000,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:Restaurants are in Many Countries",

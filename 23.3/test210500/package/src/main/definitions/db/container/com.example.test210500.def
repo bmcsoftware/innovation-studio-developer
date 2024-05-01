@@ -1,10 +1,10 @@
 begin container
    name           : com.example.test210500
    type           : 2
-   num-references : 304
-   timestamp      : 1709336058
+   num-references : 307
+   timestamp      : 1713986551
    owner          : com.example
-   last-changed   : ARSERVER
+   last-changed   : Demo
    export-version : 12
    object-prop    : 5\90019\2\10\90016\4\1\1\90002\4\22\com.example.test210500\90021\4\22\com.example.test210500\90015\2\4\
 reference {
@@ -1300,21 +1300,6 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\42\com.example.test210500:VC User Preferences\
-}
-reference {
-   type           : 32839
-   datatype       : 1
-   value          : 2\2\
-}
-reference {
-   type           : 32849
-   datatype       : 1
-   value          : 0\
-}
-reference {
-   type           : 16
-   datatype       : 1
    value          : 4\66\com.example.test210500:VC star rating as standalone view component\
 }
 reference {
@@ -1330,7 +1315,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\40\com.example.test210500:VC Floating Panel\
+   value          : 4\42\com.example.test210500:VC User Preferences\
 }
 reference {
    type           : 32839
@@ -1346,6 +1331,21 @@ reference {
    type           : 16
    datatype       : 1
    value          : 4\35\com.example.test210500:VC Icon List\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\40\com.example.test210500:VC Floating Panel\
 }
 reference {
    type           : 32839
@@ -1435,6 +1435,21 @@ reference {
 reference {
    type           : 16
    datatype       : 1
+   value          : 4\93\com.example.test210500:Test Lmame Label View Components and global css pure javascript assets\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
    value          : 4\32\com.example.test210500:VC iFrame\
 }
 reference {
@@ -1465,7 +1480,7 @@ reference {
 reference {
    type           : 16
    datatype       : 1
-   value          : 4\93\com.example.test210500:Test Lmame Label View Components and global css pure javascript assets\
+   value          : 4\40\com.example.test210500:VC Accessing grid\
 }
 reference {
    type           : 32839
@@ -1481,21 +1496,6 @@ reference {
    type           : 16
    datatype       : 1
    value          : 4\41\com.example.test210500:ADM Create Country\
-}
-reference {
-   type           : 32839
-   datatype       : 1
-   value          : 2\2\
-}
-reference {
-   type           : 32849
-   datatype       : 1
-   value          : 0\
-}
-reference {
-   type           : 16
-   datatype       : 1
-   value          : 4\40\com.example.test210500:VC Accessing grid\
 }
 reference {
    type           : 32839
@@ -1526,5 +1526,20 @@ reference {
    type           : 17
    datatype       : 1
    value          : 4\35\com.example.test210500:adequateshop\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\41\com.example.test210500:VC Image container\
 }
 end

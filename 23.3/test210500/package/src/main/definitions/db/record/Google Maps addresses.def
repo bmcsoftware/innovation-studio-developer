@@ -2,8 +2,8 @@ begin record definition
    name           : com.example.test210500:Google Maps addresses
    definition     : {
    definition     :   "resourceType" : "com.bmc.arsys.rx.services.record.domain.RegularRecordDefinition",
-   definition     :   "version" : "1.0-SNAPSHOT",
-   definition     :   "lastUpdateTime" : 1709319149000,
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1710367116000,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "Demo",
    definition     :   "name" : "com.example.test210500:Google Maps addresses",
@@ -15,7 +15,7 @@ begin record definition
    definition     :   "guid" : "IDGAAC47FY79WAQSI8GLQSI8GLBJ8W",
    definition     :   "fieldDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319149530,
+   definition     :     "lastUpdateTime" : 1710367116646,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Display ID",
@@ -89,7 +89,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319149530,
+   definition     :     "lastUpdateTime" : 1710367116646,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Created By",
@@ -149,7 +149,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : true
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.DateTimeFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319149530,
+   definition     :     "lastUpdateTime" : 1710367116646,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Created Date",
@@ -202,7 +202,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319149530,
+   definition     :     "lastUpdateTime" : 1710367116646,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Assignee",
@@ -248,7 +248,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319149530,
+   definition     :     "lastUpdateTime" : 1710367116646,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Modified By",
@@ -294,7 +294,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.DateTimeFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319149530,
+   definition     :     "lastUpdateTime" : 1710367116646,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Modified Date",
@@ -333,7 +333,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.SelectionFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319149530,
+   definition     :     "lastUpdateTime" : 1710367116646,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Status",
@@ -401,7 +401,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319149530,
+   definition     :     "lastUpdateTime" : 1710367116646,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Description",
@@ -461,7 +461,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : true
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.SelectionFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319149530,
+   definition     :     "lastUpdateTime" : 1710367116646,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Notifier Listening",
@@ -523,7 +523,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319149530,
+   definition     :     "lastUpdateTime" : 1710367116646,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "ID",
@@ -569,7 +569,7 @@ begin record definition
    definition     :     "anyUserAllowedToSubmit" : true
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319149000,
+   definition     :     "lastUpdateTime" : 1710367116000,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Address",
@@ -630,7 +630,7 @@ begin record definition
    definition     :   "confidentialDataDescriptor" : null,
    definition     :   "rlsAlgorithm" : 0,
    definition     :   "indexDefinitions" : [ {
-   definition     :     "indexName" : "I4991_1_379_T4991",
+   definition     :     "indexName" : "I4864_1_379_T4864",
    definition     :     "unique" : true,
    definition     :     "indexFieldIds" : [ 379 ],
    definition     :     "ignoreBlankValues" : false

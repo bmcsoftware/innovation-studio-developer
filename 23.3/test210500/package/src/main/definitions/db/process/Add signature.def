@@ -1,8 +1,8 @@
 begin process definition
    name           : com.example.test210500:Add signature
    definition     : {
-   definition     :   "version" : "1.0-SNAPSHOT",
-   definition     :   "lastUpdateTime" : 1709319150062,
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1710367117441,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "Demo",
    definition     :   "name" : "com.example.test210500:Add signature",
@@ -14,7 +14,7 @@ begin process definition
    definition     :   "guid" : "rx-39137536-b59d-4d59-a299-ff4108497a80",
    definition     :   "flowElements" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
-   definition     :     "lastUpdateTime" : 1709319150062,
+   definition     :     "lastUpdateTime" : 1710367117441,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "Sequence Flow",
@@ -28,7 +28,7 @@ begin process definition
    definition     :     "condition" : ""
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
-   definition     :     "lastUpdateTime" : 1709319150062,
+   definition     :     "lastUpdateTime" : 1710367117441,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "Sequence Flow",
@@ -42,7 +42,7 @@ begin process definition
    definition     :     "condition" : ""
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.StartEventDefinition",
-   definition     :     "lastUpdateTime" : 1709319150062,
+   definition     :     "lastUpdateTime" : 1710367117441,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "Start",
@@ -53,7 +53,7 @@ begin process definition
    definition     :     "guid" : "rx-4ed2e9b3-66fb-4316-a7ef-51fa96adf4ba"
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
-   definition     :     "lastUpdateTime" : 1709319150062,
+   definition     :     "lastUpdateTime" : 1710367117441,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "Sequence Flow",
@@ -67,7 +67,7 @@ begin process definition
    definition     :     "condition" : ""
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
-   definition     :     "lastUpdateTime" : 1709319150062,
+   definition     :     "lastUpdateTime" : 1710367117441,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "Create Record",
@@ -92,7 +92,7 @@ begin process definition
    definition     :     "runAsUser" : null
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.EndEventDefinition",
-   definition     :     "lastUpdateTime" : 1709319150062,
+   definition     :     "lastUpdateTime" : 1710367117441,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "End",
@@ -104,7 +104,7 @@ begin process definition
    definition     :     "event" : null
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
-   definition     :     "lastUpdateTime" : 1709319150062,
+   definition     :     "lastUpdateTime" : 1710367117441,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "Create Attachment",
@@ -130,7 +130,7 @@ begin process definition
    definition     :   } ],
    definition     :   "inputParams" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319150062,
+   definition     :     "lastUpdateTime" : 1710367117441,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "user name",
@@ -162,7 +162,7 @@ begin process definition
    definition     :     "anyUserAllowedToSubmit" : false
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
-   definition     :     "lastUpdateTime" : 1709319150062,
+   definition     :     "lastUpdateTime" : 1710367117441,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "Demo",
    definition     :     "name" : "Signature base 64",
