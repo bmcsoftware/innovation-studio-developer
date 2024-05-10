@@ -2,7 +2,7 @@ begin view definition
    name           : com.example.test210500:VC Admin Preferences
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1692230266644,
+   definition     :   "lastUpdateTime" : 1715318087246,
    definition     :   "lastChangedBy" : "ARSERVER",
    definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:VC Admin Preferences",
@@ -17,7 +17,7 @@ begin view definition
    definition     :   "outputParams" : [ ],
    definition     :   "componentDefinitions" : [ {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ContainerViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1692230266644,
+   definition     :     "lastUpdateTime" : 1715318087246,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "e5e8c7fe-b8a2-45b9-96de-49a1c96bd284",
@@ -44,7 +44,7 @@ begin view definition
    definition     :     "componentDefinitions" : [ ]
    definition     :   }, {
    definition     :     "resourceType" : "com.bmc.arsys.rx.services.view.domain.ViewComponentDefinition",
-   definition     :     "lastUpdateTime" : 1692230266644,
+   definition     :     "lastUpdateTime" : 1715318087246,
    definition     :     "lastChangedBy" : "ARSERVER",
    definition     :     "owner" : "ARSERVER",
    definition     :     "name" : "18928fd5-c985-48a0-b3bf-d7851510a146",

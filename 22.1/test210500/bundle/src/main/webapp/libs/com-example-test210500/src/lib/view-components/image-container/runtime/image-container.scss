@@ -1,0 +1,19 @@
+@import "~styles/variables";
+
+rx-runtime-view-canvas-outlet {
+  border: 1px solid $gray-300;
+  display: flex;
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding-top: 10px;
+}

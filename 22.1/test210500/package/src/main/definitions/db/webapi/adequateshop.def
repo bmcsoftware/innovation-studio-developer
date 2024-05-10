@@ -2,9 +2,9 @@ begin web api definition
    name           : com.example.test210500:adequateshop
    definition     : {
    definition     :   "version" : null,
-   definition     :   "lastUpdateTime" : 1692231032463,
-   definition     :   "lastChangedBy" : "Demo",
-   definition     :   "owner" : "Demo",
+   definition     :   "lastUpdateTime" : 1715318092879,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "ARSERVER",
    definition     :   "name" : "com.example.test210500:adequateshop",
    definition     :   "tags" : null,
    definition     :   "description" : "",
