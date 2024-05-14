@@ -1,0 +1,16 @@
+<!-- This Platform component will automatically display the Components added during design time.
+The canvas outlet allows components to be dragged and dropped
+inside of it.
+Since there are multiple outlets in this example, we need the Component to extend "ContainerDesignComponent".
+The different methods will define:
+    which components can be dragged and dropped,
+    actions to apply when a component is actually dragged and dropped.
+-->
+<rx-canvas-outlet
+  class="image-multiple-container"
+  [dropListOrientation]="'horizontal'"
+  [containerComponent]="containerCanvasItemComponent"
+  [dropPredicate]="actionButtonDropPredicate"
+  (beforeViewComponentDrop)="onBeforeViewComponentDrop($event)"
+  [name]="outletName">
+</rx-canvas-outlet>

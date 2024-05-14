@@ -44,6 +44,7 @@ import { ImageClickRegistrationModule } from './view-components/image-click/imag
 import { DelayRegistrationRegistrationModule } from './view-components/delay-registration/delay-registration-registration.module';
 import { ComExampleTest210500Initializer } from './com-example-test210500-initializer.service';
 import { ImageContainerRegistrationModule } from './view-components/image-container/image-container-registration.module';
+import { ImageMultipleContainersRegistrationModule } from './view-components/image-multiple-containers/image-multiple-containers-registration.module';
 
 // We declare here the custom view component and action Registration Modules.
 // Those registration Modules take care of the view component / action
@@ -94,7 +95,8 @@ import { ImageContainerRegistrationModule } from './view-components/image-contai
     AdminPreferencesRegistrationModule,
     // Global Load
     ComExampleTest210500GlobalLoadModule,
-    ImageContainerRegistrationModule
+    ImageContainerRegistrationModule,
+    ImageMultipleContainersRegistrationModule
   ],
   providers: [
     // The bundle Initializer.

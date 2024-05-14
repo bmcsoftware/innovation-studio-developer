@@ -1,10 +1,10 @@
 begin container
    name           : com.example.test210500
    type           : 2
-   num-references : 307
-   timestamp      : 1715321200
+   num-references : 311
+   timestamp      : 1715723062
    owner          : com.example
-   last-changed   : ARSERVER
+   last-changed   : Demo
    export-version : 12
    object-prop    : 5\90019\2\10\90016\4\1\1\90002\4\22\com.example.test210500\90021\4\22\com.example.test210500\90015\2\4\
 reference {
@@ -1541,5 +1541,25 @@ reference {
    type           : 16
    datatype       : 1
    value          : 4\41\com.example.test210500:VC Image Container\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\51\com.example.test210500:VC Image Multiple Containers\
 }
 end

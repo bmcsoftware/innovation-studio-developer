@@ -1,0 +1,9 @@
+@import "~styles/variables";
+
+span {
+  font-size: 150px;
+  color: $black;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
