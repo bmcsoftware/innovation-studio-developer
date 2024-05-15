@@ -283,7 +283,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGADG1AAQOS9AS27AOIS27AOIWK64
-   timestamp      : 1714002344
+   timestamp      : 1715731622
    owner          : Demo
    last-changed   : Demo
    bundle         : com.example.test210500
@@ -291,12 +291,13 @@ begin localizable string
    owner-objects  : 17\d1d0d09e-0941-445c-b5bf-d561282fee69
    object-prop    : 2\90016\4\1\1\90015\2\4\
    locale         : default
-   string-text    : <p><span style="font-size:24px">[VC] Accessing a grid object</span></p><ul><li>This example shows how to add Components to a Coded View Components.</li><&
-   string-text    : li>For example, adding Action buttons, Rich text and Button bar fields inside a coded View Component, here displaying a simple picture. It could be usefu&
-   string-text    : l if you want to embed button bars and buttons within your View Component rather than using Container.</li><li>This is leveraging the Container property &
-   string-text    : for a View Component, as well as the Outlet concept.</li><li>It is possible to:<ul><li>Define the list of components that can be added,</li><li>Actions t&
-   string-text    : hat happen when you drag &amp; drop an allowed component,<ul><li>In our case, when we drag &amp; drop a button directly in our "Image Container" View com&
-   string-text    : ponent, we change its style from Primary to Secondary.</li></ul></li></ul></li><li>At Runtime we just display the Outlet.</li></ul><p>&nbsp;</p>
+   string-text    : <p><span style="font-size:24px">[VC] Adding other UI Elements into a View Component (Container)</span></p><ul><li>This example shows how to add Component&
+   string-text    : s to a Coded View Components.</li><li>For example, adding Action buttons, Rich text and Button bar fields inside a coded View Component, here displaying &
+   string-text    : a simple picture. It could be useful if you want to embed button bars and buttons within your View Component rather than using Container.</li><li>This is&
+   string-text    :  leveraging the Container property for a View Component, as well as the Outlet concept.</li><li>It is possible to:<ul><li>Define the list of components t&
+   string-text    : hat can be added,</li><li>Actions that happen when you drag &amp; drop an allowed component,<ul><li>In our case, when we drag &amp; drop a button directl&
+   string-text    : y in our "Image Container" View component, we change its style from Primary to Secondary.</li></ul></li></ul></li><li>At Runtime we just display the Outl&
+   string-text    : et.</li></ul><p>&nbsp;</p>
 end
 begin localizable string
    name           : LSGADG1AAQOS9AS27CBRS27CBRWPUN
@@ -333,6 +334,25 @@ begin localizable string
    object-prop    : 2\90016\4\1\1\90015\2\4\
    locale         : default
    string-text    : Display ID
+end
+begin localizable string
+   name           : LSGADG1AAQOS9AS38DATS38DATVC3I
+   timestamp      : 1715731661
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 12b79063-050f-4271-9e86-836bb1c4a6b5
+   owner-objects  : 17\453d0c4a-b1ae-4912-ba68-a6354507c99a
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : <p><span style="font-size:24px">[VC] Adding other UI Elements into a View Component (Containers)</span></p><ul><li>This example shows how to add Componen&
+   string-text    : ts to a Coded View Components, but this time this View Component has multiple "Outlets", aka zones,<ul><li>There is one zone above and below the picture,&
+   string-text    : </li></ul></li><li>For example, adding Action buttons, Rich text and Button bar fields inside a coded View Component, here displaying a simple picture. I&
+   string-text    : t could be useful if you want to embed button bars and buttons within your View Component rather than using Container.</li><li>This is leveraging the Con&
+   string-text    : tainer property for a View Component, as well as the Outlet concept.</li><li>This is leveraging the Component "ContainerDesignComponent" which allows to &
+   string-text    : support multiple Outlets,</li><li>It is possible to:<ul><li>Define the list of components that can be added,</li><li>Actions that happen when you drag &a&
+   string-text    : mp; drop an allowed component,<ul><li>In our case, when we drag &amp; drop a button directly in our "Image Container" View component, we change its style&
+   string-text    :  from Primary to Secondary.</li></ul></li></ul></li><li>At Runtime we just display the Outlets.</li></ul>
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU13DUQU13DUOE81
@@ -507,6 +527,18 @@ begin localizable string
    object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
    locale         : default
    string-text    : Listening
+end
+begin localizable string
+   name           : LSGADG1AAQOS9AS38D7US38D7UVDS8
+   timestamp      : 1715732274
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 1f8f61e4-6416-4f30-8a15-815c51274bf5
+   owner-objects  : 17\b7858e3f-efe5-4a1f-94b5-ca19b6153eec
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Within the up zone
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU17PFQU17PFON9V
@@ -818,6 +850,30 @@ begin localizable string
    string-text    : New
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS38D7US38D7UVDSP
+   timestamp      : 1715732274
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 32e2c2cb-f098-4e0e-a047-e345327f8445
+   owner-objects  : 17\9d7ee671-6d11-4932-a09b-07f7d6f44781
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : <p>This outlet is <span style="color:#16a085">below</span> the picture</p>
+end
+begin localizable string
+   name           : LSGADG1AAQOS9AS38D8PS38D8PVDW8
+   timestamp      : 1715732305
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 3310ce32-2421-4bec-8c94-654b6366e9ed
+   owner-objects  : 17\da777980-73d6-4666-9154-0c733607ac7a
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Multiple Outlets
+end
+begin localizable string
    name           : LSGAAC47FY79WAQSCZP3QSCZP3X04E
    timestamp      : 1710367123
    owner          : Demo
@@ -926,6 +982,18 @@ begin localizable string
    object-prop    : 2\90016\4\1\1\90015\2\4\
    locale         : default
    string-text    : White Rabbit
+end
+begin localizable string
+   name           : LSGADG1AAQOS9AS38D7US38D7UVDSK
+   timestamp      : 1715732274
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 3603cd21-c20e-43a1-8117-7fb3b0d0f187
+   owner-objects  : 17\ca322915-cf3e-49f2-973c-7653603d4d78
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : "I am above the picture!"
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSHH0RQSHH0RZDG8
@@ -1824,6 +1892,18 @@ begin localizable string
    string-text    :  a new panel to the same view will be opened.</p>
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS38D7US38D7UVDS9
+   timestamp      : 1715732274
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 5f283957-3cbd-4930-abbb-7bee3f86b4e4
+   owner-objects  : 17\2e3bd710-f698-4c2b-99b8-fdb0a1a2de76
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : "I am below the picture!"
+end
+begin localizable string
    name           : LSGAAC47FY79WAQS6S6ZQS6S6ZZPX2
    timestamp      : 1710367123
    owner          : Demo
@@ -2323,6 +2403,18 @@ begin localizable string
    string-text    : serPreferencesService,</li></ul>
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS38D7US38D7UVDSM
+   timestamp      : 1715732274
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 76ecf52f-ae57-4809-95a8-1c14ea1639e8
+   owner-objects  : 17\53e0098f-b4a3-40cb-b73a-7e947e3353a0
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Within the Bottom zone
+end
+begin localizable string
    name           : LSGAAC47D0JQ4AQRXQSEQRXQSEILRI
    timestamp      : 1710367123
    owner          : Demo
@@ -2666,6 +2758,18 @@ begin localizable string
    string-text    : Picture in base 64
 end
 begin localizable string
+   name           : LSGADG1AAQOS9AS38D7US38D7UVDSO
+   timestamp      : 1715732274
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 89264a25-8f74-44c2-8464-3394caabe94e
+   owner-objects  : 17\d9eaa60d-98d0-4a99-87f8-242c8c60dc3c
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : I am in a button bar
+end
+begin localizable string
    name           : LSGAAC47EV7N9AQU24WQQU24WQX651
    timestamp      : 1710367123
    owner          : Demo
@@ -2835,6 +2939,18 @@ begin localizable string
    object-prop    : 2\90016\4\1\1\90015\2\4\
    locale         : default
    string-text    : Disable Star Rating
+end
+begin localizable string
+   name           : LSGADG1AAQOS9AS38D7US38D7UVDSL
+   timestamp      : 1715732274
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : 92a58b6c-bf38-4db9-8e04-6b2a1fb00d7a
+   owner-objects  : 17\6d223275-09fc-4b8b-b047-37891bc31b71
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : "I am also above the picture!"
 end
 begin localizable string
    name           : LSGAAC47ADZ62AQSNK5CQSNK5CG3YZ
@@ -4165,7 +4281,7 @@ begin localizable string
 end
 begin localizable string
    name           : LSGAAC47EV7N9AQU139WQU139WOG05
-   timestamp      : 1714004237
+   timestamp      : 1715732319
    owner          : Demo
    last-changed   : Demo
    bundle         : com.example.test210500
@@ -4181,7 +4297,7 @@ begin localizable string
    string-text    : cha</s> 🌶️ (BROKEN, WIP)</strong></span></li><li>access-grid 🌶️&nbsp;🌶️</li><li>floating-panel 🌶️</li><li>test-debug-component 🌶️&
    string-text    : </li><li>custom-datapagequery 🌶️&nbsp;🌶️</li><li>custom-grid 🌶️&nbsp;🌶️</li><li>lifecycle 🌶️&nbsp;🌶️&nbsp;🌶️</li><li>w&
    string-text    : izard 🌶️</li><li>star-rating 🌶️&nbsp;🌶️</li><li>qr-code-generator 🌶️&nbsp;🌶️</li><li>delay-registration 🌶️&nbsp;🌶️</li&
-   string-text    : ><li>image-container&nbsp;🌶️&nbsp;</li></ul>
+   string-text    : ><li>image-container&nbsp;🌶️</li><li>image-multiple-containers 🌶️&nbsp;</li></ul>
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSFH5FQSFH5FVTFG
@@ -4362,6 +4478,18 @@ begin localizable string
    object-prop    : 2\90016\4\1\1\90015\2\4\
    locale         : default
    string-text    : "Thanks for clicking on me!"
+end
+begin localizable string
+   name           : LSGADG1AAQOS9AS38D7US38D7UVDSN
+   timestamp      : 1715732274
+   owner          : Demo
+   last-changed   : Demo
+   bundle         : com.example.test210500
+   stringId       : e402932e-a329-4c17-8ca1-b43e8da1febc
+   owner-objects  : 17\e098116d-412a-423f-b95f-25dc99c9daf0
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : <p>This outlet is <span style="color:#16a085">above</span> the picture</p>
 end
 begin localizable string
    name           : LSGAAC47FY79WAQSGUPOQSGUPOXMZ5

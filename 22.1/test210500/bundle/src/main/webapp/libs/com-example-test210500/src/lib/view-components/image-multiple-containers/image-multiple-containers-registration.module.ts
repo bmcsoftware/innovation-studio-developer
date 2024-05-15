@@ -20,8 +20,6 @@ export class ImageMultipleContainersRegistrationModule {
       designComponentFactory: this.componentFactoryResolver.resolveComponentFactory(ImageMultipleContainersDesignComponent),
       designComponentModel: ImageMultipleContainersDesignModel,
       bundleId: 'com.example.test210500',
-      // This property is necessary in order to contain other components (for example buttons).
-      // isContainerComponent: true,
       // Two outlets are used to store the other components (here we will contain button bar and buttons).
       options: {
         canBeEmbeddedInRecordEditor: true

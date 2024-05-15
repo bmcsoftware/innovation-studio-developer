@@ -5,6 +5,7 @@ The different methods will define:
     actions to apply when a component is actually dragged and dropped,
 -->
 <rx-canvas-outlet
+  class="image-container"
   [dropListOrientation]="'horizontal'"
   (beforeViewComponentDrop)="onBeforeViewComponentDrop($event)"
   [dropPredicate]="actionButtonDropPredicate"

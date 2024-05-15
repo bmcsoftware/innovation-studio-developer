@@ -74,6 +74,7 @@ npx ng g rx-view-component "gradient"
 * [image-click](#image-click),
 * [delay-registration](#delay-registration),
 * [image-container](#image-container),
+* [image-multple-containers](#image-multiple-containers),
 
 
 ---
@@ -2603,6 +2604,23 @@ npx ng g rx-view-component "gradient"
            [dropPredicate]="actionButtonDropPredicate"
          ></rx-canvas-outlet>
         ```
+    *  In the component scss file we define the size of the drag & drop zone, if this styling is not applied, you might not be able to drag and drop elements into the Outlet:
+    * ```scss
+           :host::ng-deep .image-container {
+               display: block;
+               border: 1px solid $gray-300;
+
+               rx-canvas-item-container {
+                   min-width: 100%;
+
+                   .cdk-drop-list {
+                       min-height: 50px;
+                       display: flex;
+                       flex-flow: column wrap;
+                   }
+               }
+           }
+        ```
       * we have to implement two methods in the Design time component,
         * `dropPredicate`: returns true if the Component can be added to the Outlet, here we allow Button bar, Action button and Rich Text Components,
           * ```ts
@@ -2624,12 +2642,137 @@ npx ng g rx-view-component "gradient"
             }
             ```
   * In Runtime, we just need to place the Outlet in the Component html template,it will define the "zone" where the Embedded components are displayed. Innovation Studio will automatically insert the Components:
-    * ```ts
+    * ```html
       <rx-runtime-view-canvas-outlet></rx-runtime-view-canvas-outlet>
       ```
 * Complexity: :hot_pepper: 
 * Used in the example:
   * image-container,
+
+
+---
+
+
+<a name="image-multiple-containers"></a>
+### image-multiple-containers:
+<details> 
+<summary>image-multiple-containers-design-time</summary>
+
+![image-container](./pictures/image-multiple-containers-design-time.png)
+</details>
+
+<details> 
+<summary>image-multiple-containers-runtime</summary>
+
+![image-container](./pictures/image-multiple-containers-runtime.png)
+</details>
+
+* Description:
+  * Usually a coded View Component is a single unit, for example a star rating component. It does not embed additional elements.
+  * However, on some occasion it might be interesting to add other Components, like Action buttons to a View Component. This is something that Innovation Studio does for some of the OOTB UI elements like a Button bar that can embed Action Buttons, or a Grid that can embed Action buttons as well.
+  * This example shows to achieve the same functionality, in two different zones this time, which is the main difference with the previous example image-container.
+  * In the View Component registration module,
+    * We need to define the component as a container:
+      * `isContainerComponent: true,`,
+      * We also need to define the zones where the other components will be stored, this is called an Outlet. Usually we only use the "default" outlet, but here we have two outlets, which will be placed on top and on the bottom of a picture. We need to give each outlet an identifier, a name:
+          * ```ts
+             outlets: [
+              {
+                name: 'OUTLET_TOP'
+              },
+              {
+                name: 'OUTLET_BOTTOM'
+              }
+             ]
+            ```
+  * In the Design time Component, we need to add the Outlets, define the Components that can be dropped in the Outlet and what happens when the elements are dropped in the Outlet. However we cannot use **rx-canvas-outlet** directly like we did in the image-container example as the Component needs to extend **ContainerDesignComponent**. This means that we need to create a new Angular Standalone Component which will extend **ContainerDesignComponent**, and use this new Component in our design time component.  
+  * When saving the view, the Components will automatically be added without more code necessary. So, we need to:
+    * Create a new Standalone Component extending ContainerDesignComponent, we need to import **ViewDesignerCanvasModule** to use **rx-canvas-outlet**: 
+      * ```ts
+           @Component({
+               standalone: true,
+               selector: 'com-example-test210500-multiple-image-container-outlet',
+               templateUrl: './image-multiple-container-outlet.component.html',
+               styleUrls: ['./image-multiple-container-outlet.scss'],
+               imports: [ViewDesignerCanvasModule]
+               })
+               export class ImageMultipleContainerOutletComponent extends ContainerDesignComponent {
+        ```
+    * The html template of the component leverages **rx-canvas-outlet**, defining where the Component can be dragged and dropped:
+      * ```html
+           <rx-canvas-outlet
+               class="image-multiple-containers"
+               [dropListOrientation]="'horizontal'"
+               [containerComponent]="containerCanvasItemComponent"
+               [dropPredicate]="actionButtonDropPredicate"
+               (beforeViewComponentDrop)="onBeforeViewComponentDrop($event)"
+               [name]="outletName">
+           </rx-canvas-outlet>
+        ```
+    *  In the component scss file we define the size of the drag & drop zone, if this styling is not applied, you might not be able to drag and drop elements into the Outlets:
+    * ```scss
+           :host::ng-deep .image-multiple-containers {
+               display: block;
+               border: 1px solid $gray-300;
+
+               rx-canvas-item-container {
+                   min-width: 100%;
+
+                   .cdk-drop-list {
+                       min-height: 50px;
+                       display: flex;
+                       flex-flow: column wrap;
+                   }
+               }
+           }
+        ```
+    * We have to implement two methods in the Design time component,
+      * `dropPredicate`: returns true if the Component can be added to the Outlet, here we allow Button bar, Action button and Rich Text Components,
+        * ```ts
+            actionButtonDropPredicate(data: IViewComponentDropPredicateData): boolean {
+                return data.draggedViewComponentDescriptor.type === RxViewComponentType.ActionButton ||
+                    data.draggedViewComponentDescriptor.type === RxViewComponentType.ButtonBar ||
+                    data.draggedViewComponentDescriptor.type === RxViewComponentType.RichText;
+            }
+            ```
+      * `beforeViewComponentDrop`: called when the component is dropped in the Outlet. We can then alter some of the Component properties. In our example we change the Button default type from Primary to Secondary:
+        * ```ts
+            onBeforeViewComponentDrop(data: IViewComponentDropData): void {
+                if (data.draggedViewComponentDescriptor.type === RxViewComponentType.ActionButton) {
+                    data.initialPropertiesByName = {
+                        ...data.initialPropertiesByName,
+                        style: ActionButtonStyle.Secondary
+                    } as IActionButtonProperties;
+                }
+            }
+            ```
+    * Now in the design time component we can leverage the new Component for our two Outlets:
+      * ```html
+            <com-example-test210500-multiple-image-container-outlet
+                outletName="OUTLET_TOP">
+            </com-example-test210500-multiple-image-container-outlet>
+            <span class="d-icon-image_square"></span>
+            <com-example-test210500-multiple-image-container-outlet
+                outletName="OUTLET_BOTTOM">
+            </com-example-test210500-multiple-image-container-outlet>
+        ```
+  * In Runtime, we just need to place the Outlets in the Component html template,it will define the "zones" where the Embedded components are displayed. Innovation Studio will automatically insert the Components. We identify each outlet using its name property:
+    * ```html
+            <rx-runtime-view-canvas-outlet
+                [name]="'OUTLET_TOP'"
+                [hidden]="inputParams.hidden">
+            </rx-runtime-view-canvas-outlet>
+            <span>
+                <img [src]="assetRootPath + 'pictures/lain.jpg'" alt="" width="200px">
+            </span>
+            <rx-runtime-view-canvas-outlet
+                [name]="'OUTLET_BOTTOM'"
+                [hidden]="inputParams.hidden">
+            </rx-runtime-view-canvas-outlet>
+      ```
+* Complexity: :hot_pepper: :hot_pepper:
+* Used in the example:
+  * image-multiple-containers,
 
 
 ---
