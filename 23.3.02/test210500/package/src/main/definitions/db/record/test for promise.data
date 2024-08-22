@@ -1,0 +1,24 @@
+begin schema data
+   name           : com.example.test210500:test for promise
+   data-mapping   : <?xml version="1.0" encoding="utf-8"?><arDocMapping xmlns="urn:remedy:schemas:ars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"> 
+   data-mapping   :    <element name="entryList">        <formMapping>            <form foreignKeyId="1" formName="com.example.test210500:test for promise" mapType="embedd
+   data-mapping   : ed" primaryKeyId="1"/>            <element name="entryItem">                <element dataType="string" name="f1_Display_ID">                    <field
+   data-mapping   : Mapping arFieldId="1"/>                </element>                <element dataType="string" name="f2_Created_By">                    <fieldMapping arF
+   data-mapping   : ieldId="2"/>                </element>                <element dataType="dateTime" name="f3_Created_Date">                    <fieldMapping arFieldId=
+   data-mapping   : "3"/>                </element>                <element dataType="string" name="f4_Assignee">                    <fieldMapping arFieldId="4"/>       
+   data-mapping   :          </element>                <element dataType="string" name="f5_Modified_By">                    <fieldMapping arFieldId="5"/>                <
+   data-mapping   : /element>                <element dataType="dateTime" name="f6_Modified_Date">                    <fieldMapping arFieldId="6"/>                </eleme
+   data-mapping   : nt>                <element dataType="string" name="f7_Status">                    <fieldMapping arFieldId="7"/>                </element>           
+   data-mapping   :      <element dataType="string" name="f8_Description">                    <fieldMapping arFieldId="8"/>                </element>                <elem
+   data-mapping   : ent dataType="string" name="f15_Status_History">                    <fieldMapping arFieldId="15"/>                </element>                <element d
+   data-mapping   : ataType="string" name="f16_Notifier_Listening">                    <fieldMapping arFieldId="16"/>                </element>                <element da
+   data-mapping   : taType="string" name="f37__ID">                    <fieldMapping arFieldId="379"/>                </element>            </element>        </formMappi
+   data-mapping   : ng>    </element></arDocMapping>
+   data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">    
+   data           : <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2023-02-27T23:07:
+   data           : 25+00:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2023-02-27T23:07
+   data           : :25+00:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>Hello world ^_^</f8_Description>        <f15_Status_History xsi:
+   data           : nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGADG1AAP0IDARQR7K3RQR7K33G7B</f37__ID>    </entry
+   data           : Item></entryList>
+end
+

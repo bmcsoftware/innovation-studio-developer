@@ -1,0 +1,195 @@
+begin process definition
+   name           : com.example.test210500:Call XML Rest API and convert to Json
+   definition     : {
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1710367117893,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "Demo",
+   definition     :   "name" : "com.example.test210500:Call XML Rest API and convert to Json",
+   definition     :   "tags" : null,
+   definition     :   "description" : "",
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "rx-098bf698-6528-48e5-8e32-1ab793466b4f",
+   definition     :   "flowElements" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1710367117893,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-e15c4fad-e672-41a7-981d-8584fb5a2cb2",
+   definition     :     "sourceNode" : "rx-3ef4851e-6807-4b16-9906-44793eea9bec",
+   definition     :     "targetNode" : "rx-8395cb44-d3c2-46ff-b024-6f2d6e3ee32c",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
+   definition     :     "lastUpdateTime" : 1710367117893,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Xml Attachment To Json",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-3ef4851e-6807-4b16-9906-44793eea9bec",
+   definition     :     "multiInstanceLoopDefinition" : null,
+   definition     :     "actionTypeName" : "com.example.test210500:XmlAttachmentToJson",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "xmlAttachment",
+   definition     :       "expression" : "${actionResult.rx-52065341-e566-41d4-a48f-62d8ccb3c6a5.output}"
+   definition     :     }, {
+   definition     :       "assignTarget" : "maxIndentation",
+   definition     :       "expression" : "100"
+   definition     :     } ],
+   definition     :     "outputMap" : [ {
+   definition     :       "assignTarget" : "536870912",
+   definition     :       "expression" : "${activityResults.rx-3ef4851e-6807-4b16-9906-44793eea9bec.output}"
+   definition     :     } ],
+   definition     :     "runAsUser" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.StartEventDefinition",
+   definition     :     "lastUpdateTime" : 1710367117893,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Start",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-3647a1ac-2c60-4ea3-bc4d-8b6cc018c46a"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.EndEventDefinition",
+   definition     :     "lastUpdateTime" : 1710367117893,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "End",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-8395cb44-d3c2-46ff-b024-6f2d6e3ee32c",
+   definition     :     "event" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1710367117893,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-140cb87f-5f6a-40b2-8026-8efb3c11aee4",
+   definition     :     "sourceNode" : "rx-52065341-e566-41d4-a48f-62d8ccb3c6a5",
+   definition     :     "targetNode" : "rx-3ef4851e-6807-4b16-9906-44793eea9bec",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
+   definition     :     "lastUpdateTime" : 1710367117893,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Web Request",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-52065341-e566-41d4-a48f-62d8ccb3c6a5",
+   definition     :     "multiInstanceLoopDefinition" : null,
+   definition     :     "actionTypeName" : "WebRequest",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "connectionTarget",
+   definition     :       "expression" : "\"adequateshop\""
+   definition     :     }, {
+   definition     :       "assignTarget" : "webApiTarget",
+   definition     :       "expression" : "\"IDGADG1AAP0IDARZ83TKRZ83TKMGDA\""
+   definition     :     }, {
+   definition     :       "assignTarget" : "requestTarget",
+   definition     :       "expression" : "\"IDGADG1AAP0IDARZ83TKRZ83TKMGDB\""
+   definition     :     } ],
+   definition     :     "outputMap" : [ ],
+   definition     :     "runAsUser" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1710367117893,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-f25ec238-51ef-4300-a7c7-1e048bda564c",
+   definition     :     "sourceNode" : "rx-3647a1ac-2c60-4ea3-bc4d-8b6cc018c46a",
+   definition     :     "targetNode" : "rx-52065341-e566-41d4-a48f-62d8ccb3c6a5",
+   definition     :     "condition" : ""
+   definition     :   } ],
+   definition     :   "inputParams" : [ ],
+   definition     :   "outputParams" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1710367117893,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "Demo",
+   definition     :     "name" : "Rest api xml converted to json",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "id" : 536870912,
+   definition     :     "fieldOption" : "OPTIONAL",
+   definition     :     "permissions" : null,
+   definition     :     "storageTypeClass" : "com.bmc.arsys.rx.services.record.domain.CharacterFieldStorageType",
+   definition     :     "fieldTypeName" : "com.bmc.arsys.rx.services.record.domain.DefaultFieldType",
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : null,
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : true,
+   definition     :     "allowOtherPropertiesOverlay" : true,
+   definition     :     "auditOption" : null,
+   definition     :     "allowPermissionsEdit" : false,
+   definition     :     "maxLength" : 0,
+   definition     :     "defaultValue" : null,
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "pattern" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   } ],
+   definition     :   "localVariables" : [ ],
+   definition     :   "contextKeyParam" : null,
+   definition     :   "isEnabled" : true,
+   definition     :   "permissions" : [ ],
+   definition     :   "layout" : "{\"cells\":[{\"flowType\":\"normal\",\"id\":\"e15c4fad-e672-41a7-981d-8584fb5a2cb2\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"3ef4851e-6807-4b16-9906-44793eea9bec\"},\"target\":{\"id\":\"8395cb44-d3c2-46ff-b024-6f2d6e3ee32c\"},\"type\":\"rx.SequenceFlow\",\"z\":8},{\"content\":\"Xml Attachment To Json\",\"id\":\"3ef4851e-6807-4b16-9906-44793eea9bec\",\"position\":{\"x\":320,\"y\":360},\"size\":{\"width\":90,\"height\":60},\"type\":\"rx.ProcessAction\",\"z\":6},{\"id\":\"3647a1ac-2c60-4ea3-bc4d-8b6cc018c46a\",\"position\":{\"x\":50,\"y\":375},\"size\":{\"width\":30,\"height\":30},\"type\":\"rx.StartEvent\",\"z\":1,\"attrs\":{\".label\":{\"text\":\"\"}}},{\"id\":\"8395cb44-d3c2-46ff-b024-6f2d6e3ee32c\",\"position\":{\"x\":520,\"y\":375},\"size\":{\"width\":30,\"height\":30},\"type\":\"rx.EndEvent\",\"z\":2,\"attrs\":{\".label\":{\"text\":\"\"}}},{\"flowType\":\"normal\",\"id\":\"140cb87f-5f6a-40b2-8026-8efb3c11aee4\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"52065341-e566-41d4-a48f-62d8ccb3c6a5\"},\"target\":{\"id\":\"3ef4851e-6807-4b16-9906-44793eea9bec\"},\"type\":\"rx.SequenceFlow\",\"z\":7},{\"content\":\"Web Request\",\"id\":\"52065341-e566-41d4-a48f-62d8ccb3c6a5\",\"position\":{\"x\":125,\"y\":360},\"size\":{\"width\":90,\"height\":60},\"type\":\"rx.WebRequest\",\"z\":4},{\"flowType\":\"normal\",\"id\":\"f25ec238-51ef-4300-a7c7-1e048bda564c\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"3647a1ac-2c60-4ea3-bc4d-8b6cc018c46a\"},\"target\":{\"id\":\"52065341-e566-41d4-a48f-62d8ccb3c6a5\"},\"type\":\"rx.SequenceFlow\",\"z\":5},{\"content\":\"We call a Web Api \\\"adequateshop\\\".\\nThis Web Api is leveraging the free Rest Api website:\\nhttp://restapi.adequateshop.com/swagger/ui/index#!/Traveler/Traveler_GetTraveler\\n\\nSince the Rest Api returns Xml content, the Web Request process activity does not return an Object or a Text but an Attachment object.\\n\\nNote:\\nPlease check the documentation on how to create the Web api connection and map this connection to this test bundle.\\nThe documentation is on the Public GitHub repository, or accessible running the view \\\"Demo XML to Json conversion\\\".\\nThe view can be accessible through the view list, or running this sample application, then opening the menu \\\"Custom Java examples -> Convert Xml attachment to Json\\\".\\n\",\"id\":\"0eaf81e6-d2f5-46a7-96b2-ad52b863c96d\",\"position\":{\"x\":-150,\"y\":-50},\"size\":{\"width\":640,\"height\":205},\"type\":\"rx.TextAnnotation\",\"z\":10},{\"flowType\":\"association\",\"id\":\"acac7262-cdae-46ee-90f4-dad34b89524d\",\"source\":{\"id\":\"0eaf81e6-d2f5-46a7-96b2-ad52b863c96d\"},\"target\":{\"id\":\"52065341-e566-41d4-a48f-62d8ccb3c6a5\"},\"type\":\"rx.TextAnnotationAssociation\",\"z\":11},{\"content\":\"This custom activity accepts an Attachment as Input. Here it is simply the Output of the \\\"Web Request\\\" process activity.\\nSince the Rest Api returns Xml content, the Web Request process activity does not return an Object or a Text but an Attachment object.\\n\",\"id\":\"c810252e-8c24-4f84-ae40-92cf259630a7\",\"position\":{\"x\":222.5,\"y\":220},\"size\":{\"width\":285,\"height\":105},\"type\":\"rx.TextAnnotation\",\"z\":12},{\"flowType\":\"association\",\"id\":\"34f92448-8417-41cf-a309-433430616e15\",\"source\":{\"id\":\"c810252e-8c24-4f84-ae40-92cf259630a7\"},\"target\":{\"id\":\"3ef4851e-6807-4b16-9906-44793eea9bec\"},\"type\":\"rx.TextAnnotationAssociation\",\"z\":13}]}",
+   definition     :   "artifacts" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotation",
+   definition     :     "guid" : "rx-0eaf81e6-d2f5-46a7-96b2-ad52b863c96d",
+   definition     :     "text" : "We call a Web Api \"adequateshop\".\nThis Web Api is leveraging the free Rest Api website:\nhttp://restapi.adequateshop.com/swagger/ui/index#!/Traveler/Traveler_GetTraveler\n\nSince the Rest Api returns Xml content, the Web Request process activity does not return an Object or a Text but an Attachment object.\n\nNote:\nPlease check the documentation on how to create the Web api connection and map this connection to this test bundle.\nThe documentation is on the Public GitHub repository, or accessible running the view \"Demo XML to Json conversion\".\nThe view can be accessible through the view list, or running this sample application, then opening the menu \"Custom Java examples -> Convert Xml attachment to Json\".\n"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotationAssociation",
+   definition     :     "guid" : "rx-acac7262-cdae-46ee-90f4-dad34b89524d",
+   definition     :     "sourceNode" : "rx-0eaf81e6-d2f5-46a7-96b2-ad52b863c96d",
+   definition     :     "targetNode" : "rx-52065341-e566-41d4-a48f-62d8ccb3c6a5"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotation",
+   definition     :     "guid" : "rx-c810252e-8c24-4f84-ae40-92cf259630a7",
+   definition     :     "text" : "This custom activity accepts an Attachment as Input. Here it is simply the Output of the \"Web Request\" process activity.\nSince the Rest Api returns Xml content, the Web Request process activity does not return an Object or a Text but an Attachment object.\n"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotationAssociation",
+   definition     :     "guid" : "rx-34f92448-8417-41cf-a309-433430616e15",
+   definition     :     "sourceNode" : "rx-c810252e-8c24-4f84-ae40-92cf259630a7",
+   definition     :     "targetNode" : "rx-3ef4851e-6807-4b16-9906-44793eea9bec"
+   definition     :   } ],
+   definition     :   "runAsUser" : false,
+   definition     :   "synchronous" : true,
+   definition     :   "overlayDescriptor" : null,
+   definition     :   "allowOverlay" : false,
+   definition     :   "localizableStrings" : null
+   definition     : }
+end

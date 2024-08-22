@@ -1,0 +1,49 @@
+{
+  "name": "@com.example.test210500/com-example-test210500",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^10.2.4",
+    "@angular/core": "^10.2.4"
+  },
+  "dependencies": {
+    "@angular/google-maps": "^11.2.10",
+    "@angular/youtube-player": "^11.2.10",
+    "@zxing/browser": "0.0.5",
+    "@zxing/library": "0.18.5",
+    "@zxing/ngx-scanner": "3.1.3",
+    "angular2-signaturepad": "^3.0.4",
+    "ng-hcaptcha": "2.3.1",
+    "kjua-svg": "^1.13.1",
+    "ngx-kjua": "2.0.4",
+    "ngx-webcam": "^0.3.2",
+    "numeral": "2.0.6",
+    "tslib": "^2.0.0"
+  },
+  "private": true,
+  "workspaces": {
+    "nohoist": [
+      "@angular/google-maps",
+      "@angular/google-maps/**",
+      "@angular/youtube-player",
+      "@angular/youtube-player/**",
+      "@zxing/browser",
+      "@zxing/browser/**",
+      "@zxing/library",
+      "@zxing/library/**",
+      "@zxing/ngx-scanner",
+      "@zxing/ngx-scanner/**",
+      "angular2-signaturepad",
+      "angular2-signaturepad/**",
+      "ng-hcaptcha",
+      "ng-hcaptcha/**",
+      "kjua-svg",
+      "kjua-svg/**",
+      "ngx-kjua",
+      "ngx-kjua/**",
+      "ngx-webcam",
+      "ngx-webcam/**",
+      "numeral",
+      "numeral/**"
+    ]
+  }
+}

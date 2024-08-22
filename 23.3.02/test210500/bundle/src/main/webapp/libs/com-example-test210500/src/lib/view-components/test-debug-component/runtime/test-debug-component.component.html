@@ -1,0 +1,13 @@
+<!--Gradient-->
+<adapt-rx-control-label [label]="'Gradient'">
+</adapt-rx-control-label>
+<div #gradientDivElement class="gradient"></div>
+
+<!--Input parameters-->
+<adapt-rx-control-label [label]="'Input Parameters'"
+                        [tooltip]="tooltip">
+</adapt-rx-control-label>
+<adapt-code-viewer [code]="componentDataString"
+                   [lang]="'json'"
+                   [hasToolbar]="false">
+</adapt-code-viewer>

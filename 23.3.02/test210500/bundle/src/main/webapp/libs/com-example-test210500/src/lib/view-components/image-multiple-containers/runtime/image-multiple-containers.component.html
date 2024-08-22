@@ -1,0 +1,13 @@
+<!-- This Platform component will automatically display the Components added during design time.
+Here we have two outlets, we use the name property to distinct them.-->
+<rx-runtime-view-canvas-outlet
+  [name]="'OUTLET_TOP'"
+  [hidden]="inputParams.hidden">
+</rx-runtime-view-canvas-outlet>
+<span>
+  <img [src]="assetRootPath + 'pictures/lain.jpg'" alt="" width="200px">
+</span>
+<rx-runtime-view-canvas-outlet
+  [name]="'OUTLET_BOTTOM'"
+  [hidden]="inputParams.hidden">
+</rx-runtime-view-canvas-outlet>

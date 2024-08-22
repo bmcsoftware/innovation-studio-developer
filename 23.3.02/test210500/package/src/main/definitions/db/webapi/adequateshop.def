@@ -1,0 +1,39 @@
+begin web api definition
+   name           : com.example.test210500:adequateshop
+   definition     : {
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1710367124332,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "ARSERVER",
+   definition     :   "name" : "com.example.test210500:adequateshop",
+   definition     :   "tags" : null,
+   definition     :   "description" : "",
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "IDGADG1AAP0IDARZ83TKRZ83TKMGDA",
+   definition     :   "requestDefinitions" : [ {
+   definition     :     "id" : "IDGADG1AAP0IDARZ83TKRZ83TKMGDB",
+   definition     :     "guid" : "IDGADG1AAP0IDARZ83TKRZ83TKMGDB",
+   definition     :     "name" : "Get Travelers",
+   definition     :     "desc" : null,
+   definition     :     "method" : "GET",
+   definition     :     "path" : "/api/Traveler",
+   definition     :     "queryParams" : [ "page" ],
+   definition     :     "pathParams" : [ ],
+   definition     :     "headers" : [ ],
+   definition     :     "body" : null,
+   definition     :     "output" : null,
+   definition     :     "multiPartRequest" : false,
+   definition     :     "failOnUnsuccessfulResponse" : true,
+   definition     :     "encodeParams" : true,
+   definition     :     "partNames" : [ ]
+   definition     :   } ],
+   definition     :   "overlayDescriptor" : {
+   definition     :     "parentOverlayGroupId" : null,
+   definition     :     "permissionsOverlayType" : null,
+   definition     :     "otherPropertiesOverlayType" : null
+   definition     :   },
+   definition     :   "allowOverlay" : false
+   definition     : }
+end

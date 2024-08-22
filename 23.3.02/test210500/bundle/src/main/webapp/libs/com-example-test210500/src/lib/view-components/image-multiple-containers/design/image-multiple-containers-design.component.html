@@ -1,0 +1,15 @@
+<!-- The canvas outlet allows components to be dragged and dropped
+inside of it.
+Here there are two outlets, one above and one below the image.
+We cannot use directly "rx-canvas-outlet" in this case as the component needs to extend
+the platform component "containerCanvasItemComponent".
+We have to create the Component "ImageMultipleContainerOutletComponent" for this purpose,
+with the selector "com-example-test210500-image-multiple-container-outlet" and consume this Component.
+-->
+<com-example-test210500-multiple-image-container-outlet
+  outletName="OUTLET_TOP">
+</com-example-test210500-multiple-image-container-outlet>
+<span class="d-icon-image_square"></span>
+<com-example-test210500-multiple-image-container-outlet
+  outletName="OUTLET_BOTTOM">
+</com-example-test210500-multiple-image-container-outlet>

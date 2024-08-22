@@ -1,0 +1,35 @@
+// LMA:: TODO:: Add this by default (adapt vars declaration)
+@import "styles/variables";
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.flex-padding {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.text-sample-container {
+  flex-grow: 1;
+}
+
+adapt-color-picker {
+  margin-bottom: 25px;
+}
+
+.lorem-ipsum-formatting {
+  white-space: pre-line;
+}
+
+.helper {
+  font-weight: bolder;
+  padding-left: 25px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+.icon-padding {
+  padding-right: 10px;
+}

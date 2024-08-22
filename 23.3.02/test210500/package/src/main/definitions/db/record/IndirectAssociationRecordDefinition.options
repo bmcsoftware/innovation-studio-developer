@@ -1,0 +1,6 @@
+#
+#Wed May 15 00:47:24 UTC 2024
+IgnoreRuleExecution=false
+DuplicateDataActionType=MERGE
+Name=IndirectAssociationRecordDefinition
+ImportOrder=7

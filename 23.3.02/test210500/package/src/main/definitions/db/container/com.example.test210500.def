@@ -1,0 +1,1560 @@
+begin container
+   name           : com.example.test210500
+   type           : 2
+   num-references : 310
+   timestamp      : 1715731661
+   owner          : com.example
+   last-changed   : Demo
+   export-version : 12
+   object-prop    : 5\90019\2\10\90016\4\1\1\90002\4\22\com.example.test210500\90021\4\22\com.example.test210500\90015\2\4\
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\42\com.example.test210500:TestRecordInstances\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:TestRecordInstances
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\35\com.example.test210500:xml examples\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:xml examples
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\33\com.example.test210500:Restaurant\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:Restaurant
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\32\com.example.test210500:signature\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\30\com.example.test210500:Country\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:Country
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\39\com.example.test210500:Pictures storage\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:Pictures storage
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\38\com.example.test210500:Saving pictures\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\39\com.example.test210500:test for promise\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:test for promise
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\40\com.example.test210500:lifecycle example\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:lifecycle example
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\34\com.example.test210500:Testing Foo\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:Testing Foo
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\31\com.example.test210500:hCaptcha\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\28\com.example.test210500:steps\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\59\com.example.test210500:test attachment from custom activity\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\29\com.example.test210500:fruits\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:fruits
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\39\com.example.test210500:for data example\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:for data example
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\34\com.example.test210500:Code Sample\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:Code Sample
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\42\com.example.test210500:TwilioConfiguration\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\44\com.example.test210500:Google Maps addresses\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:Google Maps addresses
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\34\com.example.test210500:Star Rating\
+}
+reference {
+   type           : 32833
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 32841
+   datatype       : 1
+   value          : 4\4\379;\
+}
+reference {
+   type           : 32842
+   datatype       : 1
+   value          : 2\128\
+}
+reference {
+   type           : 2
+   datatype       : 0
+   object         : com.example.test210500:Star Rating
+}
+reference {
+   type           : 32844
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 11
+   datatype       : 1
+   value          : 4\56\com.example.test210500:Restaurants are in Many Countries\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\46\com.example.test210500:Validate hCaptcha token\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\43\com.example.test210500:process input output\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\36\com.example.test210500:Add signature\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\40\com.example.test210500:List manipulation\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\47\com.example.test210500:Twilio Send Text Message\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\53\com.example.test210500:Convert XML attachment to Json\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\52\com.example.test210500:Test record instances in Java\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\60\com.example.test210500:Call XML Rest API and convert to Json\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\42\com.example.test210500:Save Webcam picture\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\40\com.example.test210500:generate password\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\61\com.example.test210500:Create attachment from custom activity\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\43\com.example.test210500:VC Admin Preferences\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\60\com.example.test210500:CACT get list size and get list index\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\37\com.example.test210500:VC Custom grid\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\43\com.example.test210500:AC Matrix Easter Egg\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\43\com.example.test210500:VC Code Viewer Modal\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\76\com.example.test210500:CACT Create attachment from a Custom Process Activity\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\37\com.example.test210500:TEST Container\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\35\com.example.test210500:VC LifeCycle\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\39\com.example.test210500:AC Generate Guid\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\37\com.example.test210500:VC Code Viewer\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\26\com.example.test210500:TOC\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\44\com.example.test210500:VC Open view in blade\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\50\com.example.test210500:Demo XML to Json conversion\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\44\com.example.test210500:ADM Create Restaurant\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\38\com.example.test210500:AC Confirmation\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\41\com.example.test210500:ADM Select Country\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\62\com.example.test210500:VC star rating as a record editor field\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\38\com.example.test210500:Create New Data\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\32\com.example.test210500:VC Wizard\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\38\com.example.test210500:AC Notification\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\38\com.example.test210500:VC Call command\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\43\com.example.test210500:AC Confirmation OOTB\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\36\com.example.test210500:VC Test Debug\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\34\com.example.test210500:VC HCaptcha\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\67\com.example.test210500:Sample view with input and output parameters\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\39\com.example.test210500:BMC Modern Shell\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\46\com.example.test210500:AC Get User Information\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\35\com.example.test210500:VC Bar Chart\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\48\com.example.test210500:Tutorial Global Css Style\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\34\com.example.test210500:VC Gradient\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\32\com.example.test210500:AC Fruits\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\32\com.example.test210500:demo view\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\40\com.example.test210500:VC Youtube Player\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\47\com.example.test210500:VC Custom datapage query\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\43\com.example.test210500:VC Generate Password\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\56\com.example.test210500:VC Getting Record Definition Data\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\53\com.example.test210500:Send text message using Twilio\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\66\com.example.test210500:VC star rating as standalone view component\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\42\com.example.test210500:VC User Preferences\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\35\com.example.test210500:VC Icon List\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\40\com.example.test210500:VC Floating Panel\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\41\com.example.test210500:VC QR Code Scanner\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\32\com.example.test210500:VC Webcam\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\37\com.example.test210500:VC Google Maps\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\51\com.example.test210500:VC Actions in View Component\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\43\com.example.test210500:VC Digital signature\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\93\com.example.test210500:Test Lmame Label View Components and global css pure javascript assets\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\32\com.example.test210500:VC iFrame\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\43\com.example.test210500:VC QR code generator\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\40\com.example.test210500:VC Accessing grid\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\41\com.example.test210500:ADM Create Country\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32851
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 18
+   datatype       : 1
+   value          : 4\48\com.example.test210500:Document for list example\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32850
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 17
+   datatype       : 1
+   value          : 4\35\com.example.test210500:adequateshop\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\41\com.example.test210500:VC Image container\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\51\com.example.test210500:VC Image Multiple Containers\
+}
+end

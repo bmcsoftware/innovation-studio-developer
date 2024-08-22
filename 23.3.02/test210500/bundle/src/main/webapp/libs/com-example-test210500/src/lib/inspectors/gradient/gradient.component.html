@@ -1,0 +1,18 @@
+<div class="form-group">
+  <adapt-rx-control-label [showRequiredLabel]="options.required"
+                          [label]="options.label"
+                          [tooltip]="tooltip">
+  </adapt-rx-control-label>
+
+  <!--  We display a preview of the gradient. -->
+  <div #gradientDivElement class="gradient"></div>
+
+  <!--  Color pickers used for the left and right side of the gradient.-->
+  <adapt-color-picker [disabled]="isDisabled"
+                      [(ngModel)]="gradientLeftValue">
+  </adapt-color-picker>
+  <adapt-color-picker [disabled]="isDisabled"
+                      [(ngModel)]="gradientRightValue">
+  </adapt-color-picker>
+</div>
+

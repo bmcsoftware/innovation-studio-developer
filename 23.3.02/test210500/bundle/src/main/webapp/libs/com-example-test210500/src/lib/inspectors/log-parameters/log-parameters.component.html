@@ -1,0 +1,19 @@
+<div class="form-group">
+  <adapt-rx-control-label [showRequiredLabel]="options.required"
+                          [label]="options.label"
+                          [tooltip]="tooltip">
+  </adapt-rx-control-label>
+
+  <button adapt-button btn-type="primary"
+          size="default"
+          (click)="seeDetails()">
+    <span>See details</span>
+  </button>
+
+  <!--  We display the data in an an Adapt Code Viewer component -->
+  <adapt-code-viewer [hasToolbar]="false"
+                     [code]="inputParametersString"
+                     [lang]="'json'">
+  </adapt-code-viewer>
+</div>
+

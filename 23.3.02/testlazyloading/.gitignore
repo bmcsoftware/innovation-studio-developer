@@ -1,0 +1,38 @@
+# exclude generated or boilerplate files
+# IDEs
+.idea/
+.settings/
+.classpath
+.project
+.p4ignore
+*.iml
+
+# Compiled class files
+*.class
+
+# Angular / AngularJs common build folders
+bundle/target/
+package/target/
+
+# Angular build folders 
+bundle/src/main/webapp/apps/shell/
+bundle/src/main/webapp/dist/
+bundle/src/main/webapp/libs/**/node_modules/
+bundle/src/main/webapp/node_modules/
+bundle/src/main/webapp/tools/
+# LMA:: What about external scripts and styles? How do we add them?
+bundle/src/main/webapp/scripts/
+bundle/src/main/webapp/styles/
+
+# AngularJs specific
+bundle/node_modules/
+automation/target/
+ui-automation/target/
+
+# Automation reporting (AngularJs)
+automation/AutoLog/
+automation/jgiven-reports/
+automation/test-output/
+ui-automation/AutoLog/
+ui-automation/jgiven-reports/
+ui-automation/test-output/

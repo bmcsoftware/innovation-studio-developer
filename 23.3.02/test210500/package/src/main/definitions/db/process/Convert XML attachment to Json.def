@@ -1,0 +1,195 @@
+begin process definition
+   name           : com.example.test210500:Convert XML attachment to Json
+   definition     : {
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1710367117713,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "Demo",
+   definition     :   "name" : "com.example.test210500:Convert XML attachment to Json",
+   definition     :   "tags" : null,
+   definition     :   "description" : "",
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "rx-6774de95-bf6c-437a-aea0-65077c869e89",
+   definition     :   "flowElements" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.StartEventDefinition",
+   definition     :     "lastUpdateTime" : 1710367117713,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Start",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-9c0865c1-283b-41b0-9ef4-fe152a59eb43"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.EndEventDefinition",
+   definition     :     "lastUpdateTime" : 1710367117713,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "End",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-9a59d060-1693-4f6d-a0d7-162a0302192e",
+   definition     :     "event" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
+   definition     :     "lastUpdateTime" : 1710367117713,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Xml Attachment To Json",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-d87e1cef-50ff-41ff-b0fd-84a6313cd012",
+   definition     :     "multiInstanceLoopDefinition" : null,
+   definition     :     "actionTypeName" : "com.example.test210500:XmlAttachmentToJson",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "xmlAttachment",
+   definition     :       "expression" : "${activityResults.rx-478dd535-8b52-41bb-9dc8-2205a61ec99f.output}"
+   definition     :     }, {
+   definition     :       "assignTarget" : "maxIndentation",
+   definition     :       "expression" : "100"
+   definition     :     } ],
+   definition     :     "outputMap" : [ {
+   definition     :       "assignTarget" : "536870912",
+   definition     :       "expression" : "${activityResults.rx-d87e1cef-50ff-41ff-b0fd-84a6313cd012.output}"
+   definition     :     } ],
+   definition     :     "runAsUser" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
+   definition     :     "lastUpdateTime" : 1710367117713,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Get Attachment",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-478dd535-8b52-41bb-9dc8-2205a61ec99f",
+   definition     :     "multiInstanceLoopDefinition" : null,
+   definition     :     "actionTypeName" : "getAttachment",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "recordID",
+   definition     :       "expression" : "\"AGGADG1AAP0IDARZ830FRZ830FMDO8\""
+   definition     :     }, {
+   definition     :       "assignTarget" : "recordDefinitionName",
+   definition     :       "expression" : "\"IDGADG1AAP0IDARZ83JORZ83JOMDLZ\""
+   definition     :     }, {
+   definition     :       "assignTarget" : "attachmentFieldID",
+   definition     :       "expression" : "\"536870913\""
+   definition     :     } ],
+   definition     :     "outputMap" : [ ],
+   definition     :     "runAsUser" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1710367117713,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-7d3df824-91de-4c51-89de-8001030fe455",
+   definition     :     "sourceNode" : "rx-d87e1cef-50ff-41ff-b0fd-84a6313cd012",
+   definition     :     "targetNode" : "rx-9a59d060-1693-4f6d-a0d7-162a0302192e",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1710367117713,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-17f8c6d4-c875-4ff5-8fbb-daf7b0f82da6",
+   definition     :     "sourceNode" : "rx-478dd535-8b52-41bb-9dc8-2205a61ec99f",
+   definition     :     "targetNode" : "rx-d87e1cef-50ff-41ff-b0fd-84a6313cd012",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1710367117713,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-3e71e0cf-12e7-440d-af90-f83ca5a17407",
+   definition     :     "sourceNode" : "rx-9c0865c1-283b-41b0-9ef4-fe152a59eb43",
+   definition     :     "targetNode" : "rx-478dd535-8b52-41bb-9dc8-2205a61ec99f",
+   definition     :     "condition" : ""
+   definition     :   } ],
+   definition     :   "inputParams" : [ ],
+   definition     :   "outputParams" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.standardlib.record.CharacterFieldDefinition",
+   definition     :     "lastUpdateTime" : 1710367117713,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "Demo",
+   definition     :     "name" : "json string",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "id" : 536870912,
+   definition     :     "fieldOption" : "OPTIONAL",
+   definition     :     "permissions" : null,
+   definition     :     "storageTypeClass" : "com.bmc.arsys.rx.services.record.domain.CharacterFieldStorageType",
+   definition     :     "fieldTypeName" : "com.bmc.arsys.rx.services.record.domain.DefaultFieldType",
+   definition     :     "isInherited" : false,
+   definition     :     "explicitPermissions" : null,
+   definition     :     "overlayDescriptor" : null,
+   definition     :     "fieldMapping" : null,
+   definition     :     "allowPermissionsOverlay" : true,
+   definition     :     "allowOtherPropertiesOverlay" : true,
+   definition     :     "auditOption" : null,
+   definition     :     "allowPermissionsEdit" : false,
+   definition     :     "maxLength" : 0,
+   definition     :     "defaultValue" : null,
+   definition     :     "searchDefinition" : null,
+   definition     :     "namedListDefinition" : null,
+   definition     :     "shouldPersistEncrypted" : false,
+   definition     :     "shouldPersistHashed" : false,
+   definition     :     "associationGuid" : null,
+   definition     :     "pattern" : null,
+   definition     :     "anyUserAllowedToSubmit" : false
+   definition     :   } ],
+   definition     :   "localVariables" : [ ],
+   definition     :   "contextKeyParam" : null,
+   definition     :   "isEnabled" : true,
+   definition     :   "permissions" : [ ],
+   definition     :   "layout" : "{\"cells\":[{\"id\":\"9c0865c1-283b-41b0-9ef4-fe152a59eb43\",\"position\":{\"x\":50,\"y\":375},\"size\":{\"width\":30,\"height\":30},\"type\":\"rx.StartEvent\",\"z\":1,\"attrs\":{\".label\":{\"text\":\"\"}}},{\"id\":\"9a59d060-1693-4f6d-a0d7-162a0302192e\",\"position\":{\"x\":560,\"y\":375},\"size\":{\"width\":30,\"height\":30},\"type\":\"rx.EndEvent\",\"z\":2,\"attrs\":{\".label\":{\"text\":\"\"}}},{\"content\":\"Xml Attachment To Json\",\"id\":\"d87e1cef-50ff-41ff-b0fd-84a6313cd012\",\"position\":{\"x\":320,\"y\":360},\"size\":{\"width\":90,\"height\":60},\"type\":\"rx.ProcessAction\",\"z\":6},{\"content\":\"Get Attachment\",\"id\":\"478dd535-8b52-41bb-9dc8-2205a61ec99f\",\"position\":{\"x\":125,\"y\":360},\"size\":{\"width\":90,\"height\":60},\"type\":\"rx.ProcessActions.getAttachment\",\"z\":4},{\"flowType\":\"normal\",\"id\":\"7d3df824-91de-4c51-89de-8001030fe455\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"d87e1cef-50ff-41ff-b0fd-84a6313cd012\"},\"target\":{\"id\":\"9a59d060-1693-4f6d-a0d7-162a0302192e\"},\"type\":\"rx.SequenceFlow\",\"z\":8},{\"flowType\":\"normal\",\"id\":\"17f8c6d4-c875-4ff5-8fbb-daf7b0f82da6\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"478dd535-8b52-41bb-9dc8-2205a61ec99f\"},\"target\":{\"id\":\"d87e1cef-50ff-41ff-b0fd-84a6313cd012\"},\"type\":\"rx.SequenceFlow\",\"z\":7},{\"flowType\":\"normal\",\"id\":\"3e71e0cf-12e7-440d-af90-f83ca5a17407\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"9c0865c1-283b-41b0-9ef4-fe152a59eb43\"},\"target\":{\"id\":\"478dd535-8b52-41bb-9dc8-2205a61ec99f\"},\"type\":\"rx.SequenceFlow\",\"z\":5},{\"content\":\"We get an attachment stored in a record instance.\\nThis attachment is a xml file.\\nThe xml file itself comes from the free Rest Api website:\\nhttp://restapi.adequateshop.com/swagger/ui/index#!/Traveler/Traveler_GetTraveler\",\"id\":\"16958b56-88e9-4178-a2f3-af1a7946455b\",\"position\":{\"x\":-80,\"y\":30},\"size\":{\"width\":500,\"height\":145},\"type\":\"rx.TextAnnotation\",\"z\":10},{\"flowType\":\"association\",\"id\":\"5152c49d-0f4d-47b3-9295-d8a3e47c1c73\",\"source\":{\"id\":\"16958b56-88e9-4178-a2f3-af1a7946455b\"},\"target\":{\"id\":\"478dd535-8b52-41bb-9dc8-2205a61ec99f\"},\"type\":\"rx.TextAnnotationAssociation\",\"z\":11},{\"content\":\"This custom activity accepts an Attachment as Input. Here it is simply the Output of the \\\"Get Attachment\\\" process activity.\\n\\nIndentation level is usually set to 100 in the examples.\",\"id\":\"3057dc7b-ed56-4394-b77f-3701e9a4bba8\",\"position\":{\"x\":205,\"y\":190},\"size\":{\"width\":320,\"height\":110},\"type\":\"rx.TextAnnotation\",\"z\":12},{\"flowType\":\"association\",\"id\":\"e1b1a4d4-8bd6-43e9-9444-9ec4cc341036\",\"source\":{\"id\":\"3057dc7b-ed56-4394-b77f-3701e9a4bba8\"},\"target\":{\"id\":\"d87e1cef-50ff-41ff-b0fd-84a6313cd012\"},\"type\":\"rx.TextAnnotationAssociation\",\"z\":13}]}",
+   definition     :   "artifacts" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotation",
+   definition     :     "guid" : "rx-16958b56-88e9-4178-a2f3-af1a7946455b",
+   definition     :     "text" : "We get an attachment stored in a record instance.\nThis attachment is a xml file.\nThe xml file itself comes from the free Rest Api website:\nhttp://restapi.adequateshop.com/swagger/ui/index#!/Traveler/Traveler_GetTraveler"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotationAssociation",
+   definition     :     "guid" : "rx-5152c49d-0f4d-47b3-9295-d8a3e47c1c73",
+   definition     :     "sourceNode" : "rx-16958b56-88e9-4178-a2f3-af1a7946455b",
+   definition     :     "targetNode" : "rx-478dd535-8b52-41bb-9dc8-2205a61ec99f"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotation",
+   definition     :     "guid" : "rx-3057dc7b-ed56-4394-b77f-3701e9a4bba8",
+   definition     :     "text" : "This custom activity accepts an Attachment as Input. Here it is simply the Output of the \"Get Attachment\" process activity.\n\nIndentation level is usually set to 100 in the examples."
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.TextAnnotationAssociation",
+   definition     :     "guid" : "rx-e1b1a4d4-8bd6-43e9-9444-9ec4cc341036",
+   definition     :     "sourceNode" : "rx-3057dc7b-ed56-4394-b77f-3701e9a4bba8",
+   definition     :     "targetNode" : "rx-d87e1cef-50ff-41ff-b0fd-84a6313cd012"
+   definition     :   } ],
+   definition     :   "runAsUser" : false,
+   definition     :   "synchronous" : true,
+   definition     :   "overlayDescriptor" : null,
+   definition     :   "allowOverlay" : false,
+   definition     :   "localizableStrings" : null
+   definition     : }
+end

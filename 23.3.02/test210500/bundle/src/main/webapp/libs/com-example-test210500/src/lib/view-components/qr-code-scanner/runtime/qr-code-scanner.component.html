@@ -1,0 +1,25 @@
+<!--Displaying information (status, error etc...)-->
+<adapt-alert
+  [hidden]="!alertContent"
+  [config]="alertConfiguration">
+  <div [innerHTML]="alertContent"></div>
+</adapt-alert>
+
+<!--List of available devices-->
+<adapt-rx-select [hidden]="deviceList.length === 0"
+                 [(ngModel)]="selectedCamera"
+                 [options]="deviceList"
+                 [optionFormatter]="optionFormatter"
+                 (onSelectionChange)="onCameraSelected($event)">
+</adapt-rx-select>
+
+<zxing-scanner [enable]="isScanningEnabled"
+               [formats]="allowedFormats"
+               [(device)]="zxingSelectedDevice"
+               (deviceChange)="onDeviceChange($event)"
+               (camerasFound)="onCamerasFound($event)"
+               (camerasNotFound)="onCamerasNotFound()"
+               (scanSuccess)="onScanSuccess($event)"
+               (permissionResponse)="permissionResponse($event)"
+               (scanError)="onScanError($event)">
+</zxing-scanner>

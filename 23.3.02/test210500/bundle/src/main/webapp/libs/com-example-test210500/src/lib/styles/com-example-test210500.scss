@@ -1,0 +1,62 @@
+@import "styles/variables";
+
+// This is a css class that can be used to style a view component in View Designer
+.com-example-test210500-blue-container {
+  border: 1px solid blue;
+}
+
+// This is an example how to style the rx-rating Adapt component.
+// It is used in the star-rating view component.
+.com-example-test210500-star-rating-red-star {
+  // We override the Adapt default color for the star color.
+  .a-rating__item {
+    color: red;
+  }
+}
+
+// It is used in the star-rating view component.
+.com-example-test210500-star-rating-green-star {
+  // We override the Adapt default color for the star color.
+  .a-rating__item {
+    color: greenyellow;
+  }
+}
+
+// This class is used to override Adapt panel style, adding a border around the panel.
+.com-example-test210500-override-rx-tab {
+  .tab-content {
+    border-left: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    border-right: 1px solid $gray-300;
+  }
+}
+
+.com-example-test210500-wizard-container {
+  height: 750px;
+  margin-top: -1rem;
+}
+
+.com-example-test210500-wizard-container-border {
+  height: 750px;
+  border-left: 1px solid $gray-300;
+  border-right: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-300;
+  margin-top: -1rem;
+}
+
+// This is used in the custom-grid view component example where
+// we want to create a custom icon used in view designer.
+// Image original source:
+// https://www.deviantart.com/ladycoventina/art/Kuroneko-Sama-Coloured-136100276
+// Please see the explanation in file "custom-grid-registration.module.ts".
+.d-icon-com-example-test210500-custom-grid-icon {
+  background: url('data:image/png;base64,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');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// Tutorial class.
+.com-example-test210500-green-container {
+  border: 1px solid green;
+  background-color: lawngreen;
+}

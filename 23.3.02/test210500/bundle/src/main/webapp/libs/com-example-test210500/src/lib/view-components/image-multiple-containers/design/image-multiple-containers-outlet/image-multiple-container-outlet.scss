@@ -1,0 +1,16 @@
+@import "styles/variables";
+
+:host::ng-deep .image-multiple-containers {
+  display: block;
+  border: 1px solid $gray-300;
+
+  rx-canvas-item-container {
+    min-width: 100%;
+
+    .cdk-drop-list {
+      min-height: 50px;
+      display: flex;
+      flex-flow: column wrap;
+    }
+  }
+}

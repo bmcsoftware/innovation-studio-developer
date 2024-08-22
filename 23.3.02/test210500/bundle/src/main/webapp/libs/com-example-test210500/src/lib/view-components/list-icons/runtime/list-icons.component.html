@@ -1,0 +1,35 @@
+<!--LMA:: TODO:: Change this in the schematics, it seems the componentData is private-->
+<!--and in the view component HTML we use it.-->
+<!--{{componentData.listIcons}}-->
+
+<adapt-rx-search
+  [(ngModel)]="searchingValue"
+  [placeholder]="'Type the icon name you are searching (3 letters minimum).'"
+  [debounceTime]="300"
+></adapt-rx-search>
+
+<!--We are using Adapt Alert to show that the search is in progress.-->
+<adapt-alert
+  [hidden]="numberOfFilteredIcons"
+  [config]="alertConfiguration">
+</adapt-alert>
+
+<!--Icon list-->
+<table class="table table-condensed" [hidden]="!numberOfFilteredIcons">
+  <thead>
+  <tr>
+    <td><strong>Icon Name</strong></td>
+    <td><strong>Icon Codes</strong></td>
+    <td><strong>Icon Symbol</strong></td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let icon of availableIcons | iconFilter : searchingValue">
+    <td>{{icon.ruleName}}</td>
+    <td>{{icon.className}}</td>
+    <td class="{{icon.iconCode}}">
+      <span [class]="'d-icon-' + icon.ruleName" class="big-font"></span>
+    </td>
+  </tr>
+  </tbody>
+</table>

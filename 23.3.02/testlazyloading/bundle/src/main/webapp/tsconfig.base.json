@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "es2020",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@com.example.testlazyloading/com-example-testlazyloading": ["libs/com-example-testlazyloading/src/index.ts"]
+    },
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["node_modules", "tmp"]
+}
