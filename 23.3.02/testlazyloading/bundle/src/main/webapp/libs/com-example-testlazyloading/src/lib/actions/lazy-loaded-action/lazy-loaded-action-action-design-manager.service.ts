@@ -2,6 +2,7 @@ import { IViewActionDesignManager } from '@helix/platform/view/api';
 import { IViewComponentDesignValidationIssue } from '@helix/platform/view/designer';
 import { Observable, of } from 'rxjs';
 import { Injectable } from '@angular/core';
+// [23.3.02] We use the new interface.
 import { ILazyLoadedActionActionDesignProperties } from './lazy-loaded-action-action-design.types';
 
 @Injectable()

@@ -3,6 +3,7 @@ import { IViewActionService, RxViewAction } from '@helix/platform/view/api';
 import { EMPTY, from, Observable, throwError } from 'rxjs';
 import { RX_MODAL, RxModalService } from '@helix/platform/ui-kit';
 import { switchMap } from 'rxjs/operators';
+// [23.3.02] We use the new interface.
 import { ILazyLoadedActionActionProperties } from './lazy-loaded-action-action.types';
 
 @Injectable()

@@ -7,12 +7,13 @@ import {
 } from '@helix/platform/view/api';
 import { Injector } from '@angular/core';
 import { ExpressionFormControlComponent, IExpressionFormControlOptions } from '@helix/platform/shared/components';
+// [23.3.02] We use the new interface.
 import { ILazyLoadedActionActionDesignProperties } from './lazy-loaded-action-action-design.types';
 
 export class LazyLoadedActionActionDesignModel extends RxViewDesignerActionModel {
   // This method is called when a new or an existing view action is initialized in the view designer.
   // It returns values for all input parameters of the view action.
-  // [23.3.02] We use the new common interface ILazyLoadedActionActionProperties.
+  // [23.3.02] We just rename the input parameter for clarity.
   static getInitialProperties(currentInputParams: ViewActionDesignEditableProperties<ILazyLoadedActionActionDesignProperties>) {
     return {
       message: '',

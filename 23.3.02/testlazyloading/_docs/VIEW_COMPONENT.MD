@@ -123,7 +123,7 @@ export interface ILabelLazyLoadedProperties extends IRxStandardProps {
 }
 ```
 
-<a name="view-component-interface"></a>
+<a name="view-component-registration"></a>
 ### View Component registration (`label-lazy-loaded-registration.module.ts`)  
 We now import the standard properties in the registration module, and consume them.  
 There are also some changes in the View Component imports since we removed the design and runtime `index.ts` files.  
