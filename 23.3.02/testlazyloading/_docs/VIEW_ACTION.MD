@@ -21,7 +21,7 @@ You can see the differences after this commit:
 * [78767e2a353e8667103c4ba0a45ce73998e9d63c](https://github.com/bmcsoftware/innovation-studio-developer/commit/78767e2a353e8667103c4ba0a45ce73998e9d63c),
 More specifically, the changes are in these commits:
 * [def34116d5ce4b68b313ec44d5d49b8c2cc19b5c](https://github.com/bmcsoftware/innovation-studio-developer/commit/def34116d5ce4b68b313ec44d5d49b8c2cc19b5c),
-* [def34116d5ce4b68b313ec44d5d49b8c2cc19b5c](https://github.com/bmcsoftware/innovation-studio-developer/commit/def34116d5ce4b68b313ec44d5d49b8c2cc19b5c),
+* [dce67a94ddba7d0c69f0669eef4fb42d085ef492](https://github.com/bmcsoftware/innovation-studio-developer/commit/dce67a94ddba7d0c69f0669eef4fb42d085ef492),
 
 
 > :memo:  
