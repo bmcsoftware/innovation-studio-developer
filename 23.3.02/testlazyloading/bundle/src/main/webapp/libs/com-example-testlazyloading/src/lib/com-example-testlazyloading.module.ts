@@ -10,7 +10,7 @@ import { LazyLoadedActionActionModule } from './actions/lazy-loaded-action/lazy-
     CommonModule,
     // View Component.
     LabelLazyLoadedRegistrationModule,
-    // Action.
+    // View Action.
     LazyLoadedActionActionModule
   ]
 })

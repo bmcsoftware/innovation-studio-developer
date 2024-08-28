@@ -81,7 +81,7 @@
               },
               {
                 "glob": "**/*",
-                "input": "scripts/ckeditor-4.22.1/",
+                "input": "scripts/ckeditor/",
                 "output": "assets/libs/ckeditor/"
               },
               {
@@ -115,7 +115,7 @@
             "stylePreprocessorOptions": {
               "includePaths": ["styles", "./node_modules"]
             },
-            "scripts": ["scripts/ckeditor-4.22.1/ckeditor.min.js"],
+            "scripts": ["scripts/ckeditor/ckeditor.js"],
             "extractLicenses": true,
             "crossOrigin": "use-credentials",
             "allowedCommonJsDependencies": [
@@ -193,21 +193,31 @@
                   "maximumError": "50mb"
                 }
               ],
-              "indexTransform": "node_modules/@helix/schematics/src/config/webpack.transform-index.js",
+              "indexTransform": "node_modules/@helix/schematics/src/config/webpack.transform-index.prod.js",
               "customWebpackConfig": {
                 "path": "node_modules/@helix/schematics/src/config/webpack.prod.js"
               }
             },
             "development": {
               "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
+              "optimization": {
+                "scripts": true,
+                "fonts": {
+                  "inline": true
+                },
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                }
+              },
+              "vendorChunk": false,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true,
               "customWebpackConfig": {
-                "path": "node_modules/@helix/schematics/src/config/webpack.dev.js"
-              }
+                "path": "node_modules/@helix/schematics/src/config/webpack.prod.js"
+              },
+              "indexTransform": "node_modules/@helix/schematics/src/config/webpack.transform-index.dev.js"
             }
           },
           "defaultConfiguration": "production"

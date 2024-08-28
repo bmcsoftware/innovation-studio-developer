@@ -1,7 +1,8 @@
 # Testing View Component / Bundle Lazy Loading
 History:
 * Version:
-    * 0.1, 2024/02/29, Updated to use the 23.3.x SDK.
+    * 0.2, 2024/08/22, Updated to use the 23.3.02 SDK, applied the new best practices to set View Components as seen in this [documentation](https://docs.bmc.com/docs/innovationsuite/233/introduction-to-view-components-and-view-actions-1342726343.html?src=search).
+    * 0.1, 2024/02/29, Updated to use the 23.3.00 SDK.
 * Author: Laurent Matheo.
 
 
@@ -36,7 +37,7 @@ For example, let's say that we have:
 #### When the user clicks on an order to see the Order Details:
 * Since this view leverages the View Component "Pizza Tracker", the Platform automatically loads the coded library "Pizza tool" coded files (.js and .css).   
 
-This example leverages the 22.3.00 SDK (Angular).  
+This example leverages the 22.3.02 SDK (Angular).  
 
 
 <a name="installation"></a>
@@ -45,12 +46,13 @@ There are two bundles in this example:
 * The coded library [com.example.testlazyloading-1.0-SNAPSHOT.zip](com.example.testlazyloading-1.0-SNAPSHOT.zip),
 * The codeless application [com.example.uselazyloadinglibrary-1.0.0-INSTALL.zip](./_codeless%20application/com.example.uselazyloadinglibrary-1.0.0-INSTALL.zip),
 
-You can just deploy the files on your 23.3.00 development environment which is available on the [BMC Developer Portal](https://developers.bmc.com/site/global/home/index.gsp).    
+You can just deploy the files on your 23.3.02 development environment which is available on the [BMC Developer Portal](https://developers.bmc.com/site/global/home/index.gsp).    
 Here are the [instructions](https://docs.bmc.com/docs/innovationsuite/233/deploying-your-application-for-the-first-time-to-start-working-in-bmc-helix-innovation-studio-1223791377.html?src=search) to start working with Innovation Studio. 
 
 
 <a name="update"></a>
 ## Updating your SDK / Developer Environment (if needed):
+* [23.00 to 23.3.01 to 23.3.02](https://docs.bmc.com/docs/innovationsuite/233/upgrading-to-the-latest-bmc-helix-innovation-studio-sdk-1247609631.html?src=search),
 * [22.x to 23.3.00](https://docs.bmc.com/docs/innovationsuite/233/upgrading-to-the-latest-bmc-helix-innovation-studio-sdk-1247609631.html?src=search),
 
 
@@ -219,14 +221,21 @@ When accessing the view "Test Lazy Loading", you can see that the Platform loads
 
 
 <a name="upgrade-notes"></a>
-# Upgrade notes:  
-In the GitHub repository you can see what steps were taken to upgrade this example from the 22.x SDK to the 23.3 SDK.  
+# Upgrade notes (23.3.00 to 23.3.01 to 23.3.02):
+In the GitHub repository you can see what steps were taken to upgrade this example from the 22.x SDK to the 23.3.00 SDK:
+* The commit [AAAAA](https://github.com/bmcsoftware/innovation-studio-developer/commit/AAAAA) contains the 23.3.00 files,
+* The commit [BBBBB](https://github.com/bmcsoftware/innovation-studio-developer/commit/BBBBB) contains the changes for the 23.3.02 SDK best practices,
+  Note:  
+  The steps to upgrade a 23.3.00 SDK to 23.3.01 SDK to 23.3.02 SDK are available in this [link]https://docs.bmc.com/docs/innovationsuite/233/upgrading-to-the-latest-bmc-helix-innovation-studio-sdk-1247609631.html?src=search().
+
+
+# Upgrade notes (22.x to 23.3.00):
+In the GitHub repository you can see what steps were taken to upgrade this example from the 22.x SDK to the 23.3.00 SDK:  
 * The commit [f129506770038b27638335ae5a24fb46166c6638](https://github.com/bmcsoftware/innovation-studio-developer/commit/f129506770038b27638335ae5a24fb46166c6638) contains the 22.x files,
 * The commit [e798a23da04ec740c2dba5d24b6dda84b766339d](https://github.com/bmcsoftware/innovation-studio-developer/commit/e798a23da04ec740c2dba5d24b6dda84b766339d) contains the changes applied manually and automatically to match the 23.3 SDK requirements,
 Note:  
 The steps to upgrade a 22.x to 23.3 SDK are available in this [link]https://docs.bmc.com/docs/innovationsuite/233/upgrading-to-the-latest-bmc-helix-innovation-studio-sdk-1247609631.html?src=search().  
-  
-  
+
   
 <a name="disclaimer"></a>
 # Disclaimer:

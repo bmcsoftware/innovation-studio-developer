@@ -1754,9 +1754,9 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bmc-ux/adapt-angular@file:./scripts/bmc-ux/adapt-angular-14.28.6.tgz":
-  version "14.28.6"
-  resolved "file:./scripts/bmc-ux/adapt-angular-14.28.6.tgz#2ff13428f1430a1daf0378525f20c3bcd3506351"
+"@bmc-ux/adapt-angular@file:./scripts/bmc-ux/adapt-angular-14.43.0-hp-patch.1.tgz":
+  version "14.43.0-hp-patch.1"
+  resolved "file:./scripts/bmc-ux/adapt-angular-14.43.0-hp-patch.1.tgz#a953a173c0f69c20b1dd8845f43c01c9e20cd3b8"
   dependencies:
     bignumber.js "^9.0.2"
     d3-color "^1.4.1"
@@ -1765,26 +1765,32 @@
     prismjs "1.28.0"
     tslib "^2.4.0"
 
-"@bmc-ux/adapt-charts@file:./scripts/bmc-ux/adapt-charts-14.27.0.tgz":
-  version "14.27.0"
-  resolved "file:./scripts/bmc-ux/adapt-charts-14.27.0.tgz#e41b2bf85780f53a2a0ec7c334b907f28d703134"
+"@bmc-ux/adapt-charts@file:./scripts/bmc-ux/adapt-charts-14.36.0.tgz":
+  version "14.36.0"
+  resolved "file:./scripts/bmc-ux/adapt-charts-14.36.0.tgz#c45e0a9866e93f048f227ca1118c40f93f7b1137"
   dependencies:
     d3-scale "^4.0.2"
     tslib "^2.3.0"
 
-"@bmc-ux/adapt-css@file:./scripts/bmc-ux/adapt-css-4.139.2.tgz":
-  version "4.139.2"
-  resolved "file:./scripts/bmc-ux/adapt-css-4.139.2.tgz#c9b86626893afa81cc4ed240d965039d2969f112"
-
-"@bmc-ux/adapt-radar@file:./scripts/bmc-ux/adapt-radar-14.26.0.tgz":
-  version "14.26.0"
-  resolved "file:./scripts/bmc-ux/adapt-radar-14.26.0.tgz#bdfd0ccf1d63876869bf92d3474facc7df9d9f04"
+"@bmc-ux/adapt-chatbot@file:./scripts/bmc-ux/adapt-chatbot-14.43.1-patch.0.tgz":
+  version "14.43.1-patch.0"
+  resolved "file:./scripts/bmc-ux/adapt-chatbot-14.43.1-patch.0.tgz#4f9d236ee8d1e8b43fb287dc515c3d13f60d69a3"
   dependencies:
     tslib "^2.3.0"
 
-"@bmc-ux/adapt-table@file:./scripts/bmc-ux/adapt-table-14.28.4.tgz":
-  version "14.28.4"
-  resolved "file:./scripts/bmc-ux/adapt-table-14.28.4.tgz#c6d3d9945a487a06a894242bd2a60d8ce93f0421"
+"@bmc-ux/adapt-css@file:./scripts/bmc-ux/adapt-css-4.152.1.tgz":
+  version "4.152.1"
+  resolved "file:./scripts/bmc-ux/adapt-css-4.152.1.tgz#ae4375bb30e0ef96fad1b3693b559c3453e334f3"
+
+"@bmc-ux/adapt-radar@file:./scripts/bmc-ux/adapt-radar-14.43.0.tgz":
+  version "14.43.0"
+  resolved "file:./scripts/bmc-ux/adapt-radar-14.43.0.tgz#b4df17323e679e257fe962764438a0bcc9a911f1"
+  dependencies:
+    tslib "^2.3.0"
+
+"@bmc-ux/adapt-table@file:./scripts/bmc-ux/adapt-table-14.43.0.tgz":
+  version "14.43.0"
+  resolved "file:./scripts/bmc-ux/adapt-table-14.43.0.tgz#074f2ffb45ba808d0b9d8df2ff36e5fbca30a8ef"
   dependencies:
     tslib "^2.3.0"
 
@@ -1792,9 +1798,9 @@
   version "1.0.0"
   resolved "file:./scripts/bmc-ux/adapt-w3c-keyboard-1.0.0.tgz#88f367abed3c6d91594d53d47324a474ae8087a5"
 
-"@bmc-ux/dpl-iconfont@file:./scripts/bmc-ux/dpl-iconfont-2.128.0.tgz":
-  version "2.128.0"
-  resolved "file:./scripts/bmc-ux/dpl-iconfont-2.128.0.tgz#dab1ad1a6e25f72c7b0520eff5c22a68949c4d9f"
+"@bmc-ux/dpl-iconfont@file:./scripts/bmc-ux/dpl-iconfont-2.135.0.tgz":
+  version "2.135.0"
+  resolved "file:./scripts/bmc-ux/dpl-iconfont-2.135.0.tgz#cb66f43361850f573ebbeb5113cffa8bec1c43db"
 
 "@bmc-ux/velocity-animate@file:./scripts/bmc-ux/velocity-animate-2.0.6-bmc-patch.5.tgz":
   version "2.0.6-bmc-patch.5"
@@ -2121,12 +2127,12 @@
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
 "@helix/com-bmc-arsys-rx-innovationstudio@file:./tools/rx-libs/com-bmc-arsys-rx-innovationstudio":
-  version "23.3.0-20231114225106"
+  version "23.3.2-20240510030504"
   dependencies:
     tslib "^2.0.0"
 
 "@helix/platform@file:./tools/rx-libs/platform":
-  version "23.3.0-20231114225106"
+  version "23.3.2-20240510030504"
   dependencies:
     tslib "^2.0.0"
 
@@ -5238,8 +5244,10 @@ ckeditor4-angular@1.3.0:
     load-script "^1.0.0"
     tslib "^1.9.0"
 
-"ckeditor4@file:./scripts/ckeditor-4.22.1":
-  version "4.22.1"
+ckeditor4@4.24.0:
+  version "4.24.0"
+  resolved "https://registry.yarnpkg.com/ckeditor4/-/ckeditor4-4.24.0.tgz#9699ddbce7eaa9cb1063f7f7d75b0ae761106405"
+  integrity sha512-ShtIqZMMNmP5r8AhZqnysSaONsx+qKjI/zf5AkU9wKxl0yHVw2/CSxWYmdd40u3dMjJR2kOthQ6USahz528lbw==
 
 class-utils@^0.3.5:
   version "0.3.6"

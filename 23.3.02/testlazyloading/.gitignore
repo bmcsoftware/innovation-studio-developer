@@ -6,6 +6,7 @@
 .project
 .p4ignore
 *.iml
+.DS_Store
 
 # Compiled class files
 *.class
