@@ -26,4 +26,4 @@ Please refer to this [file](./_docs/VIEW_COMPONENT.MD) for the changes in the Vi
   
 <a name="ac-23302"></a>
 ## View Action changes (23.3.00 to 23.3.02)  
-Please refer to this [file](./_docs/VIEW_COMPONENT.MD) for the changes in the View Actions.
+Please refer to this [file](./_docs/VIEW_ACTION.MD) for the changes in the View Actions.
