@@ -16,9 +16,10 @@
 ## Best practices changes for the View Action "lazy-loaded-action" (23.3.00 to 23.3.02)  
 In 23.3.02 there are some minor modifications to the SDK and the archetypes used to generate View Component, View Actions, and Record Field View Components.  
 These best practices are listed in our [documentation](https://docs.bmc.com/docs/innovationsuite/233/introduction-to-view-components-and-view-actions-1342726343.html?src=search).  
-This section will list the changes from 23.3.00 to 23.3.02, as an example.  
+This section will list the changes from 23.3.00 to 23.3.02, as an example. In the case of a View Action, there are very little changes.    
 You can see the differences after this commit:
 * [78767e2a353e8667103c4ba0a45ce73998e9d63c](https://github.com/bmcsoftware/innovation-studio-developer/commit/78767e2a353e8667103c4ba0a45ce73998e9d63c),
+  
 More specifically, the changes are in these commits:
 * [def34116d5ce4b68b313ec44d5d49b8c2cc19b5c](https://github.com/bmcsoftware/innovation-studio-developer/commit/def34116d5ce4b68b313ec44d5d49b8c2cc19b5c),
 * [dce67a94ddba7d0c69f0669eef4fb42d085ef492](https://github.com/bmcsoftware/innovation-studio-developer/commit/dce67a94ddba7d0c69f0669eef4fb42d085ef492),
