@@ -1,15 +1,16 @@
 import { IViewActionDesignManager } from '@helix/platform/view/api';
 import { IViewComponentDesignValidationIssue } from '@helix/platform/view/designer';
 import { Observable, of } from 'rxjs';
-import { IPlainObject } from '@helix/platform/shared/api';
 import { Injectable } from '@angular/core';
-import { ILazyLoadedActionActionDesignProperties } from './lazy-loaded-action-action.interface';
+import { ILazyLoadedActionActionDesignProperties } from './lazy-loaded-action-action-design.types';
 
 @Injectable()
 export class LazyLoadedActionActionDesignManagerService implements IViewActionDesignManager<ILazyLoadedActionActionDesignProperties> {
 
-  // This method will be called automatically to validate the input parameter values.
-  validate(actionProperties: ILazyLoadedActionActionDesignProperties, propertyName: string): Observable<IPlainObject[]> {
+  // This method will be called automatically to validate view action input parameters.
+  // [23.3.02] we Type the validate() method as:
+  //    Observable<IViewComponentDesignValidationIssue[]>
+  validate(actionProperties: ILazyLoadedActionActionDesignProperties, propertyName: string): Observable<IViewComponentDesignValidationIssue[]> {
     return of(this.validateInputParameters(actionProperties, propertyName));
   }
 

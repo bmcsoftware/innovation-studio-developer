@@ -8,22 +8,28 @@ import { LazyLoadedActionActionDesignModel } from './lazy-loaded-action-action-d
   providers: [LazyLoadedActionActionService, LazyLoadedActionActionDesignManagerService]
 })
 export class LazyLoadedActionActionModule {
+  // [23.3.02] Removing the "private" in the constructor, for example:
+  //     private rxViewActionRegistryService: RxViewActionRegistryService,
+  //     to:
+  //     rxViewActionRegistryService: RxViewActionRegistryService,
   constructor(
-    private rxViewActionRegistryService: RxViewActionRegistryService,
-    private lazyLoadedActionActionService: LazyLoadedActionActionService,
-    private lazyLoadedActionActionDesignManagerService: LazyLoadedActionActionDesignManagerService
+    rxViewActionRegistryService: RxViewActionRegistryService,
+    lazyLoadedActionActionService: LazyLoadedActionActionService,
+    lazyLoadedActionActionDesignManagerService: LazyLoadedActionActionDesignManagerService
   ) {
-    this.rxViewActionRegistryService.register({
+    // [23.3.02] Calling the services directly since they are not private anymore, for example using:
+    //     rxViewActionRegistryService.register() instead of:
+    //     this .rxViewActionRegistryService.register()
+    rxViewActionRegistryService.register({
       name: 'comExampleTestlazyloadingLazyLoadedAction',
       label: 'Lazy Loaded Action',
-      // Service that will be executed at runtime.
-      service: this.lazyLoadedActionActionService,
-      // The design manager will validate the input parameters at design time.
-      designManager: this.lazyLoadedActionActionDesignManagerService,
-      // The output parameters are not defined in this file but
-      // in the design model via the data dictionary.
+      // A service that will execute the view action at runtime.
+      service: lazyLoadedActionActionService,
+      // The design manager service responsible for view action parameter validation at design time.
+      designManager: lazyLoadedActionActionDesignManagerService,
+      // The design model class responsible for the design time behavior of the view action.
       designModel: LazyLoadedActionActionDesignModel,
-      // The input parameters will be defined in more details in the design-model file.
+      // The list of view action input parameters.
       parameters: [
         {
           name: 'message',
