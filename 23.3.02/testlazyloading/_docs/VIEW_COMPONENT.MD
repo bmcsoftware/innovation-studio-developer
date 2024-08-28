@@ -21,9 +21,12 @@
 In 23.3.02 there are some minor modifications to the SDK and the archetypes used to generate View Component, View Actions, and Record Field View Components.  
 These best practices are listed in our [documentation](https://docs.bmc.com/docs/innovationsuite/233/introduction-to-view-components-and-view-actions-1342726343.html?src=search).  
 This section will list the changes from 23.3.00 to 23.3.02, as an example.  
-You can see the differences in these commits:
+You can see the differences after this commit:
+* [78767e2a353e8667103c4ba0a45ce73998e9d63c](https://github.com/bmcsoftware/innovation-studio-developer/commit/78767e2a353e8667103c4ba0a45ce73998e9d63c),
+So, in these commits:
 * [60187d519971232df0ef4b796176ec327b38c51e](https://github.com/bmcsoftware/innovation-studio-developer/commit/60187d519971232df0ef4b796176ec327b38c51e),
 * [88cdc14045ef5351adb52095a52006c4db9795e7](https://github.com/bmcsoftware/innovation-studio-developer/commit/88cdc14045ef5351adb52095a52006c4db9795e7),
+* [9a35dce39e91db36b528d2f95adc6f916dca7461](https://github.com/bmcsoftware/innovation-studio-developer/commit/9a35dce39e91db36b528d2f95adc6f916dca7461),
 
 > :memo:  
 > Those modifications are NOT required. The 23.3.00 source code would continue to work.
