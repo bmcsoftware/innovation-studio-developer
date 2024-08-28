@@ -7,6 +7,7 @@
   * [File structure](#file-structure)
   * [View Component interface (label-lazy-loaded.types.ts)](#view-component-interface)
   * [View Component registration (label-lazy-loaded-registration.module.ts)](#view-component-registration)
+  * [View Component global CSS (com-example-testlazyloading.scss)](#view-component-css)
 * [Design time changes](#design-time-changes)
   * [label-lazy-loaded-design.component.ts](#design-component)
   * [label-lazy-loaded-design.model.ts](#design-model)
@@ -20,7 +21,9 @@
 In 23.3.02 there are some minor modifications to the SDK and the archetypes used to generate View Component, View Actions, and Record Field View Components.  
 These best practices are listed in our [documentation](https://docs.bmc.com/docs/innovationsuite/233/introduction-to-view-components-and-view-actions-1342726343.html?src=search).  
 This section will list the changes from 23.3.00 to 23.3.02, as an example.  
-You can see the differences in the commit []().
+You can see the differences in these commits:
+* [60187d519971232df0ef4b796176ec327b38c51e](https://github.com/bmcsoftware/innovation-studio-developer/commit/60187d519971232df0ef4b796176ec327b38c51e),
+* [88cdc14045ef5351adb52095a52006c4db9795e7](https://github.com/bmcsoftware/innovation-studio-developer/commit/88cdc14045ef5351adb52095a52006c4db9795e7),
 
 > :memo:  
 > Those modifications are NOT required. The 23.3.00 source code would continue to work.
@@ -85,6 +88,17 @@ Some default View Component properties are now available, we will consume them i
 ```ts
 RX_STANDARD_PROPS_DESC
 ```
+
+<details> 
+<summary>Default properties</summary>  
+
+![Default properties](./_pictures/vc-default-properties.png)
+</details>
+
+> :memo:  
+> We do not need to implement those properties as they are properties of the BaseComponent.
+
+
   
 This means that we need to modify the former interface file (label-lazy-loaded.interface.ts) to extend those standard properties.  
 Before in the file `label-lazy-loaded.interface.ts` we only had the message property:
@@ -146,6 +160,24 @@ export class LabelLazyLoadedRegistrationModule {
   }
 }
 ```
+
+<a name="view-component-css"></a>
+### View Component global CSS (`com-example-testlazyloading.scss`)
+This is just for demo purposes, to demonstrate that we can apply a CSS style to the View Component using the new imported Default properties.  
+This css class is used in the [demo codeless bundle](../_codeless%20application/com.example.uselazyloadinglibrary-1.0.0-INSTALL.zip).  
+```scss
+/* Adding a global css style to be used for the label view component */
+.com-example-testlazyloading-vc-green-container p {
+  border: 2px solid green;
+}
+```
+
+<details> 
+<summary>CSS class</summary>  
+
+![CSS class](./_pictures/vc-css.png)
+</details>
+
 
 <a name="design-time-changes"></a>
 ## Design time changes  
@@ -364,9 +396,18 @@ export class LabelLazyLoadedComponent extends BaseViewComponent implements OnIni
 
 <a name="runtime-component-html"></a>
 ### label-lazy-loaded.component.html  
-We now use the state property to display the message or not.
+We now use the state property to display the message or not.  
+We can also leverage the new default properties to hide the View Component, apply CSS classes or specify if it needs to be displayed on Desktop / Tablet / Mobile:    
+
+<details> 
+<summary>Default properties</summary>  
+
+![Default properties](./_pictures/vc-default-properties.png)
+</details>
+
 > :memo:  
-> We do not need to implement the hidden property as we set in the view component the isHidden property of the BaseComponent.
+> We do not need to implement those properties in the View Component's code as they are properties of the BaseComponent.
+
 
 ```html
 <p>

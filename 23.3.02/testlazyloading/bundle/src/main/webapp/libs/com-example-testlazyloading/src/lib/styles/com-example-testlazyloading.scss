@@ -2,3 +2,8 @@
 .com-example-testlazyloading-green-container {
   border: 2px solid green;
 }
+
+/* Adding a global css style to be used for the label view component */
+.com-example-testlazyloading-vc-green-container p {
+  border: 2px solid green;
+}

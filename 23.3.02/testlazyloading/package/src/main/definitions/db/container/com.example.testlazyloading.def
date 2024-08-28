@@ -1,0 +1,15 @@
+begin container
+   name           : com.example.testlazyloading
+   type           : 2
+   num-references : 1
+   timestamp      : 1724878529
+   owner          : com.example
+   last-changed   : ARSERVER
+   export-version : 12
+   object-prop    : 5\90019\2\10\90016\4\1\1\90002\4\27\com.example.testlazyloading\90021\4\27\com.example.testlazyloading\90015\2\4\
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+end
